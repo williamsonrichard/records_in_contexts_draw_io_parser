@@ -1,0 +1,98 @@
+Individual: KoronakommisjonenDokumentasjon
+  Types: rico:RecordSet
+  Facts:
+    rico:hasCreator Koronakommisjonen,
+    rico:hasSender Koronakommisjonen,
+    rico:scopeAndContent "Dokumentasjon knyttet til kommisjonens møter (innkallinger, referater, oppsummeringsnotater), informasjon som kommisjonen har innhentet fra forvaltningen, gjennom innspill og intervjuer (stort volum), eksterne utredninger, rapporten med forarbeider, dokumentasjon knyttet til innsynsforespørsler. Administrasjon og økonomi ble håndtert av Statsministerens kontor.",
+    rico:isAssociatedWithEvent Covid-19,
+    rico:isAssociatedWithPlace Norge,
+    rico:hasOrHadLanguage NorskBokmål,
+    rico:hasOrHadHolder Arkivverket,
+    rico:isOrWasUnderAuthorityOf Arkivverket,
+    rico:hasBeginningDate InitiationOfKoronakommisjonen,
+    rico:hasEndDate ClosingOfKoronakommisjonen,
+    rico:hasOrganicOrFunctionalProvenance Sharepoint,
+    rico:hasOrHadDigitalInstantiation KoronakommisjonenDokumentasjonStoredInstantiation
+
+Individual: Koronakommisjonen
+  Types: rico:CorporateBody, rico:AgentName
+  Facts:
+    rico:hasBeginningDate InitiationOfKoronakommisjonen,
+    rico:hasEndDate ClosingOfKoronakommisjonen,
+    rico:isOrWasRegulatedBy KongeligResolusjonKoronakommisjonen
+
+Individual: Covid-19
+  Types: rico:Event
+
+Individual: Norge
+  Types: rico:Place
+  Facts:
+    rico:hasOrHadPlaceType Country
+
+Individual: NorskBokmål
+  Types: rico:Language
+  Facts:
+    rico:isOrWasLanguageOf Norge
+
+Individual: Country
+  Types: rico:PlaceType
+
+Individual: Arkivverket
+  Types: rico:CorporateBody, rico:AgentName
+  Facts:
+    rico:name "National Archives of Norway"
+
+Individual: Arkivvesenet
+  Types: rico:AgentName
+  Facts:
+    rico:followsInTime Arkivverket
+
+Individual: InitiationOfKoronakommisjonen
+  Types: rico:Date
+  Facts:
+    rico:normalizedDateValue "2020-04-24"^^xsd:date
+
+Individual: ClosingOfKoronakommisjonen
+  Types: rico:Date
+  Facts:
+    rico:normalizedDateValue "2022-05-06"^^xsd:date
+
+Individual: Sharepoint
+  Types: rico:Mechanism
+
+Individual: KongeligResolusjonKoronakommisjonen
+  Types: rico:Rule
+  Facts:
+    rico:occurredAtDate InitiationOfKoronakommisjonen,
+    rico:hasOrHadRuleType KongeligResolusjon
+
+Individual: KongeligResolusjon
+  Types: rico:RuleType
+
+Individual: KoronakommisjonenDokumentasjonStoredInstantiation
+  Types: rico:Instantiation
+  Facts:
+    rico:hasOrHadIdentifier KoronakommisjonenDokumentasjonStorageID,
+    rico:hasExtent KoronakommisjonenDokumentasjonTarFileSize
+
+Individual: KoronakommisjonenDokumentasjonStorageID
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType StorageID,
+    rico:identifier "96e28e3a-94fd-49e9-af7c-be6c8f60c141"
+
+Individual: KoronakommisjonenDokumentasjonTarFileSize
+  Types: rico:InstantiationExtent
+  Facts:
+    rico:hasUnitOfMeasurement Bytes,
+    rico:hasExtentType FileSize,
+    rico:quantity "131070863360"^^xsd:integer
+
+Individual: StorageID
+  Types: rico:IdentifierType
+
+Individual: Bytes
+  Types: rico:UnitOfMeasurement
+
+Individual: FileSize
+  Types: rico:ExtentType
