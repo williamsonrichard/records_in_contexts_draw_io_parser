@@ -23,6 +23,7 @@ Contents
 * [Feedback, bugs, suggestions](#feedback-bugs-suggestions)
 * [Typical uses](#typical-uses)
 * [For developers](#for-developers)
+* [Thanks](#thanks)
 * [License](#license)
 
 
@@ -104,7 +105,7 @@ Given a graph constructed in [draw.io](https://draw.io) graph created using the 
 
 * Download the underlying XML to your machine (File -> Save As). Let us suppose that the downloaded file has name `example.drawio` (feel free to use one of the `.drawio` files in the `examples` folder in this repository).
 * Carry out the [preliminary steps](#how-to-use) described above, depending on whether you wish to use an executable file from a release, or use Python directly.
-* Pipe the contents of `example.drawio` into the parser, in the terminal you opened in the preliminary steps [above](#how-to-use). For example, if using an executable file from a release in Windows, proceed as follows (replacing `example.drawio` by a path to it if it is not in the same folder as `draw_io_parser.exe`).
+* Pipe the contents of `example.drawio` into the parser, in the terminal you opened in the preliminary steps [above](#how-to-use). For example, if using an executable file from a release in Windows, proceed as follows (replacing `example.drawio` by a path to it if it is not in the same folder as `draw_io_parser.exe`). Here and throughout below, if your filename or path to it includes spaces, enclose it in quotation marks.
 
    ```
    type example.drawio | draw_io_parser.exe
