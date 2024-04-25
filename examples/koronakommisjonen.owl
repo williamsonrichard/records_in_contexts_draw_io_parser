@@ -1,9 +1,12 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
-Prefix: : <ontology://generated-from-draw-io/2024-04-19T18-53-06#>
-Ontology: <ontology://generated-from-draw-io/2024-04-19T18-53-06>
+Prefix: : <ontology://generated-from-draw-io/2024-04-26T01-31-21#>
+Ontology: <ontology://generated-from-draw-io/2024-04-26T01-31-21>
   Import: <https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/current-version/RiC-O_1-0.rdf>
 
 Individual: KoronakommisjonenDokumentasjon
+  Annotations:
+    rdfs:label "Koronakommisjonen Dokumentasjon"
   Types: rico:RecordSet
   Facts:
     rico:hasCreator Koronakommisjonen,
@@ -20,6 +23,8 @@ Individual: KoronakommisjonenDokumentasjon
     rico:hasOrHadDigitalInstantiation KoronakommisjonenDokumentasjonStoredInstantiation
 
 Individual: Koronakommisjonen
+  Annotations:
+    rdfs:label "Koronakommisjonen"
   Types: rico:AgentName, rico:CorporateBody
   Facts:
     rico:hasBeginningDate InitiationOfKoronakommisjonen,
@@ -27,66 +32,94 @@ Individual: Koronakommisjonen
     rico:isOrWasRegulatedBy KongeligResolusjonKoronakommisjonen
 
 Individual: Covid-19
+  Annotations:
+    rdfs:label "Covid-19"
   Types: rico:Event
 
 Individual: Norge
+  Annotations:
+    rdfs:label "Norge"
   Types: rico:Place
   Facts:
     rico:hasOrHadPlaceType Country
 
 Individual: NorskBokmål
+  Annotations:
+    rdfs:label "Norsk Bokmål"
   Types: rico:Language
   Facts:
     rico:isOrWasLanguageOf Norge
 
 Individual: Country
+  Annotations:
+    rdfs:label "Country"
   Types: rico:PlaceType
 
 Individual: Arkivverket
+  Annotations:
+    rdfs:label "Arkivverket"
   Types: rico:AgentName, rico:CorporateBody
   Facts:
     rico:name "National Archives of Norway"
 
 Individual: Arkivvesenet
+  Annotations:
+    rdfs:label "Arkivvesenet"
   Types: rico:AgentName
   Facts:
     rico:followsInTime Arkivverket
 
 Individual: InitiationOfKoronakommisjonen
+  Annotations:
+    rdfs:label "Initiation of Koronakommisjonen"
   Types: rico:Date
   Facts:
     rico:normalizedDateValue "2020-04-24"^^xsd:date
 
 Individual: ClosingOfKoronakommisjonen
+  Annotations:
+    rdfs:label "Closing of Koronakommisjonen"
   Types: rico:Date
   Facts:
     rico:normalizedDateValue "2022-05-06"^^xsd:date
 
 Individual: Sharepoint
+  Annotations:
+    rdfs:label "Sharepoint"
   Types: rico:Mechanism
 
 Individual: KongeligResolusjonKoronakommisjonen
+  Annotations:
+    rdfs:label "Kongelig Resolusjon Koronakommisjonen"
   Types: rico:Rule
   Facts:
     rico:occurredAtDate InitiationOfKoronakommisjonen,
     rico:hasOrHadRuleType KongeligResolusjon
 
 Individual: KongeligResolusjon
+  Annotations:
+    rdfs:label "Kongelig Resolusjon"
   Types: rico:RuleType
 
 Individual: KoronakommisjonenDokumentasjonStoredInstantiation
+  Annotations:
+    rdfs:label "Koronakommisjonen Dokumentasjon Stored Instantiation"
   Types: rico:Instantiation
   Facts:
     rico:hasOrHadIdentifier KoronakommisjonenDokumentasjonStorageID,
     rico:hasExtent KoronakommisjonenDokumentasjonTarFileSize
 
 Individual: KoronakommisjonenDokumentasjonStorageID
+  Annotations:
+    rdfs:label "Koronakommisjonen Dokumentasjon Storage ID"
   Types: rico:Identifier
   Facts:
     rico:hasIdentifierType StorageID,
     rico:identifier "96e28e3a-94fd-49e9-af7c-be6c8f60c141"
 
 Individual: KoronakommisjonenDokumentasjonTarFileSize
+  Annotations:
+    rdfs:label "Koronakommisjonen Dokumentasjon Tar File Size"
   Types: rico:InstantiationExtent
   Facts:
     rico:hasUnitOfMeasurement Bytes,
@@ -94,10 +127,16 @@ Individual: KoronakommisjonenDokumentasjonTarFileSize
     rico:quantity "131070863360"^^xsd:integer
 
 Individual: StorageID
+  Annotations:
+    rdfs:label "Storage ID"
   Types: rico:IdentifierType
 
 Individual: Bytes
+  Annotations:
+    rdfs:label "Bytes"
   Types: rico:UnitOfMeasurement
 
 Individual: FileSize
+  Annotations:
+    rdfs:label "FileSize"
   Types: rico:ExtentType
