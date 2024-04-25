@@ -1,9 +1,13 @@
 Individual: KnutOlborgsForskingsnotater
+  Annotations:
+    rdfs:label "Knut Olborgs Forskingsnotater"
   Types: rico:RecordSet
   Facts:
     rico:hasCreator KnutOlborg,
     rico:hasSender KnutOlborg,
-    rico:scopeAndContent "Notatene kan være til nytte for andre forskere og studenter som skal arbeidet med dette tyskspråklige og vanskelig tilgjengelige arkivmaterialet. Arkivverket tok imot de digitale filene i 2022. Materialet er elektronisk og består av 105 word-filer (pdf'er).",
+    rico:scopeAndContent "Forskerarkiv. Samling av forsker Knut Olborgs notater fra kildegransking av arkivet RAFA-2197 Deutscher Oberbefehlshaber Norwegen (DOBN). Knut Olborg har gått systematisk gjennom det, eske for eske, og tatt notater.
+
+Notatene kan være til nytte for andre forskere og studenter som skal arbeidet med dette tyskspråklige og vanskelig tilgjengelige arkivmaterialet. Arkivverket tok imot de digitale filene i 2022. Materialet er elektronisk og består av 105 word-filer (pdf'er).",
     rico:isAssociatedWithEvent Okkupasjonstiden,
     rico:isAssociatedWithPlace Norge,
     rico:hasOrHadHolder Arkivverket,
@@ -15,63 +19,89 @@ Individual: KnutOlborgsForskingsnotater
     rico:isRecordResourceAssociatedWithRecordResource DeutscherOberbefehlshaberNorwegenSamling
 
 Individual: KnutOlborg
+  Annotations:
+    rdfs:label "Knut Olborg"
   Types: rico:AgentName, rico:Person
 
 Individual: Okkupasjonstiden
+  Annotations:
+    rdfs:label "Okkupasjonstiden"
   Types: rico:Event
   Facts:
     rico:hasEndDate OkkupasjonstidenSlutt,
     rico:hasBeginningDate OkkupasjonstidenStart
 
 Individual: Norge
+  Annotations:
+    rdfs:label "Norge"
   Types: rico:Place
   Facts:
     rico:hasOrHadPlaceType Country
 
 Individual: NorskBokmål
+  Annotations:
+    rdfs:label "Norsk Bokmål"
   Types: rico:Language
   Facts:
     rico:isOrWasLanguageOf Norge
 
 Individual: Country
+  Annotations:
+    rdfs:label "Country"
   Types: rico:PlaceType
 
 Individual: Arkivverket
-  Types: rico:AgentName, rico:CorporateBody
+  Annotations:
+    rdfs:label "Arkivverket"
+  Types: rico:CorporateBody, rico:AgentName
   Facts:
     rico:name "National Archives of Norway"
 
 Individual: Arkivvesenet
+  Annotations:
+    rdfs:label "Arkivvesenet"
   Types: rico:AgentName
   Facts:
     rico:followsInTime Arkivverket
 
 Individual: KnutOlborgsForskningsnotaterStart
+  Annotations:
+    rdfs:label "Knut Olborgs Forskningsnotater Start"
   Types: rico:Date
   Facts:
     rico:normalizedDateValue "2018-08-05"^^xsd:date
 
 Individual: KnutOlborgsForskningsnotaterSlutt
+  Annotations:
+    rdfs:label "Knut Olborgs Forskningsnotater Slutt"
   Types: rico:Date
   Facts:
     rico:normalizedDateValue "2021-11-23"^^xsd:date
 
 Individual: Mappestruktur
+  Annotations:
+    rdfs:label "Mappestruktur"
   Types: rico:Mechanism
 
 Individual: KnutOlborgsForskningsnotaterStorageInstantiation
+  Annotations:
+    rdfs:label "Knut Olborgs Forskningsnotater Storage Instantiation"
   Types: rico:Instantiation
   Facts:
     rico:hasOrHadIdentifier KnutOlborgsForskningsnotaterStorageID,
     rico:hasExtent KnutOlborgsForskningsnotaterTarFileSize
 
 Individual: KnutOlborgsForskningsnotaterStorageID
+  Annotations:
+    rdfs:label "Knut Olborgs Forskningsnotater Storage ID"
   Types: rico:Identifier
   Facts:
     rico:hasIdentifierType StorageID,
     rico:identifier "d6ef5d07-8b2e-4d7b-9590-a70381765c9a"
 
 Individual: KnutOlborgsForskningsnotaterTarFileSize
+  Annotations:
+    rdfs:label "Knut Olborgs Forskningsnotater Tar File Size"
   Types: rico:InstantiationExtent
   Facts:
     rico:hasUnitOfMeasurement Bytes,
@@ -79,44 +109,64 @@ Individual: KnutOlborgsForskningsnotaterTarFileSize
     rico:quantity "3676160"^^xsd:integer
 
 Individual: StorageID
+  Annotations:
+    rdfs:label "Storage ID"
   Types: rico:IdentifierType
 
 Individual: Bytes
+  Annotations:
+    rdfs:label "Bytes"
   Types: rico:UnitOfMeasurement
 
 Individual: FileSize
+  Annotations:
+    rdfs:label "File Size"
   Types: rico:ExtentType
 
 Individual: DeutscherOberbefehlshaberNorwegenSamling
+  Annotations:
+    rdfs:label "Deutscher Oberbefehlshaber Norwegen Samling"
   Types: rico:RecordSet
   Facts:
     rico:hasOrHadLanguage Tysk,
     rico:isAssociatedWithPlace Tyskland,
     rico:isAssociatedWithPlace Norge,
     rico:isAssociatedWithEvent Okkupasjonstiden,
-    rico:scopeAndContent "Arkivet var i mange år vært svært lite tilgjengelig for bruk inntil Arkivverket i årene 2016-19 gjennomgikk det og registrerte det i katalog.",
+    rico:scopeAndContent "Et arkiv på om lag 30 hm som ble skapt av tyske militære som var internert i Norge etter krigens slutt. Under alliert kommando måtte de over 350 000 tyskerne administrere seg selv inntil de ble hjemsendt, og dette er arkivet de skapte i den perioden våren 1945 til ut i 1947.
+
+Arkivet var i mange år vært svært lite tilgjengelig for bruk inntil Arkivverket i årene 2016-19 gjennomgikk det og registrerte det i katalog.",
     rico:hasCreator DeutscherOberbefehlshaberNorwegen,
     rico:hasOrHadAnalogueInstantiation DOBNSamlingStorageInstantiation
 
 Individual: Tyskland
+  Annotations:
+    rdfs:label "Tyskland"
   Types: rico:Place
   Facts:
     rico:hasOrHadPlaceType Country
 
 Individual: Tysk
+  Annotations:
+    rdfs:label "Tysk"
   Types: rico:Language
   Facts:
     rico:isOrWasLanguageOf Tyskland
 
 Individual: DeutscherOberbefehlshaberNorwegen
-  Types: rico:AgentName, rico:CorporateBody
+  Annotations:
+    rdfs:label "Deutscher Oberbefehlshaber Norwegen"
+  Types: rico:CorporateBody, rico:AgentName
 
 Individual: DOBNSamlingStorageInstantiation
+  Annotations:
+    rdfs:label "DOBN Samling Storage Instantiation"
   Types: rico:Instantiation
   Facts:
     rico:hasExtent DOBNSamlingShelfSpace
 
 Individual: DOBNSamlingShelfSpace
+  Annotations:
+    rdfs:label "DOBN Samling Shelf Space"
   Types: rico:InstantiationExtent
   Facts:
     rico:hasUnitOfMeasurement Hyllemeter,
@@ -124,17 +174,25 @@ Individual: DOBNSamlingShelfSpace
     rico:quantity "30"^^xsd:integer
 
 Individual: Hyllemeter
+  Annotations:
+    rdfs:label "Hyllemeter"
   Types: rico:UnitOfMeasurement
 
 Individual: ShelfSpace
+  Annotations:
+    rdfs:label "Shelf Space"
   Types: rico:ExtentType
 
 Individual: OkkupasjonstidenSlutt
+  Annotations:
+    rdfs:label "Okkupasjonstiden Slutt"
   Types: rico:Date
   Facts:
     rico:normalizedDateValue "1945"^^xsd:integer
 
 Individual: OkkupasjonstidenStart
+  Annotations:
+    rdfs:label "Okkupasjonstiden Start"
   Types: rico:Date
   Facts:
     rico:normalizedDateValue "1940"^^xsd:integer

@@ -19,6 +19,7 @@ Contents
         * [Example](#example)
         * [Overview of all command line arguments](#overview-of-all-command-line-arguments)
 * [Documentation](#documentation)
+* [Considerations when drawing graphs](#considerations-when-drawing-graphs)
 * [Feedback, bugs, suggestions](#feedback-bugs-suggestions)
 * [Typical uses](#typical-uses)
 * [For developers](#for-developers)
@@ -36,6 +37,10 @@ The parser tries to be tolerant of small imperfections in the graph creation, at
 It will attempt to infer the types of any integer or date literals, rather than regard them as strings. Again, a parameter can be used to disable this.
 
 By default, the parser outputs a complete, self-contained ontology. This can be tweaked in various ways through command line arguments: for instance all preamble can be omitted, and only individual blocks outputted, which may be convenient if the output will be used to make additions to existing data.
+
+See [Considerations when drawing graphs](#considerations-when-drawing-graphs) for a few points to keep in mind when constructing graphs which you intend to feed through the parser.
+
+Release notes: v0.2 adds several features and fixes a number of bugs/scenarios that were not handled in v0.1. Please upgrade if you are currently using v0.1!
 
 
 Examples
@@ -155,6 +160,7 @@ Then the file `example.owl` can be imported into Protégé, or worked with in an
 
 A number of command line arguments can be passed to the parser, rather than only using it in its most basic form as [above](#basic-use).
 
+
 ##### Example
 
 The following will run the application in 'strict mode' (no attempt made to fix imperfections in the graph XML), and will use four spaces when indenting the outputted OWL.
@@ -222,6 +228,20 @@ Documentation
 Using `--help` as above will output quite thorough documentation of the possible command line arguments. If trying to understand the code, see the docstrings in `draw_io_parser.py`.
 
 
+Considerations when drawing graphs
+----------------------------------
+
+* In the parsing of multi-line text  whether within literal nodes or within the upper half of individual nodes, two or more consecutive line-breaks will be treated as indicating a new paragraph, but single line-breaks will be ignored, that is to say, the two lines will be concatenated without any space being added. Thus, if one wishes to describe a list in a literal node, for instance, which would visually look fine with only a single line-break between items, one should include some kind of separator (a comma plus a single space, or a semi-colon plus a single space, etc), so that the list aspect is not upon parsing.
+* OWL has certain metacharacters that cannot be used in the IRI for an individual (coming from the upper half of an individual node). This includes spaces. The command line option `-m/--metacharacter-substitute` can be used (more than once if necessary) to define substitutes for these metacharacters or to remove them: use `--help` as described in the section [Overview of all command line arguments](#overview-of-all-command-line-arguments) for more details.
+
+  If the parser encounters a metacharacter for which a substitute has not been defined, it will cease parsing and protest! For convenience, you may wish to use `-m remove`, which will simply remove all metacharacters (including spaces) for which you do not specify a substitute (by means of further uses of `-m/--metacharacter-substitute`).
+
+  The handling of capitalisation in connection with replacing or removing spaces can be configured/homogenised using the `-c/--capitalisation-scheme` option. Again, see `--help` for details.
+
+  In all cases, by default, an `rdfs:label` annotation property will be included in the outputted OWL block which records the original text, before it was parsed. In Protégé, this human-readable label is what will typically be displayed; it is only in the actual IRI for an individual that the parsed form is necessary. If you wish to disable the inclusion of the `rdfs:label` annotation property, include the `-l/--label-disable` option when running the script.
+
+
+
 Feedback, bugs, suggestions
 ---------------------------
 
@@ -249,6 +269,11 @@ A github action will be run for every commit or pull request which carries out a
 * `pylint draw_io_parser.py` for linting
 * `autopep8 --in-place draw_io_parser.py` to format the code in-place (replace `--in-place` by `--diff` to see divergences from the PEP 8 style guide)
 
+
+Thanks
+------
+
+I am very grateful to Aaron Hope from the Archives of Ontario for engaging with the parser and the shape library, and for an extremely useful example breaking many things in v0.1 of the parser!
 
 
 License
