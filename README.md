@@ -23,6 +23,7 @@ Contents
 * [Feedback, bugs, suggestions](#feedback-bugs-suggestions)
 * [Typical uses](#typical-uses)
 * [For developers](#for-developers)
+* [Thanks](#thanks)
 * [License](#license)
 
 
