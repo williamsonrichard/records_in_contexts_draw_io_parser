@@ -43,6 +43,7 @@ from html.parser import HTMLParser
 from sys import exit as sys_exit, stdin
 from typing import Generator, Iterator
 from xml.etree.ElementTree import Element, fromstring
+from typing import Optional
 
 _ric_classes = [
     "AccumulationRelation",
@@ -561,7 +562,7 @@ Height = float
 ArrowStart = tuple[XCoordinate, YCoordinate]
 ArrowEnd = tuple[XCoordinate, YCoordinate]
 Label = str
-ArrowData = tuple[Cell, ArrowStart | None, ArrowEnd | None, Label]
+ArrowData = tuple[Cell, Optional[ArrowStart], Optional[ArrowEnd], Label]
 Dimensions = tuple[XCoordinate, YCoordinate, Width, Height]
 Paragraph = str
 Metacharacter = str
