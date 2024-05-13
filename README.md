@@ -266,15 +266,15 @@ For developers
 
 A github action will be run for every commit or pull request which carries out a few checks. Locally, one can achieve the same by setting up a virtual environment with `mypy`, `pylint`, and `autopep8` installed, and running the following:
 
+* `python -m unittest tests/test_draw_io_parser.py` for tests
 * `mypy draw_io_parser.py` for type-checking
 * `pylint draw_io_parser.py` for linting
 * `autopep8 --in-place draw_io_parser.py` to format the code in-place (replace `--in-place` by `--diff` to see divergences from the PEP 8 style guide)
 
-
 Thanks
 ------
 
-I am very grateful to Aaron Hope from the Archives of Ontario for engaging with the parser and the shape library, and for an extremely useful example breaking many things in v0.1 of the parser!
+I am very grateful to Aaron Hope from the Archives of Ontario for engaging with the parser and the shape library, and for an extremely useful example breaking many things in v0.1 of the parser! This example has now, with Aaron's permission, been added to the `examples` directory.
 
 
 License
