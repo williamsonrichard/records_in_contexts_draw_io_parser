@@ -567,6 +567,7 @@ Paragraph = str
 Metacharacter = str
 Replacement = str
 
+DEFAULT_CAPITALISATION_SCHEME = "upper-camel"
 DEFAULT_INDENTATION = 2
 DEFAULT_MAX_GAP = 10
 OWL_METACHARACTERS = ["(", ")", "[", "]", "/", ","]
@@ -1362,7 +1363,7 @@ def _serialise_facts(
     else:
         prefix_string = ""
     for _property, values in facts.items():
-        for value in values:
+        for value in sorted(values):
             if _property in _ric_datatype_properties:
                 if infer_type_of_literals:
                     formatted_value = _infer_type(value)
@@ -1391,7 +1392,7 @@ def _serialise_block(
         header += f"\n{' '*indentation}Annotations:"
         header += f"\n{' '*(indentation*2)}rdfs:label \"{individual_label}\""
     types_string = ", ".join(
-        f"rico:{_type}" for _type in types_and_facts["Types"])
+        f"rico:{_type}" for _type in sorted(types_and_facts["Types"]))
     facts = types_and_facts.copy()
     del facts["Types"]
     if not facts:
@@ -1647,7 +1648,7 @@ def _arguments_parser():
         "-c",
         "--capitalisation-scheme",
         type=str,
-        default="upper-camel",
+        default=DEFAULT_CAPITALISATION_SCHEME,
         help=(
             "spaces are not permitted in OWL individual IRIs, and thus a "
             "choice of how to separate multiple words is needed. The "

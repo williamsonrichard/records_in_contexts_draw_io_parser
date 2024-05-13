@@ -53,7 +53,7 @@ Individual: Country
 Individual: Arkivverket
   Annotations:
     rdfs:label "Arkivverket"
-  Types: rico:CorporateBody, rico:AgentName
+  Types: rico:AgentName, rico:CorporateBody
   Facts:
     rico:name "National Archives of Norway"
 
@@ -129,8 +129,8 @@ Individual: DeutscherOberbefehlshaberNorwegenSamling
   Types: rico:RecordSet
   Facts:
     rico:hasOrHadLanguage Tysk,
-    rico:isAssociatedWithPlace Tyskland,
     rico:isAssociatedWithPlace Norge,
+    rico:isAssociatedWithPlace Tyskland,
     rico:isAssociatedWithEvent Okkupasjonstiden,
     rico:scopeAndContent "Et arkiv på om lag 30 hm som ble skapt av tyske militære som var internert i Norge etter krigens slutt. Under alliert kommando måtte de over 350 000 tyskerne administrere seg selv inntil de ble hjemsendt, og dette er arkivet de skapte i den perioden våren 1945 til ut i 1947.
 
@@ -155,7 +155,7 @@ Individual: Tysk
 Individual: DeutscherOberbefehlshaberNorwegen
   Annotations:
     rdfs:label "Deutscher Oberbefehlshaber Norwegen"
-  Types: rico:CorporateBody, rico:AgentName
+  Types: rico:AgentName, rico:CorporateBody
 
 Individual: DOBNSamlingStorageInstantiation
   Annotations:

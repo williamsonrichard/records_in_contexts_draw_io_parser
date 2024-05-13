@@ -19,7 +19,7 @@ Individual: KoronakommisjonenDokumentasjon
 Individual: Koronakommisjonen
   Annotations:
     rdfs:label "Koronakommisjonen"
-  Types: rico:CorporateBody, rico:AgentName
+  Types: rico:AgentName, rico:CorporateBody
   Facts:
     rico:hasBeginningDate InitiationOfKoronakommisjonen,
     rico:hasEndDate ClosingOfKoronakommisjonen,
@@ -52,7 +52,7 @@ Individual: Country
 Individual: Arkivverket
   Annotations:
     rdfs:label "Arkivverket"
-  Types: rico:CorporateBody, rico:AgentName
+  Types: rico:AgentName, rico:CorporateBody
   Facts:
     rico:name "National Archives of Norway"
 
