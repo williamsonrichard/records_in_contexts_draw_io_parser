@@ -1442,7 +1442,7 @@ def _preamble(serialisation_config: SerialisationConfig) -> str:
     return preamble + f"""Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
 Prefix: {prefix_string}: {prefix_iri}
 Ontology: <{ontology_iri_string}>
-{' '*indentation}Import: <https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/current-version/RiC-O_1-0.rdf>
+{' '*indentation}Import: <https://www.ica.org/standards/RiC/ontology>
 
 """
 
