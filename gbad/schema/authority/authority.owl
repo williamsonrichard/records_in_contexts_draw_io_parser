@@ -1,8 +1,8 @@
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
-Prefix: : <ontology://generated-from-draw-io/2024-05-23T15-19-53#>
-Ontology: <ontology://generated-from-draw-io/2024-05-23T15-19-53>
-  Import: <https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/current-version/RiC-O_1-0.rdf>
+Prefix: : <http://gbad.archives.gov.on.ca/schema/authority#>
+Ontology: <http://gbad.archives.gov.on.ca/schema/authority>
+  Import: <https://www.ica.org/standards/RiC/ontology>
 
 Individual: Natural%20Name%20%28AUTH13%29NAME
   Annotations:
