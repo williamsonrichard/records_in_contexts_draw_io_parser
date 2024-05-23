@@ -1,0 +1,270 @@
+[ {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://www.ica.org/standards/RiC/ontology"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Identifier" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Agency Reference Code (AUTH01)REFA"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasIdentifierType" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#IdentifierType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Agent Identifier"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Person" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Archivist (AUTH02)ARCHAU"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#DocumentaryFormType", "https://www.ica.org/standards/RiC/ontology#Record" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Authority Record"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#generalDescription" : [ {
+    "@value" : "Source Note (AUTH17)SOURCE"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasDocumentaryFormType" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasRecordState" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Status%20%28AUTH18%29STATUSA"
+  }, {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Web%20Ready%20%28AUTH22%29WEBA"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#isOrWasRegulatedBy" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#lastModificationDate" : [ {
+    "@value" : "Date (AUTH09)MOD_DATE"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#resultsOrResultedFrom" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation"
+  }, {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Modification"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Activity" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Authority Record Creation"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#isOrWasPerformedBy" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#occurredAtDate" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Creation"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Modification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Activity" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Authority Record Modification"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#isOrWasPerformedBy" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#occurredAtDate" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Modification"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#CorporateBodyType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Authority Type (AUTH03)AUTHTP"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Mandate" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Authorizing Agent (AUTH04)AA"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Agent" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Controlling Agencies (AUTH08)CONTAG"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#AgentControlRelation" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Controlling Agency Relation"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasBeginningDate" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasEndDate" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#relationHasTarget" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Creation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Date" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Date of Creation"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Modification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Date" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Date of Modification"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Date" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Date of Subordination (AUTH08)DATECONT"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Date" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Dates of Existence (AUTH10)DATEEX"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Function%20%28AUTH11%29FUN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Activity" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Function (AUTH11)FUN"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Agent", "https://www.ica.org/standards/RiC/ontology#AgentName" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Natural Name (AUTH13)NAME"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#authorizedBy" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#generalDescription" : [ {
+    "@value" : "Comment (AUTH07)CMTAU"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasBeginningDate" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasBirthDate" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasDeathDate" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasEndDate" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasOrHadAgentName" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME"
+  }, {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR"
+  }, {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasOrHadController" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasOrHadCorporateBodyType" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasSuccessor" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#history" : [ {
+    "@value" : "Biographical Sketch or Administrative History (AUTH05)ADM"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#isOrWasControllerOf" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#isOrWasDescribedBy" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#isSuccessorOf" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#normalizedValue" : [ {
+    "@value" : "Heading (AUTH12)HEADING"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#performsOrPerformed" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Function%20%28AUTH11%29FUN"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Type" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parallel Name"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#AgentName" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parallel Names (AUTH14)PAR"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasOrHadCategory" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Agent" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Predecessor Agencies (AUTH15)PRED"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Rule" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rules (AUTH16)RULES"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Status%20%28AUTH18%29STATUSA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordState" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Status (AUTH18)STATUSA"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Agent" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Successor Agencies (AUTH20)SUC"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#Type" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Variant Name"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#AgentName" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Variant Names (AUTH21)VAR"
+  } ],
+  "https://www.ica.org/standards/RiC/ontology#hasOrHadCategory" : [ {
+    "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name"
+  } ]
+}, {
+  "@id" : "http://gbad.archives.gov.on.ca/schema/authority#Web%20Ready%20%28AUTH22%29WEBA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.ica.org/standards/RiC/ontology#RecordState" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Web Ready (AUTH22)WEBA"
+  } ]
+} ]

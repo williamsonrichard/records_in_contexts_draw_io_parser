@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://gbad.archives.gov.on.ca/schema/authority#"
+     xml:base="http://gbad.archives.gov.on.ca/schema/authority"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://gbad.archives.gov.on.ca/schema/authority">
+        <owl:imports rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Identifier"/>
+        <rico:hasIdentifierType rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier"/>
+        <rdfs:label>Agency Reference Code (AUTH01)REFA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#IdentifierType"/>
+        <rdfs:label>Agent Identifier</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:label>Archivist (AUTH02)ARCHAU</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rico:hasDocumentaryFormType rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record"/>
+        <rico:hasRecordState rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Status%20%28AUTH18%29STATUSA"/>
+        <rico:hasRecordState rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Web%20Ready%20%28AUTH22%29WEBA"/>
+        <rico:isOrWasRegulatedBy rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES"/>
+        <rico:resultsOrResultedFrom rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation"/>
+        <rico:resultsOrResultedFrom rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Modification"/>
+        <rico:generalDescription>Source Note (AUTH17)SOURCE</rico:generalDescription>
+        <rico:lastModificationDate>Date (AUTH09)MOD_DATE</rico:lastModificationDate>
+        <rdfs:label>Authority Record</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Activity"/>
+        <rico:isOrWasPerformedBy rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU"/>
+        <rico:occurredAtDate rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Creation"/>
+        <rdfs:label>Authority Record Creation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Modification -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Modification">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Activity"/>
+        <rico:isOrWasPerformedBy rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU"/>
+        <rico:occurredAtDate rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Modification"/>
+        <rdfs:label>Authority Record Modification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+        <rdfs:label>Authority Type (AUTH03)AUTHTP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Mandate"/>
+        <rdfs:label>Authorizing Agent (AUTH04)AA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rico:thingIsSourceOfRelation rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation"/>
+        <rdfs:label>Controlling Agencies (AUTH08)CONTAG</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
+        <rico:hasBeginningDate rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT"/>
+        <rico:hasEndDate rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT"/>
+        <rico:relationHasTarget rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME"/>
+        <rdfs:label>Controlling Agency Relation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Creation -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Creation">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:label>Date of Creation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Modification -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Modification">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:label>Date of Modification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:label>Date of Subordination (AUTH08)DATECONT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:label>Dates of Existence (AUTH10)DATEEX</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Function%20%28AUTH11%29FUN -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Function%20%28AUTH11%29FUN">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Activity"/>
+        <rdfs:label>Function (AUTH11)FUN</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentName"/>
+        <rico:authorizedBy rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA"/>
+        <rico:hasBeginningDate rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX"/>
+        <rico:hasBirthDate rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX"/>
+        <rico:hasDeathDate rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX"/>
+        <rico:hasEndDate rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX"/>
+        <rico:hasOrHadAgentName rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME"/>
+        <rico:hasOrHadAgentName rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR"/>
+        <rico:hasOrHadAgentName rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR"/>
+        <rico:hasOrHadController rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG"/>
+        <rico:hasOrHadCorporateBodyType rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP"/>
+        <rico:hasOrHadIdentifier rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA"/>
+        <rico:hasSuccessor rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC"/>
+        <rico:isOrWasControllerOf rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME"/>
+        <rico:isOrWasDescribedBy rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record"/>
+        <rico:isSuccessorOf rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED"/>
+        <rico:performsOrPerformed rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Function%20%28AUTH11%29FUN"/>
+        <rico:thingIsSourceOfRelation rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation"/>
+        <rico:generalDescription>Comment (AUTH07)CMTAU</rico:generalDescription>
+        <rico:history>Biographical Sketch or Administrative History (AUTH05)ADM</rico:history>
+        <rico:normalizedValue>Heading (AUTH12)HEADING</rico:normalizedValue>
+        <rdfs:label>Natural Name (AUTH13)NAME</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
+        <rdfs:label>Parallel Name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentName"/>
+        <rico:hasOrHadCategory rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name"/>
+        <rdfs:label>Parallel Names (AUTH14)PAR</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:label>Predecessor Agencies (AUTH15)PRED</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Rule"/>
+        <rdfs:label>Rules (AUTH16)RULES</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Status%20%28AUTH18%29STATUSA -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Status%20%28AUTH18%29STATUSA">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+        <rdfs:label>Status (AUTH18)STATUSA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:label>Successor Agencies (AUTH20)SUC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
+        <rdfs:label>Variant Name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentName"/>
+        <rico:hasOrHadCategory rdf:resource="http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name"/>
+        <rdfs:label>Variant Names (AUTH21)VAR</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/authority#Web%20Ready%20%28AUTH22%29WEBA -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/authority#Web%20Ready%20%28AUTH22%29WEBA">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+        <rdfs:label>Web Ready (AUTH22)WEBA</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
