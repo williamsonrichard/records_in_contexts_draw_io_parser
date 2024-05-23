@@ -1,0 +1,195 @@
+Individual: OrvilleAlanWood
+  Annotations:
+    rdfs:label "Orville Alan Wood"
+  Types: rico:AgentName, rico:Person
+  Facts:
+    rico:hasBirthDate 1912,
+    rico:hasDeathDate 2006,
+    rico:hasBirthPlace SouthRiver-Ontario,
+    rico:isCreatorOf OrvilleWoodFonds,
+    rico:history "Orville Wood was born in South River, Ontario, in 1912. He served in the Navy, stationed in Halifax, during World War II, after which he became president of the Fort York Construction Company Ltd. (Source note: correspondence with donor and Ancestry.ca).",
+    rico:occupiesOrOccupied President,
+    rico:isOrWasLeaderOf FortYorkConstructionCompanyLtd.,
+    rico:isAgentAssociatedWithPlace Halifax-NovaScotia
+
+Individual: 1912
+  Annotations:
+    rdfs:label "1912"
+  Types: rico:Date
+
+Individual: 2006
+  Annotations:
+    rdfs:label "2006"
+  Types: rico:Date
+
+Individual: SouthRiver-Ontario
+  Annotations:
+    rdfs:label "South River, Ontario"
+  Types: rico:Place
+  Facts:
+    rico:hasOrHadPlaceType Village
+
+Individual: Village
+  Annotations:
+    rdfs:label "Village"
+  Types: rico:PlaceType
+
+Individual: OrvilleWoodFonds
+  Annotations:
+    rdfs:label "Orville Wood fonds"
+  Types: rico:RecordSet
+  Facts:
+    rico:hasRecordSetType Fonds,
+    rico:hasCreationDate {194-}-1953,
+    rico:hasOrHadSubject Atikokan-Ontario,
+    rico:hasOrHadSubject TerraceBay-Ontario,
+    rico:recordResourceExtent "0.1 centimetres of textual records; 98 photographs : black and white prints; 2 photographs : colour prints; 143 photographs : black and white negatives",
+    rico:scopeAndContent "Fonds consists primarily of photographs of the construction of the Atikokan Highway between Shabaqua Corners and Atikokan, Ontario. The highway was later named Highway 120, and is currently designated as Highway 11. Wood's company, Fort York Construction Company Ltd., was contracted to undertake the construction of the highway starting in 1951 and completed the work in 1953.
+
+Fonds also includes photographs of a project undertaken by Fort York Construction Company Ltd. at Terrace Bay, Ontario.
+
+Also included are a news clipping about Fort York Construction Company Ltd., Orville Wood's business card, photographs of an unidentified historic fort, and photographs of Wood's family and business partners.",
+    rico:hasOrHadSomeMembersWithContentType GraphicMaterial,
+    rico:hasOrHadSomeMembersWithContentType TextualRecords,
+    rico:conditionsOfAccess "No restrictions on access.",
+    rico:conditionsOfUse "Copyright has been transferred to the Archives of Ontario by the donor. There are no restrictions on reproduction for research and private study. If you wish to use any of this material for a purpose other than research and private study, submit a Request for Permission to Publish, Exhibit or Broadcast Form.",
+    rico:hasOrHadIdentifier F4711,
+    rico:accruals "No further accruals are expected.",
+    rico:history "The Orville Wood fonds was donated to the Archives of Ontario by his son, Bruce Arthur Wood, in 2018.",
+    rico:hasGeneticLinkToRecordResource HighwayHistoricalCollection-Photographs,
+    rico:hasGeneticLinkToRecordResource HighwaysHistoricalCollection-HistoricalResearchBinders
+
+Individual: Halifax-NovaScotia
+  Annotations:
+    rdfs:label "Halifax, Nova Scotia"
+  Types: rico:Place
+  Facts:
+    rico:hasOrHadPlaceType City
+
+Individual: City
+  Annotations:
+    rdfs:label "City"
+  Types: rico:PlaceType
+
+Individual: President
+  Annotations:
+    rdfs:label "President"
+  Types: rico:Position
+  Facts:
+    rico:isOrWasOwnerOf FortYorkConstructionCompanyLtd.
+
+Individual: FortYorkConstructionCompanyLtd.
+  Annotations:
+    rdfs:label "Fort York Construction Company Ltd."
+  Types: rico:CorporateBody
+  Facts:
+    rico:isAgentAssociatedWithPlace Ontario,
+    rico:isRelatedTo HighwayHistoricalCollection-Photographs,
+    rico:isRelatedTo HighwaysHistoricalCollection-HistoricalResearchBinders
+
+Individual: Fonds
+  Annotations:
+    rdfs:label "Fonds"
+  Types: rico:RecordSetType
+
+Individual: {194-}-1953
+  Annotations:
+    rdfs:label "[194-]-1953"
+  Types: rico:Date
+  Facts:
+    rico:normalizedDateValue "194X/1953"
+
+Individual: TextualRecords
+  Annotations:
+    rdfs:label "Textual records"
+  Types: rico:ContentType
+
+Individual: GraphicMaterial
+  Annotations:
+    rdfs:label "Graphic material"
+  Types: rico:ContentType
+
+Individual: Ontario
+  Annotations:
+    rdfs:label "Ontario"
+  Types: rico:Place
+  Facts:
+    rico:hasOrHadPlaceType Province
+
+Individual: Province
+  Annotations:
+    rdfs:label "Province"
+  Types: rico:PlaceType
+
+Individual: F4711
+  Annotations:
+    rdfs:label "F 4711"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType ArchivesOfOntarioReferenceCode
+
+Individual: ArchivesOfOntarioReferenceCode
+  Annotations:
+    rdfs:label "Archives of Ontario reference code"
+  Types: rico:IdentifierType
+
+Individual: HighwayHistoricalCollection-Photographs
+  Annotations:
+    rdfs:label "Highway historical collection - photographs"
+  Types: rico:RecordSet
+  Facts:
+    rico:hasRecordSetType Sub-series,
+    rico:hasOrHadIdentifier RG14-162-2,
+    rico:hasCreator FortYorkConstructionCompanyLtd.
+
+Individual: HighwaysHistoricalCollection-HistoricalResearchBinders
+  Annotations:
+    rdfs:label "Highways historical collection - historical research binders"
+  Types: rico:RecordSet
+  Facts:
+    rico:hasRecordSetType Sub-series,
+    rico:hasOrHadIdentifier RG14-162-5,
+    rico:hasOrHadSubject Atikokan-Ontario
+
+Individual: Sub-series
+  Annotations:
+    rdfs:label "Sub-series"
+  Types: rico:RecordSetType
+
+Individual: RG14-162-5
+  Annotations:
+    rdfs:label "RG 14-162-5"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType ArchivesOfOntarioReferenceCode
+
+Individual: RG14-162-2
+  Annotations:
+    rdfs:label "RG 14-162-2"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType ArchivesOfOntarioReferenceCode
+
+Individual: Atikokan-Ontario
+  Annotations:
+    rdfs:label "Atikokan, Ontario"
+  Types: rico:Place
+  Facts:
+    rico:hasOrHadPlaceType Town
+
+Individual: TerraceBay-Ontario
+  Annotations:
+    rdfs:label "Terrace Bay, Ontario"
+  Types: rico:Place
+  Facts:
+    rico:hasOrHadPlaceType Township
+
+Individual: Township
+  Annotations:
+    rdfs:label "Township"
+  Types: rico:PlaceType
+
+Individual: Town
+  Annotations:
+    rdfs:label "Town"
+  Types: rico:PlaceType
