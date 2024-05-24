@@ -1,0 +1,422 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://gbad.archives.gov.on.ca/schema/description-listings#"
+     xml:base="http://gbad.archives.gov.on.ca/schema/description-listings"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings">
+        <owl:imports rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Barcode -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Barcode">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#IdentifierType"/>
+        <rdfs:label>Barcode</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Accumulation%20Relation -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Accumulation%20Relation">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AccumulationRelation"/>
+        <rico:hasBeginningDate rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Accumulation%20%28ADD18%29DATEACM"/>
+        <rico:hasEndDate rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Accumulation%20%28ADD18%29DATEACM"/>
+        <rico:relationHasTarget rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Provenance%20%28ADD47%29INDEXPROV"/>
+        <rdfs:label>Accumulation Relation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Archival%20Description -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Archival%20Description">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rico:hasDocumentaryFormType rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Archival%20Description"/>
+        <rico:hasRecordState rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Status%20%28ADD54%29STATUSD"/>
+        <rico:hasRecordState rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Web%20Enabled%20%28ADD57%29WEBD%20%2F%20WEBL"/>
+        <rico:resultsOrResultedFrom rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Archival%20Description%20Creation"/>
+        <rico:resultsOrResultedFrom rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Archival%20Description%20Modification"/>
+        <rico:lastModificationDate>Date Modified (ADD21)MODDATE</rico:lastModificationDate>
+        <rdfs:label>Archival Description</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Archival%20Description%20Creation -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Archival%20Description%20Creation">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Activity"/>
+        <rico:isOrWasPerformedBy rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Archivist%20%28ADD05%29ARCHD"/>
+        <rico:occurredAtDate rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Date%20Of%20Creation"/>
+        <rdfs:label>Archival Description Creation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Archival%20Description%20Modification -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Archival%20Description%20Modification">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Activity"/>
+        <rico:isOrWasPerformedBy rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Archivist%20%28ADD05%29ARCHD"/>
+        <rico:occurredAtDate rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Date%20Of%20Modification"/>
+        <rdfs:label>Archival Description Modification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Archivist%20%28ADD05%29ARCHD -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Archivist%20%28ADD05%29ARCHD">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:label>Archivist (ADD05)ARCHD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Associated%20Material%20%28ADD08%29ASSMAT -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Associated%20Material%20%28ADD08%29ASSMAT">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:label>Associated Material (ADD08)ASSMAT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Availability%20Of%20OtherFormats%20%28ADD09%29%20AVAIL -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Availability%20Of%20OtherFormats%20%28ADD09%29%20AVAIL">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+        <rico:instantiationExtent>Extent [part of Physical Description (ADD46) PHDESC]</rico:instantiationExtent>
+        <rdfs:label>Availability of OtherFormats (ADD09) AVAIL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Barcode%20%28ADD10%29BARCODE -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Barcode%20%28ADD10%29BARCODE">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Identifier"/>
+        <rico:hasIdentifierType rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Barcode"/>
+        <rico:generalDescription>Barcode Note (ADD12)BNOTE</rico:generalDescription>
+        <rdfs:label>Barcode (ADD10)BARCODE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Controlling%20Agency%20Relation -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Controlling%20Agency%20Relation">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
+        <rico:hasBeginningDate rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Control"/>
+        <rico:hasEndDate rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Control"/>
+        <rico:relationHasTarget rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Secondary%20Agency%20%28ADD42%29OFFICEC"/>
+        <rdfs:label>Controlling Agency Relation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Creator%20%28ADD15%29CREATOR -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Creator%20%28ADD15%29CREATOR">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:label>Creator (ADD15)CREATOR</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Current%20Reference%20Code -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Current%20Reference%20Code">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#IdentifierType"/>
+        <rdfs:label>Current Reference Code</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Date%20Of%20Creation -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Date%20Of%20Creation">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:label>Date of Creation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Date%20Of%20Modification -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Date%20Of%20Modification">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:label>Date of Modification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Date%20Of%20Creation%20%28ADD42%29DATEOFF -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Date%20Of%20Creation%20%28ADD42%29DATEOFF">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:label>Date of Creation (ADD42)DATEOFF</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Control -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Control">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:label>Dates of Control</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Accumulation%20%28ADD18%29DATEACM -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Accumulation%20%28ADD18%29DATEACM">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:label>Dates of Accumulation (ADD18)DATEACM</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Creation%20%28ADD19%29DATECR -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Creation%20%28ADD19%29DATECR">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:label>Dates of Creation (ADD19)DATECR</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Finding%20Aid -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Finding%20Aid">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <rdfs:label>Finding Aid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Finding%20Aid%20Link%20%28ADD23%29FINDAIDLINK -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Finding%20Aid%20Link%20%28ADD23%29FINDAIDLINK">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rico:hasDocumentaryFormType rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Finding%20Aid"/>
+        <rdfs:label>Finding Aid Link (ADD23)FINDAIDLINK</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Form%20%28ADD26%29GMD -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Form%20%28ADD26%29GMD">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <rdfs:label>Form (ADD26)GMD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Former%20Code -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Former%20Code">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#IdentifierType"/>
+        <rdfs:label>Former Code</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Former%20Codes%20%28ADD27%29FCODES -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Former%20Codes%20%28ADD27%29FCODES">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Identifier"/>
+        <rico:hasIdentifierType rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Former%20Code"/>
+        <rdfs:label>Former Codes (ADD27)FCODES</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Geographic%20%28ADD28%29INDEXGEO -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Geographic%20%28ADD28%29INDEXGEO">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <rdfs:label>Geographic (ADD28)INDEXGEO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Level%20%28ADD36%29LEVELDES -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Level%20%28ADD36%29LEVELDES">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <rdfs:label>Level (ADD36)LEVELDES</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Names%20As%20Subjects%20%28ADD40%29INDEXSUB -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Names%20As%20Subjects%20%28ADD40%29INDEXSUB">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:label>Names as Subjects (ADD40)INDEXSUB</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Office%20Of%20Origin%20Relation -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Office%20Of%20Origin%20Relation">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CreationRelation"/>
+        <rico:hasBeginningDate rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Date%20Of%20Creation%20%28ADD42%29DATEOFF"/>
+        <rico:hasEndDate rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Date%20Of%20Creation%20%28ADD42%29DATEOFF"/>
+        <rico:relationHasTarget rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Secondary%20Agency%20%28ADD42%29OFFICEC"/>
+        <rdfs:label>Office of Origin Relation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Physical%20Description%20%28ADD46%29PHDESC -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Physical%20Description%20%28ADD46%29PHDESC">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResourceExtent"/>
+        <rico:hasOrHadIdentifier rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Barcode%20%28ADD10%29BARCODE"/>
+        <rico:generalDescription>How to Order (ADD31)HOWTO</rico:generalDescription>
+        <rico:instantiationExtent>Extent [part of Physical Description (ADD46) PHDESC]</rico:instantiationExtent>
+        <rico:physicalCharacteristicsNote>Physical Condition (ADD45)PHYSCO</rico:physicalCharacteristicsNote>
+        <rdfs:label>Physical Description (ADD46)PHDESC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Primary%20Agency%20%28ADD42%29OFFICEAB -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Primary%20Agency%20%28ADD42%29OFFICEAB">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rico:thingIsSourceOfRelation rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Controlling%20Agency%20Relation"/>
+        <rdfs:label>Primary Agency (ADD42)OFFICEAB</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Provenance%20%28ADD47%29INDEXPROV -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Provenance%20%28ADD47%29INDEXPROV">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:label>Provenance (ADD47)INDEXPROV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Reference%20Code%20%28ADD48%29REFD -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Reference%20Code%20%28ADD48%29REFD">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Identifier"/>
+        <rico:hasIdentifierType rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Current%20Reference%20Code"/>
+        <rdfs:label>Reference Code (ADD48)REFD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Related%20Material%20%28ADD49%29RELMAT -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Related%20Material%20%28ADD49%29RELMAT">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:label>Related Material (ADD49)RELMAT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Secondary%20Agency%20%28ADD42%29OFFICEC -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Secondary%20Agency%20%28ADD42%29OFFICEC">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rico:hasOrHadController rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Primary%20Agency%20%28ADD42%29OFFICEAB"/>
+        <rdfs:label>Secondary Agency (ADD42)OFFICEC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Status%20%28ADD54%29STATUSD -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Status%20%28ADD54%29STATUSD">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+        <rdfs:label>Status (ADD54)STATUSD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Title%20%28ADD56%29TITLE -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Title%20%28ADD56%29TITLE">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Title"/>
+        <rico:hasAccumulator rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Provenance%20%28ADD47%29INDEXPROV"/>
+        <rico:hasCreationDate rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Creation%20%28ADD19%29DATECR"/>
+        <rico:hasCreator rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Creator%20%28ADD15%29CREATOR"/>
+        <rico:hasCreator rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Provenance%20%28ADD47%29INDEXPROV"/>
+        <rico:hasCreator rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Secondary%20Agency%20%28ADD42%29OFFICEC"/>
+        <rico:hasDocumentaryFormType rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Form%20%28ADD26%29GMD"/>
+        <rico:hasGeneticLinkToRecordResource rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Associated%20Material%20%28ADD08%29ASSMAT"/>
+        <rico:hasGeneticLinkToRecordResource rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Related%20Material%20%28ADD49%29RELMAT"/>
+        <rico:hasOrHadIdentifier rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Former%20Codes%20%28ADD27%29FCODES"/>
+        <rico:hasOrHadIdentifier rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Reference%20Code%20%28ADD48%29REFD"/>
+        <rico:hasOrHadInstantiation rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Availability%20Of%20OtherFormats%20%28ADD09%29%20AVAIL"/>
+        <rico:hasOrHadInstantiation rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Physical%20Description%20%28ADD46%29PHDESC"/>
+        <rico:hasOrHadSubject rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Names%20As%20Subjects%20%28ADD40%29INDEXSUB"/>
+        <rico:hasOrHadTitle rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Title%20%28ADD56%29TITLE"/>
+        <rico:hasRecordSetType rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Level%20%28ADD36%29LEVELDES"/>
+        <rico:isAssociatedWithPlace rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Geographic%20%28ADD28%29INDEXGEO"/>
+        <rico:isOrWasDescribedBy rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Archival%20Description"/>
+        <rico:isOrWasDescribedBy rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Finding%20Aid%20Link%20%28ADD23%29FINDAIDLINK"/>
+        <rico:thingIsSourceOfRelation rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Accumulation%20Relation"/>
+        <rico:thingIsSourceOfRelation rdf:resource="http://gbad.archives.gov.on.ca/schema/description-listings#Office%20Of%20Origin%20Relation"/>
+        <rico:accruals>Accruals (ADD02)ACCRUAL</rico:accruals>
+        <rico:conditionsOfAccess>Access Restrictions (ADD01)RESTRTX / REST</rico:conditionsOfAccess>
+        <rico:conditionsOfUse>Terms Governing Use (ADD55)TGU</rico:conditionsOfUse>
+        <rico:generalDescription>Archivist&apos;s Comment (ADD06)CMTD</rico:generalDescription>
+        <rico:generalDescription>Finding Aid Note (ADD24)FINDAID</rico:generalDescription>
+        <rico:generalDescription>Notes (ADD41)NOTES</rico:generalDescription>
+        <rico:history>Custodial History (ADD17)CUSTOD</rico:history>
+        <rico:history>Immediate Source of Acquisition (ADD33)ISA</rico:history>
+        <rico:recordResourceExtent>Physical Description (ADD46)PHDESC</rico:recordResourceExtent>
+        <rico:scopeAndContent>Scope and Content (ADD51)SCOPE</rico:scopeAndContent>
+        <rdfs:label>Title (ADD56)TITLE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gbad.archives.gov.on.ca/schema/description-listings#Web%20Enabled%20%28ADD57%29WEBD%20%2F%20WEBL -->
+
+    <owl:NamedIndividual rdf:about="http://gbad.archives.gov.on.ca/schema/description-listings#Web%20Enabled%20%28ADD57%29WEBD%20%2F%20WEBL">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+        <rdfs:label>Web Enabled (ADD57)WEBD / WEBL</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
