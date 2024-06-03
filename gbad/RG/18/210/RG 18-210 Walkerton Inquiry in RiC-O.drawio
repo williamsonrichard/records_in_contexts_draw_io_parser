@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-22T13:28:43.907Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="JUCUltmuShv3Tbbp4b8Z" version="24.0.7" type="device">
+<mxfile host="app.diagrams.net" modified="2024-06-03T17:03:22.962Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="oQQcpM2o3lDqx4z0Hw_l" version="24.4.13" type="device">
   <diagram name="Page-1" id="F49Q9moJtOhBZ-nkpdS7">
-    <mxGraphModel dx="2494" dy="1538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2814" dy="1666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -61,15 +61,6 @@
         </mxCell>
         <mxCell id="ccQ81NhYz9qmqgse-E7F-14" value="&lt;p style=&quot;line-height: 90%;&quot;&gt;Walkerton Inquiry (BA619)&lt;/p&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="280" y="160" width="140" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ccQ81NhYz9qmqgse-E7F-62" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.591;entryY=1.176;entryDx=0;entryDy=0;entryPerimeter=0;" parent="ccQ81NhYz9qmqgse-E7F-14" target="ccQ81NhYz9qmqgse-E7F-59" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="50" as="sourcePoint" />
-            <mxPoint x="200" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ccQ81NhYz9qmqgse-E7F-63" value="rico:hasOrHadLeader" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="ccQ81NhYz9qmqgse-E7F-62" connectable="0" vertex="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ccQ81NhYz9qmqgse-E7F-15" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;rico:CorporateBody&lt;/font&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;rico:AgentName&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="ccQ81NhYz9qmqgse-E7F-14" vertex="1">
           <mxGeometry y="26" width="140" height="34" as="geometry" />
@@ -732,46 +723,46 @@
         <mxCell id="HLbPBR5fNmHbn4HrSuu7-136" value="rico:quantity" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="HLbPBR5fNmHbn4HrSuu7-135" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-1" value="&lt;p style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Closing of Walkerton Inquiry&lt;/font&gt;&lt;/p&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-1" value="&lt;p style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Closing of Walkerton Inquiry&lt;/font&gt;&lt;/p&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="250" y="270" width="90" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-2" value="rico:Event" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0Zy0miyS0KUs_HnzcUTQ-1">
+        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-2" value="rico:Event" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="0Zy0miyS0KUs_HnzcUTQ-1" vertex="1">
           <mxGeometry y="26" width="90" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-3" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="250" y="296" as="sourcePoint" />
             <mxPoint x="120" y="296" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-4" value="rico:occurredAtDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="0Zy0miyS0KUs_HnzcUTQ-3">
+        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-4" value="rico:occurredAtDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="0Zy0miyS0KUs_HnzcUTQ-3" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-5" value="&lt;p style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Establishment of Walkerton Inquiry&lt;/font&gt;&lt;/p&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-5" value="&lt;p style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Establishment of Walkerton Inquiry&lt;/font&gt;&lt;/p&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-270" y="74" width="110" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-6" value="rico:Event" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0Zy0miyS0KUs_HnzcUTQ-5">
+        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-6" value="rico:Event" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="0Zy0miyS0KUs_HnzcUTQ-5" vertex="1">
           <mxGeometry y="26" width="110" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.006;exitY=0.077;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0Zy0miyS0KUs_HnzcUTQ-6" target="ccQ81NhYz9qmqgse-E7F-72">
+        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.006;exitY=0.077;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="0Zy0miyS0KUs_HnzcUTQ-6" target="ccQ81NhYz9qmqgse-E7F-72" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-130" y="152" as="sourcePoint" />
             <mxPoint x="-10" y="152" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-8" value="rico:occurredAtDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="0Zy0miyS0KUs_HnzcUTQ-7">
+        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-8" value="rico:occurredAtDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="0Zy0miyS0KUs_HnzcUTQ-7" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="ccQ81NhYz9qmqgse-E7F-50">
+        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="ccQ81NhYz9qmqgse-E7F-50" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="240" y="44" as="sourcePoint" />
             <mxPoint x="132.5" y="82" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-10" value="rico:authorizedBy" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="0Zy0miyS0KUs_HnzcUTQ-9">
+        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-10" value="rico:authorizedBy" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="0Zy0miyS0KUs_HnzcUTQ-9" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ccQ81NhYz9qmqgse-E7F-52" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.524;entryY=1.026;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="ccQ81NhYz9qmqgse-E7F-57" source="ccQ81NhYz9qmqgse-E7F-50">
+        <mxCell id="ccQ81NhYz9qmqgse-E7F-52" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.524;entryY=1.026;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ccQ81NhYz9qmqgse-E7F-50" target="ccQ81NhYz9qmqgse-E7F-57" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="40" y="70" as="sourcePoint" />
             <mxPoint x="40" y="20" as="targetPoint" />
@@ -780,16 +771,25 @@
         <mxCell id="ccQ81NhYz9qmqgse-E7F-53" value="rico:hasOrHadMandateType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="ccQ81NhYz9qmqgse-E7F-52" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.318;entryY=1.103;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="ccQ81NhYz9qmqgse-E7F-67">
+        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.318;entryY=1.103;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="ccQ81NhYz9qmqgse-E7F-67" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="90" y="68" as="sourcePoint" />
             <mxPoint x="210" y="18" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-12" value="rico:regulatesOrRegulated" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="0Zy0miyS0KUs_HnzcUTQ-11">
+        <mxCell id="0Zy0miyS0KUs_HnzcUTQ-12" value="rico:regulatesOrRegulated" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="0Zy0miyS0KUs_HnzcUTQ-11" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="4" y="-11" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="ccQ81NhYz9qmqgse-E7F-62" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.591;entryY=1.176;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" target="ccQ81NhYz9qmqgse-E7F-59" edge="1" source="ccQ81NhYz9qmqgse-E7F-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="160" as="sourcePoint" />
+            <mxPoint x="480" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ccQ81NhYz9qmqgse-E7F-63" value="rico:hasOrHadLeader" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="ccQ81NhYz9qmqgse-E7F-62" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
