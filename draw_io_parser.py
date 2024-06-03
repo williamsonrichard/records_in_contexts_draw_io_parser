@@ -44,6 +44,7 @@ from sys import exit as sys_exit, stdin
 from typing import Generator, Iterator
 from xml.etree.ElementTree import Element, fromstring
 from typing import Optional
+import urllib.parse
 
 _ric_classes = [
     "AccumulationRelation",
@@ -1472,20 +1473,29 @@ def serialise(blocks: Blocks, serialisation_config: SerialisationConfig) -> str:
 def _parse_space_substitute(
         metacharacter_substitutes: list[str]) -> str | None:
     has_remove = False
+    has_url = False
     for substitution_definition in metacharacter_substitutes:
         if substitution_definition == "remove":
             has_remove = True
-            continue
+            if not has_url:
+                continue
+        if substitution_definition == "url":
+            has_url = True
+            if not has_remove:
+                continue
         if substitution_definition[0] != ' ':
-            continue
+            if not has_url:
+                continue
         if substitution_definition[1] != "=":
             raise _MetacharacterSubstituteParseException(
-                "The second character of a string other than 'remove' passed "
-                "into the -m/--metadata-substitute option must be '='. This is "
+                "The second character of a string other than 'remove' or 'url' "
+                "passed into the -m/--metadata-substitute option must be '='. This is "
                 f"not the case for: {substitution_definition}")
         return substitution_definition.split("=")[1]
     if has_remove:
         return ""
+    elif has_url:
+        return "%20"
     return None
 
 
@@ -1493,19 +1503,25 @@ def _parse_metacharacter_substitutes(
         metacharacter_substitutes: list[str]) -> Generator[
         tuple[Metacharacter, Replacement], None, None]:
     has_remove = False
+    has_url = False
     handled = []
     for substitution_definition in metacharacter_substitutes:
         if substitution_definition[0] == ' ':
             continue
         if substitution_definition == "remove":
             has_remove = True
-            continue
+            if not has_url:
+                continue
+        if substitution_definition == "url":
+            has_url = True
+            if not has_remove:
+                continue
         if substitution_definition[0] not in OWL_METACHARACTERS:
             metacharacters = ', '.join(
                 f"'{character}'" for character in OWL_METACHARACTERS)
             raise _MetacharacterSubstituteParseException(
-                "The first character of a string other than 'remove' passed "
-                "into the -m/--metadata-substitute option must be an OWL "
+                "The first character of a string other than 'remove' or 'url' "
+                "passed into the -m/--metadata-substitute option must be an OWL "
                 f"metacharacter, namely one of the following: {metacharacters}"
                 f". This is not the case for: {substitution_definition}")
         if substitution_definition[1] != "=":
@@ -1516,11 +1532,14 @@ def _parse_metacharacter_substitutes(
         metacharacter, replacement = substitution_definition.split("=", 1)
         handled.append(metacharacter)
         yield metacharacter, replacement
-    if not has_remove:
-        return
     for metacharacter in OWL_METACHARACTERS:
         if metacharacter not in handled:
-            yield metacharacter, ""
+            if has_url:
+                yield metacharacter, urllib.parse.quote(metacharacter, safe='')
+            else:
+                yield metacharacter, ""
+    if not has_remove:
+        return
 
 
 def _parse_capitalisation_scheme(capitalisation_scheme: str) -> None:
@@ -1620,11 +1639,11 @@ def _arguments_parser():
             "defines a substitute for an OWL metacharacter, namely for a space "
             f"character ' ' or one of the following: {metacharacters}. This "
             "option can be used multiple times, for each metacharacter one "
-            "wishes to handle. Either the string passed into the option must "
-            "be 'remove', or the syntax 'c=d' must be used, where c is the "
-            "metacharacter and d is its substitute, which can consist of "
-            "zero, one, or more characters. The case of zero characters, that "
-            "is to say when the syntax reads 'c=', has the effect of simply "
+            "wishes to handle. The string passed into the option must "
+            "be 'remove' or 'url'; otherwise., the syntax 'c=d' must be used, "
+            "where c is the metacharacter and d is its substitute, which can "
+            "consist of zero, one, or more characters. The case of zero characters, "
+            "that is to say when the syntax reads 'c=', has the effect of simply "
             "removing any occurrence of c. In several cases it will be "
             "necessary to include the quotation marks in the syntax, and "
             "indeed doing so in all cases will not harm. In the special case "
@@ -1634,7 +1653,11 @@ def _arguments_parser():
             "special string 'remove' is used, all metacharacters will simply "
             "be removed except for those for which a replacement has been "
             "defined by means of a separate use of the "
-            "-m/--metacharacter-substitute option"))
+            "-m/--metacharacter-substitute option. "
+            "If the special string 'url' is used, all metacharacters will simply "
+            "be replaced with corresponding URL entities except for those "
+            "for which a replacement has been defined by means of a separate use "
+            "of the -m/--metacharacter-substitute option."))
     argument_parser.add_argument(
         "-l",
         "--label-disable",
