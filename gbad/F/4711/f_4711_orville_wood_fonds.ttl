@@ -1,226 +1,226 @@
-@prefix : <http://gbad.archives.gov.on.ca/#> .
+@prefix : <http://gbad.archives.gov.on.ca/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
-@base <http://gbad.archives.gov.on.ca/#> .
+@base <http://gbad.archives.gov.on.ca/> .
 
-<http://gbad.archives.gov.on.ca/> rdf:type owl:Ontology ;
-                                   owl:imports <https://www.ica.org/standards/RiC/ontology> .
+<http://gbad.archives.gov.on.ca/schema/authority#> rdf:type owl:Ontology ;
+                                                    owl:imports <https://www.ica.org/standards/RiC/ontology> .
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://gbad.archives.gov.on.ca/#City
+###  http://gbad.archives.gov.on.ca/City
 :City rdf:type owl:NamedIndividual ,
                rico:PlaceType ;
       rdfs:label "City" .
 
 
-###  http://gbad.archives.gov.on.ca/#Fonds
+###  http://gbad.archives.gov.on.ca/Fonds
 :Fonds rdf:type owl:NamedIndividual ,
                 rico:RecordSetType ;
        rdfs:label "Fonds" .
 
 
-###  http://gbad.archives.gov.on.ca/#Ontario
+###  http://gbad.archives.gov.on.ca/Ontario
 :Ontario rdf:type owl:NamedIndividual ,
                   rico:Place ;
          rico:hasOrHadPlaceType :Province ;
          rdfs:label "Ontario" .
 
 
-###  http://gbad.archives.gov.on.ca/#President
+###  http://gbad.archives.gov.on.ca/President
 :President rdf:type owl:NamedIndividual ,
                     rico:Position ;
-           rico:isOrWasOwnerOf <http://gbad.archives.gov.on.ca/#Fort%20York%20Construction%20Company%20Ltd.> ;
+           rico:isOrWasOwnerOf <http://gbad.archives.gov.on.ca/Fort%20York%20Construction%20Company%20Ltd.> ;
            rdfs:label "President" .
 
 
-###  http://gbad.archives.gov.on.ca/#Province
+###  http://gbad.archives.gov.on.ca/Province
 :Province rdf:type owl:NamedIndividual ,
                    rico:PlaceType ;
           rdfs:label "Province" .
 
 
-###  http://gbad.archives.gov.on.ca/#Sub-series
+###  http://gbad.archives.gov.on.ca/Sub-series
 :Sub-series rdf:type owl:NamedIndividual ,
                      rico:RecordSetType ;
             rdfs:label "Sub-series" .
 
 
-###  http://gbad.archives.gov.on.ca/#Town
+###  http://gbad.archives.gov.on.ca/Town
 :Town rdf:type owl:NamedIndividual ,
                rico:PlaceType ;
       rdfs:label "Town" .
 
 
-###  http://gbad.archives.gov.on.ca/#Township
+###  http://gbad.archives.gov.on.ca/Township
 :Township rdf:type owl:NamedIndividual ,
                    rico:PlaceType ;
           rdfs:label "Township" .
 
 
-###  http://gbad.archives.gov.on.ca/#Village
+###  http://gbad.archives.gov.on.ca/Village
 :Village rdf:type owl:NamedIndividual ,
                   rico:PlaceType ;
          rdfs:label "Village" .
 
 
-###  http://gbad.archives.gov.on.ca/#%5B194-%5D-1953
-<http://gbad.archives.gov.on.ca/#%5B194-%5D-1953> rdf:type owl:NamedIndividual ,
-                                                           rico:Date ;
-                                                  rico:normalizedDateValue "194X/1953" ;
-                                                  rdfs:label "[194-]-1953" .
+###  http://gbad.archives.gov.on.ca/%5B194-%5D-1953
+<http://gbad.archives.gov.on.ca/%5B194-%5D-1953> rdf:type owl:NamedIndividual ,
+                                                          rico:Date ;
+                                                 rico:normalizedDateValue "194X/1953" ;
+                                                 rdfs:label "[194-]-1953" .
 
 
-###  http://gbad.archives.gov.on.ca/#1912
-<http://gbad.archives.gov.on.ca/#1912> rdf:type owl:NamedIndividual ,
-                                                rico:Date ;
-                                       rdfs:label "1912" .
+###  http://gbad.archives.gov.on.ca/1912
+<http://gbad.archives.gov.on.ca/1912> rdf:type owl:NamedIndividual ,
+                                               rico:Date ;
+                                      rdfs:label "1912" .
 
 
-###  http://gbad.archives.gov.on.ca/#2006
-<http://gbad.archives.gov.on.ca/#2006> rdf:type owl:NamedIndividual ,
-                                                rico:Date ;
-                                       rdfs:label "2006" .
+###  http://gbad.archives.gov.on.ca/2006
+<http://gbad.archives.gov.on.ca/2006> rdf:type owl:NamedIndividual ,
+                                               rico:Date ;
+                                      rdfs:label "2006" .
 
 
-###  http://gbad.archives.gov.on.ca/#Archives%20Of%20Ontario%20Reference%20Code
-<http://gbad.archives.gov.on.ca/#Archives%20Of%20Ontario%20Reference%20Code> rdf:type owl:NamedIndividual ,
-                                                                                      rico:IdentifierType ;
-                                                                             rdfs:label "Archives of Ontario reference code" .
+###  http://gbad.archives.gov.on.ca/Archives%20Of%20Ontario%20Reference%20Code
+<http://gbad.archives.gov.on.ca/Archives%20Of%20Ontario%20Reference%20Code> rdf:type owl:NamedIndividual ,
+                                                                                     rico:IdentifierType ;
+                                                                            rdfs:label "Archives of Ontario reference code" .
 
 
-###  http://gbad.archives.gov.on.ca/#Atikokan%2C%20Ontario
-<http://gbad.archives.gov.on.ca/#Atikokan%2C%20Ontario> rdf:type owl:NamedIndividual ,
-                                                                 rico:Place ;
-                                                        rico:hasOrHadPlaceType :Town ;
-                                                        rdfs:label "Atikokan, Ontario" .
+###  http://gbad.archives.gov.on.ca/Atikokan%2C%20Ontario
+<http://gbad.archives.gov.on.ca/Atikokan%2C%20Ontario> rdf:type owl:NamedIndividual ,
+                                                                rico:Place ;
+                                                       rico:hasOrHadPlaceType :Town ;
+                                                       rdfs:label "Atikokan, Ontario" .
 
 
-###  http://gbad.archives.gov.on.ca/#F%204711
-<http://gbad.archives.gov.on.ca/#F%204711> rdf:type owl:NamedIndividual ,
-                                                    rico:Identifier ;
-                                           rico:hasIdentifierType <http://gbad.archives.gov.on.ca/#Archives%20Of%20Ontario%20Reference%20Code> ;
-                                           rdfs:label "F 4711" .
+###  http://gbad.archives.gov.on.ca/F%204711
+<http://gbad.archives.gov.on.ca/F%204711> rdf:type owl:NamedIndividual ,
+                                                   rico:Identifier ;
+                                          rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Archives%20Of%20Ontario%20Reference%20Code> ;
+                                          rdfs:label "F 4711" .
 
 
-###  http://gbad.archives.gov.on.ca/#Fort%20York%20Construction%20Company%20Ltd.
-<http://gbad.archives.gov.on.ca/#Fort%20York%20Construction%20Company%20Ltd.> rdf:type owl:NamedIndividual ,
-                                                                                       rico:CorporateBody ;
-                                                                              rico:isAgentAssociatedWithPlace :Ontario ;
-                                                                              rico:isRelatedTo <http://gbad.archives.gov.on.ca/#Highway%20Historical%20Collection%20-%20Photographs> ,
-                                                                                               <http://gbad.archives.gov.on.ca/#Highways%20Historical%20Collection%20-%20Historical%20Research%20Binders> ;
-                                                                              rdfs:label "Fort York Construction Company Ltd." .
+###  http://gbad.archives.gov.on.ca/Fort%20York%20Construction%20Company%20Ltd.
+<http://gbad.archives.gov.on.ca/Fort%20York%20Construction%20Company%20Ltd.> rdf:type owl:NamedIndividual ,
+                                                                                      rico:CorporateBody ;
+                                                                             rico:isAgentAssociatedWithPlace :Ontario ;
+                                                                             rico:isRelatedTo <http://gbad.archives.gov.on.ca/Highway%20Historical%20Collection%20-%20Photographs> ,
+                                                                                              <http://gbad.archives.gov.on.ca/Highways%20Historical%20Collection%20-%20Historical%20Research%20Binders> ;
+                                                                             rdfs:label "Fort York Construction Company Ltd." .
 
 
-###  http://gbad.archives.gov.on.ca/#Graphic%20Material
-<http://gbad.archives.gov.on.ca/#Graphic%20Material> rdf:type owl:NamedIndividual ,
-                                                              rico:ContentType ;
-                                                     rdfs:label "Graphic material" .
+###  http://gbad.archives.gov.on.ca/Graphic%20Material
+<http://gbad.archives.gov.on.ca/Graphic%20Material> rdf:type owl:NamedIndividual ,
+                                                             rico:ContentType ;
+                                                    rdfs:label "Graphic material" .
 
 
-###  http://gbad.archives.gov.on.ca/#Halifax%2C%20Nova%20Scotia
-<http://gbad.archives.gov.on.ca/#Halifax%2C%20Nova%20Scotia> rdf:type owl:NamedIndividual ,
-                                                                      rico:Place ;
-                                                             rico:hasOrHadPlaceType :City ;
-                                                             rdfs:label "Halifax, Nova Scotia" .
+###  http://gbad.archives.gov.on.ca/Halifax%2C%20Nova%20Scotia
+<http://gbad.archives.gov.on.ca/Halifax%2C%20Nova%20Scotia> rdf:type owl:NamedIndividual ,
+                                                                     rico:Place ;
+                                                            rico:hasOrHadPlaceType :City ;
+                                                            rdfs:label "Halifax, Nova Scotia" .
 
 
-###  http://gbad.archives.gov.on.ca/#Highway%20Historical%20Collection%20-%20Photographs
-<http://gbad.archives.gov.on.ca/#Highway%20Historical%20Collection%20-%20Photographs> rdf:type owl:NamedIndividual ,
-                                                                                               rico:RecordSet ;
-                                                                                      rico:hasCreator <http://gbad.archives.gov.on.ca/#Fort%20York%20Construction%20Company%20Ltd.> ;
-                                                                                      rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/#RG%2014-162-2> ;
-                                                                                      rico:hasRecordSetType :Sub-series ;
-                                                                                      rdfs:label "Highway historical collection - photographs" .
+###  http://gbad.archives.gov.on.ca/Highway%20Historical%20Collection%20-%20Photographs
+<http://gbad.archives.gov.on.ca/Highway%20Historical%20Collection%20-%20Photographs> rdf:type owl:NamedIndividual ,
+                                                                                              rico:RecordSet ;
+                                                                                     rico:hasCreator <http://gbad.archives.gov.on.ca/Fort%20York%20Construction%20Company%20Ltd.> ;
+                                                                                     rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/RG%2014-162-2> ;
+                                                                                     rico:hasRecordSetType :Sub-series ;
+                                                                                     rdfs:label "Highway historical collection - photographs" .
 
 
-###  http://gbad.archives.gov.on.ca/#Highways%20Historical%20Collection%20-%20Historical%20Research%20Binders
-<http://gbad.archives.gov.on.ca/#Highways%20Historical%20Collection%20-%20Historical%20Research%20Binders> rdf:type owl:NamedIndividual ,
-                                                                                                                    rico:RecordSet ;
-                                                                                                           rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/#RG%2014-162-5> ;
-                                                                                                           rico:hasOrHadSubject <http://gbad.archives.gov.on.ca/#Atikokan%2C%20Ontario> ;
-                                                                                                           rico:hasRecordSetType :Sub-series ;
-                                                                                                           rdfs:label "Highways historical collection - historical research binders" .
+###  http://gbad.archives.gov.on.ca/Highways%20Historical%20Collection%20-%20Historical%20Research%20Binders
+<http://gbad.archives.gov.on.ca/Highways%20Historical%20Collection%20-%20Historical%20Research%20Binders> rdf:type owl:NamedIndividual ,
+                                                                                                                   rico:RecordSet ;
+                                                                                                          rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/RG%2014-162-5> ;
+                                                                                                          rico:hasOrHadSubject <http://gbad.archives.gov.on.ca/Atikokan%2C%20Ontario> ;
+                                                                                                          rico:hasRecordSetType :Sub-series ;
+                                                                                                          rdfs:label "Highways historical collection - historical research binders" .
 
 
-###  http://gbad.archives.gov.on.ca/#Orville%20Alan%20Wood
-<http://gbad.archives.gov.on.ca/#Orville%20Alan%20Wood> rdf:type owl:NamedIndividual ,
-                                                                 rico:AgentName ,
-                                                                 rico:Person ;
-                                                        rico:hasBirthDate <http://gbad.archives.gov.on.ca/#1912> ;
-                                                        rico:hasBirthPlace <http://gbad.archives.gov.on.ca/#South%20River%2C%20Ontario> ;
-                                                        rico:hasDeathDate <http://gbad.archives.gov.on.ca/#2006> ;
-                                                        rico:isAgentAssociatedWithPlace <http://gbad.archives.gov.on.ca/#Halifax%2C%20Nova%20Scotia> ;
-                                                        rico:isCreatorOf <http://gbad.archives.gov.on.ca/#Orville%20Wood%20Fonds> ;
-                                                        rico:isOrWasLeaderOf <http://gbad.archives.gov.on.ca/#Fort%20York%20Construction%20Company%20Ltd.> ;
-                                                        rico:occupiesOrOccupied :President ;
-                                                        rico:history "Orville Wood was born in South River, Ontario, in 1912. He served in the Navy, stationed in Halifax, during World War II, after which he became president of the Fort York Construction Company Ltd. (Source note: correspondence with donor and Ancestry.ca)." ;
-                                                        rdfs:label "Orville Alan Wood" .
+###  http://gbad.archives.gov.on.ca/Orville%20Alan%20Wood
+<http://gbad.archives.gov.on.ca/Orville%20Alan%20Wood> rdf:type owl:NamedIndividual ,
+                                                                rico:AgentName ,
+                                                                rico:Person ;
+                                                       rico:hasBirthDate <http://gbad.archives.gov.on.ca/1912> ;
+                                                       rico:hasBirthPlace <http://gbad.archives.gov.on.ca/South%20River%2C%20Ontario> ;
+                                                       rico:hasDeathDate <http://gbad.archives.gov.on.ca/2006> ;
+                                                       rico:isAgentAssociatedWithPlace <http://gbad.archives.gov.on.ca/Halifax%2C%20Nova%20Scotia> ;
+                                                       rico:isCreatorOf <http://gbad.archives.gov.on.ca/Orville%20Wood%20Fonds> ;
+                                                       rico:isOrWasLeaderOf <http://gbad.archives.gov.on.ca/Fort%20York%20Construction%20Company%20Ltd.> ;
+                                                       rico:occupiesOrOccupied :President ;
+                                                       rico:history "Orville Wood was born in South River, Ontario, in 1912. He served in the Navy, stationed in Halifax, during World War II, after which he became president of the Fort York Construction Company Ltd. (Source note: correspondence with donor and Ancestry.ca)." ;
+                                                       rdfs:label "Orville Alan Wood" .
 
 
-###  http://gbad.archives.gov.on.ca/#Orville%20Wood%20Fonds
-<http://gbad.archives.gov.on.ca/#Orville%20Wood%20Fonds> rdf:type owl:NamedIndividual ,
-                                                                  rico:RecordSet ;
-                                                         rico:hasCreationDate <http://gbad.archives.gov.on.ca/#%5B194-%5D-1953> ;
-                                                         rico:hasGeneticLinkToRecordResource <http://gbad.archives.gov.on.ca/#Highway%20Historical%20Collection%20-%20Photographs> ,
-                                                                                             <http://gbad.archives.gov.on.ca/#Highways%20Historical%20Collection%20-%20Historical%20Research%20Binders> ;
-                                                         rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/#F%204711> ;
-                                                         rico:hasOrHadSomeMembersWithContentType <http://gbad.archives.gov.on.ca/#Graphic%20Material> ,
-                                                                                                 <http://gbad.archives.gov.on.ca/#Textual%20Records> ;
-                                                         rico:hasOrHadSubject <http://gbad.archives.gov.on.ca/#Atikokan%2C%20Ontario> ,
-                                                                              <http://gbad.archives.gov.on.ca/#Terrace%20Bay%2C%20Ontario> ;
-                                                         rico:hasRecordSetType :Fonds ;
-                                                         rico:accruals "No further accruals are expected." ;
-                                                         rico:conditionsOfAccess "No restrictions on access." ;
-                                                         rico:conditionsOfUse "Copyright has been transferred to the Archives of Ontario by the donor. There are no restrictions on reproduction for research and private study. If you wish to use any of this material for a purpose other than research and private study, submit a Request for Permission to Publish, Exhibit or Broadcast Form." ;
-                                                         rico:history "The Orville Wood fonds was donated to the Archives of Ontario by his son, Bruce Arthur Wood, in 2018." ;
-                                                         rico:recordResourceExtent "0.1 centimetres of textual records; 98 photographs : black and white prints; 2 photographs : colour prints; 143 photographs : black and white negatives" ;
-                                                         rico:scopeAndContent """Fonds consists primarily of photographs of the construction of the Atikokan Highway between Shabaqua Corners and Atikokan, Ontario. The highway was later named Highway 120, and is currently designated as Highway 11. Wood's company, Fort York Construction Company Ltd., was contracted to undertake the construction of the highway starting in 1951 and completed the work in 1953.
+###  http://gbad.archives.gov.on.ca/Orville%20Wood%20Fonds
+<http://gbad.archives.gov.on.ca/Orville%20Wood%20Fonds> rdf:type owl:NamedIndividual ,
+                                                                 rico:RecordSet ;
+                                                        rico:hasCreationDate <http://gbad.archives.gov.on.ca/%5B194-%5D-1953> ;
+                                                        rico:hasGeneticLinkToRecordResource <http://gbad.archives.gov.on.ca/Highway%20Historical%20Collection%20-%20Photographs> ,
+                                                                                            <http://gbad.archives.gov.on.ca/Highways%20Historical%20Collection%20-%20Historical%20Research%20Binders> ;
+                                                        rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/F%204711> ;
+                                                        rico:hasOrHadSomeMembersWithContentType <http://gbad.archives.gov.on.ca/Graphic%20Material> ,
+                                                                                                <http://gbad.archives.gov.on.ca/Textual%20Records> ;
+                                                        rico:hasOrHadSubject <http://gbad.archives.gov.on.ca/Atikokan%2C%20Ontario> ,
+                                                                             <http://gbad.archives.gov.on.ca/Terrace%20Bay%2C%20Ontario> ;
+                                                        rico:hasRecordSetType :Fonds ;
+                                                        rico:accruals "No further accruals are expected." ;
+                                                        rico:conditionsOfAccess "No restrictions on access." ;
+                                                        rico:conditionsOfUse "Copyright has been transferred to the Archives of Ontario by the donor. There are no restrictions on reproduction for research and private study. If you wish to use any of this material for a purpose other than research and private study, submit a Request for Permission to Publish, Exhibit or Broadcast Form." ;
+                                                        rico:history "The Orville Wood fonds was donated to the Archives of Ontario by his son, Bruce Arthur Wood, in 2018." ;
+                                                        rico:recordResourceExtent "0.1 centimetres of textual records; 98 photographs : black and white prints; 2 photographs : colour prints; 143 photographs : black and white negatives" ;
+                                                        rico:scopeAndContent """Fonds consists primarily of photographs of the construction of the Atikokan Highway between Shabaqua Corners and Atikokan, Ontario. The highway was later named Highway 120, and is currently designated as Highway 11. Wood's company, Fort York Construction Company Ltd., was contracted to undertake the construction of the highway starting in 1951 and completed the work in 1953.
 
 Fonds also includes photographs of a project undertaken by Fort York Construction Company Ltd. at Terrace Bay, Ontario.
 
 Also included are a news clipping about Fort York Construction Company Ltd., Orville Wood's business card, photographs of an unidentified historic fort, and photographs of Wood's family and business partners.""" ;
-                                                         rdfs:label "Orville Wood fonds" .
+                                                        rdfs:label "Orville Wood fonds" .
 
 
-###  http://gbad.archives.gov.on.ca/#RG%2014-162-2
-<http://gbad.archives.gov.on.ca/#RG%2014-162-2> rdf:type owl:NamedIndividual ,
-                                                         rico:Identifier ;
-                                                rico:hasIdentifierType <http://gbad.archives.gov.on.ca/#Archives%20Of%20Ontario%20Reference%20Code> ;
-                                                rdfs:label "RG 14-162-2" .
+###  http://gbad.archives.gov.on.ca/RG%2014-162-2
+<http://gbad.archives.gov.on.ca/RG%2014-162-2> rdf:type owl:NamedIndividual ,
+                                                        rico:Identifier ;
+                                               rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Archives%20Of%20Ontario%20Reference%20Code> ;
+                                               rdfs:label "RG 14-162-2" .
 
 
-###  http://gbad.archives.gov.on.ca/#RG%2014-162-5
-<http://gbad.archives.gov.on.ca/#RG%2014-162-5> rdf:type owl:NamedIndividual ,
-                                                         rico:Identifier ;
-                                                rico:hasIdentifierType <http://gbad.archives.gov.on.ca/#Archives%20Of%20Ontario%20Reference%20Code> ;
-                                                rdfs:label "RG 14-162-5" .
+###  http://gbad.archives.gov.on.ca/RG%2014-162-5
+<http://gbad.archives.gov.on.ca/RG%2014-162-5> rdf:type owl:NamedIndividual ,
+                                                        rico:Identifier ;
+                                               rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Archives%20Of%20Ontario%20Reference%20Code> ;
+                                               rdfs:label "RG 14-162-5" .
 
 
-###  http://gbad.archives.gov.on.ca/#South%20River%2C%20Ontario
-<http://gbad.archives.gov.on.ca/#South%20River%2C%20Ontario> rdf:type owl:NamedIndividual ,
-                                                                      rico:Place ;
-                                                             rico:hasOrHadPlaceType :Village ;
-                                                             rdfs:label "South River, Ontario" .
+###  http://gbad.archives.gov.on.ca/South%20River%2C%20Ontario
+<http://gbad.archives.gov.on.ca/South%20River%2C%20Ontario> rdf:type owl:NamedIndividual ,
+                                                                     rico:Place ;
+                                                            rico:hasOrHadPlaceType :Village ;
+                                                            rdfs:label "South River, Ontario" .
 
 
-###  http://gbad.archives.gov.on.ca/#Terrace%20Bay%2C%20Ontario
-<http://gbad.archives.gov.on.ca/#Terrace%20Bay%2C%20Ontario> rdf:type owl:NamedIndividual ,
-                                                                      rico:Place ;
-                                                             rico:hasOrHadPlaceType :Township ;
-                                                             rdfs:label "Terrace Bay, Ontario" .
+###  http://gbad.archives.gov.on.ca/Terrace%20Bay%2C%20Ontario
+<http://gbad.archives.gov.on.ca/Terrace%20Bay%2C%20Ontario> rdf:type owl:NamedIndividual ,
+                                                                     rico:Place ;
+                                                            rico:hasOrHadPlaceType :Township ;
+                                                            rdfs:label "Terrace Bay, Ontario" .
 
 
-###  http://gbad.archives.gov.on.ca/#Textual%20Records
-<http://gbad.archives.gov.on.ca/#Textual%20Records> rdf:type owl:NamedIndividual ,
-                                                             rico:ContentType ;
-                                                    rdfs:label "Textual records" .
+###  http://gbad.archives.gov.on.ca/Textual%20Records
+<http://gbad.archives.gov.on.ca/Textual%20Records> rdf:type owl:NamedIndividual ,
+                                                            rico:ContentType ;
+                                                   rdfs:label "Textual records" .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
