@@ -1,0 +1,55 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca/schema/authority#>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Wood%2C%20Orville%20Alvin%2C%201912-2006
+  Annotations:
+    rdfs:label "Wood, Orville Alvin, 1912-2006"
+  Types: rico:AgentName, rico:Person
+  Facts:
+    rico:hasOrHadAgentName Wood%2C%20Orville%20Alvin%2C%201912-2006,
+    rico:history "Orville Wood was born in South River, Ontario, in 1912. He served in the Navy, stationed in Halifax, during World War II, after which he became president of the Fort York Construction Company Ltd.",
+    rico:isOrWasDescribedBy Authority%20Record
+
+Individual: Authority%20Record
+  Annotations:
+    rdfs:label "Authority Record"
+  Types: rico:DocumentaryFormType, rico:Record
+  Facts:
+    rico:generalDescription "Source Note: Ancestry.ca",
+    rico:generalDescription "Source Note: Correspondence with donor.",
+    rico:hasDocumentaryFormType Authority%20Record,
+    rico:isOrWasRegulatedBy Rules%20For%20Archival%20Description,
+    rico:resultsOrResultedFrom Authority%20Record%20Creation,
+    rico:lastModificationDate "2019-02-05"^^xsd:date,
+    rico:hasRecordState Status%3A Approved,
+    rico:hasRecordState Web%20Ready%3A%20Y
+
+Individual: Rules%20For%20Archival%20Description
+  Annotations:
+    rdfs:label "Rules for Archival Description"
+  Types: rico:Rule
+
+Individual: Authority%20Record%20Creation
+  Annotations:
+    rdfs:label "Authority Record Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy McKibbon
+
+Individual: McKibbon
+  Annotations:
+    rdfs:label "McKibbon"
+  Types: rico:Person
+
+Individual: Web%20Ready%3A%20Y
+  Annotations:
+    rdfs:label "Web Ready: Y"
+  Types: rico:RecordState
+
+Individual: Status%3A Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState
