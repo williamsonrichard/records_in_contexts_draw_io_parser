@@ -1,7 +1,7 @@
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
-Prefix: : <http://gbad.archives.gov.on.ca/#>
-Ontology: <http://gbad.archives.gov.on.ca/>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca/schema/authority#>
   Import: <https://www.ica.org/standards/RiC/ontology>
 
 Individual: Records%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210%29
@@ -9,7 +9,7 @@ Individual: Records%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210%29
     rdfs:label "Records of the Walkerton Inquiry (RG 18-210)"
   Types: rico:RecordSet
   Facts:
-    rico:isAssociatedWithEvent E%2E%20Coli%20Outbreak,
+    rico:isAssociatedWithEvent E.%20Coli%20Outbreak,
     rico:hasRecordSetType Series,
     rico:scopeAndContent "Series consists of records generated during the course of the Walkerton Inquiry into the tainted water tragedy that occurred in Walkerton, Ontario in May 2000. At that time Walkerton’s drinking water system became contaminated with deadly bacteria, primarily Escherichia coli O157:H7.1 Seven people died, and more than 2,300 became ill.
 
@@ -47,7 +47,7 @@ Individual: Walkerton%20Inquiry%20%28BA619%29
     rico:isOrWasRegulatedBy Order%20In%20Council%201170%2F2000,
     rico:hasBeginningDate June%2013%2C%202000,
     rico:hasEndDate May%2023%2C%202002,
-    rico:hasOrHadLeader Dennis%20R%2E%20O%27Connor
+    rico:hasOrHadLeader Dennis%20R.%20O%27Connor
 
 Individual: Walkerton%2C%20Ontario
   Annotations:
@@ -61,7 +61,7 @@ Individual: Town
     rdfs:label "Town"
   Types: rico:PlaceType
 
-Individual: E%2E%20Coli%20Outbreak
+Individual: E.%20Coli%20Outbreak
   Annotations:
     rdfs:label "E. coli Outbreak"
   Types: rico:Event
@@ -96,7 +96,7 @@ Individual: Order%20In%20Council
     rdfs:label "Order in Council"
   Types: rico:MandateType
 
-Individual: Dennis%20R%2E%20O%27Connor
+Individual: Dennis%20R.%20O%27Connor
   Annotations:
     rdfs:label "Dennis R. O'Connor"
   Types: rico:AgentName, rico:Person
