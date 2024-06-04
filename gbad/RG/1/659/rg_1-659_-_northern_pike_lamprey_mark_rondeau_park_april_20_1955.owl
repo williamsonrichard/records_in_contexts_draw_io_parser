@@ -1,0 +1,78 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca/schema/authority#>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955
+  Annotations:
+    rdfs:label "Northern pike lamprey mark, Rondeau Park, April 20, 1955"
+  Types: rico:Instantiation, rico:RecordSet, rico:Title
+  Facts:
+    rico:hasRecordSetType File,
+    rico:hasCreationDate 1955,
+    rico:hasOrHadInstantiation Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955,
+    rico:instantiationExtent "10 photographs : 4 black and white prints, 6 negatives",
+    rico:isOrWasDescribedBy Archival%20Description,
+    rico:hasOrHadTitle Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955,
+    rico:isDirectlyIncludedIn %5BLake%20Erie%20Management%20Unit%5D,
+    rico:isDirectlyIncludedIn Fisheries%20Branch%20Photographs,
+    rico:hasContentOfType Graphic%20Materials
+
+Individual: File
+  Annotations:
+    rdfs:label "File"
+  Types: rico:RecordSetType
+
+Individual: 1955
+  Annotations:
+    rdfs:label "1955"
+  Types: rico:Date
+
+Individual: Archival%20Description
+  Annotations:
+    rdfs:label "Archival Description"
+  Types: rico:DocumentaryFormType, rico:Record
+  Facts:
+    rico:hasDocumentaryFormType Archival%20Description,
+    rico:hasRecordState Web%20Enabled%3A%20Y
+
+Individual: Web%20Enabled%3A%20Y
+  Annotations:
+    rdfs:label "Web Enabled: Y"
+  Types: rico:RecordState
+
+Individual: %5BLake%20Erie%20Management%20Unit%5D
+  Annotations:
+    rdfs:label "[Lake Erie Management Unit]"
+  Types: rico:RecordSet
+  Facts:
+    rico:hasRecordSetType Filing%20Class
+
+Individual: Filing%20Class
+  Annotations:
+    rdfs:label "Filing Class"
+  Types: rico:RecordSetType
+
+Individual: Fisheries%20Branch%20Photographs
+  Annotations:
+    rdfs:label "Fisheries Branch photographs"
+  Types: rico:RecordSet
+  Facts:
+    rico:hasOrHadIdentifier RG%201-659,
+    rico:hasRecordSetType Series
+
+Individual: RG%201-659
+  Annotations:
+    rdfs:label "RG 1-659"
+  Types: rico:Identifier
+
+Individual: Series
+  Annotations:
+    rdfs:label "Series"
+  Types: rico:RecordSetType
+
+Individual: Graphic%20Materials
+  Annotations:
+    rdfs:label "Graphic materials"
+  Types: rico:ContentType
