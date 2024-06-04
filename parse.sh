@@ -40,7 +40,7 @@ fi
 
 # Construct the output file path
 output_file_dir=$(dirname "$input_file")
-output_file_name=$(basename "$input_file" .drawio | tr '[:upper:]' '[:lower:]' | tr ' ' '_').owl
+output_file_name=$(basename "$input_file" .drawio | tr '[:upper:]' '[:lower:]' | tr ' ' '_' | tr -d "()[]/,:.\"'").owl
 output_file="$output_file_dir/$output_file_name"
 
 # Function to properly escape and quote arguments
