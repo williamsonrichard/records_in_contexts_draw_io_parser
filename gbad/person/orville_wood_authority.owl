@@ -11,12 +11,12 @@ Individual: Wood%2C%20Orville%20Alvin%2C%201912-2006
   Facts:
     rico:hasOrHadAgentName Wood%2C%20Orville%20Alvin%2C%201912-2006,
     rico:history "Orville Wood was born in South River, Ontario, in 1912. He served in the Navy, stationed in Halifax, during World War II, after which he became president of the Fort York Construction Company Ltd.",
-    rico:isOrWasDescribedBy Authority%20Record
+    rico:isOrWasDescribedBy Wood%2C%20Orville%20Alvin%2C%201912-2006%20Authority%20Record
 
-Individual: Authority%20Record
+Individual: Wood%2C%20Orville%20Alvin%2C%201912-2006%20Authority%20Record
   Annotations:
-    rdfs:label "Authority Record"
-  Types: rico:DocumentaryFormType, rico:Record
+    rdfs:label "Wood, Orville Alvin, 1912-2006 Authority Record"
+  Types: rico:Record
   Facts:
     rico:generalDescription "Source Note: Ancestry.ca",
     rico:generalDescription "Source Note: Correspondence with donor.",
@@ -26,6 +26,11 @@ Individual: Authority%20Record
     rico:lastModificationDate "2019-02-05"^^xsd:date,
     rico:hasRecordState Status%3A Approved,
     rico:hasRecordState Web%20Ready%3A%20Y
+
+Individual: Authority%20Record
+  Annotations:
+    rdfs:label "Authority Record"
+  Types: rico:DocumentaryFormType
 
 Individual: Rules%20For%20Archival%20Description
   Annotations:

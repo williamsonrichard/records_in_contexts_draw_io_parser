@@ -62,18 +62,12 @@ Individual: Archival%20Description%20Creation
     rdfs:label "Archival Description Creation"
   Types: rico:Activity
   Facts:
-    rico:isOrWasPerformedBy O%27Rourke,
-    rico:occurredAtDate 2002-08-20
+    rico:isOrWasPerformedBy O%27Rourke
 
 Individual: O%27Rourke
   Annotations:
     rdfs:label "O'Rourke"
   Types: rico:Person
-
-Individual: 2002-08-20
-  Annotations:
-    rdfs:label "2002-08-20"
-  Types: rico:Date
 
 Individual: Archival%20Description
   Annotations:

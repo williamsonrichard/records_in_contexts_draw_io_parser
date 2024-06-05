@@ -1,0 +1,110 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca/schema/authority#>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: BA27
+  Annotations:
+    rdfs:label "BA27"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Agent%20Identifier
+
+Individual: Agent%20Identifier
+  Annotations:
+    rdfs:label "Agent Identifier"
+  Types: rico:IdentifierType
+
+Individual: Provincial%20Board%20Of%20Health%20Of%20Ontario
+  Annotations:
+    rdfs:label "Provincial Board of Health of Ontario"
+  Types: rico:AgentName, rico:CorporateBody
+  Facts:
+    rico:normalizedValue "Provincial Board of Health of Ontario",
+    rico:hasOrHadIdentifier BA27,
+    rico:hasOrHadAgentName Provincial%20Board%20Of%20Health%20Of%20Ontario,
+    rico:hasOrHadCorporateBodyType B%20Ontario%20Government%20Name,
+    rico:hasBeginningDate 1882,
+    rico:hasEndDate 1924,
+    rico:history "The Provincial Board of Health of Ontario was established on March 10, 1882.  At this time, however, health was still considered primarily a municipal rather than provincial matter, and the Provincial Board was an over-seeing body of the many Local Boards. The Board reported to the Lieutenant Governor (1882-1903); the Provincial Secretary (1904-1918); and to the Department of Labour (1919-1924). The Provincial Board of Health was replaced with the Department of Health in 1924.",
+    rico:isOrWasDescribedBy Department%20Of%20Health%20Authority%20Record,
+    rico:generalDescription "Function Note: The Provincial Board of Health of Ontario was responsible for promoting and ensuring the general health of the people of the province. This involved the study and use of the vital statistics of the province; conducting sanitary investigations and inquiries regarding causes of disease, especially epidemics; and distributing information to local boards of health.",
+    rico:isSuccessorOf Ontario.%20Central%20Board%20Of%20Health,
+    rico:authorizedBy Public%20Health%20Act%2C%20Statutes%20Of%20Ontario%201882%2C%20Chap.%2029,
+    rico:hasSuccessor Ontario.%20Dept.%20Of%20Health
+
+Individual: B%20Ontario%20Government%20Name
+  Annotations:
+    rdfs:label "B Ontario Government Name"
+  Types: rico:CorporateBodyType
+
+Individual: 1882
+  Annotations:
+    rdfs:label "1882"
+  Types: rico:Date
+
+Individual: 1924
+  Annotations:
+    rdfs:label "1924"
+  Types: rico:Date
+
+Individual: Department%20Of%20Health%20Authority%20Record
+  Annotations:
+    rdfs:label "Department of Health Authority Record"
+  Types: rico:Record
+  Facts:
+    rico:hasDocumentaryFormType Authority%20Record,
+    rico:isOrWasRegulatedBy Rules%20For%20Archival%20Description,
+    rico:resultsOrResultedFrom Authority%20Record%20Creation,
+    rico:lastModificationDate "2007-06-16"^^xsd:date,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Ready%3A%20Y,
+    rico:generalDescription "Source Note: Bishop, Olga. Publications of the Government of Ontario, 1867-1900 (1976). MacTaggart, Hazel I. Publications of the Government of Ontario, 1901-1955 (1964). Canadiana Name Authorities, 1996-12-24."
+
+Individual: Authority%20Record
+  Annotations:
+    rdfs:label "Authority Record"
+  Types: rico:DocumentaryFormType
+
+Individual: Rules%20For%20Archival%20Description
+  Annotations:
+    rdfs:label "Rules for Archival Description"
+  Types: rico:Rule
+
+Individual: Authority%20Record%20Creation
+  Annotations:
+    rdfs:label "Authority Record Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy R.%20Anger
+
+Individual: R.%20Anger
+  Annotations:
+    rdfs:label "R. Anger"
+  Types: rico:Person
+
+Individual: Web%20Ready%3A%20Y
+  Annotations:
+    rdfs:label "Web Ready: Y"
+  Types: rico:RecordState
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState
+
+Individual: Ontario.%20Central%20Board%20Of%20Health
+  Annotations:
+    rdfs:label "Ontario. Central Board of Health"
+  Types: rico:CorporateBody
+
+Individual: Public%20Health%20Act%2C%20Statutes%20Of%20Ontario%201882%2C%20Chap.%2029
+  Annotations:
+    rdfs:label "Public Health Act, Statutes of Ontario 1882, Chap. 29"
+  Types: rico:Mandate
+
+Individual: Ontario.%20Dept.%20Of%20Health
+  Annotations:
+    rdfs:label "Ontario. Dept. of Health"
+  Types: rico:CorporateBody

@@ -1,0 +1,110 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca/schema/authority#>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: AA37
+  Annotations:
+    rdfs:label "AA37"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Agent%20Identifier
+
+Individual: Agent%20Identifier
+  Annotations:
+    rdfs:label "Agent Identifier"
+  Types: rico:IdentifierType
+
+Individual: Department%20Of%20Health
+  Annotations:
+    rdfs:label "Department of Health"
+  Types: rico:AgentName, rico:CorporateBody
+  Facts:
+    rico:normalizedValue "Ontario. Dept. of Health",
+    rico:hasOrHadIdentifier AA37,
+    rico:hasOrHadAgentName Department%20Of%20Health,
+    rico:hasOrHadCorporateBodyType A%20Ontario%20Government%20Name,
+    rico:hasBeginningDate 1924,
+    rico:hasEndDate 1972,
+    rico:history "Established in 1924, the Department of Health replaced the Provincial Board of Health.  Since its establishment, the Department's functions have both expanded and shrunk.  In 1930, the Hospitals Branch of the Department of the Provincial Secretary - responsible for administering Ontario's psychiatric hospitals and inspecting the province's public and private hospitals - was transferred to the Department of Health. In 1952, cancer research and the operation of cancer clinics was added to the Department's responsibilities. At the same time, other functions have been shifted out of the Ministry to other agencies.  In 1956,  the Public and Private Hospitals Division was transferred to the Ontario Hospitals Services Commission (although this Commission still reported to the Minister of Health).  The water and sewage functions of the old Sanitary Engineering Division were moved to the Ontario Water Resources Commission in 1957. The Ministry of Community and Social Services took responsibility for mental retardation facilities and children's services in 1974, and the Ministry of Labour took charge of the occupational health function in 1976. The Department was organised primarily by divisions until 1959, when they became known as branches.  In 1962 a Royal Commission on Health Services was appointed which served as a catalyst for a major overhaul of the Department. This occurred in 1966 when the various branches and programmes of the Department were organized into divisions once again. These divisions included the Public Health Division, Mental Health Division, Medical Services Insurance Division, and the Financial and Administrative Services Division. The Department of Health was replaced by the new Ministry of Health in 1972.",
+    rico:isOrWasDescribedBy Department%20Of%20Health%20Authority%20Record,
+    rico:generalDescription "Function Note: The Department of Health was responsible for the  management and operation of programmes relating to health insurance, care for the mentally ill, home care services, drug services, and the regulation of hospitals and nursing homes.  The Department also operates laboratories, psychiatric hospitals, and provides funding and leadership for local public health services.",
+    rico:isSuccessorOf Provincial%20Board%20Of%20Health%20Of%20Ontario,
+    rico:authorizedBy The%20Health%20Department%20Act%2C%20Statutes%20Of%20Ontario%201924%2C%20Chap.%2069,
+    rico:hasSuccessor Ontario.%20Ministry%20Of%20Health
+
+Individual: A%20Ontario%20Government%20Name
+  Annotations:
+    rdfs:label "A Ontario Government Name"
+  Types: rico:CorporateBodyType
+
+Individual: 1924
+  Annotations:
+    rdfs:label "1924"
+  Types: rico:Date
+
+Individual: 1972
+  Annotations:
+    rdfs:label "1972"
+  Types: rico:Date
+
+Individual: Department%20Of%20Health%20Authority%20Record
+  Annotations:
+    rdfs:label "Department of Health Authority Record"
+  Types: rico:Record
+  Facts:
+    rico:hasDocumentaryFormType Authority%20Record,
+    rico:isOrWasRegulatedBy Rules%20For%20Archival%20Description,
+    rico:resultsOrResultedFrom Authority%20Record%20Creation,
+    rico:lastModificationDate "2007-06-16"^^xsd:date,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Ready%3A%20Y,
+    rico:generalDescription "Source Note: MacTaggart, Hazel I.  Publications of the Government of Ontario, 1901-1955 (1964). Publications of the Government of Ontario, 1956-1971 (1975). Canadiana Name Authorities, 1996-12-24"
+
+Individual: Authority%20Record
+  Annotations:
+    rdfs:label "Authority Record"
+  Types: rico:DocumentaryFormType
+
+Individual: Rules%20For%20Archival%20Description
+  Annotations:
+    rdfs:label "Rules for Archival Description"
+  Types: rico:Rule
+
+Individual: Authority%20Record%20Creation
+  Annotations:
+    rdfs:label "Authority Record Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy R.%20Anger
+
+Individual: R.%20Anger
+  Annotations:
+    rdfs:label "R. Anger"
+  Types: rico:Person
+
+Individual: Web%20Ready%3A%20Y
+  Annotations:
+    rdfs:label "Web Ready: Y"
+  Types: rico:RecordState
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState
+
+Individual: Provincial%20Board%20Of%20Health%20Of%20Ontario
+  Annotations:
+    rdfs:label "Provincial Board of Health of Ontario"
+  Types: rico:CorporateBody
+
+Individual: The%20Health%20Department%20Act%2C%20Statutes%20Of%20Ontario%201924%2C%20Chap.%2069
+  Annotations:
+    rdfs:label "The Health Department Act, Statutes of Ontario 1924, Chap. 69"
+  Types: rico:Mandate
+
+Individual: Ontario.%20Ministry%20Of%20Health
+  Annotations:
+    rdfs:label "Ontario. Ministry of Health"
+  Types: rico:CorporateBody

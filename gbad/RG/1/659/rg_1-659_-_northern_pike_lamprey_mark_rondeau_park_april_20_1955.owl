@@ -13,7 +13,7 @@ Individual: Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020
     rico:hasCreationDate 1955,
     rico:hasOrHadInstantiation Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955,
     rico:instantiationExtent "10 photographs : 4 black and white prints, 6 negatives",
-    rico:isOrWasDescribedBy Archival%20Description,
+    rico:isOrWasDescribedBy Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955%20Archival%20Description,
     rico:hasOrHadTitle Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955,
     rico:isDirectlyIncludedIn %5BLake%20Erie%20Management%20Unit%5D,
     rico:isDirectlyIncludedIn Fisheries%20Branch%20Photographs,
@@ -29,13 +29,18 @@ Individual: 1955
     rdfs:label "1955"
   Types: rico:Date
 
-Individual: Archival%20Description
+Individual: Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955%20Archival%20Description
   Annotations:
-    rdfs:label "Archival Description"
-  Types: rico:DocumentaryFormType, rico:Record
+    rdfs:label "Northern pike lamprey mark, Rondeau Park, April 20, 1955 Archival Description"
+  Types: rico:Record
   Facts:
     rico:hasDocumentaryFormType Archival%20Description,
     rico:hasRecordState Web%20Enabled%3A%20Y
+
+Individual: Archival%20Description
+  Annotations:
+    rdfs:label "Archival Description"
+  Types: rico:DocumentaryFormType
 
 Individual: Web%20Enabled%3A%20Y
   Annotations:

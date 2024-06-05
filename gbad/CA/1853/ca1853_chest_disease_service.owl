@@ -1,0 +1,115 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca/schema/authority#>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: CA1853
+  Annotations:
+    rdfs:label "CA1853"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Agent%20Identifier
+
+Individual: Agent%20Identifier
+  Annotations:
+    rdfs:label "Agent Identifier"
+  Types: rico:IdentifierType
+
+Individual: Chest%20Disease%20Service
+  Annotations:
+    rdfs:label "Chest Disease Service"
+  Types: rico:AgentName, rico:CorporateBody
+  Facts:
+    rico:normalizedValue "Ontario. Chest Disease Service",
+    rico:hasOrHadIdentifier CA1853,
+    rico:hasOrHadAgentName Chest%20Disease%20Service,
+    rico:hasOrHadCorporateBodyType C%20Ontario%20Government%20Name,
+    rico:hasBeginningDate 1974,
+    rico:hasEndDate 1982,
+    rico:history "In 1974, in response to the continuing decline of the incidence of TB, the Tuberculosis Prevention Service was renamed Chest Disease Service, and was moved, within the Clinic Services Branch, to the Community Health Division.Throughout the late 1970s and into the 1980s, the Chest Disease Service was transferred several times within the public health function to different offices. Finally in 1982 it was effectively shut down. Of the 23 chest clinics that the service operated, 18 were closed and the remaining 5, all located in Northern Ontario, were transferred to the Ministry of Labour for the purposes of screening miners.",
+    rico:hasOrHadController Ontario.%20Ministry%20Of%20Health,
+    rico:isOrWasDescribedBy Chest%20Disease%20Service%20Authority%20Record,
+    rico:generalDescription "Function Note: The Chest Disease Service was established to eradicate tuberculosis and to deal with other diseases of the chest and lungs.",
+    rico:isSuccessorOf Ontario.%20Division%20Of%20Tuberculosis%20Prevention
+
+Individual: C%20Ontario%20Government%20Name
+  Annotations:
+    rdfs:label "C Ontario Government Name"
+  Types: rico:CorporateBodyType
+
+Individual: 1974
+  Annotations:
+    rdfs:label "1974"
+  Types: rico:Date
+
+Individual: 1982
+  Annotations:
+    rdfs:label "1982"
+  Types: rico:Date
+
+Individual: Chest%20Disease%20Service%20Authority%20Record
+  Annotations:
+    rdfs:label "Chest Disease Service Authority Record"
+  Types: rico:Record
+  Facts:
+    rico:hasDocumentaryFormType Authority%20Record,
+    rico:isOrWasRegulatedBy Rules%20For%20Archival%20Description,
+    rico:resultsOrResultedFrom Authority%20Record%20Creation,
+    rico:lastModificationDate "2010-07-19"^^xsd:date,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Ready%3A%20Y,
+    rico:generalDescription "Source Note: Not in Canadiana. Inventory for RG 10. Archivaria, Number 41, Spring 1996."
+
+Individual: Authority%20Record
+  Annotations:
+    rdfs:label "Authority Record"
+  Types: rico:DocumentaryFormType
+
+Individual: Rules%20For%20Archival%20Description
+  Annotations:
+    rdfs:label "Rules for Archival Description"
+  Types: rico:Rule
+
+Individual: Authority%20Record%20Creation
+  Annotations:
+    rdfs:label "Authority Record Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Billinton
+
+Individual: Billinton
+  Annotations:
+    rdfs:label "Billinton"
+  Types: rico:Person
+
+Individual: Controlling%20Agency%20Relation
+  Annotations:
+    rdfs:label "Controlling Agency Relation"
+  Types: rico:AgentControlRelation
+  Facts:
+    rico:relationHasTarget Chest%20Disease%20Service,
+    rico:hasBeginningDate 1974,
+    rico:hasEndDate 1982
+
+Individual: Web%20Ready%3A%20Y
+  Annotations:
+    rdfs:label "Web Ready: Y"
+  Types: rico:RecordState
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState
+
+Individual: Ontario.%20Ministry%20Of%20Health
+  Annotations:
+    rdfs:label "Ontario. Ministry of Health"
+  Types: rico:CorporateBody
+  Facts:
+    rico:thingIsSourceOfRelation Controlling%20Agency%20Relation
+
+Individual: Ontario.%20Division%20Of%20Tuberculosis%20Prevention
+  Annotations:
+    rdfs:label "Ontario. Division of Tuberculosis Prevention"
+  Types: rico:CorporateBody
