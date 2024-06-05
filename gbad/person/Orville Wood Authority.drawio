@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2024-05-31T17:57:35.531Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="t6WLmv1ryBUHlZBhpNEH" version="24.4.13" type="device">
+<mxfile host="app.diagrams.net" modified="2024-06-05T15:07:22.774Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="oymu38ZF-7ULQEst6tat" version="24.4.14" type="device">
   <diagram name="Page-1" id="JNRxnBV9_3tvGunqLC9R">
-    <mxGraphModel dx="1644" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+    <mxGraphModel dx="2924" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="gmwnegnUR_CNORKRYM6Y-1" value="Wood, Orville Alvin, 1912-2006" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
-          <mxGeometry x="90" y="410" width="200" height="52" as="geometry" />
+          <mxGeometry x="180" y="400" width="200" height="52" as="geometry" />
         </mxCell>
         <mxCell id="gmwnegnUR_CNORKRYM6Y-2" value="rico:Person" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gmwnegnUR_CNORKRYM6Y-1" vertex="1">
           <mxGeometry y="26" width="200" height="26" as="geometry" />
@@ -18,7 +18,7 @@
         <mxCell id="iiJ8OJKaNMLrSCaLO3TT-2" value="rico:AgentName&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="iiJ8OJKaNMLrSCaLO3TT-1" vertex="1">
           <mxGeometry y="26" width="210" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.203;entryY=0.974;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="gmwnegnUR_CNORKRYM6Y-1" edge="1" target="iiJ8OJKaNMLrSCaLO3TT-2">
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.203;entryY=0.974;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="gmwnegnUR_CNORKRYM6Y-1" target="iiJ8OJKaNMLrSCaLO3TT-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="330" y="362" as="sourcePoint" />
             <mxPoint x="280" y="252" as="targetPoint" />
@@ -39,7 +39,7 @@
         <mxCell id="_-RjwaxhbeTWfwVWe4ke-15" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Orville Wood was born in South River, Ontario, in 1912. He served in the Navy, stationed in Halifax, during World War II, after which he became president of the Fort York Construction Company Ltd.&lt;/blockquote&gt;" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;align=left;" parent="1" vertex="1">
           <mxGeometry x="160" y="535" width="335" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.925;exitY=1.019;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-30" target="I4GB3cVhTv-sTvJ7h0Jz-28" edge="1">
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.539;exitY=1.038;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-30" target="I4GB3cVhTv-sTvJ7h0Jz-28" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-141" y="400" as="sourcePoint" />
             <mxPoint x="-140" y="650" as="targetPoint" />
@@ -53,11 +53,11 @@
         <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-28" value="Source Note: Correspondence with donor." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
           <mxGeometry x="-150" y="648" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-29" value="Authority Record" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
-          <mxGeometry x="-230" y="434" width="90" height="52" as="geometry" />
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-29" value="Wood, Orville Alvin, 1912-2006 Authority Record" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="-230" y="434" width="180" height="52" as="geometry" />
         </mxCell>
         <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-30" value="rico:Record" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="I4GB3cVhTv-sTvJ7h0Jz-29" vertex="1">
-          <mxGeometry y="26" width="90" height="26" as="geometry" />
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
         </mxCell>
         <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="gmwnegnUR_CNORKRYM6Y-1" target="I4GB3cVhTv-sTvJ7h0Jz-29" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -130,7 +130,7 @@
         <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-48" value="rico:Person" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="I4GB3cVhTv-sTvJ7h0Jz-47" vertex="1">
           <mxGeometry y="26" width="150" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="kRIpfUrG9O16BsR5oPXA-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.744;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-30" target="kRIpfUrG9O16BsR5oPXA-17" edge="1">
+        <mxCell id="kRIpfUrG9O16BsR5oPXA-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.35;exitY=1.154;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-30" target="kRIpfUrG9O16BsR5oPXA-17" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-140" y="396" as="sourcePoint" />
             <mxPoint x="-180" y="660" as="targetPoint" />
@@ -154,7 +154,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="lTHjRTAcClQ9bYR0I0Gv-11" value="Web Ready: Y" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-411" y="330" width="150" height="52" as="geometry">
+          <mxGeometry x="-460" y="292" width="150" height="52" as="geometry">
             <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -162,7 +162,7 @@
           <mxGeometry y="26" width="150" height="26" as="geometry" />
         </mxCell>
         <mxCell id="lTHjRTAcClQ9bYR0I0Gv-13" value="Status:&amp;nbsp;Approved" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-190" y="330" width="150" height="52" as="geometry">
+          <mxGeometry x="-180" y="292" width="150" height="52" as="geometry">
             <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -178,19 +178,19 @@
         <mxCell id="lTHjRTAcClQ9bYR0I0Gv-16" value="rico:hasRecordState" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="lTHjRTAcClQ9bYR0I0Gv-15" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="soPkVrcQ7c6xz3tsdwBX-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.067;entryY=0.2;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-30" target="soPkVrcQ7c6xz3tsdwBX-3">
+        <mxCell id="soPkVrcQ7c6xz3tsdwBX-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.067;entryY=0.2;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-30" target="soPkVrcQ7c6xz3tsdwBX-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-120" y="470" as="sourcePoint" />
             <mxPoint x="-28" y="582" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="soPkVrcQ7c6xz3tsdwBX-2" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="soPkVrcQ7c6xz3tsdwBX-1">
+        <mxCell id="soPkVrcQ7c6xz3tsdwBX-2" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="soPkVrcQ7c6xz3tsdwBX-1" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="27" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="soPkVrcQ7c6xz3tsdwBX-3" value="Source Note: Ancestry.ca" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" vertex="1" parent="1">
-          <mxGeometry x="-20" y="580" width="110" height="50" as="geometry" />
+        <mxCell id="soPkVrcQ7c6xz3tsdwBX-3" value="Source Note: Ancestry.ca" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="-10" y="560" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

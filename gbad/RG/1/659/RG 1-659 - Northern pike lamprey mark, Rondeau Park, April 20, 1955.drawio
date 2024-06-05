@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-29T19:25:00.121Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="uQOJR6nwNInF5vjGUUR5" version="24.4.10" type="device">
+<mxfile host="app.diagrams.net" modified="2024-06-05T15:08:03.448Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="41o75LsDwhZrEygQd9lz" version="24.4.14" type="device">
   <diagram name="Page-1" id="_9r6geDOEYo5xFr4fmT0">
     <mxGraphModel dx="2924" dy="2206" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
       <root>
@@ -66,7 +66,7 @@
         <mxCell id="K4QZWATomJR9_dxTVFmW-42" value="rico:instantiationExtent" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="K4QZWATomJR9_dxTVFmW-41" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="K4QZWATomJR9_dxTVFmW-45" value="10 photographs : 4 black and white prints, 6 negatives" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;strokeColor=#FF0000;" parent="1" vertex="1">
+        <mxCell id="K4QZWATomJR9_dxTVFmW-45" value="10 photographs : 4 black and white prints, 6 negatives" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="-120" y="592" width="200" height="50" as="geometry" />
         </mxCell>
         <mxCell id="wiPwyt0miK05mvKJtJq--53" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="wiPwyt0miK05mvKJtJq--56" edge="1">
@@ -78,11 +78,11 @@
         <mxCell id="wiPwyt0miK05mvKJtJq--54" value="rico:isOrWasDescribedBy" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--53" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wiPwyt0miK05mvKJtJq--55" value="Archival Description" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
-          <mxGeometry x="860" y="223" width="90" height="52" as="geometry" />
+        <mxCell id="wiPwyt0miK05mvKJtJq--55" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Northern pike lamprey mark, Rondeau Park, April 20, 1955 Archival Description&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="860" y="223" width="260" height="52" as="geometry" />
         </mxCell>
         <mxCell id="wiPwyt0miK05mvKJtJq--56" value="rico:Record" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wiPwyt0miK05mvKJtJq--55" vertex="1">
-          <mxGeometry y="26" width="90" height="26" as="geometry" />
+          <mxGeometry y="26" width="260" height="26" as="geometry" />
         </mxCell>
         <mxCell id="Pa1L8ZfUJXBHrEYyGiSI-1" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Northern pike lamprey mark, Rondeau Park, April 20, 1955&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="440" y="124" width="330" height="52" as="geometry">
@@ -119,7 +119,7 @@
         </mxCell>
         <mxCell id="JUvVhaggt__ALHUesofw-4" value="rico:hasDocumentaryFormType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="JUvVhaggt__ALHUesofw-3" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-16" y="-43" as="offset" />
+            <mxPoint x="-30" y="-59" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="JUvVhaggt__ALHUesofw-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.637;exitY=-0.019;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.372;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wiPwyt0miK05mvKJtJq--55" target="JUvVhaggt__ALHUesofw-12" edge="1">
@@ -141,7 +141,7 @@
         <mxCell id="JUvVhaggt__ALHUesofw-12" value="rico:RecordState&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JUvVhaggt__ALHUesofw-11" vertex="1">
           <mxGeometry y="26" width="150" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="BgzUFkZFLuuaoTEaSqZe-3" value="[Lake Erie Management Unit]" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+        <mxCell id="BgzUFkZFLuuaoTEaSqZe-3" value="[Lake Erie Management Unit]" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="780" y="440" width="200" height="52" as="geometry" />
         </mxCell>
         <mxCell id="BgzUFkZFLuuaoTEaSqZe-4" value="rico:RecordSet" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="BgzUFkZFLuuaoTEaSqZe-3" vertex="1">

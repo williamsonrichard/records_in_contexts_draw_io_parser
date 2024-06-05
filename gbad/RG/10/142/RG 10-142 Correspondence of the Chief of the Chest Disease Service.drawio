@@ -1,0 +1,538 @@
+<mxfile host="app.diagrams.net" modified="2024-06-05T15:08:55.919Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="1Vy_at0j3-JFT_KVsG5u" version="24.4.14" type="device">
+  <diagram name="Page-1" id="_9r6geDOEYo5xFr4fmT0">
+    <mxGraphModel dx="2924" dy="2206" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-1" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Correspondence of the Chief of the Chest Disease Service&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="370" width="240" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-2" value="rico:RecordSet" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="sWa0SD8Ajx1KSGOqKPP4-1" vertex="1">
+          <mxGeometry y="26" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-3" value="Series" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="890" y="478" width="160" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-4" value="rico:RecordSetType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="sWa0SD8Ajx1KSGOqKPP4-3" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="sWa0SD8Ajx1KSGOqKPP4-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="390" as="sourcePoint" />
+            <mxPoint x="610" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-6" value="rico:hasRecordSetType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="sWa0SD8Ajx1KSGOqKPP4-5" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-7" value="1948-1982" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="221" width="190" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-8" value="rico:Date" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="sWa0SD8Ajx1KSGOqKPP4-7" vertex="1">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="sWa0SD8Ajx1KSGOqKPP4-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="470.0000000000002" as="sourcePoint" />
+            <mxPoint x="280" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-10" value="rico:hasCreationDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="sWa0SD8Ajx1KSGOqKPP4-9" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-11" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Series consists of records created and maintained by the Chest Disease Service and its predecessor agencies to provide a cumulative record in reviewing, preventing, and treating tuberculosis in Ontario.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Records consist of originals of incoming and copies of outgoing correspondence, both inter and intra Ministry, with the federal government, sanatoria, chest clinics, professional associations, other agencies outside the provincial government, and private citizens relating to the prevention and treatment of tuberculosis in Ontario.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Subjects include the following: drugs, chemotheraphy, chest x-ray programs, epidemiology, home care programs, health standards, immigrants and refugees, mass survey x-ray interpretaion, smoking and health education material.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Files are arranged alphabetically by subject.&lt;/div&gt;&lt;/blockquote&gt;" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="-640" y="309" width="750" height="169" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.003;exitY=0.439;exitDx=0;exitDy=0;entryX=0.996;entryY=0.412;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="sWa0SD8Ajx1KSGOqKPP4-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="400" as="sourcePoint" />
+            <mxPoint x="130" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-13" value="rico:scopeAndContent" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="sWa0SD8Ajx1KSGOqKPP4-12" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-14" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Correspondence of the Chief of the Chest Disease Service&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="-181" y="568" width="241" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-15" value="rico:Instantiation&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="sWa0SD8Ajx1KSGOqKPP4-14" vertex="1">
+          <mxGeometry y="26" width="241" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-24" value="Records in this series were transferred to the Archives of Ontario by the Ministry of Health." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="19" y="780" width="200" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.29;exitY=0.991;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="K4QZWATomJR9_dxTVFmW-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="520" as="sourcePoint" />
+            <mxPoint x="208" y="805" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-28" value="rico:history" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="K4QZWATomJR9_dxTVFmW-27" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-94" y="114" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-37" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="sWa0SD8Ajx1KSGOqKPP4-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="400" as="sourcePoint" />
+            <mxPoint x="110" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-38" value="rico:hasOrHadInstantiation" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="K4QZWATomJR9_dxTVFmW-37" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-41" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-15" target="K4QZWATomJR9_dxTVFmW-45" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-140" y="494.5" as="sourcePoint" />
+            <mxPoint x="-290" y="494.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-42" value="rico:instantiationExtent" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="K4QZWATomJR9_dxTVFmW-41" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-45" value="9.8 metres of textual records (32 Boxes)" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="-520" y="660" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.109;entryY=-0.007;entryDx=0;entryDy=0;exitX=0.624;exitY=1.013;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="vEi_3DjQt7wcUmB-cSFn-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="422" as="sourcePoint" />
+            <mxPoint x="360" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-2" value="rico:conditionsOfAccess" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="vEi_3DjQt7wcUmB-cSFn-1" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="41" y="68" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-3" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Access to these records is governed by the Freedom of Information and Protection of Privacy Act. Requests for access to records 100 years old or less must be submitted in writing to the Information and Privacy Unit of the Archives of Ontario.&lt;/blockquote&gt;" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;strokeColor=#000000;align=left;" parent="1" vertex="1">
+          <mxGeometry x="530" y="670" width="390" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.402;entryY=-0.007;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="vEi_3DjQt7wcUmB-cSFn-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="422" as="sourcePoint" />
+            <mxPoint x="420" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-5" value="rico:conditionsOfUse" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="vEi_3DjQt7wcUmB-cSFn-4" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="8" y="39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-6" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Copyright is held primarily by the Crown. There are no restrictions on reproduction. Permission of the Archives of Ontario is required for publication; submit a Request for Permission to Publish, Exhibit or Broadcast Form.&lt;/blockquote&gt;" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;align=left;" parent="1" vertex="1">
+          <mxGeometry x="250" y="800" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.376;entryY=-0.04;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.87;exitY=1.026;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="vEi_3DjQt7wcUmB-cSFn-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="420" as="sourcePoint" />
+            <mxPoint x="510" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-8" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="vEi_3DjQt7wcUmB-cSFn-7" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="32" y="24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-9" value="Finding Aid Note: No file list is available." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="635" y="570" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.997;exitY=0.957;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="wiPwyt0miK05mvKJtJq--13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="450" as="sourcePoint" />
+            <mxPoint x="920" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--12" value="rico:accruals" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--11" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--13" value="No further accruals are expected." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="850" y="560" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--20" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="wiPwyt0miK05mvKJtJq--22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-180" y="580" as="sourcePoint" />
+            <mxPoint x="-130" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--21" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--20" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--22" value="How to Order: Please contact a Reference Archivist for information about obtaining access to this material." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="-560" y="500" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--23" value="RG 10-142" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-196" y="12" width="170" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--24" value="rico:Identifier&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wiPwyt0miK05mvKJtJq--23" vertex="1">
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.467;entryY=1.051;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="wiPwyt0miK05mvKJtJq--24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="362" as="sourcePoint" />
+            <mxPoint x="260" y="242" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--26" value="rico:hasOrHadIdentifier" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--25" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-182" y="-112" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wiPwyt0miK05mvKJtJq--23" target="wiPwyt0miK05mvKJtJq--34" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-180" y="-150" as="sourcePoint" />
+            <mxPoint x="-40" y="-140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--32" value="rico:hasIdentifierType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--31" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--33" value="Current Reference Code" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="-390" y="-148" width="129" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--34" value="rico:IdentifierType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wiPwyt0miK05mvKJtJq--33" vertex="1">
+          <mxGeometry y="26" width="129" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--53" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="wiPwyt0miK05mvKJtJq--56" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="300" as="sourcePoint" />
+            <mxPoint x="800" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--54" value="rico:isOrWasDescribedBy" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--53" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--55" value="Correspondence of the Chief of the Chest Disease Service Archival Description" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="810" y="350" width="260" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--56" value="rico:Record" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wiPwyt0miK05mvKJtJq--55" vertex="1">
+          <mxGeometry y="26" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--57" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wiPwyt0miK05mvKJtJq--55" target="wiPwyt0miK05mvKJtJq--60" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="170.00000000000023" as="sourcePoint" />
+            <mxPoint x="1030" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--58" value="rico:resultsOrResultedFrom" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--57" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="9" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--59" value="Archival Description Creation" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="1300" y="440" width="150" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--60" value="rico:Activity" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wiPwyt0miK05mvKJtJq--59" vertex="1">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--61" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.568;exitY=1.068;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wiPwyt0miK05mvKJtJq--60" target="wiPwyt0miK05mvKJtJq--63" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1390" y="510" as="sourcePoint" />
+            <mxPoint x="1105" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--62" value="rico:isOrWasPerformedBy" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--61" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--63" value="Stabile" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="610" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--64" value="rico:Person" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wiPwyt0miK05mvKJtJq--63" vertex="1">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--71" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.324;exitY=0.038;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.736;entryY=0.987;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="oq1ih978A7QFoimO-3pH-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="210" as="sourcePoint" />
+            <mxPoint x="-20" y="-130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--72" value="rico:hasCreator" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--71" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-39" y="-43" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Pa1L8ZfUJXBHrEYyGiSI-1" value="Correspondence of the Chief of the Chest Disease Service" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="830" y="208" width="270" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Pa1L8ZfUJXBHrEYyGiSI-2" value="rico:Title&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Pa1L8ZfUJXBHrEYyGiSI-1" vertex="1">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Pa1L8ZfUJXBHrEYyGiSI-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="Pa1L8ZfUJXBHrEYyGiSI-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="330" as="sourcePoint" />
+            <mxPoint x="380" y="230.00000000000023" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Pa1L8ZfUJXBHrEYyGiSI-4" value="rico:hasOrHadTitle" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="Pa1L8ZfUJXBHrEYyGiSI-3" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="86" y="-22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rlVAaZdWDM-1AO-MbrP8-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.003;exitY=0.885;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.098;entryY=0.051;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wiPwyt0miK05mvKJtJq--56" target="rlVAaZdWDM-1AO-MbrP8-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="270" as="sourcePoint" />
+            <mxPoint x="1130" y="313" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rlVAaZdWDM-1AO-MbrP8-2" value="rico:lastModificationDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="rlVAaZdWDM-1AO-MbrP8-1" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rlVAaZdWDM-1AO-MbrP8-3" value="2012-03-29" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="525" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-1" value="Archival Description" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="1280.5" y="145" width="189" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-2" value="rico:DocumentaryFormType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JUvVhaggt__ALHUesofw-1" vertex="1">
+          <mxGeometry y="26" width="189" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.478;entryY=1.103;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="wiPwyt0miK05mvKJtJq--55" target="JUvVhaggt__ALHUesofw-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="220" as="sourcePoint" />
+            <mxPoint x="1050" y="-20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-4" value="rico:hasDocumentaryFormType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="JUvVhaggt__ALHUesofw-3" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="99" y="-34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="wiPwyt0miK05mvKJtJq--55" target="JUvVhaggt__ALHUesofw-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="223" as="sourcePoint" />
+            <mxPoint x="940" y="-120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-6" value="rico:hasRecordState" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="JUvVhaggt__ALHUesofw-5" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="28" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.192;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="wiPwyt0miK05mvKJtJq--55" target="JUvVhaggt__ALHUesofw-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1010" y="156" as="sourcePoint" />
+            <mxPoint x="1050" y="-120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-8" value="rico:hasRecordState" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="JUvVhaggt__ALHUesofw-7" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="21" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-9" value="Status: Approved" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1360" y="234" width="150" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-10" value="rico:RecordState&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JUvVhaggt__ALHUesofw-9" vertex="1">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-11" value="Web Enabled: Y" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1390" y="350" width="150" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-12" value="rico:RecordState&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JUvVhaggt__ALHUesofw-11" vertex="1">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-1" value="Office of Origin Relation" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="250" y="-197" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-2" value="rico:CreationRelation" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Q8uZV5vyl1yQ3metHevY-1" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.441;exitY=0.038;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="Q8uZV5vyl1yQ3metHevY-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="370" as="sourcePoint" />
+            <mxPoint x="330" y="-140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-4" value="rico:thingIsSourceOfRelation" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="Q8uZV5vyl1yQ3metHevY-3" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-20" y="-223" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.856;exitY=-0.013;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.321;entryY=1.06;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Q8uZV5vyl1yQ3metHevY-1" target="oq1ih978A7QFoimO-3pH-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="329.5" y="-197" as="sourcePoint" />
+            <mxPoint x="440" y="-260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-6" value="rico:relationHasTarget" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="Q8uZV5vyl1yQ3metHevY-5" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-11" y="16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.53;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.53;entryY=1.06;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="oq1ih978A7QFoimO-3pH-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="361.333251953125" as="sourcePoint" />
+            <mxPoint x="495" y="-290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-10" value="rico:hasCreator" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="Q8uZV5vyl1yQ3metHevY-9" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="31" y="-148" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-11" value="1948" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="-60" y="-360" width="170" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-12" value="rico:Date" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Q8uZV5vyl1yQ3metHevY-11" vertex="1">
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-13" value="1974" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="70" y="-451" width="170" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-14" value="rico:Date" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Q8uZV5vyl1yQ3metHevY-13" vertex="1">
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Q8uZV5vyl1yQ3metHevY-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="-200" as="sourcePoint" />
+            <mxPoint x="70" y="-310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-16" value="rico:hasBeginningDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="Q8uZV5vyl1yQ3metHevY-15" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-37" y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.437;entryY=0.979;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.128;exitY=-0.066;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Q8uZV5vyl1yQ3metHevY-1" target="Q8uZV5vyl1yQ3metHevY-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="-200" as="sourcePoint" />
+            <mxPoint x="374.5" y="-412" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8uZV5vyl1yQ3metHevY-18" value="rico:hasEndDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="Q8uZV5vyl1yQ3metHevY-17" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-7" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lszSfj4lrEIONad0Ssyt-1" value="Textual records" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-200" y="728" width="178" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lszSfj4lrEIONad0Ssyt-2" value="rico:ContentType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="lszSfj4lrEIONad0Ssyt-1" vertex="1">
+          <mxGeometry y="26" width="178" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lszSfj4lrEIONad0Ssyt-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.212;exitY=1.051;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="lszSfj4lrEIONad0Ssyt-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="64.5" y="634" as="sourcePoint" />
+            <mxPoint x="-75.5" y="764" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lszSfj4lrEIONad0Ssyt-4" value="rico:hasContentOfType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="lszSfj4lrEIONad0Ssyt-3" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-105" y="78" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.508;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="Tz2F32KxXM1jOS5T9Jy2-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="475" y="370" as="sourcePoint" />
+            <mxPoint x="840" y="-250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-2" value="rico:thingIsSourceOfRelation" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="Tz2F32KxXM1jOS5T9Jy2-1" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="-173" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.935;exitY=0.021;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.312;entryY=1.145;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="oq1ih978A7QFoimO-3pH-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="370" as="sourcePoint" />
+            <mxPoint x="1020" y="-120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-8" value="rico:hasCreator" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="Tz2F32KxXM1jOS5T9Jy2-7" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="-191" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-13" value="Office of Origin Relation" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="690" y="-158" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-14" value="rico:CreationRelation" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Tz2F32KxXM1jOS5T9Jy2-13" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="Tz2F32KxXM1jOS5T9Jy2-13" target="oq1ih978A7QFoimO-3pH-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="-263" as="sourcePoint" />
+            <mxPoint x="970" y="-187" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-16" value="rico:relationHasTarget" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="Tz2F32KxXM1jOS5T9Jy2-15" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-4" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.484;entryY=0.974;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Tz2F32KxXM1jOS5T9Jy2-13" target="Tz2F32KxXM1jOS5T9Jy2-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1160" y="-275" as="sourcePoint" />
+            <mxPoint x="830" y="-430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-18" value="rico:hasBeginningDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="Tz2F32KxXM1jOS5T9Jy2-17" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-16" y="24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.663;exitY=-0.051;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.393;entryY=0.94;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Tz2F32KxXM1jOS5T9Jy2-13" target="Tz2F32KxXM1jOS5T9Jy2-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="960" y="-327" as="sourcePoint" />
+            <mxPoint x="1020" y="-420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-20" value="rico:hasEndDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="Tz2F32KxXM1jOS5T9Jy2-19" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="19" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-21" value="1974" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="780" y="-440" width="170" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-22" value="rico:Date" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Tz2F32KxXM1jOS5T9Jy2-21" vertex="1">
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-23" value="1982" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="1000" y="-412" width="170" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Tz2F32KxXM1jOS5T9Jy2-24" value="rico:Date" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Tz2F32KxXM1jOS5T9Jy2-23" vertex="1">
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="oq1ih978A7QFoimO-3pH-1" value="Division of Tuberculosis Prevention" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="370" y="-334" width="230" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="oq1ih978A7QFoimO-3pH-2" value="rico:CorporateBody" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="oq1ih978A7QFoimO-3pH-1" vertex="1">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="oq1ih978A7QFoimO-3pH-5" value="Provenance (ADD47)&lt;div&gt;INDEXPROV&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="-151" y="-197" width="170" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="oq1ih978A7QFoimO-3pH-6" value="rico:Agent" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="oq1ih978A7QFoimO-3pH-5" vertex="1">
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="oq1ih978A7QFoimO-3pH-9" value="Chest Disease Service" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="-210" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="oq1ih978A7QFoimO-3pH-10" value="rico:CorporateBody" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="oq1ih978A7QFoimO-3pH-9" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
