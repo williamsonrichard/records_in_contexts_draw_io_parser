@@ -1,0 +1,179 @@
+@prefix : <http://gbad.archives.gov.on.ca#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca> .
+
+<http://gbad.archives.gov.on.ca> rdf:type owl:Ontology ;
+                                  owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/AA42
+<http://gbad.archives.gov.on.ca/AA42> rdf:type owl:NamedIndividual ,
+                                               rico:Identifier ;
+                                      rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Agent%20Identifier> ;
+                                      rdfs:label "AA42" .
+
+
+###  http://gbad.archives.gov.on.ca/MOH
+<http://gbad.archives.gov.on.ca/MOH> rdf:type owl:NamedIndividual ,
+                                              rico:AgentName ;
+                                     rico:hasOrHadCategory <http://gbad.archives.gov.on.ca/Variant%20Name> ;
+                                     rdfs:label "MOH" .
+
+
+###  http://gbad.archives.gov.on.ca/MS
+<http://gbad.archives.gov.on.ca/MS> rdf:type owl:NamedIndividual ,
+                                             rico:AgentName ;
+                                    rico:hasOrHadCategory <http://gbad.archives.gov.on.ca/Variant%20Name> ;
+                                    rdfs:label "MS" .
+
+
+###  http://gbad.archives.gov.on.ca/1972
+<http://gbad.archives.gov.on.ca/1972> rdf:type owl:NamedIndividual ,
+                                               rico:Date ;
+                                      rdfs:label "1972" .
+
+
+###  http://gbad.archives.gov.on.ca/1999
+<http://gbad.archives.gov.on.ca/1999> rdf:type owl:NamedIndividual ,
+                                               rico:Date ;
+                                      rdfs:label "1999" .
+
+
+###  http://gbad.archives.gov.on.ca/A%20Ontario%20Government%20Name
+<http://gbad.archives.gov.on.ca/A%20Ontario%20Government%20Name> rdf:type owl:NamedIndividual ,
+                                                                          rico:CorporateBodyType ;
+                                                                 rdfs:label "A Ontario Government Name" .
+
+
+###  http://gbad.archives.gov.on.ca/Agent%20Identifier
+<http://gbad.archives.gov.on.ca/Agent%20Identifier> rdf:type owl:NamedIndividual ,
+                                                             rico:IdentifierType ;
+                                                    rdfs:label "Agent Identifier" .
+
+
+###  http://gbad.archives.gov.on.ca/Authority%20Record
+<http://gbad.archives.gov.on.ca/Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                             rico:DocumentaryFormType ;
+                                                    rdfs:label "Authority Record" .
+
+
+###  http://gbad.archives.gov.on.ca/Authority%20Record%20Creation
+<http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> rdf:type owl:NamedIndividual ,
+                                                                        rico:Activity ;
+                                                               rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/R.%20Anger> ;
+                                                               rdfs:label "Authority Record Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/Department%20Of%20Health%20Authority%20Record
+<http://gbad.archives.gov.on.ca/Department%20Of%20Health%20Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                                                        rico:Record ;
+                                                                               rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Authority%20Record> ;
+                                                                               rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
+                                                                                                   <http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> ;
+                                                                               rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> ;
+                                                                               rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> ;
+                                                                               rico:generalDescription "Source Note: Government of Ontario Telephone Directory, 1995-96. KWIC Indexes, 1972-1995. Canadiana Name Authorities, 1996-12-24." ;
+                                                                               rico:lastModificationDate "2024-04-18"^^xsd:date ;
+                                                                               rdfs:label "Department of Health Authority Record" .
+
+
+###  http://gbad.archives.gov.on.ca/Ministry%20Of%20Health
+<http://gbad.archives.gov.on.ca/Ministry%20Of%20Health> rdf:type owl:NamedIndividual ,
+                                                                 rico:AgentName ,
+                                                                 rico:CorporateBody ;
+                                                        rico:authorizedBy <http://gbad.archives.gov.on.ca/Ministry%20Of%20Health%20Act%2C%20Statutes%20Of%20Ontario%201972%2C%20Chap.%2092> ;
+                                                        rico:hasBeginningDate <http://gbad.archives.gov.on.ca/1972> ;
+                                                        rico:hasEndDate <http://gbad.archives.gov.on.ca/1999> ;
+                                                        rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/MOH> ,
+                                                                               <http://gbad.archives.gov.on.ca/MS> ,
+                                                                               <http://gbad.archives.gov.on.ca/Ministry%20Of%20Health> ,
+                                                                               <http://gbad.archives.gov.on.ca/Ontario.%20Ministère%20De%20La%20Santé> ;
+                                                        rico:hasOrHadCorporateBodyType <http://gbad.archives.gov.on.ca/A%20Ontario%20Government%20Name> ;
+                                                        rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/AA42> ;
+                                                        rico:hasSuccessor <http://gbad.archives.gov.on.ca/Ontario.%20Ministry%20Of%20Health%20And%20Long-Term%20Care> ;
+                                                        rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Department%20Of%20Health%20Authority%20Record> ;
+                                                        rico:isSuccessorOf <http://gbad.archives.gov.on.ca/Ontario.%20Dept.%20Of%20Health> ;
+                                                        rico:generalDescription "Function Note: The Ministry of Health is responsible for administering the health care system and providing services to the Ontario public through programs such as health insurance, care for the mentally ill, drug services, home care services, and the regulation of hospitals and nursing homes. The Ministry also operates psychiatric hospitals, medical laboratories and provides funding and leadership for local public health services." ;
+                                                        rico:history "The Department of Health was renamed the Ministry of Health in 1972.Since 1972, the Ministry has been restructured often and a number of different divisions have existed within it.  They have, however, tended to focus around five primary areas: health insurance; community and public health services; institutional health (including administration of hospitals, ambulance services, nursing homes and psychiatric hospitals); administration and finance; and information systems.Agencies which report to the Ministry include the Addiction Research Foundation, the Ontario Cancer Treatment and Research Foundation, the District Health Councils, and the Ontario Mental Health Foundation.On June 17, 1999 the Ministry of Health was renamed the Ministry of Health and Long-Term Care." ;
+                                                        rico:normalizedValue "Ontario. Ministry of Health" ;
+                                                        rdfs:label "Ministry of Health" .
+
+
+###  http://gbad.archives.gov.on.ca/Ministry%20Of%20Health%20Act%2C%20Statutes%20Of%20Ontario%201972%2C%20Chap.%2092
+<http://gbad.archives.gov.on.ca/Ministry%20Of%20Health%20Act%2C%20Statutes%20Of%20Ontario%201972%2C%20Chap.%2092> rdf:type owl:NamedIndividual ,
+                                                                                                                           rico:Mandate ;
+                                                                                                                  rdfs:label "Ministry of Health Act, Statutes of Ontario 1972, Chap. 92" .
+
+
+###  http://gbad.archives.gov.on.ca/Ontario.%20Dept.%20Of%20Health
+<http://gbad.archives.gov.on.ca/Ontario.%20Dept.%20Of%20Health> rdf:type owl:NamedIndividual ,
+                                                                         rico:CorporateBody ;
+                                                                rdfs:label "Ontario. Dept. of Health" .
+
+
+###  http://gbad.archives.gov.on.ca/Ontario.%20Ministry%20Of%20Health%20And%20Long-Term%20Care
+<http://gbad.archives.gov.on.ca/Ontario.%20Ministry%20Of%20Health%20And%20Long-Term%20Care> rdf:type owl:NamedIndividual ,
+                                                                                                     rico:CorporateBody ;
+                                                                                            rdfs:label "Ontario. Ministry of Health and Long-Term Care" .
+
+
+###  http://gbad.archives.gov.on.ca/Ontario.%20Ministère%20De%20La%20Santé
+<http://gbad.archives.gov.on.ca/Ontario.%20Ministère%20De%20La%20Santé> rdf:type owl:NamedIndividual ,
+                                                                                 rico:AgentName ;
+                                                                        rico:hasOrHadCategory <http://gbad.archives.gov.on.ca/Parallel%20Name> ;
+                                                                        rdfs:label "Ontario. Ministère de la Santé" .
+
+
+###  http://gbad.archives.gov.on.ca/Parallel%20Name
+<http://gbad.archives.gov.on.ca/Parallel%20Name> rdf:type owl:NamedIndividual ,
+                                                          rico:Type ;
+                                                 rdfs:label "Parallel Name" .
+
+
+###  http://gbad.archives.gov.on.ca/R.%20Anger
+<http://gbad.archives.gov.on.ca/R.%20Anger> rdf:type owl:NamedIndividual ,
+                                                     rico:Person ;
+                                            rdfs:label "R. Anger" .
+
+
+###  http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description
+<http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                               rico:Rule ;
+                                                                      rdfs:label "Rules for Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Status%3A%20Approved
+<http://gbad.archives.gov.on.ca/Status%3A%20Approved> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Status: Approved" .
+
+
+###  http://gbad.archives.gov.on.ca/Variant%20Name
+<http://gbad.archives.gov.on.ca/Variant%20Name> rdf:type owl:NamedIndividual ,
+                                                         rico:Type ;
+                                                rdfs:label "Variant Name" .
+
+
+###  http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y
+<http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> rdf:type owl:NamedIndividual ,
+                                                             rico:RecordState ;
+                                                    rdfs:label "Web Ready: Y" .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

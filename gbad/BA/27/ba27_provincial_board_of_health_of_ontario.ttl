@@ -1,0 +1,143 @@
+@prefix : <http://gbad.archives.gov.on.ca#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca> .
+
+<http://gbad.archives.gov.on.ca> rdf:type owl:Ontology ;
+                                  owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/BA27
+<http://gbad.archives.gov.on.ca/BA27> rdf:type owl:NamedIndividual ,
+                                               rico:Identifier ;
+                                      rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Agent%20Identifier> ;
+                                      rdfs:label "BA27" .
+
+
+###  http://gbad.archives.gov.on.ca/1882
+<http://gbad.archives.gov.on.ca/1882> rdf:type owl:NamedIndividual ,
+                                               rico:Date ;
+                                      rdfs:label "1882" .
+
+
+###  http://gbad.archives.gov.on.ca/1924
+<http://gbad.archives.gov.on.ca/1924> rdf:type owl:NamedIndividual ,
+                                               rico:Date ;
+                                      rdfs:label "1924" .
+
+
+###  http://gbad.archives.gov.on.ca/Agent%20Identifier
+<http://gbad.archives.gov.on.ca/Agent%20Identifier> rdf:type owl:NamedIndividual ,
+                                                             rico:IdentifierType ;
+                                                    rdfs:label "Agent Identifier" .
+
+
+###  http://gbad.archives.gov.on.ca/Authority%20Record
+<http://gbad.archives.gov.on.ca/Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                             rico:DocumentaryFormType ;
+                                                    rdfs:label "Authority Record" .
+
+
+###  http://gbad.archives.gov.on.ca/Authority%20Record%20Creation
+<http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> rdf:type owl:NamedIndividual ,
+                                                                        rico:Activity ;
+                                                               rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/R.%20Anger> ;
+                                                               rdfs:label "Authority Record Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/B%20Ontario%20Government%20Name
+<http://gbad.archives.gov.on.ca/B%20Ontario%20Government%20Name> rdf:type owl:NamedIndividual ,
+                                                                          rico:CorporateBodyType ;
+                                                                 rdfs:label "B Ontario Government Name" .
+
+
+###  http://gbad.archives.gov.on.ca/Department%20Of%20Health%20Authority%20Record
+<http://gbad.archives.gov.on.ca/Department%20Of%20Health%20Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                                                        rico:Record ;
+                                                                               rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Authority%20Record> ;
+                                                                               rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
+                                                                                                   <http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> ;
+                                                                               rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> ;
+                                                                               rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> ;
+                                                                               rico:generalDescription "Source Note: Bishop, Olga. Publications of the Government of Ontario, 1867-1900 (1976). MacTaggart, Hazel I. Publications of the Government of Ontario, 1901-1955 (1964). Canadiana Name Authorities, 1996-12-24." ;
+                                                                               rico:lastModificationDate "2007-06-16"^^xsd:date ;
+                                                                               rdfs:label "Department of Health Authority Record" .
+
+
+###  http://gbad.archives.gov.on.ca/Ontario.%20Central%20Board%20Of%20Health
+<http://gbad.archives.gov.on.ca/Ontario.%20Central%20Board%20Of%20Health> rdf:type owl:NamedIndividual ,
+                                                                                   rico:CorporateBody ;
+                                                                          rdfs:label "Ontario. Central Board of Health" .
+
+
+###  http://gbad.archives.gov.on.ca/Ontario.%20Dept.%20Of%20Health
+<http://gbad.archives.gov.on.ca/Ontario.%20Dept.%20Of%20Health> rdf:type owl:NamedIndividual ,
+                                                                         rico:CorporateBody ;
+                                                                rdfs:label "Ontario. Dept. of Health" .
+
+
+###  http://gbad.archives.gov.on.ca/Provincial%20Board%20Of%20Health%20Of%20Ontario
+<http://gbad.archives.gov.on.ca/Provincial%20Board%20Of%20Health%20Of%20Ontario> rdf:type owl:NamedIndividual ,
+                                                                                          rico:AgentName ,
+                                                                                          rico:CorporateBody ;
+                                                                                 rico:authorizedBy <http://gbad.archives.gov.on.ca/Public%20Health%20Act%2C%20Statutes%20Of%20Ontario%201882%2C%20Chap.%2029> ;
+                                                                                 rico:hasBeginningDate <http://gbad.archives.gov.on.ca/1882> ;
+                                                                                 rico:hasEndDate <http://gbad.archives.gov.on.ca/1924> ;
+                                                                                 rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/Provincial%20Board%20Of%20Health%20Of%20Ontario> ;
+                                                                                 rico:hasOrHadCorporateBodyType <http://gbad.archives.gov.on.ca/B%20Ontario%20Government%20Name> ;
+                                                                                 rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/BA27> ;
+                                                                                 rico:hasSuccessor <http://gbad.archives.gov.on.ca/Ontario.%20Dept.%20Of%20Health> ;
+                                                                                 rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Department%20Of%20Health%20Authority%20Record> ;
+                                                                                 rico:isSuccessorOf <http://gbad.archives.gov.on.ca/Ontario.%20Central%20Board%20Of%20Health> ;
+                                                                                 rico:generalDescription "Function Note: The Provincial Board of Health of Ontario was responsible for promoting and ensuring the general health of the people of the province. This involved the study and use of the vital statistics of the province; conducting sanitary investigations and inquiries regarding causes of disease, especially epidemics; and distributing information to local boards of health." ;
+                                                                                 rico:history "The Provincial Board of Health of Ontario was established on March 10, 1882.  At this time, however, health was still considered primarily a municipal rather than provincial matter, and the Provincial Board was an over-seeing body of the many Local Boards. The Board reported to the Lieutenant Governor (1882-1903); the Provincial Secretary (1904-1918); and to the Department of Labour (1919-1924). The Provincial Board of Health was replaced with the Department of Health in 1924." ;
+                                                                                 rico:normalizedValue "Provincial Board of Health of Ontario" ;
+                                                                                 rdfs:label "Provincial Board of Health of Ontario" .
+
+
+###  http://gbad.archives.gov.on.ca/Public%20Health%20Act%2C%20Statutes%20Of%20Ontario%201882%2C%20Chap.%2029
+<http://gbad.archives.gov.on.ca/Public%20Health%20Act%2C%20Statutes%20Of%20Ontario%201882%2C%20Chap.%2029> rdf:type owl:NamedIndividual ,
+                                                                                                                    rico:Mandate ;
+                                                                                                           rdfs:label "Public Health Act, Statutes of Ontario 1882, Chap. 29" .
+
+
+###  http://gbad.archives.gov.on.ca/R.%20Anger
+<http://gbad.archives.gov.on.ca/R.%20Anger> rdf:type owl:NamedIndividual ,
+                                                     rico:Person ;
+                                            rdfs:label "R. Anger" .
+
+
+###  http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description
+<http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                               rico:Rule ;
+                                                                      rdfs:label "Rules for Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Status%3A%20Approved
+<http://gbad.archives.gov.on.ca/Status%3A%20Approved> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Status: Approved" .
+
+
+###  http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y
+<http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> rdf:type owl:NamedIndividual ,
+                                                             rico:RecordState ;
+                                                    rdfs:label "Web Ready: Y" .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

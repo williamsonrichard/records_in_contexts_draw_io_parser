@@ -1,14 +1,14 @@
-@prefix : <http://gbad.archives.gov.on.ca/> .
+@prefix : <http://gbad.archives.gov.on.ca#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
-@base <http://gbad.archives.gov.on.ca/> .
+@base <http://gbad.archives.gov.on.ca> .
 
-<http://gbad.archives.gov.on.ca/schema/authority#> rdf:type owl:Ontology ;
-                                                    owl:imports <https://www.ica.org/standards/RiC/ontology> .
+<http://gbad.archives.gov.on.ca> rdf:type owl:Ontology ;
+                                  owl:imports <https://www.ica.org/standards/RiC/ontology> .
 
 #################################################################
 #    Datatypes
@@ -23,22 +23,16 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://gbad.archives.gov.on.ca/BA619
-:BA619 rdf:type owl:NamedIndividual ,
-                rico:Identifier ;
-       rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Government%20Of%20Ontario%20Agency%20Code> ;
-       rdfs:label "BA619" .
+<http://gbad.archives.gov.on.ca/BA619> rdf:type owl:NamedIndividual ,
+                                                rico:Identifier ;
+                                       rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Government%20Of%20Ontario%20Agency%20Code> ;
+                                       rdfs:label "BA619" .
 
 
 ###  http://gbad.archives.gov.on.ca/Dale
-:Dale rdf:type owl:NamedIndividual ,
-               rico:Person ;
-      rdfs:label "Dale" .
-
-
-###  http://gbad.archives.gov.on.ca/Investigation
-:Investigation rdf:type owl:NamedIndividual ,
-                        rico:Activity ;
-               rdfs:label "Investigation" .
+<http://gbad.archives.gov.on.ca/Dale> rdf:type owl:NamedIndividual ,
+                                               rico:Person ;
+                                      rdfs:label "Dale" .
 
 
 ###  http://gbad.archives.gov.on.ca/2000
@@ -53,12 +47,6 @@ xsd:date rdf:type rdfs:Datatype .
                                       rdfs:label "2002" .
 
 
-###  http://gbad.archives.gov.on.ca/2007-06-16
-<http://gbad.archives.gov.on.ca/2007-06-16> rdf:type owl:NamedIndividual ,
-                                                     rico:Date ;
-                                            rdfs:label "2007-06-16" .
-
-
 ###  http://gbad.archives.gov.on.ca/Authority%20Record
 <http://gbad.archives.gov.on.ca/Authority%20Record> rdf:type owl:NamedIndividual ,
                                                              rico:DocumentaryFormType ;
@@ -68,8 +56,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://gbad.archives.gov.on.ca/Authority%20Record%20Creation
 <http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> rdf:type owl:NamedIndividual ,
                                                                         rico:Activity ;
-                                                               rico:isOrWasPerformedBy :Dale ;
-                                                               rico:occurredAtDate <http://gbad.archives.gov.on.ca/2007-06-16> ;
+                                                               rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/Dale> ;
                                                                rdfs:label "Authority Record Creation" .
 
 
@@ -112,9 +99,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                      rico:hasEndDate <http://gbad.archives.gov.on.ca/2002> ;
                                                      rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/Walkerton%20Inquiry> ;
                                                      rico:hasOrHadCorporateBodyType <http://gbad.archives.gov.on.ca/B%20Ontario%20Government%20Name> ;
-                                                     rico:hasOrHadIdentifier :BA619 ;
+                                                     rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/BA619> ;
                                                      rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Walkerton%20Inquiry%20Authority%20Record> ;
-                                                     rico:performsOrPerformed :Investigation ;
                                                      rico:generalDescription "Function Note: The Walkerton Inquiry was appointed to investigate the causes of the contamination of Walkerton's drinking water system with E. coli bacteria in May of 2000. This contamination caused the death of seven people and more than 2,300 became ill. The Inquiry was to find out who was responsible for the E. coli outbreak, and if it could have been prevented. The Inquiry was also responsible for making recommendations on how to avoid another outbreak in the future." ;
                                                      rico:history "Commissioner O'Connor divided the Inquiry into two parts, which ran more or less concurrently. The first part dealt exclusively with what happened in Walkerton, and involved extensive public hearings. The second part went beyond Walkerton and involved an investigation into other matters related to the general safety of Ontario's drinking water.The work of the commission resulted in two reports published in 2002, entitled Part One and Part Two: Report of the Walkerton Inquiry. Justice O'Connor made a large number of recommendations related to the following: the protection of the sources of Ontario's drinking water; the need for effective standards and technology for the treatment of water and to monitor its quality; the need for stricter mandatory regulations from municipalities that provide drinking water; and, the need for a strengthened role for the provincial government in regulating and overseeing the safety of Ontario's drinking water." ;
                                                      rico:normalizedValue "Ontario. Walkerton Inquiry" ;
@@ -140,4 +126,4 @@ xsd:date rdf:type rdfs:Datatype .
                                                     rdfs:label "Web Ready: Y" .
 
 
-###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

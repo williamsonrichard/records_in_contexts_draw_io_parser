@@ -1,0 +1,177 @@
+@prefix : <http://gbad.archives.gov.on.ca#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca> .
+
+<http://gbad.archives.gov.on.ca> rdf:type owl:Ontology ;
+                                  owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/Series
+<http://gbad.archives.gov.on.ca/Series> rdf:type owl:NamedIndividual ,
+                                                 rico:RecordSetType ;
+                                        rdfs:label "Series" .
+
+
+###  http://gbad.archives.gov.on.ca/Stabile
+<http://gbad.archives.gov.on.ca/Stabile> rdf:type owl:NamedIndividual ,
+                                                  rico:Person ;
+                                         rdfs:label "Stabile" .
+
+
+###  http://gbad.archives.gov.on.ca/1948
+<http://gbad.archives.gov.on.ca/1948> rdf:type owl:NamedIndividual ,
+                                               rico:Date ;
+                                      rdfs:label "1948" .
+
+
+###  http://gbad.archives.gov.on.ca/1948-1982
+<http://gbad.archives.gov.on.ca/1948-1982> rdf:type owl:NamedIndividual ,
+                                                    rico:Date ;
+                                           rdfs:label "1948-1982" .
+
+
+###  http://gbad.archives.gov.on.ca/1974
+<http://gbad.archives.gov.on.ca/1974> rdf:type owl:NamedIndividual ,
+                                               rico:Date ;
+                                      rdfs:label "1974" .
+
+
+###  http://gbad.archives.gov.on.ca/1982
+<http://gbad.archives.gov.on.ca/1982> rdf:type owl:NamedIndividual ,
+                                               rico:Date ;
+                                      rdfs:label "1982" .
+
+
+###  http://gbad.archives.gov.on.ca/Archival%20Description
+<http://gbad.archives.gov.on.ca/Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                 rico:DocumentaryFormType ;
+                                                        rdfs:label "Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Archival%20Description%20Creation
+<http://gbad.archives.gov.on.ca/Archival%20Description%20Creation> rdf:type owl:NamedIndividual ,
+                                                                            rico:Activity ;
+                                                                   rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/Stabile> ;
+                                                                   rdfs:label "Archival Description Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/Chest%20Disease%20Service
+<http://gbad.archives.gov.on.ca/Chest%20Disease%20Service> rdf:type owl:NamedIndividual ,
+                                                                    rico:CorporateBody ;
+                                                           rdfs:label "Chest Disease Service" .
+
+
+###  http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service
+<http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service> rdf:type owl:NamedIndividual ,
+                                                                                                                   rico:Instantiation ,
+                                                                                                                   rico:RecordSet ,
+                                                                                                                   rico:Title ;
+                                                                                                          rico:hasContentOfType <http://gbad.archives.gov.on.ca/Textual%20Records> ;
+                                                                                                          rico:hasCreationDate <http://gbad.archives.gov.on.ca/1948-1982> ;
+                                                                                                          rico:hasCreator <http://gbad.archives.gov.on.ca/Chest%20Disease%20Service> ,
+                                                                                                                          <http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention> ,
+                                                                                                                          <http://gbad.archives.gov.on.ca/Provenance%20%28ADD47%29INDEXPROV> ;
+                                                                                                          rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/RG%2010-142> ;
+                                                                                                          rico:hasOrHadInstantiation <http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service> ;
+                                                                                                          rico:hasOrHadTitle <http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service> ;
+                                                                                                          rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Series> ;
+                                                                                                          rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service%20Archival%20Description> ;
+                                                                                                          rico:thingIsSourceOfRelation <http://gbad.archives.gov.on.ca/Office%20Of%20Origin%20Relation> ;
+                                                                                                          rico:accruals "No further accruals are expected." ;
+                                                                                                          rico:conditionsOfAccess "Access to these records is governed by the Freedom of Information and Protection of Privacy Act. Requests for access to records 100 years old or less must be submitted in writing to the Information and Privacy Unit of the Archives of Ontario." ;
+                                                                                                          rico:conditionsOfUse "Copyright is held primarily by the Crown. There are no restrictions on reproduction. Permission of the Archives of Ontario is required for publication; submit a Request for Permission to Publish, Exhibit or Broadcast Form." ;
+                                                                                                          rico:generalDescription "Finding Aid Note: No file list is available." ,
+                                                                                                                                  "How to Order: Please contact a Reference Archivist for information about obtaining access to this material." ;
+                                                                                                          rico:history "Records in this series were transferred to the Archives of Ontario by the Ministry of Health." ;
+                                                                                                          rico:instantiationExtent "9.8 metres of textual records (32 Boxes)" ;
+                                                                                                          rico:scopeAndContent """Series consists of records created and maintained by the Chest Disease Service and its predecessor agencies to provide a cumulative record in reviewing, preventing, and treating tuberculosis in Ontario.Records consist of originals of incoming and copies of outgoing correspondence, both inter and intra Ministry, with the federal government, sanatoria, chest clinics, professional associations, other agencies outside the provincial government, and private citizens relating to the prevention and treatment of tuberculosis in Ontario.
+
+Subjects include the following: drugs, chemotheraphy, chest x-ray programs, epidemiology, home care programs, health standards, immigrants and refugees, mass survey x-ray interpretaion, smoking and health education material.
+
+Files are arranged alphabetically by subject.""" ;
+                                                                                                          rdfs:label "Correspondence of the Chief of the Chest Disease Service" .
+
+
+###  http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service%20Archival%20Description
+<http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service%20Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                                                                                            rico:Record ;
+                                                                                                                                   rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Archival%20Description> ;
+                                                                                                                                   rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
+                                                                                                                                                       <http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y> ;
+                                                                                                                                   rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Archival%20Description%20Creation> ;
+                                                                                                                                   rico:lastModificationDate "2012-03-29"^^xsd:date ;
+                                                                                                                                   rdfs:label "Correspondence of the Chief of the Chest Disease Service Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Current%20Reference%20Code
+<http://gbad.archives.gov.on.ca/Current%20Reference%20Code> rdf:type owl:NamedIndividual ,
+                                                                     rico:IdentifierType ;
+                                                            rdfs:label "Current Reference Code" .
+
+
+###  http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention
+<http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention> rdf:type owl:NamedIndividual ,
+                                                                                    rico:CorporateBody ;
+                                                                           rdfs:label "Division of Tuberculosis Prevention" .
+
+
+###  http://gbad.archives.gov.on.ca/Office%20Of%20Origin%20Relation
+<http://gbad.archives.gov.on.ca/Office%20Of%20Origin%20Relation> rdf:type owl:NamedIndividual ,
+                                                                          rico:CreationRelation ;
+                                                                 rico:hasBeginningDate <http://gbad.archives.gov.on.ca/1948> ,
+                                                                                       <http://gbad.archives.gov.on.ca/1974> ;
+                                                                 rico:hasEndDate <http://gbad.archives.gov.on.ca/1974> ,
+                                                                                 <http://gbad.archives.gov.on.ca/1982> ;
+                                                                 rico:relationHasTarget <http://gbad.archives.gov.on.ca/Chest%20Disease%20Service> ,
+                                                                                        <http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention> ;
+                                                                 rdfs:label "Office of Origin Relation" .
+
+
+###  http://gbad.archives.gov.on.ca/Provenance%20%28ADD47%29INDEXPROV
+<http://gbad.archives.gov.on.ca/Provenance%20%28ADD47%29INDEXPROV> rdf:type owl:NamedIndividual ,
+                                                                            rico:Agent ;
+                                                                   rdfs:label "Provenance (ADD47)INDEXPROV" .
+
+
+###  http://gbad.archives.gov.on.ca/RG%2010-142
+<http://gbad.archives.gov.on.ca/RG%2010-142> rdf:type owl:NamedIndividual ,
+                                                      rico:Identifier ;
+                                             rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Current%20Reference%20Code> ;
+                                             rdfs:label "RG 10-142" .
+
+
+###  http://gbad.archives.gov.on.ca/Status%3A%20Approved
+<http://gbad.archives.gov.on.ca/Status%3A%20Approved> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Status: Approved" .
+
+
+###  http://gbad.archives.gov.on.ca/Textual%20Records
+<http://gbad.archives.gov.on.ca/Textual%20Records> rdf:type owl:NamedIndividual ,
+                                                            rico:ContentType ;
+                                                   rdfs:label "Textual records" .
+
+
+###  http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y
+<http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Web Enabled: Y" .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

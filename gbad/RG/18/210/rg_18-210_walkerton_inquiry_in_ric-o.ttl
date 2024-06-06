@@ -1,14 +1,14 @@
-@prefix : <http://gbad.archives.gov.on.ca/> .
+@prefix : <http://gbad.archives.gov.on.ca#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
-@base <http://gbad.archives.gov.on.ca/> .
+@base <http://gbad.archives.gov.on.ca> .
 
-<http://gbad.archives.gov.on.ca/schema/authority#> rdf:type owl:Ontology ;
-                                                    owl:imports <https://www.ica.org/standards/RiC/ontology> .
+<http://gbad.archives.gov.on.ca> rdf:type owl:Ontology ;
+                                  owl:imports <https://www.ica.org/standards/RiC/ontology> .
 
 #################################################################
 #    Datatypes
@@ -23,123 +23,123 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://gbad.archives.gov.on.ca/Bytes
-:Bytes rdf:type owl:NamedIndividual ,
-                rico:UnitOfMeasurement ;
-       rdfs:label "Bytes" .
+<http://gbad.archives.gov.on.ca/Bytes> rdf:type owl:NamedIndividual ,
+                                                rico:UnitOfMeasurement ;
+                                       rdfs:label "Bytes" .
 
 
 ###  http://gbad.archives.gov.on.ca/Commissioner
-:Commissioner rdf:type owl:NamedIndividual ,
-                       rico:Position ;
-              rdfs:label "Commissioner" .
+<http://gbad.archives.gov.on.ca/Commissioner> rdf:type owl:NamedIndividual ,
+                                                       rico:Position ;
+                                              rdfs:label "Commissioner" .
 
 
 ###  http://gbad.archives.gov.on.ca/File
-:File rdf:type owl:NamedIndividual ,
-               rico:RecordSetType ;
-      rdfs:label "File" .
+<http://gbad.archives.gov.on.ca/File> rdf:type owl:NamedIndividual ,
+                                               rico:RecordSetType ;
+                                      rdfs:label "File" .
 
 
 ###  http://gbad.archives.gov.on.ca/Series
-:Series rdf:type owl:NamedIndividual ,
-                 rico:RecordSetType ;
-        rdfs:label "Series" .
+<http://gbad.archives.gov.on.ca/Series> rdf:type owl:NamedIndividual ,
+                                                 rico:RecordSetType ;
+                                        rdfs:label "Series" .
 
 
 ###  http://gbad.archives.gov.on.ca/Sub-series
-:Sub-series rdf:type owl:NamedIndividual ,
-                     rico:RecordSetType ;
-            rdfs:label "Sub-series" .
+<http://gbad.archives.gov.on.ca/Sub-series> rdf:type owl:NamedIndividual ,
+                                                     rico:RecordSetType ;
+                                            rdfs:label "Sub-series" .
 
 
 ###  http://gbad.archives.gov.on.ca/Town
-:Town rdf:type owl:NamedIndividual ,
-               rico:PlaceType ;
-      rdfs:label "Town" .
+<http://gbad.archives.gov.on.ca/Town> rdf:type owl:NamedIndividual ,
+                                               rico:PlaceType ;
+                                      rdfs:label "Town" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-1%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-1%29> rdf:type owl:NamedIndividual ,
                                                               rico:RecordSet ;
                                                      rico:hasOrHadDigitalInstantiation <http://gbad.archives.gov.on.ca/Walkerton%20Inquiry%20Website%20Stored%20Instantiation> ;
-                                                     rico:hasRecordSetType :Sub-series ;
+                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
                                                      rdfs:label "(RG 18-210-1)" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-10%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-10%29> rdf:type owl:NamedIndividual ,
                                                                rico:RecordSet ;
-                                                      rico:hasRecordSetType :Sub-series ;
+                                                      rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
                                                       rdfs:label "(RG 18-210-10)" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-11%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-11%29> rdf:type owl:NamedIndividual ,
                                                                rico:RecordSet ;
-                                                      rico:hasRecordSetType :Sub-series ;
+                                                      rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
                                                       rdfs:label "(RG 18-210-11)" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-12%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-12%29> rdf:type owl:NamedIndividual ,
                                                                rico:RecordSet ;
-                                                      rico:hasRecordSetType :Sub-series ;
+                                                      rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
                                                       rdfs:label "(RG 18-210-12)" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-2%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-2%29> rdf:type owl:NamedIndividual ,
                                                               rico:RecordSet ;
-                                                     rico:hasRecordSetType :Sub-series ;
+                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
                                                      rdfs:label "(RG 18-210-2)" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-3%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-3%29> rdf:type owl:NamedIndividual ,
                                                               rico:RecordSet ;
-                                                     rico:hasRecordSetType :Sub-series ;
+                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
                                                      rdfs:label "(RG 18-210-3)" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-4%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-4%29> rdf:type owl:NamedIndividual ,
                                                               rico:RecordSet ;
-                                                     rico:hasRecordSetType :Sub-series ;
+                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
                                                      rdfs:label "(RG 18-210-4)" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-5%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-5%29> rdf:type owl:NamedIndividual ,
                                                               rico:RecordSet ;
-                                                     rico:hasRecordSetType :Sub-series ;
+                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
                                                      rdfs:label "(RG 18-210-5)" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-6%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-6%29> rdf:type owl:NamedIndividual ,
                                                               rico:RecordSet ;
-                                                     rico:hasRecordSetType :Sub-series ;
+                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
                                                      rdfs:label "(RG 18-210-6)" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-7%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-7%29> rdf:type owl:NamedIndividual ,
                                                               rico:RecordSet ;
-                                                     rico:hasRecordSetType :Sub-series ;
+                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
                                                      rdfs:label "(RG 18-210-7)" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-8%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-8%29> rdf:type owl:NamedIndividual ,
                                                               rico:RecordSet ;
-                                                     rico:hasRecordSetType :Sub-series ;
+                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
                                                      rdfs:label "(RG 18-210-8)" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-9%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-9%29> rdf:type owl:NamedIndividual ,
                                                               rico:RecordSet ;
-                                                     rico:hasRecordSetType :Sub-series ;
+                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
                                                      rico:includesOrIncluded <http://gbad.archives.gov.on.ca/%28RG%2018-210-9-1%29> ,
                                                                              <http://gbad.archives.gov.on.ca/%28RG%2018-210-9-2%29> ;
                                                      rdfs:label "(RG 18-210-9)" .
@@ -148,14 +148,14 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-9-1%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-9-1%29> rdf:type owl:NamedIndividual ,
                                                                 rico:RecordSet ;
-                                                       rico:hasRecordSetType :File ;
+                                                       rico:hasRecordSetType <http://gbad.archives.gov.on.ca/File> ;
                                                        rdfs:label "(RG 18-210-9-1)" .
 
 
 ###  http://gbad.archives.gov.on.ca/%28RG%2018-210-9-2%29
 <http://gbad.archives.gov.on.ca/%28RG%2018-210-9-2%29> rdf:type owl:NamedIndividual ,
                                                                 rico:RecordSet ;
-                                                       rico:hasRecordSetType :File ;
+                                                       rico:hasRecordSetType <http://gbad.archives.gov.on.ca/File> ;
                                                        rdfs:label "(RG 18-210-9-2)" .
 
 
@@ -178,7 +178,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                                    rico:AgentName ,
                                                                    rico:Person ;
                                                           rico:authorizedBy <http://gbad.archives.gov.on.ca/Order%20In%20Council%201170%2F2000> ;
-                                                          rico:occupiesOrOccupied :Commissioner ;
+                                                          rico:occupiesOrOccupied <http://gbad.archives.gov.on.ca/Commissioner> ;
                                                           rdfs:label "Dennis R. O'Connor" .
 
 
@@ -241,7 +241,7 @@ xsd:date rdf:type rdfs:Datatype .
 <http://gbad.archives.gov.on.ca/Order%20In%20Council%201170%2F2000> rdf:type owl:NamedIndividual ,
                                                                              rico:Mandate ;
                                                                     rico:hasOrHadMandateType <http://gbad.archives.gov.on.ca/Order%20In%20Council> ;
-                                                                    rico:regulatesOrRegulated :Commissioner ;
+                                                                    rico:regulatesOrRegulated <http://gbad.archives.gov.on.ca/Commissioner> ;
                                                                     rdfs:label "Order in Council 1170/2000" .
 
 
@@ -250,7 +250,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                                        rico:RecordSet ;
                                                                                               rico:hasCreator <http://gbad.archives.gov.on.ca/Walkerton%20Inquiry%20%28BA619%29> ;
                                                                                               rico:hasOrHadHolder <http://gbad.archives.gov.on.ca/Archives%20Of%20Ontario%20%28ON00009%29> ;
-                                                                                              rico:hasRecordSetType :Series ;
+                                                                                              rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Series> ;
                                                                                               rico:includesOrIncluded <http://gbad.archives.gov.on.ca/%28RG%2018-210-1%29> ,
                                                                                                                       <http://gbad.archives.gov.on.ca/%28RG%2018-210-10%29> ,
                                                                                                                       <http://gbad.archives.gov.on.ca/%28RG%2018-210-11%29> ,
@@ -297,7 +297,7 @@ The records in this series have been arranged into sub-series that broadly refle
 <http://gbad.archives.gov.on.ca/Walkerton%20Inquiry%20Website%20Stored%20Instantiation%20File%20Size> rdf:type owl:NamedIndividual ,
                                                                                                                rico:InstantiationExtent ;
                                                                                                       rico:hasExtentType <http://gbad.archives.gov.on.ca/File%20Size> ;
-                                                                                                      rico:hasUnitOfMeasurement :Bytes ;
+                                                                                                      rico:hasUnitOfMeasurement <http://gbad.archives.gov.on.ca/Bytes> ;
                                                                                                       rico:quantity 57200000 ;
                                                                                                       rdfs:label "Walkerton Inquiry Website Stored Instantiation File Size" .
 
@@ -305,8 +305,8 @@ The records in this series have been arranged into sub-series that broadly refle
 ###  http://gbad.archives.gov.on.ca/Walkerton%2C%20Ontario
 <http://gbad.archives.gov.on.ca/Walkerton%2C%20Ontario> rdf:type owl:NamedIndividual ,
                                                                  rico:PlaceName ;
-                                                        rico:hasOrHadPlaceType :Town ;
+                                                        rico:hasOrHadPlaceType <http://gbad.archives.gov.on.ca/Town> ;
                                                         rdfs:label "Walkerton, Ontario" .
 
 
-###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

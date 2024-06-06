@@ -43,6 +43,9 @@ output_file_dir=$(dirname "$input_file")
 output_file_name=$(basename "$input_file" .drawio | tr '[:upper:]' '[:lower:]' | tr ' ' '_' | tr -d "()[]/,:.\"'").owl
 output_file="$output_file_dir/$output_file_name"
 
+# Construct the TTL file path
+ttl_file="$output_file_dir/$(basename "$output_file" .owl).ttl"
+
 # Function to properly escape and quote arguments
 quote_argument() {
     local quoted_arg
@@ -59,7 +62,7 @@ done
 # Check if optional_commands is empty and set it to a particular value if empty
 if [ ${#optional_commands[@]} -eq 0 ]; then
     optional_commands="-m url \
-                       -o http://gbad.archives.gov.on.ca/schema/authority# \
+                       -o http://gbad.archives.gov.on.ca \
                        -p http://gbad.archives.gov.on.ca/"
 fi
 
@@ -73,4 +76,17 @@ echo "Executing command: $python_command"
 eval $python_command
 
 # Print the output message
-echo "Output saved to: $output_file"
+echo "Manchester OWL Output saved to: $output_file"
+
+# Convert the OWL file to TTL
+robot_sh_path="./robot.sh"
+conversion_command="$robot_sh_path convert -i \"$output_file\" -o \"$ttl_file\""
+
+# Print the conversion command
+echo "Executing command: $conversion_command"
+
+# Run the conversion command
+eval $conversion_command
+
+# Print the output message
+echo "TTL Output saved to: $ttl_file"

@@ -1,7 +1,7 @@
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
 Prefix: : <http://gbad.archives.gov.on.ca/>
-Ontology: <http://gbad.archives.gov.on.ca/schema/authority#>
+Ontology: <http://gbad.archives.gov.on.ca>
   Import: <https://www.ica.org/standards/RiC/ontology>
 
 Individual: Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service
