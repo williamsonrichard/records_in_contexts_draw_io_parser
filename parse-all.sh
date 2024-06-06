@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# originally generated with Gemini Free Version on the date this was committed,
+# with modifications
+
+# initial prompt:
+# i have a particular shell bash script that has the following usage
+#
+# "Usage: $0 <input_drawio_file> [optional commands for the parser]"
+#
+# it also outputs some output file in the same dir as the input file. I want to modify the script so that it if not given any arguments, it would look in the folder where the script is stored as well as any nested folders for *.drawio files and pass them as <input_drawio_file> iteratively
+
 # Path to your original script (replace with the actual path)
 ORIGINAL_SCRIPT_PATH="./parse.sh"
 
