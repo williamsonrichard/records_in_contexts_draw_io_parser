@@ -1,0 +1,304 @@
+
+general_authority_to_ric-o_model_v02_-_26_april_2024.ttl
+File
+what follows is a correctly formatted rml turtle file. you will extend it using the relationships described in the attached ontology while preserving the correct syntax.
+
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://example.org/rules/> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix auth: <http://gbad.archives.gov.on.ca/schema/authority#> .
+
+### Logical Source Definition
+:TriplesMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "gbad/mapping/source/authority_head_6.csv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter ","
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ].
+
+### Subject Map Definition
+:TriplesMap rr:subjectMap [
+  rr:template "http://gbad.archives.gov.on.ca/{SISN}"
+].
+
+### Predicate Object Maps
+
+# Type Mapping
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdf:type;
+  rr:objectMap [
+    rr:constant rico:CorporateBody
+  ]
+].
+
+# Mapping for Agent Name
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasOrHadAgentName;
+  rr:objectMap [
+    rml:reference "NAME";
+    rr:constant auth:NaturalName
+  ]
+].
+
+# Mapping for General Description
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:generalDescription;
+  rr:objectMap [
+    rml:reference "BRIEFBIO";
+    rr:constant auth:GeneralDescription
+  ]
+].
+
+# Mapping for Identifier Type
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasIdentifierType;
+  rr:objectMap [
+    rr:constant auth:AgentIdentifier
+  ]
+].
+
+# Mapping for Label
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "HEADING";
+    rr:constant auth:NaturalName
+  ]
+].
+
+# Mapping for Last Modification Date
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:lastModificationDate;
+  rr:objectMap [
+    rml:reference "DATEEX";
+    rr:constant auth:DateOfModification
+  ]
+].
+
+# Mapping for Documentary Form Type
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDocumentaryFormType;
+  rr:objectMap [
+    rr:constant auth:AuthorityRecord
+  ]
+].
+
+# Mapping for Predecessor
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasPredecessor;
+  rr:objectMap [
+    rml:reference "PRED";
+    rr:constant auth:PredecessorAgencies
+  ]
+].
+
+# Mapping for Successor
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasSuccessor;
+  rr:objectMap [
+    rml:reference "SUC";
+    rr:constant auth:SuccessorAgencies
+  ]
+].
+
+# Mapping for Rules
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasRecordCreator;
+  rr:objectMap [
+    rml:reference "RULES";
+    rr:constant auth:Rules
+  ]
+].
+
+# Mapping for Status
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:status;
+  rr:objectMap [
+    rml:reference "STATUSA";
+    rr:constant auth:Status
+  ]
+].
+
+# Mapping for Website
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDigitalDocument;
+  rr:objectMap [
+    rml:reference "WEBA";
+    rr:constant auth:WebReady
+  ]
+].
+
+ChatGPT
+The ontology file defines a series of individuals and their relationships, primarily focusing on authority records and their mapping to the RiC-O ontology. To extend your RML mapping with additional relationships from the ontology, I'll integrate these mappings while preserving the correct syntax.
+
+Here's the extended RML Turtle file based on the provided ontology:
+
+turtle
+Copy code
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://www.w3.org/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://example.org/rules/> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix auth: <http://gbad.archives.gov.on.ca/schema/authority#> .
+
+### Logical Source Definition
+:TriplesMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "gbad/mapping/source/authority_head_6.csv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter ","
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ].
+
+### Subject Map Definition
+:TriplesMap rr:subjectMap [
+  rr:template "http://gbad.archives.gov.on.ca/{SISN}"
+].
+
+### Predicate Object Maps
+
+# Type Mapping
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdf:type;
+  rr:objectMap [
+    rr:constant rico:CorporateBody
+  ]
+].
+
+# Mapping for Agent Name
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasOrHadAgentName;
+  rr:objectMap [
+    rml:reference "NAME";
+    rr:constant auth:NaturalName
+  ]
+].
+
+# Mapping for General Description
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:generalDescription;
+  rr:objectMap [
+    rml:reference "BRIEFBIO";
+    rr:constant auth:GeneralDescription
+  ]
+].
+
+# Mapping for Identifier Type
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasIdentifierType;
+  rr:objectMap [
+    rr:constant auth:AgentIdentifier
+  ]
+].
+
+# Mapping for Label
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "HEADING";
+    rr:constant auth:NaturalName
+  ]
+].
+
+# Mapping for Last Modification Date
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:lastModificationDate;
+  rr:objectMap [
+    rml:reference "DATEEX";
+    rr:constant auth:DateOfModification
+  ]
+].
+
+# Mapping for Documentary Form Type
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDocumentaryFormType;
+  rr:objectMap [
+    rr:constant auth:AuthorityRecord
+  ]
+].
+
+# Mapping for Predecessor
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasPredecessor;
+  rr:objectMap [
+    rml:reference "PRED";
+    rr:constant auth:PredecessorAgencies
+  ]
+].
+
+# Mapping for Successor
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasSuccessor;
+  rr:objectMap [
+    rml:reference "SUC";
+    rr:constant auth:SuccessorAgencies
+  ]
+].
+
+# Mapping for Rules
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasRecordCreator;
+  rr:objectMap [
+    rml:reference "RULES";
+    rr:constant auth:Rules
+  ]
+].
+
+# Mapping for Status
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:status;
+  rr:objectMap [
+    rml:reference "STATUSA";
+    rr:constant auth:Status
+  ]
+].
+
+# Mapping for Website
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDigitalDocument;
+  rr:objectMap [
+    rml:reference "WEBA";
+    rr:constant auth:WebReady
+  ]
+].
+
+### Additional Mappings from Ontology
+
+# Mapping for Agency Reference Code
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasIdentifier;
+  rr:objectMap [
+    rml:reference "AUTH01";
+    rr:constant auth:AgencyReferenceCode
+  ]
+].
+
+# Mapping for Archivist
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasCreator;
+  rr:objectMap [
+    rml:reference "AUTH02";
+    rr:constant auth:Archivist
+  ]
+].
+This extension includes additional mappings for Agency Reference Code and Archivist based on the ontology content provided. Feel free to add more mappings as necessary using a similar structure. ​

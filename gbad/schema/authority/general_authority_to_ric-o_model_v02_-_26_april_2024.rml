@@ -133,3 +133,23 @@
     rr:constant auth:WebReady
   ]
 ].
+
+### Additional Mappings from Ontology
+
+# Mapping for Agency Reference Code
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasIdentifier;
+  rr:objectMap [
+    rml:reference "REFA";
+    rr:constant auth:AgencyReferenceCode
+  ]
+].
+
+# Mapping for Archivist
+#:TriplesMap rr:predicateObjectMap [
+#  rr:predicate rico:hasCreator;
+#  rr:objectMap [
+#    rml:reference "ARCHAU";
+#    rr:constant auth:Archivist
+#  ]
+#].

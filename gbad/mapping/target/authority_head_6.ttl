@@ -11,6 +11,7 @@
 <http://gbad.archives.gov.on.ca/4> a rico:CorporateBody;
   rico:hasDigitalDocument <http://example.comY>;
   rico:hasDocumentaryFormType auth:AuthorityRecord;
+  rico:hasIdentifier <http://example.comAA108>;
   rico:hasIdentifierType auth:AgentIdentifier;
   rico:lastModificationDate <http://example.com-1985> .
 
