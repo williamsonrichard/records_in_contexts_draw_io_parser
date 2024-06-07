@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
-@base <http://gbad.archives.gov.on.ca/schema/description-listings#> .
+@base <http://gbad.archives.gov.on.ca/schema/description-listings> .
 
 <http://gbad.archives.gov.on.ca/schema/description-listings> rdf:type owl:Ontology ;
                                                               owl:imports <https://www.ica.org/standards/RiC/ontology> .
@@ -13,12 +13,6 @@
 #################################################################
 #    Individuals
 #################################################################
-
-###  http://gbad.archives.gov.on.ca/schema/description-listings#Barcode
-:Barcode rdf:type owl:NamedIndividual ,
-                  rico:IdentifierType ;
-         rdfs:label "Barcode" .
-
 
 ###  http://gbad.archives.gov.on.ca/schema/description-listings#Accumulation%20Relation
 <http://gbad.archives.gov.on.ca/schema/description-listings#Accumulation%20Relation> rdf:type owl:NamedIndividual ,
@@ -64,36 +58,6 @@
                                                                                           rdfs:label "Archivist (ADD05)ARCHD" .
 
 
-###  http://gbad.archives.gov.on.ca/schema/description-listings#Associated%20Material%20%28ADD08%29ASSMAT
-<http://gbad.archives.gov.on.ca/schema/description-listings#Associated%20Material%20%28ADD08%29ASSMAT> rdf:type owl:NamedIndividual ,
-                                                                                                                rico:RecordSet ;
-                                                                                                       rdfs:label "Associated Material (ADD08)ASSMAT" .
-
-
-###  http://gbad.archives.gov.on.ca/schema/description-listings#Availability%20Of%20OtherFormats%20%28ADD09%29%20AVAIL
-<http://gbad.archives.gov.on.ca/schema/description-listings#Availability%20Of%20OtherFormats%20%28ADD09%29%20AVAIL> rdf:type owl:NamedIndividual ,
-                                                                                                                             rico:Instantiation ;
-                                                                                                                    rico:instantiationExtent "Extent [part of Physical Description (ADD46) PHDESC]" ;
-                                                                                                                    rdfs:label "Availability of OtherFormats (ADD09) AVAIL" .
-
-
-###  http://gbad.archives.gov.on.ca/schema/description-listings#Barcode%20%28ADD10%29BARCODE
-<http://gbad.archives.gov.on.ca/schema/description-listings#Barcode%20%28ADD10%29BARCODE> rdf:type owl:NamedIndividual ,
-                                                                                                   rico:Identifier ;
-                                                                                          rico:hasIdentifierType :Barcode ;
-                                                                                          rico:generalDescription "Barcode Note (ADD12)BNOTE" ;
-                                                                                          rdfs:label "Barcode (ADD10)BARCODE" .
-
-
-###  http://gbad.archives.gov.on.ca/schema/description-listings#Controlling%20Agency%20Relation
-<http://gbad.archives.gov.on.ca/schema/description-listings#Controlling%20Agency%20Relation> rdf:type owl:NamedIndividual ,
-                                                                                                      rico:AgentControlRelation ;
-                                                                                             rico:hasBeginningDate <http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Control> ;
-                                                                                             rico:hasEndDate <http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Control> ;
-                                                                                             rico:relationHasTarget <http://gbad.archives.gov.on.ca/schema/description-listings#Secondary%20Agency%20%28ADD42%29OFFICEC> ;
-                                                                                             rdfs:label "Controlling Agency Relation" .
-
-
 ###  http://gbad.archives.gov.on.ca/schema/description-listings#Creator%20%28ADD15%29CREATOR
 <http://gbad.archives.gov.on.ca/schema/description-listings#Creator%20%28ADD15%29CREATOR> rdf:type owl:NamedIndividual ,
                                                                                                    rico:Agent ;
@@ -124,12 +88,6 @@
                                                                                                        rdfs:label "Date of Creation (ADD42)DATEOFF" .
 
 
-###  http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Control
-<http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Control> rdf:type owl:NamedIndividual ,
-                                                                                           rico:Date ;
-                                                                                  rdfs:label "Dates of Control" .
-
-
 ###  http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Accumulation%20%28ADD18%29DATEACM
 <http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Accumulation%20%28ADD18%29DATEACM> rdf:type owl:NamedIndividual ,
                                                                                                                      rico:Date ;
@@ -157,7 +115,7 @@
 
 ###  http://gbad.archives.gov.on.ca/schema/description-listings#Form%20%28ADD26%29GMD
 <http://gbad.archives.gov.on.ca/schema/description-listings#Form%20%28ADD26%29GMD> rdf:type owl:NamedIndividual ,
-                                                                                            rico:DocumentaryFormType ;
+                                                                                            rico:ContentType ;
                                                                                    rdfs:label "Form (ADD26)GMD" .
 
 
@@ -180,6 +138,12 @@
                                                                                               rdfs:label "Geographic (ADD28)INDEXGEO" .
 
 
+###  http://gbad.archives.gov.on.ca/schema/description-listings#Higher%20Office%20%28A%20Or%20B%29%20OR%20Lower%20Office%20%28C%29%20%28ADD42%29OFFICEAB%20Or%20OFFICEC
+<http://gbad.archives.gov.on.ca/schema/description-listings#Higher%20Office%20%28A%20Or%20B%29%20OR%20Lower%20Office%20%28C%29%20%28ADD42%29OFFICEAB%20Or%20OFFICEC> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                              rico:CorporateBody ;
+                                                                                                                                                                     rdfs:label "Higher Office (A or B) OR Lower Office (C) (ADD42)OFFICEAB or OFFICEC" .
+
+
 ###  http://gbad.archives.gov.on.ca/schema/description-listings#Level%20%28ADD36%29LEVELDES
 <http://gbad.archives.gov.on.ca/schema/description-listings#Level%20%28ADD36%29LEVELDES> rdf:type owl:NamedIndividual ,
                                                                                                   rico:RecordSetType ;
@@ -197,26 +161,8 @@
                                                                                                       rico:CreationRelation ;
                                                                                              rico:hasBeginningDate <http://gbad.archives.gov.on.ca/schema/description-listings#Date%20Of%20Creation%20%28ADD42%29DATEOFF> ;
                                                                                              rico:hasEndDate <http://gbad.archives.gov.on.ca/schema/description-listings#Date%20Of%20Creation%20%28ADD42%29DATEOFF> ;
-                                                                                             rico:relationHasTarget <http://gbad.archives.gov.on.ca/schema/description-listings#Secondary%20Agency%20%28ADD42%29OFFICEC> ;
+                                                                                             rico:relationHasTarget <http://gbad.archives.gov.on.ca/schema/description-listings#Higher%20Office%20%28A%20Or%20B%29%20OR%20Lower%20Office%20%28C%29%20%28ADD42%29OFFICEAB%20Or%20OFFICEC> ;
                                                                                              rdfs:label "Office of Origin Relation" .
-
-
-###  http://gbad.archives.gov.on.ca/schema/description-listings#Physical%20Description%20%28ADD46%29PHDESC
-<http://gbad.archives.gov.on.ca/schema/description-listings#Physical%20Description%20%28ADD46%29PHDESC> rdf:type owl:NamedIndividual ,
-                                                                                                                 rico:Instantiation ,
-                                                                                                                 rico:RecordResourceExtent ;
-                                                                                                        rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/schema/description-listings#Barcode%20%28ADD10%29BARCODE> ;
-                                                                                                        rico:generalDescription "How to Order (ADD31)HOWTO" ;
-                                                                                                        rico:instantiationExtent "Extent [part of Physical Description (ADD46) PHDESC]" ;
-                                                                                                        rico:physicalCharacteristicsNote "Physical Condition (ADD45)PHYSCO" ;
-                                                                                                        rdfs:label "Physical Description (ADD46)PHDESC" .
-
-
-###  http://gbad.archives.gov.on.ca/schema/description-listings#Primary%20Agency%20%28ADD42%29OFFICEAB
-<http://gbad.archives.gov.on.ca/schema/description-listings#Primary%20Agency%20%28ADD42%29OFFICEAB> rdf:type owl:NamedIndividual ,
-                                                                                                             rico:Agent ;
-                                                                                                    rico:thingIsSourceOfRelation <http://gbad.archives.gov.on.ca/schema/description-listings#Controlling%20Agency%20Relation> ;
-                                                                                                    rdfs:label "Primary Agency (ADD42)OFFICEAB" .
 
 
 ###  http://gbad.archives.gov.on.ca/schema/description-listings#Provenance%20%28ADD47%29INDEXPROV
@@ -232,19 +178,6 @@
                                                                                                 rdfs:label "Reference Code (ADD48)REFD" .
 
 
-###  http://gbad.archives.gov.on.ca/schema/description-listings#Related%20Material%20%28ADD49%29RELMAT
-<http://gbad.archives.gov.on.ca/schema/description-listings#Related%20Material%20%28ADD49%29RELMAT> rdf:type owl:NamedIndividual ,
-                                                                                                             rico:RecordSet ;
-                                                                                                    rdfs:label "Related Material (ADD49)RELMAT" .
-
-
-###  http://gbad.archives.gov.on.ca/schema/description-listings#Secondary%20Agency%20%28ADD42%29OFFICEC
-<http://gbad.archives.gov.on.ca/schema/description-listings#Secondary%20Agency%20%28ADD42%29OFFICEC> rdf:type owl:NamedIndividual ,
-                                                                                                              rico:Agent ;
-                                                                                                     rico:hasOrHadController <http://gbad.archives.gov.on.ca/schema/description-listings#Primary%20Agency%20%28ADD42%29OFFICEAB> ;
-                                                                                                     rdfs:label "Secondary Agency (ADD42)OFFICEC" .
-
-
 ###  http://gbad.archives.gov.on.ca/schema/description-listings#Status%20%28ADD54%29STATUSD
 <http://gbad.archives.gov.on.ca/schema/description-listings#Status%20%28ADD54%29STATUSD> rdf:type owl:NamedIndividual ,
                                                                                                   rico:RecordState ;
@@ -253,20 +186,18 @@
 
 ###  http://gbad.archives.gov.on.ca/schema/description-listings#Title%20%28ADD56%29TITLE
 <http://gbad.archives.gov.on.ca/schema/description-listings#Title%20%28ADD56%29TITLE> rdf:type owl:NamedIndividual ,
+                                                                                               rico:Instantiation ,
                                                                                                rico:RecordSet ,
                                                                                                rico:Title ;
                                                                                       rico:hasAccumulator <http://gbad.archives.gov.on.ca/schema/description-listings#Provenance%20%28ADD47%29INDEXPROV> ;
+                                                                                      rico:hasContentOfType <http://gbad.archives.gov.on.ca/schema/description-listings#Form%20%28ADD26%29GMD> ;
                                                                                       rico:hasCreationDate <http://gbad.archives.gov.on.ca/schema/description-listings#Dates%20Of%20Creation%20%28ADD19%29DATECR> ;
                                                                                       rico:hasCreator <http://gbad.archives.gov.on.ca/schema/description-listings#Creator%20%28ADD15%29CREATOR> ,
-                                                                                                      <http://gbad.archives.gov.on.ca/schema/description-listings#Provenance%20%28ADD47%29INDEXPROV> ,
-                                                                                                      <http://gbad.archives.gov.on.ca/schema/description-listings#Secondary%20Agency%20%28ADD42%29OFFICEC> ;
-                                                                                      rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/schema/description-listings#Form%20%28ADD26%29GMD> ;
-                                                                                      rico:hasGeneticLinkToRecordResource <http://gbad.archives.gov.on.ca/schema/description-listings#Associated%20Material%20%28ADD08%29ASSMAT> ,
-                                                                                                                          <http://gbad.archives.gov.on.ca/schema/description-listings#Related%20Material%20%28ADD49%29RELMAT> ;
+                                                                                                      <http://gbad.archives.gov.on.ca/schema/description-listings#Higher%20Office%20%28A%20Or%20B%29%20OR%20Lower%20Office%20%28C%29%20%28ADD42%29OFFICEAB%20Or%20OFFICEC> ,
+                                                                                                      <http://gbad.archives.gov.on.ca/schema/description-listings#Provenance%20%28ADD47%29INDEXPROV> ;
                                                                                       rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/schema/description-listings#Former%20Codes%20%28ADD27%29FCODES> ,
                                                                                                               <http://gbad.archives.gov.on.ca/schema/description-listings#Reference%20Code%20%28ADD48%29REFD> ;
-                                                                                      rico:hasOrHadInstantiation <http://gbad.archives.gov.on.ca/schema/description-listings#Availability%20Of%20OtherFormats%20%28ADD09%29%20AVAIL> ,
-                                                                                                                 <http://gbad.archives.gov.on.ca/schema/description-listings#Physical%20Description%20%28ADD46%29PHDESC> ;
+                                                                                      rico:hasOrHadInstantiation <http://gbad.archives.gov.on.ca/schema/description-listings#Title%20%28ADD56%29TITLE> ;
                                                                                       rico:hasOrHadSubject <http://gbad.archives.gov.on.ca/schema/description-listings#Names%20As%20Subjects%20%28ADD40%29INDEXSUB> ;
                                                                                       rico:hasOrHadTitle <http://gbad.archives.gov.on.ca/schema/description-listings#Title%20%28ADD56%29TITLE> ;
                                                                                       rico:hasRecordSetType <http://gbad.archives.gov.on.ca/schema/description-listings#Level%20%28ADD36%29LEVELDES> ;
@@ -279,11 +210,16 @@
                                                                                       rico:conditionsOfAccess "Access Restrictions (ADD01)RESTRTX / REST" ;
                                                                                       rico:conditionsOfUse "Terms Governing Use (ADD55)TGU" ;
                                                                                       rico:generalDescription "Archivist's Comment (ADD06)CMTD" ,
+                                                                                                              "Associated Material (ADD08)ASSMAT" ,
+                                                                                                              "Availability of Other Formats (ADD09)AVAIL" ,
                                                                                                               "Finding Aid Note (ADD24)FINDAID" ,
-                                                                                                              "Notes (ADD41)NOTES" ;
+                                                                                                              "How to Order (ADD31)HOWTO" ,
+                                                                                                              "Notes (ADD41)NOTES" ,
+                                                                                                              "Related Material (ADD49)RELMAT" ;
                                                                                       rico:history "Custodial History (ADD17)CUSTOD" ,
                                                                                                    "Immediate Source of Acquisition (ADD33)ISA" ;
-                                                                                      rico:recordResourceExtent "Physical Description (ADD46)PHDESC" ;
+                                                                                      rico:instantiationExtent "Physical Description (ADD46) PHDESC" ;
+                                                                                      rico:physicalCharacteristicsNote "Physical Condition (ADD45)PHYSCO" ;
                                                                                       rico:scopeAndContent "Scope and Content (ADD51)SCOPE" ;
                                                                                       rdfs:label "Title (ADD56)TITLE" .
 
@@ -294,4 +230,4 @@
                                                                                                           rdfs:label "Web Enabled (ADD57)WEBD / WEBL" .
 
 
-###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi
