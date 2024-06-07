@@ -13,7 +13,7 @@
   rml:logicalSource [
     rml:source [
       a csvw:Table;
-      csvw:url "gbad/schema/authority/authority_head_6.csv";
+      csvw:url "gbad/mapping/source/authority_head_6.csv";
       csvw:dialect [
         a csvw:Dialect;
         csvw:delimiter ","
