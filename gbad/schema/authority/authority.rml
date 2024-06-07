@@ -3,8 +3,10 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix csvw: <http://www.w3.org/ns/csvw#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix : <http://example.org/rules/> .
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix auth: <http://gbad.archives.gov.on.ca/schema/authority#> .
 
 ### Logical Source Definition
 :TriplesMap a rr:TriplesMap;
@@ -39,7 +41,8 @@
 :TriplesMap rr:predicateObjectMap [
   rr:predicate rico:hasOrHadAgentName;
   rr:objectMap [
-    rml:reference "NAME"
+    rml:reference "NAME";
+    rr:constant auth:NaturalName
   ]
 ].
 
@@ -47,7 +50,8 @@
 :TriplesMap rr:predicateObjectMap [
   rr:predicate rico:generalDescription;
   rr:objectMap [
-    rml:reference "BRIEFBIO"
+    rml:reference "BRIEFBIO";
+    rr:constant auth:GeneralDescription
   ]
 ].
 
@@ -55,7 +59,7 @@
 :TriplesMap rr:predicateObjectMap [
   rr:predicate rico:hasIdentifierType;
   rr:objectMap [
-    rr:constant <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier>
+    rr:constant auth:AgentIdentifier
   ]
 ].
 
@@ -63,7 +67,8 @@
 :TriplesMap rr:predicateObjectMap [
   rr:predicate rdfs:label;
   rr:objectMap [
-    rml:reference "HEADING"
+    rml:reference "HEADING";
+    rr:constant auth:NaturalName
   ]
 ].
 
@@ -71,7 +76,8 @@
 :TriplesMap rr:predicateObjectMap [
   rr:predicate rico:lastModificationDate;
   rr:objectMap [
-    rml:reference "DATEEX"
+    rml:reference "DATEEX";
+    rr:constant auth:DateOfModification
   ]
 ].
 
@@ -79,7 +85,7 @@
 :TriplesMap rr:predicateObjectMap [
   rr:predicate rico:hasDocumentaryFormType;
   rr:objectMap [
-    rr:constant <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record>
+    rr:constant auth:AuthorityRecord
   ]
 ].
 
@@ -87,7 +93,8 @@
 :TriplesMap rr:predicateObjectMap [
   rr:predicate rico:hasPredecessor;
   rr:objectMap [
-    rml:reference "PRED"
+    rml:reference "PRED";
+    rr:constant auth:PredecessorAgencies
   ]
 ].
 
@@ -95,7 +102,8 @@
 :TriplesMap rr:predicateObjectMap [
   rr:predicate rico:hasSuccessor;
   rr:objectMap [
-    rml:reference "SUC"
+    rml:reference "SUC";
+    rr:constant auth:SuccessorAgencies
   ]
 ].
 
@@ -103,7 +111,8 @@
 :TriplesMap rr:predicateObjectMap [
   rr:predicate rico:hasRecordCreator;
   rr:objectMap [
-    rml:reference "RULES"
+    rml:reference "RULES";
+    rr:constant auth:Rules
   ]
 ].
 
@@ -111,7 +120,8 @@
 :TriplesMap rr:predicateObjectMap [
   rr:predicate rico:status;
   rr:objectMap [
-    rml:reference "STATUSA"
+    rml:reference "STATUSA";
+    rr:constant auth:Status
   ]
 ].
 
@@ -119,6 +129,7 @@
 :TriplesMap rr:predicateObjectMap [
   rr:predicate rico:hasDigitalDocument;
   rr:objectMap [
-    rml:reference "WEBA"
+    rml:reference "WEBA";
+    rr:constant auth:WebReady
   ]
 ].

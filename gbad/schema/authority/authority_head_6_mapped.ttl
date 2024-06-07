@@ -1,52 +1,39 @@
 @prefix : <http://example.org/rules/> .
+@prefix auth: <http://gbad.archives.gov.on.ca/schema/authority#> .
 @prefix csvw: <http://www.w3.org/ns/csvw#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
 @prefix rml: <http://semweb.mmlab.be/ns/rml#> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 
 <http://gbad.archives.gov.on.ca/4> a rico:CorporateBody;
-  <http://www.w3.org/2000/01/rdf-schema#label> "Ontario. Minister Responsible for Native Affairs";
-  rico:hasDigitalDocument "Y";
-  rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record>;
-  rico:hasIdentifierType <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier>;
-  rico:hasOrHadAgentName "Minister Responsible for Native Affairs";
-  rico:hasRecordCreator "Rules for Archival Description";
-  rico:lastModificationDate "-1985" .
+  rico:hasDigitalDocument <http://example.comY>;
+  rico:hasDocumentaryFormType auth:AuthorityRecord;
+  rico:hasIdentifierType auth:AgentIdentifier;
+  rico:lastModificationDate <http://example.com-1985> .
 
 <http://gbad.archives.gov.on.ca/5624> a rico:CorporateBody;
-  <http://www.w3.org/2000/01/rdf-schema#label> "Multilingual Television (Toronto) Limited";
-  rico:generalDescription "Multilingual Television Limited is a Toronto, Ontario-based television station specializing in multicultural programming, and owns and operates television station CFMT.";
-  rico:hasDigitalDocument "Y";
-  rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record>;
-  rico:hasIdentifierType <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier>;
-  rico:hasRecordCreator "Rules for Archival Description";
-  rico:status "Review" .
+  rico:hasDigitalDocument <http://example.comY>;
+  rico:hasDocumentaryFormType auth:AuthorityRecord;
+  rico:hasIdentifierType auth:AgentIdentifier;
+  rico:status <http://example.comReview> .
 
 <http://gbad.archives.gov.on.ca/5625> a rico:CorporateBody;
-  <http://www.w3.org/2000/01/rdf-schema#label> "CHIN Radio/TV International";
-  rico:generalDescription "CHIN Radio/Television International, Inc. produces multicultural programming for broadcast in Toronto and surrounding areas.";
-  rico:hasDigitalDocument "Y";
-  rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record>;
-  rico:hasIdentifierType <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier>;
-  rico:hasRecordCreator "Rules for Archival Description";
-  rico:status "Approved" .
+  rico:hasDigitalDocument <http://example.comY>;
+  rico:hasDocumentaryFormType auth:AuthorityRecord;
+  rico:hasIdentifierType auth:AgentIdentifier;
+  rico:status <http://example.comApproved> .
 
 <http://gbad.archives.gov.on.ca/5626> a rico:CorporateBody;
-  <http://www.w3.org/2000/01/rdf-schema#label> "Canada Packers";
-  rico:generalDescription "Canada Packers, Inc. (now Maple Leaf Foods, Inc.) was a Toronto-based meat packing and processing company.";
-  rico:hasDigitalDocument "Y";
-  rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record>;
-  rico:hasIdentifierType <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier>;
-  rico:hasRecordCreator "Rules for Archival Description";
-  rico:status "Approved" .
+  rico:hasDigitalDocument <http://example.comY>;
+  rico:hasDocumentaryFormType auth:AuthorityRecord;
+  rico:hasIdentifierType auth:AgentIdentifier;
+  rico:status <http://example.comApproved> .
 
 <http://gbad.archives.gov.on.ca/5655> a rico:CorporateBody;
-  <http://www.w3.org/2000/01/rdf-schema#label> "Canadian Pacific Railway Company";
-  rico:generalDescription "The Canadian Pacific Railway Company was responsible for the construction of the Canadian Pacific Railway.";
-  rico:hasDigitalDocument "Y";
-  rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record>;
-  rico:hasIdentifierType <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier>;
-  rico:hasRecordCreator "Rules for Archival Description";
-  rico:status "Approved" .
+  rico:hasDigitalDocument <http://example.comY>;
+  rico:hasDocumentaryFormType auth:AuthorityRecord;
+  rico:hasIdentifierType auth:AgentIdentifier;
+  rico:status <http://example.comApproved> .
