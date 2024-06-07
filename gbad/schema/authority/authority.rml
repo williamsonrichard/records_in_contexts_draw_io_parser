@@ -1,0 +1,124 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+
+### Logical Source Definition
+:TriplesMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "gbad/schema/authority/authority_head_6.csv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter ","
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ].
+
+### Subject Map Definition
+:TriplesMap rr:subjectMap [
+  rr:template "http://gbad.archives.gov.on.ca/{SISN}"
+].
+
+### Predicate Object Maps
+
+# Type Mapping
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdf:type;
+  rr:objectMap [
+    rr:constant rico:CorporateBody
+  ]
+].
+
+# Mapping for Agent Name
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasOrHadAgentName;
+  rr:objectMap [
+    rml:reference "NAME"
+  ]
+].
+
+# Mapping for General Description
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:generalDescription;
+  rr:objectMap [
+    rml:reference "BRIEFBIO"
+  ]
+].
+
+# Mapping for Identifier Type
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasIdentifierType;
+  rr:objectMap [
+    rr:constant <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier>
+  ]
+].
+
+# Mapping for Label
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "HEADING"
+  ]
+].
+
+# Mapping for Last Modification Date
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:lastModificationDate;
+  rr:objectMap [
+    rml:reference "DATEEX"
+  ]
+].
+
+# Mapping for Documentary Form Type
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDocumentaryFormType;
+  rr:objectMap [
+    rr:constant <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record>
+  ]
+].
+
+# Mapping for Predecessor
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasPredecessor;
+  rr:objectMap [
+    rml:reference "PRED"
+  ]
+].
+
+# Mapping for Successor
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasSuccessor;
+  rr:objectMap [
+    rml:reference "SUC"
+  ]
+].
+
+# Mapping for Rules
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasRecordCreator;
+  rr:objectMap [
+    rml:reference "RULES"
+  ]
+].
+
+# Mapping for Status
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:status;
+  rr:objectMap [
+    rml:reference "STATUSA"
+  ]
+].
+
+# Mapping for Website
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDigitalDocument;
+  rr:objectMap [
+    rml:reference "WEBA"
+  ]
+].

@@ -1,4 +1,4 @@
 untracked/
 catalog-v001.xml
-robot.jar
+*.jar
 robot.sh

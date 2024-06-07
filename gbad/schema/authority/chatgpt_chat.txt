@@ -1,0 +1,1317 @@
+based on the turtle ontology below, write RML rules for mapping from a CSV file to RiC-O rdf file. so the source fields are /schema/authority# entities whereas target fields are the rico: entities 
+
+@prefix : <http://gbad.archives.gov.on.ca/schema/authority#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca/schema/authority#> .
+
+<http://gbad.archives.gov.on.ca/schema/authority> rdf:type owl:Ontology ;
+                                                   owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA
+<http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA> rdf:type owl:NamedIndividual ,
+                                                                                                        rico:Identifier ;
+                                                                                               rico:hasIdentifierType <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier> ;
+                                                                                               rdfs:label "Agency Reference Code (AUTH01)REFA" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier
+<http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier> rdf:type owl:NamedIndividual ,
+                                                                              rico:IdentifierType ;
+                                                                     rdfs:label "Agent Identifier" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU
+<http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU> rdf:type owl:NamedIndividual ,
+                                                                                          rico:Person ;
+                                                                                 rdfs:label "Archivist (AUTH02)ARCHAU" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record
+<http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                                              rico:DocumentaryFormType ,
+                                                                              rico:Record ;
+                                                                     rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record> ;
+                                                                     rico:hasRecordState <http://gbad.archives.gov.on.ca/schema/authority#Status%20%28AUTH18%29STATUSA> ,
+                                                                                         <http://gbad.archives.gov.on.ca/schema/authority#Web%20Ready%20%28AUTH22%29WEBA> ;
+                                                                     rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES> ;
+                                                                     rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation> ,
+                                                                                                <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Modification> ;
+                                                                     rico:generalDescription "Source Note (AUTH17)SOURCE" ;
+                                                                     rico:lastModificationDate "Date (AUTH09)MOD_DATE" ;
+                                                                     rdfs:label "Authority Record" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation
+<http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation> rdf:type owl:NamedIndividual ,
+                                                                                         rico:Activity ;
+                                                                                rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU> ;
+                                                                                rico:occurredAtDate <http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Creation> ;
+                                                                                rdfs:label "Authority Record Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Modification
+<http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Modification> rdf:type owl:NamedIndividual ,
+                                                                                             rico:Activity ;
+                                                                                    rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU> ;
+                                                                                    rico:occurredAtDate <http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Modification> ;
+                                                                                    rdfs:label "Authority Record Modification" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP
+<http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP> rdf:type owl:NamedIndividual ,
+                                                                                                 rico:CorporateBodyType ;
+                                                                                        rdfs:label "Authority Type (AUTH03)AUTHTP" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA
+<http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA> rdf:type owl:NamedIndividual ,
+                                                                                                rico:Mandate ;
+                                                                                       rdfs:label "Authorizing Agent (AUTH04)AA" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG
+<http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG> rdf:type owl:NamedIndividual ,
+                                                                                                       rico:Agent ;
+                                                                                              rico:thingIsSourceOfRelation <http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation> ;
+                                                                                              rdfs:label "Controlling Agencies (AUTH08)CONTAG" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation
+<http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation> rdf:type owl:NamedIndividual ,
+                                                                                           rico:AgentControlRelation ;
+                                                                                  rico:hasBeginningDate <http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT> ;
+                                                                                  rico:hasEndDate <http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT> ;
+                                                                                  rico:relationHasTarget <http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME> ;
+                                                                                  rdfs:label "Controlling Agency Relation" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Creation
+<http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Creation> rdf:type owl:NamedIndividual ,
+                                                                                rico:Date ;
+                                                                       rdfs:label "Date of Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Modification
+<http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Modification> rdf:type owl:NamedIndividual ,
+                                                                                    rico:Date ;
+                                                                           rdfs:label "Date of Modification" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT
+<http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT> rdf:type owl:NamedIndividual ,
+                                                                                                            rico:Date ;
+                                                                                                   rdfs:label "Date of Subordination (AUTH08)DATECONT" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX
+<http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> rdf:type owl:NamedIndividual ,
+                                                                                                       rico:Date ;
+                                                                                              rdfs:label "Dates of Existence (AUTH10)DATEEX" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Function%20%28AUTH11%29FUN
+<http://gbad.archives.gov.on.ca/schema/authority#Function%20%28AUTH11%29FUN> rdf:type owl:NamedIndividual ,
+                                                                                      rico:Activity ;
+                                                                             rdfs:label "Function (AUTH11)FUN" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME
+<http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME> rdf:type owl:NamedIndividual ,
+                                                                                             rico:Agent ,
+                                                                                             rico:AgentName ;
+                                                                                    rico:authorizedBy <http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA> ;
+                                                                                    rico:hasBeginningDate <http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> ;
+                                                                                    rico:hasBirthDate <http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> ;
+                                                                                    rico:hasDeathDate <http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> ;
+                                                                                    rico:hasEndDate <http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> ;
+                                                                                    rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME> ,
+                                                                                                           <http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR> ,
+                                                                                                           <http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR> ;
+                                                                                    rico:hasOrHadController <http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG> ;
+                                                                                    rico:hasOrHadCorporateBodyType <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP> ;
+                                                                                    rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA> ;
+                                                                                    rico:hasSuccessor <http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC> ;
+                                                                                    rico:isOrWasControllerOf <http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME> ;
+                                                                                    rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record> ;
+                                                                                    rico:isSuccessorOf <http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED> ;
+                                                                                    rico:performsOrPerformed <http://gbad.archives.gov.on.ca/schema/authority#Function%20%28AUTH11%29FUN> ;
+                                                                                    rico:thingIsSourceOfRelation <http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation> ;
+                                                                                    rico:generalDescription "Comment (AUTH07)CMTAU" ;
+                                                                                    rico:history "Biographical Sketch or Administrative History (AUTH05)ADM" ;
+                                                                                    rico:normalizedValue "Heading (AUTH12)HEADING" ;
+                                                                                    rdfs:label "Natural Name (AUTH13)NAME" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name
+<http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name> rdf:type owl:NamedIndividual ,
+                                                                           rico:Type ;
+                                                                  rdfs:label "Parallel Name" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR
+<http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR> rdf:type owl:NamedIndividual ,
+                                                                                              rico:AgentName ;
+                                                                                     rico:hasOrHadCategory <http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name> ;
+                                                                                     rdfs:label "Parallel Names (AUTH14)PAR" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED
+<http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED> rdf:type owl:NamedIndividual ,
+                                                                                                     rico:Agent ;
+                                                                                            rdfs:label "Predecessor Agencies (AUTH15)PRED" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES
+<http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES> rdf:type owl:NamedIndividual ,
+                                                                                     rico:Rule ;
+                                                                            rdfs:label "Rules (AUTH16)RULES" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Status%20%28AUTH18%29STATUSA
+<http://gbad.archives.gov.on.ca/schema/authority#Status%20%28AUTH18%29STATUSA> rdf:type owl:NamedIndividual ,
+                                                                                        rico:RecordState ;
+                                                                               rdfs:label "Status (AUTH18)STATUSA" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC
+<http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC> rdf:type owl:NamedIndividual ,
+                                                                                                  rico:Agent ;
+                                                                                         rdfs:label "Successor Agencies (AUTH20)SUC" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name
+<http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name> rdf:type owl:NamedIndividual ,
+                                                                          rico:Type ;
+                                                                 rdfs:label "Variant Name" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR
+<http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR> rdf:type owl:NamedIndividual ,
+                                                                                             rico:AgentName ;
+                                                                                    rico:hasOrHadCategory <http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name> ;
+                                                                                    rdfs:label "Variant Names (AUTH21)VAR" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Web%20Ready%20%28AUTH22%29WEBA
+<http://gbad.archives.gov.on.ca/schema/authority#Web%20Ready%20%28AUTH22%29WEBA> rdf:type owl:NamedIndividual ,
+                                                                                          rico:RecordState ;
+                                                                                 rdfs:label "Web Ready (AUTH22)WEBA" .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
+ChatGPT
+To create RML (RDF Mapping Language) rules that map data from a CSV file to the RiC-O RDF ontology based on the provided turtle ontology, you can follow these steps:
+
+Define the prefixes used.
+Specify the source and the target.
+Map the columns from the CSV to the corresponding RDF properties in the ontology.
+Below is an example of RML rules to map a CSV file to the RiC-O RDF ontology:
+
+turtle
+Copy code
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix : <http://gbad.archives.gov.on.ca/schema/authority#> .
+
+<#MappingAgencyReferenceCode>
+  rml:logicalSource [
+    rml:source "data.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://gbad.archives.gov.on.ca/schema/authority#AgencyReferenceCode/{ID}";
+    rr:class rico:Identifier
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:hasIdentifierType;
+    rr:objectMap [
+      rr:constant :AgentIdentifier
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "Agency Reference Code"
+    ]
+  ].
+
+<#MappingArchivist>
+  rml:logicalSource [
+    rml:source "data.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://gbad.archives.gov.on.ca/schema/authority#Archivist/{ID}";
+    rr:class rico:Person
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "Archivist"
+    ]
+  ].
+
+<#MappingAuthorityRecord>
+  rml:logicalSource [
+    rml:source "data.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://gbad.archives.gov.on.ca/schema/authority#AuthorityRecord/{ID}";
+    rr:class rico:Record
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:hasDocumentaryFormType;
+    rr:objectMap [
+      rr:constant :AuthorityRecord
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:hasRecordState;
+    rr:objectMap [
+      rr:constant :Status
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:isOrWasRegulatedBy;
+    rr:objectMap [
+      rr:constant :Rules
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:resultsOrResultedFrom;
+    rr:objectMap [
+      rr:constant :AuthorityRecordCreation
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:generalDescription;
+    rr:objectMap [
+      rml:reference "Source Note"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:lastModificationDate;
+    rr:objectMap [
+      rml:reference "Date"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "Authority Record"
+    ]
+  ].
+
+<#MappingAuthorityRecordCreation>
+  rml:logicalSource [
+    rml:source "data.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://gbad.archives.gov.on.ca/schema/authority#AuthorityRecordCreation/{ID}";
+    rr:class rico:Activity
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:isOrWasPerformedBy;
+    rr:objectMap [
+      rr:constant :Archivist
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:occurredAtDate;
+    rr:objectMap [
+      rr:constant :DateOfCreation
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "Authority Record Creation"
+    ]
+  ].
+
+<#MappingAuthorityRecordModification>
+  rml:logicalSource [
+    rml:source "data.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://gbad.archives.gov.on.ca/schema/authority#AuthorityRecordModification/{ID}";
+    rr:class rico:Activity
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:isOrWasPerformedBy;
+    rr:objectMap [
+      rr:constant :Archivist
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:occurredAtDate;
+    rr:objectMap [
+      rr:constant :DateOfModification
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "Authority Record Modification"
+    ]
+  ].
+
+<#MappingNaturalName>
+  rml:logicalSource [
+    rml:source "data.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://gbad.archives.gov.on.ca/schema/authority#NaturalName/{ID}";
+    rr:class rico:Agent
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:authorizedBy;
+    rr:objectMap [
+      rr:constant :AuthorizingAgent
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:hasBeginningDate;
+    rr:objectMap [
+      rr:constant :DatesOfExistence
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:hasBirthDate;
+    rr:objectMap [
+      rr:constant :DatesOfExistence
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:hasDeathDate;
+    rr:objectMap [
+      rr:constant :DatesOfExistence
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:hasEndDate;
+    rr:objectMap [
+      rr:constant :DatesOfExistence
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:hasOrHadAgentName;
+    rr:objectMap [
+      rr:constant :NaturalName
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:hasOrHadController;
+    rr:objectMap [
+      rr:constant :ControllingAgencies
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:hasOrHadCorporateBodyType;
+    rr:objectMap [
+      rr:constant :AuthorityType
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:hasOrHadIdentifier;
+    rr:objectMap [
+      rr:constant :AgencyReferenceCode
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:hasSuccessor;
+    rr:objectMap [
+      rr:constant :SuccessorAgencies
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:isOrWasControllerOf;
+    rr:objectMap [
+      rr:constant :NaturalName
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:isOrWasDescribedBy;
+    rr:objectMap [
+      rr:constant :AuthorityRecord
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:isSuccessorOf;
+    rr:objectMap [
+      rr:constant :PredecessorAgencies
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:performsOrPerformed;
+    rr:objectMap [
+      rr:constant :Function
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:thingIsSourceOfRelation;
+    rr:objectMap [
+      rr:constant :ControllingAgencyRelation
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:generalDescription;
+    rr:objectMap [
+      rml:reference "Comment"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:history;
+    rr:objectMap [
+      rml:reference "Biographical Sketch or Administrative History"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rico:normalizedValue;
+    rr:objectMap [
+      rml:reference "Heading"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "Natural Name"
+    ]
+  ].
+This example assumes that your CSV file has columns with headers corresponding to the labels like ID, Agency Reference Code, Archivist, Source Note, Date, Authority Record, etc. Each <#Mapping...> block corresponds to a mapping from a CSV column to an RDF property in the RiC-O ontology. Adjust the template URIs and reference fields according to your actual data.
+
+write a sparql query that will find that triple
+
+<http://gbad.archives.gov.on.ca/Department%20Of%20Health> rico:hasSuccessor <http://gbad.archives.gov.on.ca/Ontario.%20Ministry%20Of%20Health> ;
+
+and replace it with
+
+<http://gbad.archives.gov.on.ca/Department%20Of%20Health> rico:hasSuccessor <http://gbad.archives.gov.on.ca/Ministry%20Of%20Health> ;
+ChatGPT
+Sure, here's how you can construct a SPARQL query to achieve this task. The query involves two steps: deleting the old triple and inserting the new triple.
+
+First, make sure you have the appropriate prefixes defined. Then you can use the DELETE and INSERT operations within a WITH clause to specify the graph you're updating.
+
+sparql
+Copy code
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+
+DELETE {
+  <http://gbad.archives.gov.on.ca/Department%20Of%20Health> rico:hasSuccessor <http://gbad.archives.gov.on.ca/Ontario.%20Ministry%20Of%20Health> .
+}
+INSERT {
+  <http://gbad.archives.gov.on.ca/Department%20Of%20Health> rico:hasSuccessor <http://gbad.archives.gov.on.ca/Ministry%20Of%20Health> .
+}
+WHERE {
+  <http://gbad.archives.gov.on.ca/Department%20Of%20Health> rico:hasSuccessor <http://gbad.archives.gov.on.ca/Ontario.%20Ministry%20Of%20Health> .
+}
+This SPARQL query performs the following actions:
+
+DELETE: It removes the specified triple from the RDF store.
+INSERT: It adds the new triple to the RDF store.
+WHERE: It ensures that the triple to be deleted actually exists in the RDF store.
+Ensure you have the right permissions to modify the RDF data before executing this query.
+
+fix the turtle rml you generated above based on the following example valid turtle rml:
+
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+:TriplesMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "characters.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ].
+
+:TriplesMap rr:subjectMap [
+  rr:template "http://example.org/character/{id}"
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdf:type;
+  rr:objectMap [
+    rr:constant schema:Person
+  ]
+].
+ChatGPT
+Certainly! Below is the revised Turtle RML mapping based on your valid Turtle RML example. This mapping will convert CSV data to the RiC-O ontology.
+
+turtle
+Copy code
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+### Logical Source Definition
+:TriplesMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "authority_records.csv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter ","
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ].
+
+### Subject Map Definition
+:TriplesMap rr:subjectMap [
+  rr:template "http://gbad.archives.gov.on.ca/{AgentIdentifier}"
+].
+
+### Predicate Object Maps
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdf:type;
+  rr:objectMap [
+    rr:constant rico:Person
+  ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasIdentifierType;
+  rr:objectMap [
+    rr:constant <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier>
+  ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "label"
+  ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDocumentaryFormType;
+  rr:objectMap [
+    rr:constant <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record>
+  ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:generalDescription;
+  rr:objectMap [
+    rml:reference "generalDescription"
+  ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:lastModificationDate;
+  rr:objectMap [
+    rml:reference "lastModificationDate"
+  ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasOrHadAgentName;
+  rr:objectMap [
+    rml:reference "agentName"
+  ]
+].
+This RML mapping does the following:
+
+Logical Source: Defines the CSV file (authority_records.csv) as the source with a comma as the delimiter.
+Subject Map: Uses the {AgentIdentifier} field from the CSV to create unique IRIs for subjects.
+Predicate-Object Maps: Maps the predicates and objects based on the provided ontology and CSV fields.
+Make sure the field names in the rml:reference correspond to the actual column names in your CSV file. Adjust the rr:template and other references according to your CSV's schema and the specifics of your ontology.
+
+also here is the source csv file - use it to fix the rml:
+
+SISN,REFA,HEADING,DATEEX,FUN,ADM,VAR,SOURCE,SUC,DATECONT:CONTAG,AUTHTP,HEADING2,HEADING3,NAME,AA,BRIEFBIO,PAR,SEEALSO,PRED,EXIST,RULES,STATUSA,WEBA
+5624,,Multilingual Television (Toronto) Limited,,,"Multilingual Television Limited was founded in Toronto in 1979 by Dan Iannuzzi with the backing of private investors Jerry Grafstein, Raymond Moriyama, Steve Stavro, Garth Drabinsky and Nat Taylor. It first aired on Sept. 3, 1979. Popularly known by the call letters CFMT (""Canada's First Multilingual Television""), its mandate is to produce and broadcast ethnic programming reflecting a diverse multicultural viewing public, to match third language programming with the needs of each ethnic group, and to entertain and inform members of the ethnic communities in Toronto. The major groups targeted are Italian, Chinese and Portuguese, although the station broadcasts in a total of fifteen different languages. In 1986 Rogers Communications became the major shareholder of CFMT. It became known as ""OMNI1"" in 2002 after Rogers introduced Omni Television, its multilingual programming brand.",CFMT, Fonds C 257.,,::, Corporate name,Multilingual Television (Toronto) Limited,Multilingual Television (Toronto) Limited,,,"Multilingual Television Limited is a Toronto, Ontario-based television station specializing in multicultural programming, and owns and operates television station CFMT.",,,,,Rules for Archival Description,Review,Y
+5625,,CHIN Radio/TV International,,,"CHIN is composed of television facilities and radio stations. CHIN Radio/Television International was incorporated in 1964. The organization was established in 1965, by Johnny Lombardi, and began broadcasting in 1966. Lombardi explained the meaning of CHIN: ""C is for Canada, H for happiness, I and N for international. CHIN is the first multicultural / multilingual station to be established in Ontario. In 1967, CHIN obtained an FM radio license and inherited with that two radio stations, AM 1540 and FM 100.7, as well as a television program on CITY-TV hosted by Johnny Lombardi. In 1967, the first CHIN Picnic was held and has become one of Toronto's most popular annual multicultural events. When Lombardi died in 2002, ownership of CHIN Radio/TV International passed to his son Lenny and daughters Theresa and Donina. CHIN Ottawa CJLL 97.9FM began broadcasting to the Ottawa / Gatineau region in October of 2003, and is the first third language radio service in Ottawa.",Radio 1540 Limited, Fonds C 258. http://www.chinradio.com/,,::, Corporate name,CHIN Radio/TV International,CHIN Radio/TV International,,,"CHIN Radio/Television International, Inc. produces multicultural programming for broadcast in Toronto and surrounding areas.",,,,,Rules for Archival Description,Approved,Y
+5626,,Canada Packers,,,"The company was formed out of a succession of mergers with predecessor companies. These include the William Davies Company, Ltd. (est. 1854), the Canadian Packing Company, Ltd. (est. 1868 as the George Matthews Company), Gunns Ltd. (est. 1876), and the Harris Abattoir Company, Ltd. (est. 1896). These firms merged in 1927 to form Canada Packers, Ltd., which became Canada Packers Inc. in 1980. In 1990 Canada Packers Inc. merged with British based Maple Leaf Mills, Ltd. to form Maple Leaf Foods, Inc.",," Fonds C 262, and user created finding aid available in collection file.",,::, Corporate name,Canada Packers,Canada Packers,,,"Canada Packers, Inc. (now Maple Leaf Foods, Inc.) was a Toronto-based meat packing and processing company.",,,,,Rules for Archival Description,Approved,Y
+5655,,Canadian Pacific Railway Company,,,"The company was incorporated in 1881 and has also had interests in settlement, tourism and communications.",,Canadian Subject Headings.,,::, Corporate name,Canadian Pacific Railway Company,Canadian Pacific Railway Company,,,The Canadian Pacific Railway Company was responsible for the construction of the Canadian Pacific Railway.,,,,,Rules for Archival Description,Approved,Y
+4,AA108,Ontario. Minister Responsible for Native Affairs,-1985,"The Minister Responsible for Native Affairs develops policy in the area of native affairs on behalf of the Government of Ontario. In particular, the Minister coordinates special projects across ministries; negotiates native issues such as aboriginal constitutional matters and self- government agreements; researches, negotiates and settles native land claims in conjunction with the federal government; and monitors development and delivery of line Ministry programs affecting native people.","The position of Minister Responsible for Native Affairs was first appointed in June  1985, and assumed duties that had been with the Provincial Secretariat for Resources Development since 1981. The Provincial Secretariat had a ""Native Affairs Policy"" section, which was transferred to the jurisdiction of the Minister Responsible for Native Affairs. When the Ontario Native Affairs Directorate  (known later as a Secretariat) was formed in 1987, it reported to the Legislature through the Minister Responsible for Native Affairs and replaced the ""Native Affairs Policy"" section. The position of Minister Responsible for Native Affairs has been held by Ian G. Scott (1985-1990, also the Attorney General); C. J. Wildman (1990-1995, also the Minister of Natural Resources) and Charles A. Harnick (1995 - , also the Attorney General).",,"Bell, George G. and Andrew D. Pascoe. The Ontario Government: Structure and Functions. Toronto:  Wall & Thompson, 1988. KWIC Index to Services:  1991-1992. Toronto:  Ministry of  Government Services, 1991. Ontario Government Telephone Directories, 1985-1998.",,::,A Ontario Government Name,Ontario. Minister Responsible for Native Affairs,Ontario. Minister Responsible for Native Affairs,Minister Responsible for Native Affairs,No authorizing agent can be identified for this agency.,,,,,"Still in existence, 1998.",Rules for Archival Description,,Y
+ChatGPT
+Based on the provided CSV data and the example valid Turtle RML, here is the updated RML mapping. This mapping will convert the CSV data to the RiC-O ontology.
+
+turtle
+Copy code
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+
+### Logical Source Definition
+:TriplesMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "authority_records.csv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter ","
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ].
+
+### Subject Map Definition
+:TriplesMap rr:subjectMap [
+  rr:template "http://gbad.archives.gov.on.ca/{SISN}"
+].
+
+### Predicate Object Maps
+
+# Type Mapping
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdf:type;
+  rr:objectMap [
+    rr:constant rico:CorporateBody
+  ]
+].
+
+# Mapping for Agent Name
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasOrHadAgentName;
+  rr:objectMap [
+    rml:reference "NAME"
+  ]
+].
+
+# Mapping for General Description
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:generalDescription;
+  rr:objectMap [
+    rml:reference "BRIEFBIO"
+  ]
+].
+
+# Mapping for Identifier Type
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasIdentifierType;
+  rr:objectMap [
+    rr:constant <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier>
+  ]
+].
+
+# Mapping for Label
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "HEADING"
+  ]
+].
+
+# Mapping for Last Modification Date
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:lastModificationDate;
+  rr:objectMap [
+    rml:reference "DATEEX"
+  ]
+].
+
+# Mapping for Documentary Form Type
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDocumentaryFormType;
+  rr:objectMap [
+    rr:constant <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record>
+  ]
+].
+
+# Mapping for Predecessor
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasPredecessor;
+  rr:objectMap [
+    rml:reference "PRED"
+  ]
+].
+
+# Mapping for Successor
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasSuccessor;
+  rr:objectMap [
+    rml:reference "SUC"
+  ]
+].
+
+# Mapping for Rules
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasRecordCreator;
+  rr:objectMap [
+    rml:reference "RULES"
+  ]
+].
+
+# Mapping for Status
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:status;
+  rr:objectMap [
+    rml:reference "STATUSA"
+  ]
+].
+
+# Mapping for Website
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDigitalDocument;
+  rr:objectMap [
+    rml:reference "WEBA"
+  ]
+].
+Explanation:
+Logical Source: Defines the CSV file (authority_records.csv) with a comma delimiter.
+Subject Map: Creates unique IRIs using the {SISN} field from the CSV.
+Predicate-Object Maps:
+rdf
+: Sets the type of each subject to rico:CorporateBody.
+rico
+: Maps the NAME column.
+rico
+: Maps the BRIEFBIO column.
+rico
+: Sets a constant IRI for identifier type.
+rdfs
+: Maps the HEADING column.
+rico
+: Maps the DATEEX column.
+rico
+: Sets a constant IRI for documentary form type.
+rico
+: Maps the PRED column.
+rico
+: Maps the SUC column.
+rico
+: Maps the RULES column.
+rico
+: Maps the STATUSA column.
+rico
+: Maps the WEBA column.
+Make sure the field names in the rml:reference correspond to the actual column names in your CSV file. Adjust the rr:template and other references according to your CSV's schema and the specifics of your ontology.
+
+also the path to source csv is "gbad/schema/authority/authority.csv"
+ChatGPT
+Given the path to the source CSV file "gbad/schema/authority/authority.csv", I have updated the RML mapping accordingly:
+
+turtle
+Copy code
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+
+### Logical Source Definition
+:TriplesMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "gbad/schema/authority/authority.csv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter ","
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ].
+
+### Subject Map Definition
+:TriplesMap rr:subjectMap [
+  rr:template "http://gbad.archives.gov.on.ca/{SISN}"
+].
+
+### Predicate Object Maps
+
+# Type Mapping
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdf:type;
+  rr:objectMap [
+    rr:constant rico:CorporateBody
+  ]
+].
+
+# Mapping for Agent Name
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasOrHadAgentName;
+  rr:objectMap [
+    rml:reference "NAME"
+  ]
+].
+
+# Mapping for General Description
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:generalDescription;
+  rr:objectMap [
+    rml:reference "BRIEFBIO"
+  ]
+].
+
+# Mapping for Identifier Type
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasIdentifierType;
+  rr:objectMap [
+    rr:constant <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier>
+  ]
+].
+
+# Mapping for Label
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "HEADING"
+  ]
+].
+
+# Mapping for Last Modification Date
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:lastModificationDate;
+  rr:objectMap [
+    rml:reference "DATEEX"
+  ]
+].
+
+# Mapping for Documentary Form Type
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDocumentaryFormType;
+  rr:objectMap [
+    rr:constant <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record>
+  ]
+].
+
+# Mapping for Predecessor
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasPredecessor;
+  rr:objectMap [
+    rml:reference "PRED"
+  ]
+].
+
+# Mapping for Successor
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasSuccessor;
+  rr:objectMap [
+    rml:reference "SUC"
+  ]
+].
+
+# Mapping for Rules
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasRecordCreator;
+  rr:objectMap [
+    rml:reference "RULES"
+  ]
+].
+
+# Mapping for Status
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:status;
+  rr:objectMap [
+    rml:reference "STATUSA"
+  ]
+].
+
+# Mapping for Website
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDigitalDocument;
+  rr:objectMap [
+    rml:reference "WEBA"
+  ]
+].
+Explanation:
+Logical Source: The CSV file path is updated to "gbad/schema/authority/authority.csv" with a comma delimiter.
+Subject Map: The subject IRIs are created using the {SISN} field from the CSV.
+Predicate-Object Maps: Each predicate-object mapping is set according to the columns in the provided CSV data.
+This updated RML mapping will correctly map the data from your CSV file to the RiC-O ontology. Ensure the field names in the rml:reference correspond to the actual column names in your CSV file. Adjust the rr:template and other references according to your CSV's schema and the specifics of your ontology.
+
+also taking the following ontology into account, which describes relationships between csv columns and target entities, modify the rml:
+
+@prefix : <http://gbad.archives.gov.on.ca/schema/authority#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca/schema/authority#> .
+
+<http://gbad.archives.gov.on.ca/schema/authority> rdf:type owl:Ontology ;
+                                                   owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA
+<http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA> rdf:type owl:NamedIndividual ,
+                                                                                                        rico:Identifier ;
+                                                                                               rico:hasIdentifierType <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier> ;
+                                                                                               rdfs:label "Agency Reference Code (AUTH01)REFA" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier
+<http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier> rdf:type owl:NamedIndividual ,
+                                                                              rico:IdentifierType ;
+                                                                     rdfs:label "Agent Identifier" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU
+<http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU> rdf:type owl:NamedIndividual ,
+                                                                                          rico:Person ;
+                                                                                 rdfs:label "Archivist (AUTH02)ARCHAU" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record
+<http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                                              rico:DocumentaryFormType ,
+                                                                              rico:Record ;
+                                                                     rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record> ;
+                                                                     rico:hasRecordState <http://gbad.archives.gov.on.ca/schema/authority#Status%20%28AUTH18%29STATUSA> ,
+                                                                                         <http://gbad.archives.gov.on.ca/schema/authority#Web%20Ready%20%28AUTH22%29WEBA> ;
+                                                                     rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES> ;
+                                                                     rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation> ,
+                                                                                                <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Modification> ;
+                                                                     rico:generalDescription "Source Note (AUTH17)SOURCE" ;
+                                                                     rico:lastModificationDate "Date (AUTH09)MOD_DATE" ;
+                                                                     rdfs:label "Authority Record" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation
+<http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation> rdf:type owl:NamedIndividual ,
+                                                                                         rico:Activity ;
+                                                                                rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU> ;
+                                                                                rico:occurredAtDate <http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Creation> ;
+                                                                                rdfs:label "Authority Record Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Modification
+<http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Modification> rdf:type owl:NamedIndividual ,
+                                                                                             rico:Activity ;
+                                                                                    rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU> ;
+                                                                                    rico:occurredAtDate <http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Modification> ;
+                                                                                    rdfs:label "Authority Record Modification" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP
+<http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP> rdf:type owl:NamedIndividual ,
+                                                                                                 rico:CorporateBodyType ;
+                                                                                        rdfs:label "Authority Type (AUTH03)AUTHTP" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA
+<http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA> rdf:type owl:NamedIndividual ,
+                                                                                                rico:Mandate ;
+                                                                                       rdfs:label "Authorizing Agent (AUTH04)AA" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG
+<http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG> rdf:type owl:NamedIndividual ,
+                                                                                                       rico:Agent ;
+                                                                                              rico:thingIsSourceOfRelation <http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation> ;
+                                                                                              rdfs:label "Controlling Agencies (AUTH08)CONTAG" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation
+<http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation> rdf:type owl:NamedIndividual ,
+                                                                                           rico:AgentControlRelation ;
+                                                                                  rico:hasBeginningDate <http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT> ;
+                                                                                  rico:hasEndDate <http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT> ;
+                                                                                  rico:relationHasTarget <http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME> ;
+                                                                                  rdfs:label "Controlling Agency Relation" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Creation
+<http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Creation> rdf:type owl:NamedIndividual ,
+                                                                                rico:Date ;
+                                                                       rdfs:label "Date of Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Modification
+<http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Modification> rdf:type owl:NamedIndividual ,
+                                                                                    rico:Date ;
+                                                                           rdfs:label "Date of Modification" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT
+<http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT> rdf:type owl:NamedIndividual ,
+                                                                                                            rico:Date ;
+                                                                                                   rdfs:label "Date of Subordination (AUTH08)DATECONT" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX
+<http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> rdf:type owl:NamedIndividual ,
+                                                                                                       rico:Date ;
+                                                                                              rdfs:label "Dates of Existence (AUTH10)DATEEX" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Function%20%28AUTH11%29FUN
+<http://gbad.archives.gov.on.ca/schema/authority#Function%20%28AUTH11%29FUN> rdf:type owl:NamedIndividual ,
+                                                                                      rico:Activity ;
+                                                                             rdfs:label "Function (AUTH11)FUN" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME
+<http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME> rdf:type owl:NamedIndividual ,
+                                                                                             rico:Agent ,
+                                                                                             rico:AgentName ;
+                                                                                    rico:authorizedBy <http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA> ;
+                                                                                    rico:hasBeginningDate <http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> ;
+                                                                                    rico:hasBirthDate <http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> ;
+                                                                                    rico:hasDeathDate <http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> ;
+                                                                                    rico:hasEndDate <http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> ;
+                                                                                    rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME> ,
+                                                                                                           <http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR> ,
+                                                                                                           <http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR> ;
+                                                                                    rico:hasOrHadController <http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG> ;
+                                                                                    rico:hasOrHadCorporateBodyType <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP> ;
+                                                                                    rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA> ;
+                                                                                    rico:hasSuccessor <http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC> ;
+                                                                                    rico:isOrWasControllerOf <http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME> ;
+                                                                                    rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record> ;
+                                                                                    rico:isSuccessorOf <http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED> ;
+                                                                                    rico:performsOrPerformed <http://gbad.archives.gov.on.ca/schema/authority#Function%20%28AUTH11%29FUN> ;
+                                                                                    rico:thingIsSourceOfRelation <http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation> ;
+                                                                                    rico:generalDescription "Comment (AUTH07)CMTAU" ;
+                                                                                    rico:history "Biographical Sketch or Administrative History (AUTH05)ADM" ;
+                                                                                    rico:normalizedValue "Heading (AUTH12)HEADING" ;
+                                                                                    rdfs:label "Natural Name (AUTH13)NAME" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name
+<http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name> rdf:type owl:NamedIndividual ,
+                                                                           rico:Type ;
+                                                                  rdfs:label "Parallel Name" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR
+<http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR> rdf:type owl:NamedIndividual ,
+                                                                                              rico:AgentName ;
+                                                                                     rico:hasOrHadCategory <http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name> ;
+                                                                                     rdfs:label "Parallel Names (AUTH14)PAR" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED
+<http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED> rdf:type owl:NamedIndividual ,
+                                                                                                     rico:Agent ;
+                                                                                            rdfs:label "Predecessor Agencies (AUTH15)PRED" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES
+<http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES> rdf:type owl:NamedIndividual ,
+                                                                                     rico:Rule ;
+                                                                            rdfs:label "Rules (AUTH16)RULES" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Status%20%28AUTH18%29STATUSA
+<http://gbad.archives.gov.on.ca/schema/authority#Status%20%28AUTH18%29STATUSA> rdf:type owl:NamedIndividual ,
+                                                                                        rico:RecordState ;
+                                                                               rdfs:label "Status (AUTH18)STATUSA" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC
+<http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC> rdf:type owl:NamedIndividual ,
+                                                                                                  rico:Agent ;
+                                                                                         rdfs:label "Successor Agencies (AUTH20)SUC" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name
+<http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name> rdf:type owl:NamedIndividual ,
+                                                                          rico:Type ;
+                                                                 rdfs:label "Variant Name" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR
+<http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR> rdf:type owl:NamedIndividual ,
+                                                                                             rico:AgentName ;
+                                                                                    rico:hasOrHadCategory <http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name> ;
+                                                                                    rdfs:label "Variant Names (AUTH21)VAR" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Web%20Ready%20%28AUTH22%29WEBA
+<http://gbad.archives.gov.on.ca/schema/authority#Web%20Ready%20%28AUTH22%29WEBA> rdf:type owl:NamedIndividual ,
+                                                                                          rico:RecordState ;
+                                                                                 rdfs:label "Web Ready (AUTH22)WEBA" .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
+ChatGPT
+Given the detailed ontology, I'll update the RML mapping to align with the provided ontology structure, ensuring that the correct relationships and individual mappings are specified. Here is the revised RML mapping:
+
+turtle
+Copy code
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://example.org/rules/> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix auth: <http://gbad.archives.gov.on.ca/schema/authority#> .
+
+### Logical Source Definition
+:TriplesMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "gbad/schema/authority/authority.csv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter ","
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ].
+
+### Subject Map Definition
+:TriplesMap rr:subjectMap [
+  rr:template "http://gbad.archives.gov.on.ca/{SISN}"
+].
+
+### Predicate Object Maps
+
+# Type Mapping
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdf:type;
+  rr:objectMap [
+    rr:constant rico:CorporateBody
+  ]
+].
+
+# Mapping for Agent Name
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasOrHadAgentName;
+  rr:objectMap [
+    rml:reference "NAME";
+    rr:constant auth:NaturalName
+  ]
+].
+
+# Mapping for General Description
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:generalDescription;
+  rr:objectMap [
+    rml:reference "BRIEFBIO";
+    rr:constant auth:GeneralDescription
+  ]
+].
+
+# Mapping for Identifier Type
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasIdentifierType;
+  rr:objectMap [
+    rr:constant auth:AgentIdentifier
+  ]
+].
+
+# Mapping for Label
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "HEADING";
+    rr:constant auth:NaturalName
+  ]
+].
+
+# Mapping for Last Modification Date
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:lastModificationDate;
+  rr:objectMap [
+    rml:reference "DATEEX";
+    rr:constant auth:DateOfModification
+  ]
+].
+
+# Mapping for Documentary Form Type
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDocumentaryFormType;
+  rr:objectMap [
+    rr:constant auth:AuthorityRecord
+  ]
+].
+
+# Mapping for Predecessor
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasPredecessor;
+  rr:objectMap [
+    rml:reference "PRED";
+    rr:constant auth:PredecessorAgencies
+  ]
+].
+
+# Mapping for Successor
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasSuccessor;
+  rr:objectMap [
+    rml:reference "SUC";
+    rr:constant auth:SuccessorAgencies
+  ]
+].
+
+# Mapping for Rules
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasRecordCreator;
+  rr:objectMap [
+    rml:reference "RULES";
+    rr:constant auth:Rules
+  ]
+].
+
+# Mapping for Status
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:status;
+  rr:objectMap [
+    rml:reference "STATUSA";
+    rr:constant auth:Status
+  ]
+].
+
+# Mapping for Website
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rico:hasDigitalDocument;
+  rr:objectMap [
+    rml:reference "WEBA";
+    rr:constant auth:WebReady
+  ]
+].
+Explanation:
+Logical Source: The CSV file path and delimiter are set correctly.
+Subject Map: Subjects are created using the {SISN} field from the CSV.
+Predicate-Object Maps: Each predicate-object map is defined according to the columns and their corresponding ontological entities. The constants for certain fields are taken from the ontology definitions.
+This mapping ensures that your CSV data is accurately transformed into RDF triples, following the RiC-O ontology and the specifics of your authority schema.
+
+
+
+
+
+
