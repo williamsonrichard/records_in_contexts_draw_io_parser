@@ -717,12 +717,12 @@ class NodeHTMLParser(HTMLParser):
         self._raw_data = ""
 
     def handle_starttag(self, tag: str, _: list[tuple[str, str | None]]) -> None:
-        if tag in ["div", "blockquote"]:
+        if tag in ["div", "blockquote", "p"]:
             self._chunks.append(self._raw_data)
             self._within_tag = True
 
     def handle_endtag(self, tag: str) -> None:
-        if tag in ["div", "blockquote"]:
+        if tag in ["div", "blockquote", "p"]:
             self._chunks.append(self._raw_data)
             self._raw_data = ""
             self._within_tag = False

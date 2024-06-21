@@ -20,18 +20,18 @@ Commissioner O'Connor divided the Inquiry into two Parts. The purpose of Part On
 The records in this series have been arranged into sub-series that broadly reflect Parts One and Two of the Inquiry, and also include general administrative records created by the Inquiry's staff. Included in the sub-series are records connected with the hearings and meetings held by the Inquiry, commissioned research reports, correspondence, the reference database of documents used by the Inquiry and the Inquiry's website.",
     rico:hasCreator Walkerton%20Inquiry%20%28BA619%29,
     rico:isAssociatedWithPlace Walkerton%2C%20Ontario,
-    rico:includesOrIncluded %28RG%2018-210-1%29,
-    rico:includesOrIncluded %28RG%2018-210-10%29,
-    rico:includesOrIncluded %28RG%2018-210-11%29,
-    rico:includesOrIncluded %28RG%2018-210-12%29,
-    rico:includesOrIncluded %28RG%2018-210-2%29,
-    rico:includesOrIncluded %28RG%2018-210-3%29,
-    rico:includesOrIncluded %28RG%2018-210-4%29,
-    rico:includesOrIncluded %28RG%2018-210-5%29,
-    rico:includesOrIncluded %28RG%2018-210-6%29,
-    rico:includesOrIncluded %28RG%2018-210-7%29,
-    rico:includesOrIncluded %28RG%2018-210-8%29,
-    rico:includesOrIncluded %28RG%2018-210-9%29,
+    rico:includesOrIncluded Administrative%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-10%29,
+    rico:includesOrIncluded Agendas%2C%20Submissions%20And%20Transcripts%20For%20The%20Public%20And%20Town%20Hall%20Meetings%20%28RG%2018-210-6%29,
+    rico:includesOrIncluded Commissioned%20Issue%20Papers%20Prepared%20For%20Part%20Two%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-7%29,
+    rico:includesOrIncluded Exhibits%20For%20Part%20One%20Hearings%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-3%29,
+    rico:includesOrIncluded Files%20Relating%20To%20Participants%20In%20Part%20Two%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-8%29,
+    rico:includesOrIncluded General%20Submissions%20To%20The%20Walkerton%20Inquiry%28RG%2018-210-5%29,
+    rico:includesOrIncluded Incoming%20Correspondence%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-11%29,
+    rico:includesOrIncluded Reference%20Database%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-2%29,
+    rico:includesOrIncluded Search%20Warrants%20For%20The%20Walkerton%20Inquiry%28RG%2018-210-12%29,
+    rico:includesOrIncluded Subject%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-9%29,
+    rico:includesOrIncluded Transcripts%20Of%20Part%20One%20Hearings%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-4%29,
+    rico:includesOrIncluded Website%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-1%29,
     rico:hasOrHadHolder Archives%20Of%20Ontario%20%28ON00009%29
 
 Individual: Series
@@ -123,103 +123,103 @@ Individual: May%2023%2C%202002
   Facts:
     rico:normalizedDateValue "2002-05-23"^^xsd:date
 
-Individual: %28RG%2018-210-1%29
+Individual: Website%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-1%29
   Annotations:
-    rdfs:label "(RG 18-210-1)"
+    rdfs:label "Website of the Walkerton Inquiry (RG 18-210-1)"
   Types: rico:RecordSet
   Facts:
     rico:hasRecordSetType Sub-series,
     rico:hasOrHadDigitalInstantiation Walkerton%20Inquiry%20Website%20Stored%20Instantiation
 
-Individual: %28RG%2018-210-2%29
+Individual: Reference%20Database%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-2%29
   Annotations:
-    rdfs:label "(RG 18-210-2)"
+    rdfs:label "Reference database of the Walkerton Inquiry (RG 18-210-2)"
   Types: rico:RecordSet
   Facts:
     rico:hasRecordSetType Sub-series
 
-Individual: %28RG%2018-210-3%29
+Individual: Exhibits%20For%20Part%20One%20Hearings%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-3%29
   Annotations:
-    rdfs:label "(RG 18-210-3)"
+    rdfs:label "Exhibits for Part One hearings of the Walkerton Inquiry (RG 18-210-3)"
   Types: rico:RecordSet
   Facts:
     rico:hasRecordSetType Sub-series
 
-Individual: %28RG%2018-210-4%29
+Individual: Transcripts%20Of%20Part%20One%20Hearings%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-4%29
   Annotations:
-    rdfs:label "(RG 18-210-4)"
+    rdfs:label "Transcripts of Part One hearings of the Walkerton Inquiry (RG 18-210-4)"
   Types: rico:RecordSet
   Facts:
     rico:hasRecordSetType Sub-series
 
-Individual: %28RG%2018-210-5%29
+Individual: General%20Submissions%20To%20The%20Walkerton%20Inquiry%28RG%2018-210-5%29
   Annotations:
-    rdfs:label "(RG 18-210-5)"
+    rdfs:label "General submissions to the Walkerton Inquiry(RG 18-210-5)"
   Types: rico:RecordSet
   Facts:
     rico:hasRecordSetType Sub-series
 
-Individual: %28RG%2018-210-6%29
+Individual: Agendas%2C%20Submissions%20And%20Transcripts%20For%20The%20Public%20And%20Town%20Hall%20Meetings%20%28RG%2018-210-6%29
   Annotations:
-    rdfs:label "(RG 18-210-6)"
+    rdfs:label "Agendas, submissions and transcripts for the public and town hall meetings (RG 18-210-6)"
   Types: rico:RecordSet
   Facts:
     rico:hasRecordSetType Sub-series
 
-Individual: %28RG%2018-210-7%29
+Individual: Commissioned%20Issue%20Papers%20Prepared%20For%20Part%20Two%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-7%29
   Annotations:
-    rdfs:label "(RG 18-210-7)"
+    rdfs:label "Commissioned issue papers prepared for Part Two of the Walkerton Inquiry(RG 18-210-7)"
   Types: rico:RecordSet
   Facts:
     rico:hasRecordSetType Sub-series
 
-Individual: %28RG%2018-210-8%29
+Individual: Files%20Relating%20To%20Participants%20In%20Part%20Two%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-8%29
   Annotations:
-    rdfs:label "(RG 18-210-8)"
+    rdfs:label "Files relating to participants in Part Two of the Walkerton Inquiry(RG 18-210-8)"
   Types: rico:RecordSet
   Facts:
     rico:hasRecordSetType Sub-series
 
-Individual: %28RG%2018-210-9%29
+Individual: Subject%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-9%29
   Annotations:
-    rdfs:label "(RG 18-210-9)"
+    rdfs:label "Subject files of the Walkerton Inquiry(RG 18-210-9)"
   Types: rico:RecordSet
   Facts:
-    rico:includesOrIncluded %28RG%2018-210-9-1%29,
-    rico:includesOrIncluded %28RG%2018-210-9-2%29,
+    rico:includesOrIncluded Acts%20%2F%20Studies%28RG%2018-210-9-1%29,
+    rico:includesOrIncluded Adverse%20Water%20Incidence%20Reports%28RG%2018-210-9-2%29,
     rico:hasRecordSetType Sub-series
 
-Individual: %28RG%2018-210-10%29
+Individual: Administrative%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-10%29
   Annotations:
-    rdfs:label "(RG 18-210-10)"
-  Types: rico:RecordSet
-  Facts:
-    rico:hasRecordSetType Sub-series
-
-Individual: %28RG%2018-210-11%29
-  Annotations:
-    rdfs:label "(RG 18-210-11)"
+    rdfs:label "Administrative files of the Walkerton Inquiry(RG 18-210-10)"
   Types: rico:RecordSet
   Facts:
     rico:hasRecordSetType Sub-series
 
-Individual: %28RG%2018-210-12%29
+Individual: Incoming%20Correspondence%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-11%29
   Annotations:
-    rdfs:label "(RG 18-210-12)"
+    rdfs:label "Incoming correspondence files of the Walkerton Inquiry(RG 18-210-11)"
   Types: rico:RecordSet
   Facts:
     rico:hasRecordSetType Sub-series
 
-Individual: %28RG%2018-210-9-1%29
+Individual: Search%20Warrants%20For%20The%20Walkerton%20Inquiry%28RG%2018-210-12%29
   Annotations:
-    rdfs:label "(RG 18-210-9-1)"
+    rdfs:label "Search warrants for the Walkerton Inquiry(RG 18-210-12)"
+  Types: rico:RecordSet
+  Facts:
+    rico:hasRecordSetType Sub-series
+
+Individual: Acts%20%2F%20Studies%28RG%2018-210-9-1%29
+  Annotations:
+    rdfs:label "Acts / Studies(RG 18-210-9-1)"
   Types: rico:RecordSet
   Facts:
     rico:hasRecordSetType File
 
-Individual: %28RG%2018-210-9-2%29
+Individual: Adverse%20Water%20Incidence%20Reports%28RG%2018-210-9-2%29
   Annotations:
-    rdfs:label "(RG 18-210-9-2)"
+    rdfs:label "Adverse Water incidence reports(RG 18-210-9-2)"
   Types: rico:RecordSet
   Facts:
     rico:hasRecordSetType File

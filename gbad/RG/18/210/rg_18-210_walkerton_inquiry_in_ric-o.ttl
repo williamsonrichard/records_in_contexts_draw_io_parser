@@ -58,105 +58,32 @@ xsd:date rdf:type rdfs:Datatype .
                                       rdfs:label "Town" .
 
 
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-1%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-1%29> rdf:type owl:NamedIndividual ,
-                                                              rico:RecordSet ;
-                                                     rico:hasOrHadDigitalInstantiation <http://gbad.archives.gov.on.ca/Walkerton%20Inquiry%20Website%20Stored%20Instantiation> ;
-                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
-                                                     rdfs:label "(RG 18-210-1)" .
+###  http://gbad.archives.gov.on.ca/Acts%20%2F%20Studies%28RG%2018-210-9-1%29
+<http://gbad.archives.gov.on.ca/Acts%20%2F%20Studies%28RG%2018-210-9-1%29> rdf:type owl:NamedIndividual ,
+                                                                                    rico:RecordSet ;
+                                                                           rico:hasRecordSetType <http://gbad.archives.gov.on.ca/File> ;
+                                                                           rdfs:label "Acts / Studies(RG 18-210-9-1)" .
 
 
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-10%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-10%29> rdf:type owl:NamedIndividual ,
-                                                               rico:RecordSet ;
-                                                      rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
-                                                      rdfs:label "(RG 18-210-10)" .
+###  http://gbad.archives.gov.on.ca/Administrative%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-10%29
+<http://gbad.archives.gov.on.ca/Administrative%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-10%29> rdf:type owl:NamedIndividual ,
+                                                                                                                      rico:RecordSet ;
+                                                                                                             rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
+                                                                                                             rdfs:label "Administrative files of the Walkerton Inquiry(RG 18-210-10)" .
 
 
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-11%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-11%29> rdf:type owl:NamedIndividual ,
-                                                               rico:RecordSet ;
-                                                      rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
-                                                      rdfs:label "(RG 18-210-11)" .
+###  http://gbad.archives.gov.on.ca/Adverse%20Water%20Incidence%20Reports%28RG%2018-210-9-2%29
+<http://gbad.archives.gov.on.ca/Adverse%20Water%20Incidence%20Reports%28RG%2018-210-9-2%29> rdf:type owl:NamedIndividual ,
+                                                                                                     rico:RecordSet ;
+                                                                                            rico:hasRecordSetType <http://gbad.archives.gov.on.ca/File> ;
+                                                                                            rdfs:label "Adverse Water incidence reports(RG 18-210-9-2)" .
 
 
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-12%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-12%29> rdf:type owl:NamedIndividual ,
-                                                               rico:RecordSet ;
-                                                      rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
-                                                      rdfs:label "(RG 18-210-12)" .
-
-
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-2%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-2%29> rdf:type owl:NamedIndividual ,
-                                                              rico:RecordSet ;
-                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
-                                                     rdfs:label "(RG 18-210-2)" .
-
-
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-3%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-3%29> rdf:type owl:NamedIndividual ,
-                                                              rico:RecordSet ;
-                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
-                                                     rdfs:label "(RG 18-210-3)" .
-
-
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-4%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-4%29> rdf:type owl:NamedIndividual ,
-                                                              rico:RecordSet ;
-                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
-                                                     rdfs:label "(RG 18-210-4)" .
-
-
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-5%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-5%29> rdf:type owl:NamedIndividual ,
-                                                              rico:RecordSet ;
-                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
-                                                     rdfs:label "(RG 18-210-5)" .
-
-
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-6%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-6%29> rdf:type owl:NamedIndividual ,
-                                                              rico:RecordSet ;
-                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
-                                                     rdfs:label "(RG 18-210-6)" .
-
-
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-7%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-7%29> rdf:type owl:NamedIndividual ,
-                                                              rico:RecordSet ;
-                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
-                                                     rdfs:label "(RG 18-210-7)" .
-
-
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-8%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-8%29> rdf:type owl:NamedIndividual ,
-                                                              rico:RecordSet ;
-                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
-                                                     rdfs:label "(RG 18-210-8)" .
-
-
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-9%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-9%29> rdf:type owl:NamedIndividual ,
-                                                              rico:RecordSet ;
-                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
-                                                     rico:includesOrIncluded <http://gbad.archives.gov.on.ca/%28RG%2018-210-9-1%29> ,
-                                                                             <http://gbad.archives.gov.on.ca/%28RG%2018-210-9-2%29> ;
-                                                     rdfs:label "(RG 18-210-9)" .
-
-
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-9-1%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-9-1%29> rdf:type owl:NamedIndividual ,
-                                                                rico:RecordSet ;
-                                                       rico:hasRecordSetType <http://gbad.archives.gov.on.ca/File> ;
-                                                       rdfs:label "(RG 18-210-9-1)" .
-
-
-###  http://gbad.archives.gov.on.ca/%28RG%2018-210-9-2%29
-<http://gbad.archives.gov.on.ca/%28RG%2018-210-9-2%29> rdf:type owl:NamedIndividual ,
-                                                                rico:RecordSet ;
-                                                       rico:hasRecordSetType <http://gbad.archives.gov.on.ca/File> ;
-                                                       rdfs:label "(RG 18-210-9-2)" .
+###  http://gbad.archives.gov.on.ca/Agendas%2C%20Submissions%20And%20Transcripts%20For%20The%20Public%20And%20Town%20Hall%20Meetings%20%28RG%2018-210-6%29
+<http://gbad.archives.gov.on.ca/Agendas%2C%20Submissions%20And%20Transcripts%20For%20The%20Public%20And%20Town%20Hall%20Meetings%20%28RG%2018-210-6%29> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                 rico:RecordSet ;
+                                                                                                                                                        rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
+                                                                                                                                                        rdfs:label "Agendas, submissions and transcripts for the public and town hall meetings (RG 18-210-6)" .
 
 
 ###  http://gbad.archives.gov.on.ca/Archives%20Of%20Ontario%20%28ON00009%29
@@ -171,6 +98,13 @@ xsd:date rdf:type rdfs:Datatype .
                                                                              rico:Event ;
                                                                     rico:occurredAtDate <http://gbad.archives.gov.on.ca/May%2023%2C%202002> ;
                                                                     rdfs:label "Closing of Walkerton Inquiry" .
+
+
+###  http://gbad.archives.gov.on.ca/Commissioned%20Issue%20Papers%20Prepared%20For%20Part%20Two%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-7%29
+<http://gbad.archives.gov.on.ca/Commissioned%20Issue%20Papers%20Prepared%20For%20Part%20Two%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-7%29> rdf:type owl:NamedIndividual ,
+                                                                                                                                                          rico:RecordSet ;
+                                                                                                                                                 rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
+                                                                                                                                                 rdfs:label "Commissioned issue papers prepared for Part Two of the Walkerton Inquiry(RG 18-210-7)" .
 
 
 ###  http://gbad.archives.gov.on.ca/Dennis%20R.%20O%27Connor
@@ -197,10 +131,38 @@ xsd:date rdf:type rdfs:Datatype .
                                                                           rdfs:label "Establishment of Walkerton Inquiry" .
 
 
+###  http://gbad.archives.gov.on.ca/Exhibits%20For%20Part%20One%20Hearings%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-3%29
+<http://gbad.archives.gov.on.ca/Exhibits%20For%20Part%20One%20Hearings%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-3%29> rdf:type owl:NamedIndividual ,
+                                                                                                                                        rico:RecordSet ;
+                                                                                                                               rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
+                                                                                                                               rdfs:label "Exhibits for Part One hearings of the Walkerton Inquiry (RG 18-210-3)" .
+
+
 ###  http://gbad.archives.gov.on.ca/File%20Size
 <http://gbad.archives.gov.on.ca/File%20Size> rdf:type owl:NamedIndividual ,
                                                       rico:ExtentType ;
                                              rdfs:label "File Size" .
+
+
+###  http://gbad.archives.gov.on.ca/Files%20Relating%20To%20Participants%20In%20Part%20Two%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-8%29
+<http://gbad.archives.gov.on.ca/Files%20Relating%20To%20Participants%20In%20Part%20Two%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-8%29> rdf:type owl:NamedIndividual ,
+                                                                                                                                                     rico:RecordSet ;
+                                                                                                                                            rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
+                                                                                                                                            rdfs:label "Files relating to participants in Part Two of the Walkerton Inquiry(RG 18-210-8)" .
+
+
+###  http://gbad.archives.gov.on.ca/General%20Submissions%20To%20The%20Walkerton%20Inquiry%28RG%2018-210-5%29
+<http://gbad.archives.gov.on.ca/General%20Submissions%20To%20The%20Walkerton%20Inquiry%28RG%2018-210-5%29> rdf:type owl:NamedIndividual ,
+                                                                                                                    rico:RecordSet ;
+                                                                                                           rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
+                                                                                                           rdfs:label "General submissions to the Walkerton Inquiry(RG 18-210-5)" .
+
+
+###  http://gbad.archives.gov.on.ca/Incoming%20Correspondence%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-11%29
+<http://gbad.archives.gov.on.ca/Incoming%20Correspondence%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-11%29> rdf:type owl:NamedIndividual ,
+                                                                                                                                 rico:RecordSet ;
+                                                                                                                        rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
+                                                                                                                        rdfs:label "Incoming correspondence files of the Walkerton Inquiry(RG 18-210-11)" .
 
 
 ###  http://gbad.archives.gov.on.ca/June%2013%2C%202000
@@ -251,18 +213,18 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                               rico:hasCreator <http://gbad.archives.gov.on.ca/Walkerton%20Inquiry%20%28BA619%29> ;
                                                                                               rico:hasOrHadHolder <http://gbad.archives.gov.on.ca/Archives%20Of%20Ontario%20%28ON00009%29> ;
                                                                                               rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Series> ;
-                                                                                              rico:includesOrIncluded <http://gbad.archives.gov.on.ca/%28RG%2018-210-1%29> ,
-                                                                                                                      <http://gbad.archives.gov.on.ca/%28RG%2018-210-10%29> ,
-                                                                                                                      <http://gbad.archives.gov.on.ca/%28RG%2018-210-11%29> ,
-                                                                                                                      <http://gbad.archives.gov.on.ca/%28RG%2018-210-12%29> ,
-                                                                                                                      <http://gbad.archives.gov.on.ca/%28RG%2018-210-2%29> ,
-                                                                                                                      <http://gbad.archives.gov.on.ca/%28RG%2018-210-3%29> ,
-                                                                                                                      <http://gbad.archives.gov.on.ca/%28RG%2018-210-4%29> ,
-                                                                                                                      <http://gbad.archives.gov.on.ca/%28RG%2018-210-5%29> ,
-                                                                                                                      <http://gbad.archives.gov.on.ca/%28RG%2018-210-6%29> ,
-                                                                                                                      <http://gbad.archives.gov.on.ca/%28RG%2018-210-7%29> ,
-                                                                                                                      <http://gbad.archives.gov.on.ca/%28RG%2018-210-8%29> ,
-                                                                                                                      <http://gbad.archives.gov.on.ca/%28RG%2018-210-9%29> ;
+                                                                                              rico:includesOrIncluded <http://gbad.archives.gov.on.ca/Administrative%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-10%29> ,
+                                                                                                                      <http://gbad.archives.gov.on.ca/Agendas%2C%20Submissions%20And%20Transcripts%20For%20The%20Public%20And%20Town%20Hall%20Meetings%20%28RG%2018-210-6%29> ,
+                                                                                                                      <http://gbad.archives.gov.on.ca/Commissioned%20Issue%20Papers%20Prepared%20For%20Part%20Two%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-7%29> ,
+                                                                                                                      <http://gbad.archives.gov.on.ca/Exhibits%20For%20Part%20One%20Hearings%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-3%29> ,
+                                                                                                                      <http://gbad.archives.gov.on.ca/Files%20Relating%20To%20Participants%20In%20Part%20Two%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-8%29> ,
+                                                                                                                      <http://gbad.archives.gov.on.ca/General%20Submissions%20To%20The%20Walkerton%20Inquiry%28RG%2018-210-5%29> ,
+                                                                                                                      <http://gbad.archives.gov.on.ca/Incoming%20Correspondence%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-11%29> ,
+                                                                                                                      <http://gbad.archives.gov.on.ca/Reference%20Database%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-2%29> ,
+                                                                                                                      <http://gbad.archives.gov.on.ca/Search%20Warrants%20For%20The%20Walkerton%20Inquiry%28RG%2018-210-12%29> ,
+                                                                                                                      <http://gbad.archives.gov.on.ca/Subject%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-9%29> ,
+                                                                                                                      <http://gbad.archives.gov.on.ca/Transcripts%20Of%20Part%20One%20Hearings%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-4%29> ,
+                                                                                                                      <http://gbad.archives.gov.on.ca/Website%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-1%29> ;
                                                                                               rico:isAssociatedWithEvent <http://gbad.archives.gov.on.ca/E.%20Coli%20Outbreak> ;
                                                                                               rico:isAssociatedWithPlace <http://gbad.archives.gov.on.ca/Walkerton%2C%20Ontario> ;
                                                                                               rico:scopeAndContent """Series consists of records generated during the course of the Walkerton Inquiry into the tainted water tragedy that occurred in Walkerton, Ontario in May 2000. At that time Walkerton’s drinking water system became contaminated with deadly bacteria, primarily Escherichia coli O157:H7.1 Seven people died, and more than 2,300 became ill.
@@ -273,6 +235,36 @@ Commissioner O'Connor divided the Inquiry into two Parts. The purpose of Part On
 
 The records in this series have been arranged into sub-series that broadly reflect Parts One and Two of the Inquiry, and also include general administrative records created by the Inquiry's staff. Included in the sub-series are records connected with the hearings and meetings held by the Inquiry, commissioned research reports, correspondence, the reference database of documents used by the Inquiry and the Inquiry's website.""" ;
                                                                                               rdfs:label "Records of the Walkerton Inquiry (RG 18-210)" .
+
+
+###  http://gbad.archives.gov.on.ca/Reference%20Database%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-2%29
+<http://gbad.archives.gov.on.ca/Reference%20Database%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-2%29> rdf:type owl:NamedIndividual ,
+                                                                                                                      rico:RecordSet ;
+                                                                                                             rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
+                                                                                                             rdfs:label "Reference database of the Walkerton Inquiry (RG 18-210-2)" .
+
+
+###  http://gbad.archives.gov.on.ca/Search%20Warrants%20For%20The%20Walkerton%20Inquiry%28RG%2018-210-12%29
+<http://gbad.archives.gov.on.ca/Search%20Warrants%20For%20The%20Walkerton%20Inquiry%28RG%2018-210-12%29> rdf:type owl:NamedIndividual ,
+                                                                                                                  rico:RecordSet ;
+                                                                                                         rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
+                                                                                                         rdfs:label "Search warrants for the Walkerton Inquiry(RG 18-210-12)" .
+
+
+###  http://gbad.archives.gov.on.ca/Subject%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-9%29
+<http://gbad.archives.gov.on.ca/Subject%20Files%20Of%20The%20Walkerton%20Inquiry%28RG%2018-210-9%29> rdf:type owl:NamedIndividual ,
+                                                                                                              rico:RecordSet ;
+                                                                                                     rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
+                                                                                                     rico:includesOrIncluded <http://gbad.archives.gov.on.ca/Acts%20%2F%20Studies%28RG%2018-210-9-1%29> ,
+                                                                                                                             <http://gbad.archives.gov.on.ca/Adverse%20Water%20Incidence%20Reports%28RG%2018-210-9-2%29> ;
+                                                                                                     rdfs:label "Subject files of the Walkerton Inquiry(RG 18-210-9)" .
+
+
+###  http://gbad.archives.gov.on.ca/Transcripts%20Of%20Part%20One%20Hearings%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-4%29
+<http://gbad.archives.gov.on.ca/Transcripts%20Of%20Part%20One%20Hearings%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-4%29> rdf:type owl:NamedIndividual ,
+                                                                                                                                          rico:RecordSet ;
+                                                                                                                                 rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
+                                                                                                                                 rdfs:label "Transcripts of Part One hearings of the Walkerton Inquiry (RG 18-210-4)" .
 
 
 ###  http://gbad.archives.gov.on.ca/Walkerton%20Inquiry%20%28BA619%29
@@ -307,6 +299,14 @@ The records in this series have been arranged into sub-series that broadly refle
                                                                  rico:PlaceName ;
                                                         rico:hasOrHadPlaceType <http://gbad.archives.gov.on.ca/Town> ;
                                                         rdfs:label "Walkerton, Ontario" .
+
+
+###  http://gbad.archives.gov.on.ca/Website%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-1%29
+<http://gbad.archives.gov.on.ca/Website%20Of%20The%20Walkerton%20Inquiry%20%28RG%2018-210-1%29> rdf:type owl:NamedIndividual ,
+                                                                                                         rico:RecordSet ;
+                                                                                                rico:hasOrHadDigitalInstantiation <http://gbad.archives.gov.on.ca/Walkerton%20Inquiry%20Website%20Stored%20Instantiation> ;
+                                                                                                rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-series> ;
+                                                                                                rdfs:label "Website of the Walkerton Inquiry (RG 18-210-1)" .
 
 
 ###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi
