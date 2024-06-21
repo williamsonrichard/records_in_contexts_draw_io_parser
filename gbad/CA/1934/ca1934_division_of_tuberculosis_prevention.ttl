@@ -85,51 +85,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                        <http://gbad.archives.gov.on.ca/1972> ;
                                                                  rico:hasEndDate <http://gbad.archives.gov.on.ca/1972> ,
                                                                                  <http://gbad.archives.gov.on.ca/1974> ;
-                                                                 rico:relationHasTarget <http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention> ;
+                                                                 rico:relationHasTarget <http://gbad.archives.gov.on.ca/Ontario.%20Division%20Of%20Tuberculosis%20Prevention> ;
                                                                  rdfs:label "Controlling Agency Relation" .
-
-
-###  http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention
-<http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention> rdf:type owl:NamedIndividual ,
-                                                                                    rico:AgentName ,
-                                                                                    rico:CorporateBody ;
-                                                                           rico:hasBeginningDate <http://gbad.archives.gov.on.ca/1935> ;
-                                                                           rico:hasEndDate <http://gbad.archives.gov.on.ca/1974> ;
-                                                                           rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention> ,
-                                                                                                  <http://gbad.archives.gov.on.ca/Ontario.%20Tuberculosis%20Prevention%20Branch> ,
-                                                                                                  <http://gbad.archives.gov.on.ca/Ontario.%20Tuberculosis%20Prevention%20Service> ;
-                                                                           rico:hasOrHadController <http://gbad.archives.gov.on.ca/Ontario.%20Dept.%20Of%20Health> ,
-                                                                                                   <http://gbad.archives.gov.on.ca/Ontario.%20Ministry%20Of%20Health> ;
-                                                                           rico:hasOrHadCorporateBodyType <http://gbad.archives.gov.on.ca/C%20Ontario%20Government%20Name> ;
-                                                                           rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/CA1934> ;
-                                                                           rico:hasSuccessor <http://gbad.archives.gov.on.ca/Ontario.%20Chest%20Disease%20Service> ;
-                                                                           rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention%20Authority%20Record> ;
-                                                                           rico:generalDescription "Function Note: The Tuberculosis Prevention Division developed and promoted measures designed to eradicate tuberculosis in its early stages." ;
-                                                                           rico:history """The origins of tuberculosis prevention in the government of Ontario date to 1923 when a Diagnostic Chest Clinic was established in the Division of Preventable Diseases. In 1935 a separate Division of Tuberculosis Prevention was created. In 1959 the division was renamed the Tuberculosis Prevention Branch.
-
-As part of a major reorganization of the Department of Health in 1966, the newly named Tuberculosis Prevention Service became part of the Special Health Services Branch of the Public Health Division.
-
-In 1969 a number of changes occured in the branch. The TB case register was turned over to the Epidemiology Service and in conformity with the Task Force on Tuberculosis Prevention, the service assumed responsibility for all chest clinics in the province. Up until that year, voluntary agencies had operated the chest clinics. Fourteen permanent chest clinics were operated at Ottawa, Belleville, Timmins, Lindsay, North Bay, Orillia, Brantford, Kingston, Windsor, Fort William, Kirkland Lake, London, Kitchener, Hamilton, with sub-office in Sault Ste. Marie, Sudbury, Cornwall, and Barrie. By 1970, the department was responsible for 28 chest clinic offices.
-
-In 1973 the Tuberculosis Prevention Service was moved to the Clinic Services Branch, which formed part of the Direct Services Division.
-
-The unit was headed by G.C. Brink (1935-1959), S.A. Holling (1959-1965), and C.H. Rorabeck (1965-1973).
-
-In 1974 the service was renamed the Chest Disease Service and formed part of the Clinic Service Branch.""" ;
-                                                                           rico:normalizedValue "Ontario. Division of Tuberculosis Prevention" ;
-                                                                           rdfs:label "Division of Tuberculosis Prevention" .
-
-
-###  http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention%20Authority%20Record
-<http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention%20Authority%20Record> rdf:type owl:NamedIndividual ,
-                                                                                                         rico:Record ;
-                                                                                                rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Authority%20Record> ;
-                                                                                                rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
-                                                                                                                    <http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> ;
-                                                                                                rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> ;
-                                                                                                rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> ;
-                                                                                                rico:lastModificationDate "2024-06-03"^^xsd:date ;
-                                                                                                rdfs:label "Division of Tuberculosis Prevention Authority Record" .
 
 
 ###  http://gbad.archives.gov.on.ca/Ontario.%20Chest%20Disease%20Service
@@ -143,6 +100,49 @@ In 1974 the service was renamed the Chest Disease Service and formed part of the
                                                                          rico:CorporateBody ;
                                                                 rico:thingIsSourceOfRelation <http://gbad.archives.gov.on.ca/Controlling%20Agency%20Relation> ;
                                                                 rdfs:label "Ontario. Dept. of Health" .
+
+
+###  http://gbad.archives.gov.on.ca/Ontario.%20Division%20Of%20Tuberculosis%20Prevention
+<http://gbad.archives.gov.on.ca/Ontario.%20Division%20Of%20Tuberculosis%20Prevention> rdf:type owl:NamedIndividual ,
+                                                                                               rico:AgentName ,
+                                                                                               rico:CorporateBody ;
+                                                                                      rico:hasBeginningDate <http://gbad.archives.gov.on.ca/1935> ;
+                                                                                      rico:hasEndDate <http://gbad.archives.gov.on.ca/1974> ;
+                                                                                      rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/Ontario.%20Division%20Of%20Tuberculosis%20Prevention> ,
+                                                                                                             <http://gbad.archives.gov.on.ca/Ontario.%20Tuberculosis%20Prevention%20Branch> ,
+                                                                                                             <http://gbad.archives.gov.on.ca/Ontario.%20Tuberculosis%20Prevention%20Service> ;
+                                                                                      rico:hasOrHadController <http://gbad.archives.gov.on.ca/Ontario.%20Dept.%20Of%20Health> ,
+                                                                                                              <http://gbad.archives.gov.on.ca/Ontario.%20Ministry%20Of%20Health> ;
+                                                                                      rico:hasOrHadCorporateBodyType <http://gbad.archives.gov.on.ca/C%20Ontario%20Government%20Name> ;
+                                                                                      rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/CA1934> ;
+                                                                                      rico:hasSuccessor <http://gbad.archives.gov.on.ca/Ontario.%20Chest%20Disease%20Service> ;
+                                                                                      rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Ontario.%20Division%20Of%20Tuberculosis%20Prevention%20Authority%20Record> ;
+                                                                                      rico:generalDescription "Function Note: The Tuberculosis Prevention Division developed and promoted measures designed to eradicate tuberculosis in its early stages." ;
+                                                                                      rico:history """The origins of tuberculosis prevention in the government of Ontario date to 1923 when a Diagnostic Chest Clinic was established in the Division of Preventable Diseases. In 1935 a separate Division of Tuberculosis Prevention was created. In 1959 the division was renamed the Tuberculosis Prevention Branch.
+
+As part of a major reorganization of the Department of Health in 1966, the newly named Tuberculosis Prevention Service became part of the Special Health Services Branch of the Public Health Division.
+
+In 1969 a number of changes occured in the branch. The TB case register was turned over to the Epidemiology Service and in conformity with the Task Force on Tuberculosis Prevention, the service assumed responsibility for all chest clinics in the province. Up until that year, voluntary agencies had operated the chest clinics. Fourteen permanent chest clinics were operated at Ottawa, Belleville, Timmins, Lindsay, North Bay, Orillia, Brantford, Kingston, Windsor, Fort William, Kirkland Lake, London, Kitchener, Hamilton, with sub-office in Sault Ste. Marie, Sudbury, Cornwall, and Barrie. By 1970, the department was responsible for 28 chest clinic offices.
+
+In 1973 the Tuberculosis Prevention Service was moved to the Clinic Services Branch, which formed part of the Direct Services Division.
+
+The unit was headed by G.C. Brink (1935-1959), S.A. Holling (1959-1965), and C.H. Rorabeck (1965-1973).
+
+In 1974 the service was renamed the Chest Disease Service and formed part of the Clinic Service Branch.""" ;
+                                                                                      rico:normalizedValue "Division of Tuberculosis Prevention" ;
+                                                                                      rdfs:label "Ontario. Division of Tuberculosis Prevention" .
+
+
+###  http://gbad.archives.gov.on.ca/Ontario.%20Division%20Of%20Tuberculosis%20Prevention%20Authority%20Record
+<http://gbad.archives.gov.on.ca/Ontario.%20Division%20Of%20Tuberculosis%20Prevention%20Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                                                                                    rico:Record ;
+                                                                                                           rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Authority%20Record> ;
+                                                                                                           rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
+                                                                                                                               <http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> ;
+                                                                                                           rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> ;
+                                                                                                           rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> ;
+                                                                                                           rico:lastModificationDate "2024-06-03"^^xsd:date ;
+                                                                                                           rdfs:label "Ontario. Division of Tuberculosis Prevention Authority Record" .
 
 
 ###  http://gbad.archives.gov.on.ca/Ontario.%20Ministry%20Of%20Health

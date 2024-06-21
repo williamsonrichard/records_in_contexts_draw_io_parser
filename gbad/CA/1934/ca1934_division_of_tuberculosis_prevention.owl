@@ -16,14 +16,14 @@ Individual: Agent%20Identifier
     rdfs:label "Agent Identifier"
   Types: rico:IdentifierType
 
-Individual: Division%20Of%20Tuberculosis%20Prevention
+Individual: Ontario.%20Division%20Of%20Tuberculosis%20Prevention
   Annotations:
-    rdfs:label "Division of Tuberculosis Prevention"
+    rdfs:label "Ontario. Division of Tuberculosis Prevention"
   Types: rico:AgentName, rico:CorporateBody
   Facts:
-    rico:normalizedValue "Ontario. Division of Tuberculosis Prevention",
+    rico:normalizedValue "Division of Tuberculosis Prevention",
     rico:hasOrHadIdentifier CA1934,
-    rico:hasOrHadAgentName Division%20Of%20Tuberculosis%20Prevention,
+    rico:hasOrHadAgentName Ontario.%20Division%20Of%20Tuberculosis%20Prevention,
     rico:hasOrHadAgentName Ontario.%20Tuberculosis%20Prevention%20Branch,
     rico:hasOrHadAgentName Ontario.%20Tuberculosis%20Prevention%20Service,
     rico:hasOrHadCorporateBodyType C%20Ontario%20Government%20Name,
@@ -43,7 +43,7 @@ In 1974 the service was renamed the Chest Disease Service and formed part of the
     rico:hasOrHadController Ontario.%20Dept.%20Of%20Health,
     rico:hasOrHadController Ontario.%20Ministry%20Of%20Health,
     rico:hasSuccessor Ontario.%20Chest%20Disease%20Service,
-    rico:isOrWasDescribedBy Division%20Of%20Tuberculosis%20Prevention%20Authority%20Record,
+    rico:isOrWasDescribedBy Ontario.%20Division%20Of%20Tuberculosis%20Prevention%20Authority%20Record,
     rico:generalDescription "Function Note: The Tuberculosis Prevention Division developed and promoted measures designed to eradicate tuberculosis in its early stages."
 
 Individual: C%20Ontario%20Government%20Name
@@ -68,9 +68,9 @@ Individual: Ontario.%20Tuberculosis%20Prevention%20Branch
   Facts:
     rico:hasOrHadCategory Variant%20Name
 
-Individual: Division%20Of%20Tuberculosis%20Prevention%20Authority%20Record
+Individual: Ontario.%20Division%20Of%20Tuberculosis%20Prevention%20Authority%20Record
   Annotations:
-    rdfs:label "Division of Tuberculosis Prevention Authority Record"
+    rdfs:label "Ontario. Division of Tuberculosis Prevention Authority Record"
   Types: rico:Record
   Facts:
     rico:hasDocumentaryFormType Authority%20Record,
@@ -107,7 +107,7 @@ Individual: Controlling%20Agency%20Relation
     rdfs:label "Controlling Agency Relation"
   Types: rico:AgentControlRelation
   Facts:
-    rico:relationHasTarget Division%20Of%20Tuberculosis%20Prevention,
+    rico:relationHasTarget Ontario.%20Division%20Of%20Tuberculosis%20Prevention,
     rico:hasBeginningDate 1935,
     rico:hasBeginningDate 1972,
     rico:hasEndDate 1972,

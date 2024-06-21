@@ -7,32 +7,25 @@ Ontology: <http://gbad.archives.gov.on.ca>
 Individual: Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs
   Annotations:
     rdfs:label "Mobile Tuberculosis Testing Clinic photographs"
-  Types: rico:Instantiation, rico:RecordSet, rico:Title
+  Types: rico:RecordSet, rico:Title
   Facts:
     rico:hasRecordSetType Series,
-    rico:hasCreationDate %5Bca.%201950%5D-1964,
     rico:scopeAndContent "This series contains photographs of the mobile tuberculosis testing clinics administered by the Department of Health. This includes photographs of chest X-ray machinery, Community X-ray Survey trucks, the Chest X-ray train, information displays for fairs, TB testing equipment, department staff, and interior views of the clinics.",
     rico:conditionsOfAccess "No restrictions on access.",
     rico:conditionsOfUse "Crown copyright exists in these photographs. Permission to publish is required from the Archives of Ontario. Submit a Request for Permission to Publish, Exhibit or Broadcast form.",
-    rico:generalDescription "Availability of Other Formats: Some of the photographs from this series are available in digital format in the Archives of Ontario Visual Database. Search using reference code RG 10-145.",
-    rico:generalDescription "How to Order: To view these records, order Series RG 10-145, container B 972.",
     rico:hasOrHadIdentifier RG%2010-145,
     rico:isOrWasDescribedBy Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs%20Archival%20Description,
     rico:hasCreator Ontario.%20Dept.%20Of%20Health,
     rico:hasOrHadTitle Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs,
+    rico:generalDescription "Availability of Other Formats: Some of the photographs from this series are available in digital format in the Archives of Ontario Visual Database. Search using reference code RG 10-145.",
     rico:hasContentOfType Graphic%20Materials,
-    rico:hasOrHadInstantiation Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs,
-    rico:instantiationExtent "ca. 200 photographs"
+    rico:hasOrHadInstantiation Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs-i1,
+    rico:creationDate "[ca. 1950]-1964"
 
 Individual: Series
   Annotations:
     rdfs:label "Series"
   Types: rico:RecordSetType
-
-Individual: %5Bca.%201950%5D-1964
-  Annotations:
-    rdfs:label "[ca. 1950]-1964"
-  Types: rico:Date
 
 Individual: RG%2010-145
   Annotations:
@@ -93,3 +86,11 @@ Individual: Graphic%20Materials
   Annotations:
     rdfs:label "Graphic materials"
   Types: rico:ContentType
+
+Individual: Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs-i1
+  Annotations:
+    rdfs:label "Mobile Tuberculosis Testing Clinic photographs-i1"
+  Types: rico:Instantiation
+  Facts:
+    rico:generalDescription "How to Order: To view these records, order Series RG 10-145, container B 972.",
+    rico:instantiationExtent "ca. 200 photographs"

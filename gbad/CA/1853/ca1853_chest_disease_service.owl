@@ -16,20 +16,20 @@ Individual: Agent%20Identifier
     rdfs:label "Agent Identifier"
   Types: rico:IdentifierType
 
-Individual: Chest%20Disease%20Service
+Individual: Ontario.%20Chest%20Disease%20Service
   Annotations:
-    rdfs:label "Chest Disease Service"
+    rdfs:label "Ontario. Chest Disease Service"
   Types: rico:AgentName, rico:CorporateBody
   Facts:
-    rico:normalizedValue "Ontario. Chest Disease Service",
+    rico:normalizedValue "Chest Disease Service",
     rico:hasOrHadIdentifier CA1853,
-    rico:hasOrHadAgentName Chest%20Disease%20Service,
+    rico:hasOrHadAgentName Ontario.%20Chest%20Disease%20Service,
     rico:hasOrHadCorporateBodyType C%20Ontario%20Government%20Name,
     rico:hasBeginningDate 1974,
     rico:hasEndDate 1982,
     rico:history "In 1974, in response to the continuing decline of the incidence of TB, the Tuberculosis Prevention Service was renamed Chest Disease Service, and was moved, within the Clinic Services Branch, to the Community Health Division.Throughout the late 1970s and into the 1980s, the Chest Disease Service was transferred several times within the public health function to different offices. Finally in 1982 it was effectively shut down. Of the 23 chest clinics that the service operated, 18 were closed and the remaining 5, all located in Northern Ontario, were transferred to the Ministry of Labour for the purposes of screening miners.",
     rico:hasOrHadController Ontario.%20Ministry%20Of%20Health,
-    rico:isOrWasDescribedBy Chest%20Disease%20Service%20Authority%20Record,
+    rico:isOrWasDescribedBy Ontario.%20Chest%20Disease%20Service%20Authority%20Record,
     rico:generalDescription "Function Note: The Chest Disease Service was established to eradicate tuberculosis and to deal with other diseases of the chest and lungs.",
     rico:isSuccessorOf Ontario.%20Division%20Of%20Tuberculosis%20Prevention
 
@@ -48,9 +48,9 @@ Individual: 1982
     rdfs:label "1982"
   Types: rico:Date
 
-Individual: Chest%20Disease%20Service%20Authority%20Record
+Individual: Ontario.%20Chest%20Disease%20Service%20Authority%20Record
   Annotations:
-    rdfs:label "Chest Disease Service Authority Record"
+    rdfs:label "Ontario. Chest Disease Service Authority Record"
   Types: rico:Record
   Facts:
     rico:hasDocumentaryFormType Authority%20Record,
@@ -88,7 +88,7 @@ Individual: Controlling%20Agency%20Relation
     rdfs:label "Controlling Agency Relation"
   Types: rico:AgentControlRelation
   Facts:
-    rico:relationHasTarget Chest%20Disease%20Service,
+    rico:relationHasTarget Ontario.%20Chest%20Disease%20Service,
     rico:hasBeginningDate 1974,
     rico:hasEndDate 1982
 

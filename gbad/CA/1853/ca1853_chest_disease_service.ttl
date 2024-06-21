@@ -72,44 +72,44 @@ xsd:date rdf:type rdfs:Datatype .
                                                                  rdfs:label "C Ontario Government Name" .
 
 
-###  http://gbad.archives.gov.on.ca/Chest%20Disease%20Service
-<http://gbad.archives.gov.on.ca/Chest%20Disease%20Service> rdf:type owl:NamedIndividual ,
-                                                                    rico:AgentName ,
-                                                                    rico:CorporateBody ;
-                                                           rico:hasBeginningDate <http://gbad.archives.gov.on.ca/1974> ;
-                                                           rico:hasEndDate <http://gbad.archives.gov.on.ca/1982> ;
-                                                           rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/Chest%20Disease%20Service> ;
-                                                           rico:hasOrHadController <http://gbad.archives.gov.on.ca/Ontario.%20Ministry%20Of%20Health> ;
-                                                           rico:hasOrHadCorporateBodyType <http://gbad.archives.gov.on.ca/C%20Ontario%20Government%20Name> ;
-                                                           rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/CA1853> ;
-                                                           rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Chest%20Disease%20Service%20Authority%20Record> ;
-                                                           rico:isSuccessorOf <http://gbad.archives.gov.on.ca/Ontario.%20Division%20Of%20Tuberculosis%20Prevention> ;
-                                                           rico:generalDescription "Function Note: The Chest Disease Service was established to eradicate tuberculosis and to deal with other diseases of the chest and lungs." ;
-                                                           rico:history "In 1974, in response to the continuing decline of the incidence of TB, the Tuberculosis Prevention Service was renamed Chest Disease Service, and was moved, within the Clinic Services Branch, to the Community Health Division.Throughout the late 1970s and into the 1980s, the Chest Disease Service was transferred several times within the public health function to different offices. Finally in 1982 it was effectively shut down. Of the 23 chest clinics that the service operated, 18 were closed and the remaining 5, all located in Northern Ontario, were transferred to the Ministry of Labour for the purposes of screening miners." ;
-                                                           rico:normalizedValue "Ontario. Chest Disease Service" ;
-                                                           rdfs:label "Chest Disease Service" .
-
-
-###  http://gbad.archives.gov.on.ca/Chest%20Disease%20Service%20Authority%20Record
-<http://gbad.archives.gov.on.ca/Chest%20Disease%20Service%20Authority%20Record> rdf:type owl:NamedIndividual ,
-                                                                                         rico:Record ;
-                                                                                rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Authority%20Record> ;
-                                                                                rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
-                                                                                                    <http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> ;
-                                                                                rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> ;
-                                                                                rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> ;
-                                                                                rico:generalDescription "Source Note: Not in Canadiana. Inventory for RG 10. Archivaria, Number 41, Spring 1996." ;
-                                                                                rico:lastModificationDate "2010-07-19"^^xsd:date ;
-                                                                                rdfs:label "Chest Disease Service Authority Record" .
-
-
 ###  http://gbad.archives.gov.on.ca/Controlling%20Agency%20Relation
 <http://gbad.archives.gov.on.ca/Controlling%20Agency%20Relation> rdf:type owl:NamedIndividual ,
                                                                           rico:AgentControlRelation ;
                                                                  rico:hasBeginningDate <http://gbad.archives.gov.on.ca/1974> ;
                                                                  rico:hasEndDate <http://gbad.archives.gov.on.ca/1982> ;
-                                                                 rico:relationHasTarget <http://gbad.archives.gov.on.ca/Chest%20Disease%20Service> ;
+                                                                 rico:relationHasTarget <http://gbad.archives.gov.on.ca/Ontario.%20Chest%20Disease%20Service> ;
                                                                  rdfs:label "Controlling Agency Relation" .
+
+
+###  http://gbad.archives.gov.on.ca/Ontario.%20Chest%20Disease%20Service
+<http://gbad.archives.gov.on.ca/Ontario.%20Chest%20Disease%20Service> rdf:type owl:NamedIndividual ,
+                                                                               rico:AgentName ,
+                                                                               rico:CorporateBody ;
+                                                                      rico:hasBeginningDate <http://gbad.archives.gov.on.ca/1974> ;
+                                                                      rico:hasEndDate <http://gbad.archives.gov.on.ca/1982> ;
+                                                                      rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/Ontario.%20Chest%20Disease%20Service> ;
+                                                                      rico:hasOrHadController <http://gbad.archives.gov.on.ca/Ontario.%20Ministry%20Of%20Health> ;
+                                                                      rico:hasOrHadCorporateBodyType <http://gbad.archives.gov.on.ca/C%20Ontario%20Government%20Name> ;
+                                                                      rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/CA1853> ;
+                                                                      rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Ontario.%20Chest%20Disease%20Service%20Authority%20Record> ;
+                                                                      rico:isSuccessorOf <http://gbad.archives.gov.on.ca/Ontario.%20Division%20Of%20Tuberculosis%20Prevention> ;
+                                                                      rico:generalDescription "Function Note: The Chest Disease Service was established to eradicate tuberculosis and to deal with other diseases of the chest and lungs." ;
+                                                                      rico:history "In 1974, in response to the continuing decline of the incidence of TB, the Tuberculosis Prevention Service was renamed Chest Disease Service, and was moved, within the Clinic Services Branch, to the Community Health Division.Throughout the late 1970s and into the 1980s, the Chest Disease Service was transferred several times within the public health function to different offices. Finally in 1982 it was effectively shut down. Of the 23 chest clinics that the service operated, 18 were closed and the remaining 5, all located in Northern Ontario, were transferred to the Ministry of Labour for the purposes of screening miners." ;
+                                                                      rico:normalizedValue "Chest Disease Service" ;
+                                                                      rdfs:label "Ontario. Chest Disease Service" .
+
+
+###  http://gbad.archives.gov.on.ca/Ontario.%20Chest%20Disease%20Service%20Authority%20Record
+<http://gbad.archives.gov.on.ca/Ontario.%20Chest%20Disease%20Service%20Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                                                                    rico:Record ;
+                                                                                           rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Authority%20Record> ;
+                                                                                           rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
+                                                                                                               <http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> ;
+                                                                                           rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> ;
+                                                                                           rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> ;
+                                                                                           rico:generalDescription "Source Note: Not in Canadiana. Inventory for RG 10. Archivaria, Number 41, Spring 1996." ;
+                                                                                           rico:lastModificationDate "2010-07-19"^^xsd:date ;
+                                                                                           rdfs:label "Ontario. Chest Disease Service Authority Record" .
 
 
 ###  http://gbad.archives.gov.on.ca/Ontario.%20Division%20Of%20Tuberculosis%20Prevention

@@ -1,0 +1,86 @@
+@prefix : <http://gbad.archives.gov.on.ca#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca> .
+
+<http://gbad.archives.gov.on.ca> rdf:type owl:Ontology ;
+                                  owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/Walz
+<http://gbad.archives.gov.on.ca/Walz> rdf:type owl:NamedIndividual ,
+                                               rico:Person ;
+                                      rdfs:label "Walz" .
+
+
+###  http://gbad.archives.gov.on.ca/Authority%20Record
+<http://gbad.archives.gov.on.ca/Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                             rico:DocumentaryFormType ;
+                                                    rdfs:label "Authority Record" .
+
+
+###  http://gbad.archives.gov.on.ca/Authority%20Record%20Creation
+<http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> rdf:type owl:NamedIndividual ,
+                                                                        rico:Activity ;
+                                                               rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/Walz> ;
+                                                               rdfs:label "Authority Record Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description
+<http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                               rico:Rule ;
+                                                                      rdfs:label "Rules for Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%2C%20Eliza%2C%20Ca.%201784-1865
+<http://gbad.archives.gov.on.ca/Simcoe%2C%20Eliza%2C%20Ca.%201784-1865> rdf:type owl:NamedIndividual ,
+                                                                                 rico:AgentName ,
+                                                                                 rico:Person ;
+                                                                        rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/Simcoe%2C%20Eliza%2C%20Ca.%201784-1865> ;
+                                                                        rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Simcoe%2C%20Eliza%2C%20Ca.%201784-1865%20Authority%20Record> ;
+                                                                        rico:history "Eliza Simcoe was the eldest child of John Graves and Elizabeth Simcoe. She was born between 1783 and 1785. She lived her entire life until her death in 1865 at the family's home, Wolford Lodge. Miss Simcoe took an active part in the promotion of the careers of other members of the family, particularly her nephew, John K. Simcoe, an officer in the Royal Navy. She also worked to preserve the papers and memory of her parents. These were inherited by her brother, Henry Addington Simcoe, on her death in 1865." ;
+                                                                        rico:normalizedValue "Eliza Simcoe" ;
+                                                                        rdfs:label "Simcoe, Eliza, ca. 1784-1865" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%2C%20Eliza%2C%20Ca.%201784-1865%20Authority%20Record
+<http://gbad.archives.gov.on.ca/Simcoe%2C%20Eliza%2C%20Ca.%201784-1865%20Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                                                                      rico:Record ;
+                                                                                             rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Authority%20Record> ;
+                                                                                             rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
+                                                                                                                 <http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> ;
+                                                                                             rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> ;
+                                                                                             rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> ;
+                                                                                             rico:generalDescription "Source Note: Archives of Ontario, fonds 47." ;
+                                                                                             rico:lastModificationDate "2012-02-28"^^xsd:date ;
+                                                                                             rdfs:label "Simcoe, Eliza, ca. 1784-1865 Authority Record" .
+
+
+###  http://gbad.archives.gov.on.ca/Status%3A%20Approved
+<http://gbad.archives.gov.on.ca/Status%3A%20Approved> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Status: Approved" .
+
+
+###  http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y
+<http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> rdf:type owl:NamedIndividual ,
+                                                             rico:RecordState ;
+                                                    rdfs:label "Web Ready: Y" .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

@@ -16,22 +16,22 @@ Individual: Agent%20Identifier
     rdfs:label "Agent Identifier"
   Types: rico:IdentifierType
 
-Individual: Ministry%20Of%20Health
+Individual: Ontario.%20Ministry%20Of%20Health
   Annotations:
-    rdfs:label "Ministry of Health"
+    rdfs:label "Ontario. Ministry of Health"
   Types: rico:AgentName, rico:CorporateBody
   Facts:
-    rico:normalizedValue "Ontario. Ministry of Health",
+    rico:normalizedValue "Ministry of Health",
     rico:hasOrHadIdentifier AA42,
     rico:hasOrHadAgentName MOH,
     rico:hasOrHadAgentName MS,
-    rico:hasOrHadAgentName Ministry%20Of%20Health,
+    rico:hasOrHadAgentName Ontario.%20Ministry%20Of%20Health,
     rico:hasOrHadAgentName Ontario.%20Ministère%20De%20La%20Santé,
     rico:hasOrHadCorporateBodyType A%20Ontario%20Government%20Name,
     rico:hasBeginningDate 1972,
     rico:hasEndDate 1999,
     rico:history "The Department of Health was renamed the Ministry of Health in 1972.Since 1972, the Ministry has been restructured often and a number of different divisions have existed within it.  They have, however, tended to focus around five primary areas: health insurance; community and public health services; institutional health (including administration of hospitals, ambulance services, nursing homes and psychiatric hospitals); administration and finance; and information systems.Agencies which report to the Ministry include the Addiction Research Foundation, the Ontario Cancer Treatment and Research Foundation, the District Health Councils, and the Ontario Mental Health Foundation.On June 17, 1999 the Ministry of Health was renamed the Ministry of Health and Long-Term Care.",
-    rico:isOrWasDescribedBy Department%20Of%20Health%20Authority%20Record,
+    rico:isOrWasDescribedBy Ontario.%20Ministry%20Of%20Health%20Authority%20Record,
     rico:generalDescription "Function Note: The Ministry of Health is responsible for administering the health care system and providing services to the Ontario public through programs such as health insurance, care for the mentally ill, drug services, home care services, and the regulation of hospitals and nursing homes. The Ministry also operates psychiatric hospitals, medical laboratories and provides funding and leadership for local public health services.",
     rico:isSuccessorOf Ontario.%20Dept.%20Of%20Health,
     rico:authorizedBy Ministry%20Of%20Health%20Act%2C%20Statutes%20Of%20Ontario%201972%2C%20Chap.%2092,
@@ -52,9 +52,9 @@ Individual: 1999
     rdfs:label "1999"
   Types: rico:Date
 
-Individual: Department%20Of%20Health%20Authority%20Record
+Individual: Ontario.%20Ministry%20Of%20Health%20Authority%20Record
   Annotations:
-    rdfs:label "Department of Health Authority Record"
+    rdfs:label "Ontario. Ministry of Health Authority Record"
   Types: rico:Record
   Facts:
     rico:hasDocumentaryFormType Authority%20Record,

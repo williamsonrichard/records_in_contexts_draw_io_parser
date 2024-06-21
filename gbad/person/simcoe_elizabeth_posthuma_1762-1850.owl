@@ -1,0 +1,61 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Simcoe%2C%20Elizabeth%20Posthuma%2C%201762-1850
+  Annotations:
+    rdfs:label "Simcoe, Elizabeth Posthuma, 1762-1850"
+  Types: rico:AgentName, rico:Person
+  Facts:
+    rico:normalizedValue "Elizabeth Posthuma Simcoe",
+    rico:hasOrHadAgentName Simcoe%2C%20Elizabeth%20Posthuma%2C%201762-1850,
+    rico:history "Elizabeth Simcoe was born Elizabeth Posthuma Gwillim in 1762, the daughter of Thomas Gwillim and Elizabeth Spinkes. Thomas Gwillim died seven months before the birth of Elizabeth; her mother died in childbirth. Elizabeth was raised by her mother's sister, Margaret, and her husband, Admiral Samuel Graves. She met John Graves Simcoe through this connection; Simcoe was the godson of Admiral Graves, and stayed with the Graves family on his return to England from America in 1781. In 1782, Elizabeth and Simcoe married and with her inheritance purchased an estate in Honiton, Devonshire, where Simcoe built the family home, Wolford Lodge.In 1792, she and their then two youngest children, Sophia and Francis, accompanied her husband to Upper Canada. Their four eldest children remained in England. The Simcoe's seventh child, the first they named Katherine, was born in Upper Canada, though she died in infancy.During the time Elizabeth Simcoe was in the Canadas, she maintained an active social and artistic life. As wife of the Lieutenant-Governor, she was a leader in the social life of the province; she also served as an unofficial secretary and cartographer for her husband. She was an accomplished artist, and completed hundreds of drawings and watercolours during their travels, which ranged from Niagara Falls to Quebec. She was an avid diarist, recording many of her experiences in the province.The family returned to England in 1796. She maintained her residence at Wolford Lodge for the remainder of her life. Between 1798 and 1804, another four children were born. She remained active as an artist and in her community's social life until her death in 1850.",
+    rico:isOrWasDescribedBy Simcoe%2C%20Elizabeth%20Posthuma%2C%201762-1850%20Authority%20Record
+
+Individual: Simcoe%2C%20Elizabeth%20Posthuma%2C%201762-1850%20Authority%20Record
+  Annotations:
+    rdfs:label "Simcoe, Elizabeth Posthuma, 1762-1850 Authority Record"
+  Types: rico:Record
+  Facts:
+    rico:generalDescription "Source Note: Dictionary of Canadian Biography.",
+    rico:generalDescription "Source Note: Archives of Ontario, fonds 47.",
+    rico:hasDocumentaryFormType Authority%20Record,
+    rico:isOrWasRegulatedBy Rules%20For%20Archival%20Description,
+    rico:resultsOrResultedFrom Authority%20Record%20Creation,
+    rico:lastModificationDate "2012-02-28"^^xsd:date,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Ready%3A%20Y
+
+Individual: Authority%20Record
+  Annotations:
+    rdfs:label "Authority Record"
+  Types: rico:DocumentaryFormType
+
+Individual: Rules%20For%20Archival%20Description
+  Annotations:
+    rdfs:label "Rules for Archival Description"
+  Types: rico:Rule
+
+Individual: Authority%20Record%20Creation
+  Annotations:
+    rdfs:label "Authority Record Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Walz
+
+Individual: Walz
+  Annotations:
+    rdfs:label "Walz"
+  Types: rico:Person
+
+Individual: Web%20Ready%3A%20Y
+  Annotations:
+    rdfs:label "Web Ready: Y"
+  Types: rico:RecordState
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState

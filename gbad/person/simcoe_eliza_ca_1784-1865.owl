@@ -1,0 +1,60 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Simcoe%2C%20Eliza%2C%20Ca.%201784-1865
+  Annotations:
+    rdfs:label "Simcoe, Eliza, ca. 1784-1865"
+  Types: rico:AgentName, rico:Person
+  Facts:
+    rico:normalizedValue "Eliza Simcoe",
+    rico:hasOrHadAgentName Simcoe%2C%20Eliza%2C%20Ca.%201784-1865,
+    rico:history "Eliza Simcoe was the eldest child of John Graves and Elizabeth Simcoe. She was born between 1783 and 1785. She lived her entire life until her death in 1865 at the family's home, Wolford Lodge. Miss Simcoe took an active part in the promotion of the careers of other members of the family, particularly her nephew, John K. Simcoe, an officer in the Royal Navy. She also worked to preserve the papers and memory of her parents. These were inherited by her brother, Henry Addington Simcoe, on her death in 1865.",
+    rico:isOrWasDescribedBy Simcoe%2C%20Eliza%2C%20Ca.%201784-1865%20Authority%20Record
+
+Individual: Simcoe%2C%20Eliza%2C%20Ca.%201784-1865%20Authority%20Record
+  Annotations:
+    rdfs:label "Simcoe, Eliza, ca. 1784-1865 Authority Record"
+  Types: rico:Record
+  Facts:
+    rico:generalDescription "Source Note: Archives of Ontario, fonds 47.",
+    rico:hasDocumentaryFormType Authority%20Record,
+    rico:isOrWasRegulatedBy Rules%20For%20Archival%20Description,
+    rico:resultsOrResultedFrom Authority%20Record%20Creation,
+    rico:lastModificationDate "2012-02-28"^^xsd:date,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Ready%3A%20Y
+
+Individual: Authority%20Record
+  Annotations:
+    rdfs:label "Authority Record"
+  Types: rico:DocumentaryFormType
+
+Individual: Rules%20For%20Archival%20Description
+  Annotations:
+    rdfs:label "Rules for Archival Description"
+  Types: rico:Rule
+
+Individual: Authority%20Record%20Creation
+  Annotations:
+    rdfs:label "Authority Record Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Walz
+
+Individual: Walz
+  Annotations:
+    rdfs:label "Walz"
+  Types: rico:Person
+
+Individual: Web%20Ready%3A%20Y
+  Annotations:
+    rdfs:label "Web Ready: Y"
+  Types: rico:RecordState
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState

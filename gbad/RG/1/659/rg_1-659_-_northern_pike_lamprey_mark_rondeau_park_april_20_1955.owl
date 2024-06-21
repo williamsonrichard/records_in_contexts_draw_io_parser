@@ -7,27 +7,28 @@ Ontology: <http://gbad.archives.gov.on.ca>
 Individual: Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955
   Annotations:
     rdfs:label "Northern pike lamprey mark, Rondeau Park, April 20, 1955"
-  Types: rico:Instantiation, rico:RecordSet, rico:Title
+  Types: rico:RecordSet, rico:Title
   Facts:
     rico:hasRecordSetType File,
-    rico:hasCreationDate 1955,
-    rico:hasOrHadInstantiation Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955,
-    rico:instantiationExtent "10 photographs : 4 black and white prints, 6 negatives",
+    rico:hasOrHadInstantiation Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955-i1,
     rico:isOrWasDescribedBy Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955%20Archival%20Description,
     rico:hasOrHadTitle Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955,
     rico:isDirectlyIncludedIn %5BLake%20Erie%20Management%20Unit%5D,
     rico:isDirectlyIncludedIn Fisheries%20Branch%20Photographs,
-    rico:hasContentOfType Graphic%20Materials
+    rico:hasContentOfType Graphic%20Materials,
+    rico:creationDate "1955"^^xsd:integer
 
 Individual: File
   Annotations:
     rdfs:label "File"
   Types: rico:RecordSetType
 
-Individual: 1955
+Individual: Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955-i1
   Annotations:
-    rdfs:label "1955"
-  Types: rico:Date
+    rdfs:label "Northern pike lamprey mark, Rondeau Park, April 20, 1955-i1"
+  Types: rico:Instantiation
+  Facts:
+    rico:instantiationExtent "10 photographs : 4 black and white prints, 6 negatives"
 
 Individual: Northern%20Pike%20Lamprey%20Mark%2C%20Rondeau%20Park%2C%20April%2020%2C%201955%20Archival%20Description
   Annotations:

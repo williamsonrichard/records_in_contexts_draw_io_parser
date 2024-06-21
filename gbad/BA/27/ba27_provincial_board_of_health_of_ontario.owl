@@ -28,7 +28,7 @@ Individual: Provincial%20Board%20Of%20Health%20Of%20Ontario
     rico:hasBeginningDate 1882,
     rico:hasEndDate 1924,
     rico:history "The Provincial Board of Health of Ontario was established on March 10, 1882.  At this time, however, health was still considered primarily a municipal rather than provincial matter, and the Provincial Board was an over-seeing body of the many Local Boards. The Board reported to the Lieutenant Governor (1882-1903); the Provincial Secretary (1904-1918); and to the Department of Labour (1919-1924). The Provincial Board of Health was replaced with the Department of Health in 1924.",
-    rico:isOrWasDescribedBy Department%20Of%20Health%20Authority%20Record,
+    rico:isOrWasDescribedBy Provincial%20Board%20Of%20Health%20Of%20Ontario%20Authority%20Record,
     rico:generalDescription "Function Note: The Provincial Board of Health of Ontario was responsible for promoting and ensuring the general health of the people of the province. This involved the study and use of the vital statistics of the province; conducting sanitary investigations and inquiries regarding causes of disease, especially epidemics; and distributing information to local boards of health.",
     rico:isSuccessorOf Ontario.%20Central%20Board%20Of%20Health,
     rico:authorizedBy Public%20Health%20Act%2C%20Statutes%20Of%20Ontario%201882%2C%20Chap.%2029,
@@ -49,9 +49,9 @@ Individual: 1924
     rdfs:label "1924"
   Types: rico:Date
 
-Individual: Department%20Of%20Health%20Authority%20Record
+Individual: Provincial%20Board%20Of%20Health%20Of%20Ontario%20Authority%20Record
   Annotations:
-    rdfs:label "Department of Health Authority Record"
+    rdfs:label "Provincial Board of Health of Ontario Authority Record"
   Types: rico:Record
   Facts:
     rico:hasDocumentaryFormType Authority%20Record,

@@ -28,12 +28,6 @@ xsd:date rdf:type rdfs:Datatype .
                                         rdfs:label "Series" .
 
 
-###  http://gbad.archives.gov.on.ca/%5Bca.%201950%5D-1964
-<http://gbad.archives.gov.on.ca/%5Bca.%201950%5D-1964> rdf:type owl:NamedIndividual ,
-                                                                rico:Date ;
-                                                       rdfs:label "[ca. 1950]-1964" .
-
-
 ###  http://gbad.archives.gov.on.ca/Archival%20Description
 <http://gbad.archives.gov.on.ca/Archival%20Description> rdf:type owl:NamedIndividual ,
                                                                  rico:DocumentaryFormType ;
@@ -61,24 +55,29 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://gbad.archives.gov.on.ca/Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs
 <http://gbad.archives.gov.on.ca/Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs> rdf:type owl:NamedIndividual ,
-                                                                                                 rico:Instantiation ,
                                                                                                  rico:RecordSet ,
                                                                                                  rico:Title ;
                                                                                         rico:hasContentOfType <http://gbad.archives.gov.on.ca/Graphic%20Materials> ;
-                                                                                        rico:hasCreationDate <http://gbad.archives.gov.on.ca/%5Bca.%201950%5D-1964> ;
                                                                                         rico:hasCreator <http://gbad.archives.gov.on.ca/Ontario.%20Dept.%20Of%20Health> ;
                                                                                         rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/RG%2010-145> ;
-                                                                                        rico:hasOrHadInstantiation <http://gbad.archives.gov.on.ca/Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs> ;
+                                                                                        rico:hasOrHadInstantiation <http://gbad.archives.gov.on.ca/Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs-i1> ;
                                                                                         rico:hasOrHadTitle <http://gbad.archives.gov.on.ca/Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs> ;
                                                                                         rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Series> ;
                                                                                         rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs%20Archival%20Description> ;
                                                                                         rico:conditionsOfAccess "No restrictions on access." ;
                                                                                         rico:conditionsOfUse "Crown copyright exists in these photographs. Permission to publish is required from the Archives of Ontario. Submit a Request for Permission to Publish, Exhibit or Broadcast form." ;
-                                                                                        rico:generalDescription "Availability of Other Formats: Some of the photographs from this series are available in digital format in the Archives of Ontario Visual Database. Search using reference code RG 10-145." ,
-                                                                                                                "How to Order: To view these records, order Series RG 10-145, container B 972." ;
-                                                                                        rico:instantiationExtent "ca. 200 photographs" ;
+                                                                                        rico:creationDate "[ca. 1950]-1964" ;
+                                                                                        rico:generalDescription "Availability of Other Formats: Some of the photographs from this series are available in digital format in the Archives of Ontario Visual Database. Search using reference code RG 10-145." ;
                                                                                         rico:scopeAndContent "This series contains photographs of the mobile tuberculosis testing clinics administered by the Department of Health. This includes photographs of chest X-ray machinery, Community X-ray Survey trucks, the Chest X-ray train, information displays for fairs, TB testing equipment, department staff, and interior views of the clinics." ;
                                                                                         rdfs:label "Mobile Tuberculosis Testing Clinic photographs" .
+
+
+###  http://gbad.archives.gov.on.ca/Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs-i1
+<http://gbad.archives.gov.on.ca/Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs-i1> rdf:type owl:NamedIndividual ,
+                                                                                                    rico:Instantiation ;
+                                                                                           rico:generalDescription "How to Order: To view these records, order Series RG 10-145, container B 972." ;
+                                                                                           rico:instantiationExtent "ca. 200 photographs" ;
+                                                                                           rdfs:label "Mobile Tuberculosis Testing Clinic photographs-i1" .
 
 
 ###  http://gbad.archives.gov.on.ca/Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs%20Archival%20Description
