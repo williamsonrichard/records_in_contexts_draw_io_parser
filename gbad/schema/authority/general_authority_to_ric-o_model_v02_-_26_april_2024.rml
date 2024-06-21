@@ -23,8 +23,8 @@ _:source dc:title "gbad/mapping/source/authority_head_6.csv" .
   ];
 
   rr:subjectMap [
-    rr:template "AgentName/{NAME}";
-    rr:class <http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME>
+    rr:template "{REFA}/AgentName";
+    rr:class rico:AgentName
   ];
 
   rr:predicateObjectMap [
@@ -41,8 +41,8 @@ _:source dc:title "gbad/mapping/source/authority_head_6.csv" .
   ];
 
   rr:subjectMap [
-    rr:template "{REFA}/{HEADING}";
-    rr:class <http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME>
+    rr:template "{REFA}";
+    rr:class rico:Agent
   ];
 
   rr:predicateObjectMap [

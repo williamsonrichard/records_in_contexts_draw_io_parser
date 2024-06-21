@@ -13,10 +13,8 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://gbad.archives.gov.on.ca/AA108/Ontario.%20Minister%20Responsible%20for%20Native%20Affairs>
-  a auth:Natural%20Name%20%28AUTH13%29NAME;
+<http://gbad.archives.gov.on.ca/AA108> a rico:Agent;
   rdfs:label "Ontario. Minister Responsible for Native Affairs" .
 
-<http://gbad.archives.gov.on.ca/AgentName/Minister%20Responsible%20for%20Native%20Affairs>
-  a auth:Natural%20Name%20%28AUTH13%29NAME;
+<http://gbad.archives.gov.on.ca/AA108/AgentName> a rico:AgentName;
   rico:normalizedValue "Ontario. Minister Responsible for Native Affairs" .
