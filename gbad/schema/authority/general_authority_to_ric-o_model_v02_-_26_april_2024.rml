@@ -2,18 +2,21 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
 @prefix auth: <http://gbad.archives.gov.on.ca/schema/authority#> .
 @prefix : <http://gbad.archives.gov.on.ca/schema/mapping#> .
 @base <http://gbad.archives.gov.on.ca/> .
 
 _:source dc:title "gbad/mapping/source/authority_head_6.csv" .
 
-:AgentName a rr:TriplesMap;
+:AgentNameAUTH13 a rr:TriplesMap;
   rml:logicalSource [
     rml:source "gbad/mapping/source/authority_head_6.csv";
     rml:referenceFormulation ql:CSV
@@ -21,7 +24,7 @@ _:source dc:title "gbad/mapping/source/authority_head_6.csv" .
 
   rr:subjectMap [
     rr:template "AgentName/{NAME}";
-    rr:class rico:AgentName
+    rr:class <http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME>
   ];
 
   rr:predicateObjectMap [
@@ -31,15 +34,15 @@ _:source dc:title "gbad/mapping/source/authority_head_6.csv" .
     ]
   ].
 
-:Agent a rr:TriplesMap;
+:AgentAUTH13 a rr:TriplesMap;
   rml:logicalSource [
     rml:source "gbad/mapping/source/authority_head_6.csv";
     rml:referenceFormulation ql:CSV
   ];
 
   rr:subjectMap [
-    rr:template "{HEADING}";
-    rr:class rico:CorporateBody
+    rr:template "{REFA}/{HEADING}";
+    rr:class <http://gbad.archives.gov.on.ca/schema/authority#Natural%20Name%20%28AUTH13%29NAME>
   ];
 
   rr:predicateObjectMap [
@@ -47,17 +50,6 @@ _:source dc:title "gbad/mapping/source/authority_head_6.csv" .
     rr:objectMap [
       rml:reference "HEADING";
     ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate rico:hasOrHadAgentName;
-    rr:objectMap [
-      rr:parentTriplesMap :AgentName;
-      rr:joinCondition [
-        rr:child "NAME";
-        rr:parent "NAME";
-      ];
-    ];
   ].
 
   # Mapping for General Description

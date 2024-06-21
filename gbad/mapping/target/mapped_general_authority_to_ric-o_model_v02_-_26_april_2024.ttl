@@ -1,0 +1,22 @@
+@prefix : <http://gbad.archives.gov.on.ca/schema/mapping#> .
+@prefix auth: <http://gbad.archives.gov.on.ca/schema/authority#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://gbad.archives.gov.on.ca/AA108/Ontario.%20Minister%20Responsible%20for%20Native%20Affairs>
+  a auth:Natural%20Name%20%28AUTH13%29NAME;
+  rdfs:label "Ontario. Minister Responsible for Native Affairs" .
+
+<http://gbad.archives.gov.on.ca/AgentName/Minister%20Responsible%20for%20Native%20Affairs>
+  a auth:Natural%20Name%20%28AUTH13%29NAME;
+  rico:normalizedValue "Ontario. Minister Responsible for Native Affairs" .
