@@ -1,5 +1,27 @@
-PREFIX rico: <http://example.org/rico#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+# Originally generated with ChatGPT-4o on 2024-06-21,
+# with modifications.
+
+# Initial prompt:
+
+# using regex, write a sparql query that converts the uri for these kinds of triples
+#
+# <http://gbad.archives.gov.on.ca/AA108> a rico:Agent;
+#
+# to 
+#
+# <http://gbad.archives.gov.on.ca/AA/108> a rico:Agent;
+#
+# PREFIX rico: <http://example.org/rico#>
+# PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Follow-up prompts:
+
+# modify the query so it also supported AA and CA prefixes. don't write implementation code, just sparql
+
+# modify the query to also handle those kinds of entities
+#
+# http://gbad.archives.gov.on.ca/AA108/*
+
 
 DELETE {
   ?s ?p ?o .
