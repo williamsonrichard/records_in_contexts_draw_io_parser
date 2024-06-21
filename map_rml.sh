@@ -1,10 +1,13 @@
 #!/bin/bash
 
 rml_dir="gbad/schema/authority"
-ttl_dir="gbad/mapping/target"
+ttl_root="gbad/mapping/target"
 
 rml=$(find "$rml_dir" -type f -name "*.rml")
 rml_filename=$(basename "$rml" .rml)
-ttl="$ttl_dir/mapped_$rml_filename.ttl"
+
+ttl_dir="$ttl_root/$rml_filename"
+mkdir -p "$ttl_dir"
+ttl="$ttl_dir/mapped.ttl"
 
 java -jar rmlmapper* -s turtle -m "$rml" -o "$ttl"
