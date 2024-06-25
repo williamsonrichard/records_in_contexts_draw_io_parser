@@ -1,0 +1,173 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/schema/description-listings#>
+Ontology: <http://gbad.archives.gov.on.ca/schema/description-listings>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Title%20%28ADD56%29TITLE
+  Annotations:
+    rdfs:label "Title (ADD56)TITLE"
+  Types: rico:RecordSet, rico:Title
+  Facts:
+    rico:hasRecordSetType Level%20%28ADD36%29LEVELDES,
+    rico:scopeAndContent "Scope and Content (ADD51)SCOPE",
+    rico:history "(ADD03)ADMBIO",
+    rico:history "(ADD17)CUSTOD",
+    rico:history "(ADD33)ISA",
+    rico:hasOrHadInstantiation Title%20%28ADD56%29%20%5B+%20-i1%5DTITLE,
+    rico:conditionsOfAccess "Access Restrictions (ADD01)RESTRTX / REST",
+    rico:conditionsOfUse "Terms Governing Use (ADD55)TGU",
+    rico:generalDescription "(ADD08)ASSMAT",
+    rico:generalDescription "(ADD09)AVAIL",
+    rico:generalDescription "(ADD24)FINDAID",
+    rico:generalDescription "(ADD41)NOTES",
+    rico:generalDescription "(ADD49)RELMAT",
+    rico:isOrWasDescribedBy Archival%20Description,
+    rico:isOrWasDescribedBy Finding%20Aid%20Link%20%28ADD23%29FINDAIDLINK,
+    rico:accruals "Accruals (ADD02)ACCRUAL",
+    rico:hasOrHadIdentifier Former%20Codes%20%28ADD27%29FCODES,
+    rico:hasOrHadIdentifier High%20Level%20Reference%20Code%20%28ADD30%29REF_ADD%20Or%20REFD_HIGHER,
+    rico:hasOrHadIdentifier Reference%20Code%20%28ADD48%29REFD,
+    rico:hasCreator Creator%20%28ADD15%29CREATOR,
+    rico:hasCreator Higher%20Office%20%28A%20Or%20B%29%20OR%20Lower%20Office%20%28C%29%20%28ADD42%29OFFICEAB%20Or%20OFFICEC,
+    rico:hasCreator Provenance%20%28ADD47%29INDEXPROV,
+    rico:hasOrHadTitle Title%20%28ADD56%29TITLE,
+    rico:hasOrHadSubject Names%20As%20Subjects%20%28ADD40%29INDEXSUB,
+    rico:isAssociatedWithPlace Geographic%20%28ADD28%29INDEXGEO,
+    rico:thingIsSourceOfRelation Office%20Of%20Origin%20Relation,
+    rico:hasContentOfType Form%20%28ADD26%29GMD,
+    rico:creationDate "Dates of Creation (ADD19)DATECR",
+    rico:date "Dates of Accumulation (ADD18)DATEACM",
+    rico:isDirectlyIncludedIn Title%20%28ADD56%29TITLE
+
+Individual: Level%20%28ADD36%29LEVELDES
+  Annotations:
+    rdfs:label "Level (ADD36)LEVELDES"
+  Types: rico:RecordSetType
+
+Individual: Title%20%28ADD56%29%20%5B+%20-i1%5DTITLE
+  Annotations:
+    rdfs:label "Title (ADD56) [+ -i1]TITLE"
+  Types: rico:Instantiation
+  Facts:
+    rico:instantiationExtent "Physical Description (ADD46) PHDESC",
+    rico:physicalCharacteristicsNote "Physical Condition (ADD45)PHYSCO",
+    rico:generalDescription "(ADD31)HOWTO"
+
+Individual: Finding%20Aid%20Link%20%28ADD23%29FINDAIDLINK
+  Annotations:
+    rdfs:label "Finding Aid Link (ADD23)FINDAIDLINK"
+  Types: rico:Record
+  Facts:
+    rico:hasDocumentaryFormType Finding%20Aid
+
+Individual: Finding%20Aid
+  Annotations:
+    rdfs:label "Finding Aid"
+  Types: rico:DocumentaryFormType
+
+Individual: Reference%20Code%20%28ADD48%29REFD
+  Annotations:
+    rdfs:label "Reference Code (ADD48)REFD"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Current%20Reference%20Code
+
+Individual: Former%20Codes%20%28ADD27%29FCODES
+  Annotations:
+    rdfs:label "Former Codes (ADD27)FCODES"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Former%20Code
+
+Individual: Current%20Reference%20Code
+  Annotations:
+    rdfs:label "Current Reference Code"
+  Types: rico:IdentifierType
+
+Individual: Former%20Code
+  Annotations:
+    rdfs:label "Former Code"
+  Types: rico:IdentifierType
+
+Individual: Archival%20Description
+  Annotations:
+    rdfs:label "Archival Description"
+  Types: rico:DocumentaryFormType, rico:Record
+  Facts:
+    rico:resultsOrResultedFrom Archival%20Description%20Creation,
+    rico:lastModificationDate "Date Modified (ADD21)MODDATE",
+    rico:hasDocumentaryFormType Archival%20Description,
+    rico:hasRecordState %28ADD54%29STATUSD,
+    rico:hasRecordState %28ADD57%29WEBD%20%2F%20WEBL
+
+Individual: Archival%20Description%20Creation
+  Annotations:
+    rdfs:label "Archival Description Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Archivist%20%28ADD05%29ARCHD
+
+Individual: Archivist%20%28ADD05%29ARCHD
+  Annotations:
+    rdfs:label "Archivist (ADD05)ARCHD"
+  Types: rico:Person
+
+Individual: Provenance%20%28ADD47%29INDEXPROV
+  Annotations:
+    rdfs:label "Provenance (ADD47)INDEXPROV"
+  Types: rico:Agent
+
+Individual: Names%20As%20Subjects%20%28ADD40%29INDEXSUB
+  Annotations:
+    rdfs:label "Names as Subjects (ADD40)INDEXSUB"
+  Types: rico:Agent
+
+Individual: Geographic%20%28ADD28%29INDEXGEO
+  Annotations:
+    rdfs:label "Geographic (ADD28)INDEXGEO"
+  Types: rico:Place
+
+Individual: %28ADD54%29STATUSD
+  Annotations:
+    rdfs:label "(ADD54)STATUSD"
+  Types: rico:RecordState
+
+Individual: %28ADD57%29WEBD%20%2F%20WEBL
+  Annotations:
+    rdfs:label "(ADD57)WEBD / WEBL"
+  Types: rico:RecordState
+
+Individual: Office%20Of%20Origin%20Relation
+  Annotations:
+    rdfs:label "Office of Origin Relation"
+  Types: rico:CreationRelation
+  Facts:
+    rico:relationHasTarget Higher%20Office%20%28A%20Or%20B%29%20OR%20Lower%20Office%20%28C%29%20%28ADD42%29OFFICEAB%20Or%20OFFICEC,
+    rico:hasBeginningDate Date%20Of%20Creation%20%28ADD42%29DATEOFF,
+    rico:hasEndDate Date%20Of%20Creation%20%28ADD42%29DATEOFF
+
+Individual: Date%20Of%20Creation%20%28ADD42%29DATEOFF
+  Annotations:
+    rdfs:label "Date of Creation (ADD42)DATEOFF"
+  Types: rico:Date
+
+Individual: Creator%20%28ADD15%29CREATOR
+  Annotations:
+    rdfs:label "Creator (ADD15)CREATOR"
+  Types: rico:Agent
+
+Individual: Form%20%28ADD26%29GMD
+  Annotations:
+    rdfs:label "Form (ADD26)GMD"
+  Types: rico:ContentType
+
+Individual: Higher%20Office%20%28A%20Or%20B%29%20OR%20Lower%20Office%20%28C%29%20%28ADD42%29OFFICEAB%20Or%20OFFICEC
+  Annotations:
+    rdfs:label "Higher Office (A or B) OR Lower Office (C) (ADD42)OFFICEAB or OFFICEC"
+  Types: rico:CorporateBody
+
+Individual: High%20Level%20Reference%20Code%20%28ADD30%29REF_ADD%20Or%20REFD_HIGHER
+  Annotations:
+    rdfs:label "High Level Reference Code (ADD30)REF_ADD or REFD_HIGHER"
+  Types: rico:Identifier
