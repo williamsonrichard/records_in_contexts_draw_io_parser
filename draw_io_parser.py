@@ -1355,6 +1355,7 @@ def _infer_type(literal: str) -> str:
             return "\"" + literal + "\"^^xsd:dateTime"
         except ValueError:
             pass
+    literal = literal.replace('"', r'\"')
     return "\"" + literal + "\""
 
 

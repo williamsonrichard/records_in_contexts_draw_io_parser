@@ -1,0 +1,143 @@
+@prefix : <http://gbad.archives.gov.on.ca#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca> .
+
+<http://gbad.archives.gov.on.ca> rdf:type owl:Ontology ;
+                                  owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/Series
+<http://gbad.archives.gov.on.ca/Series> rdf:type owl:NamedIndividual ,
+                                                 rico:RecordSetType ;
+                                        rdfs:label "Series" .
+
+
+###  http://gbad.archives.gov.on.ca/Sub-Series
+<http://gbad.archives.gov.on.ca/Sub-Series> rdf:type owl:NamedIndividual ,
+                                                     rico:RecordSetType ;
+                                            rdfs:label "Sub-Series" .
+
+
+###  http://gbad.archives.gov.on.ca/Walz
+<http://gbad.archives.gov.on.ca/Walz> rdf:type owl:NamedIndividual ,
+                                               rico:Person ;
+                                      rdfs:label "Walz" .
+
+
+###  http://gbad.archives.gov.on.ca/Archival%20Description
+<http://gbad.archives.gov.on.ca/Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                 rico:DocumentaryFormType ;
+                                                        rdfs:label "Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Archival%20Description%20Creation
+<http://gbad.archives.gov.on.ca/Archival%20Description%20Creation> rdf:type owl:NamedIndividual ,
+                                                                            rico:Activity ;
+                                                                   rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/Walz> ;
+                                                                   rdfs:label "Archival Description Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/Current%20Reference%20Code
+<http://gbad.archives.gov.on.ca/Current%20Reference%20Code> rdf:type owl:NamedIndividual ,
+                                                                     rico:IdentifierType ;
+                                                            rdfs:label "Current Reference Code" .
+
+
+###  http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Sketches
+<http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Sketches> rdf:type owl:NamedIndividual ,
+                                                                        rico:RecordSet ;
+                                                               rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/F%2047-11> ;
+                                                               rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Series> ;
+                                                               rdfs:label "Elizabeth Simcoe sketches" .
+
+
+###  http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Loose%20Sketches
+<http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Loose%20Sketches> rdf:type owl:NamedIndividual ,
+                                                                                rico:RecordSet ,
+                                                                                rico:Title ;
+                                                                       rico:hasContentOfType <http://gbad.archives.gov.on.ca/Graphic%20Materials> ;
+                                                                       rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/F%2047-11-1> ;
+                                                                       rico:hasOrHadInstantiation <http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Loose%20Sketches-i1> ;
+                                                                       rico:hasOrHadTitle <http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Loose%20Sketches> ;
+                                                                       rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-Series> ;
+                                                                       rico:isDirectlyIncludedIn <http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Sketches> ;
+                                                                       rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Loose%20Sketches%20Archival%20Description> ;
+                                                                       rico:accruals "No further accruals are expected." ;
+                                                                       rico:conditionsOfAccess "The original artworks in this sub-series are closed for conservation reasons. Please refer either to reference slides and transparencies, or to the Archives' on-line Visual Database." ;
+                                                                       rico:conditionsOfUse "Records are in the public domain. There are no restrictions on reproduction for research and private study.  If you wish to use any of this material for a purpose other than research and private study, submit a Request for Permission to Publish, Exhibit or Broadcast Form." ;
+                                                                       rico:creationDate "1791-1842, predominant 1791-1796" ;
+                                                                       rico:generalDescription "Availability of Other Formats: This material is available as reference slides and/or transparencies, and through the Archives' on-line Visual Database." ,
+                                                                                               "Finding Aid Note: An online list is available for this sub-series." ,
+                                                                                               "Some items contain Mrs. Simcoe's original captions and dates. Others, initialed \"C.S.\", may have been captioned by her daughter Charlotte.  In a few cases, writing on the back of an item may have been done by members of the Coles family or archivists. Other supplied caption and date information was taken from John Ross Robertson's 1911 publication The Diary of Mrs. Simcoe. The original of this diary is contained in series F 47-8.The \"Old Code\" reference in the listings provides cross-references to earlier control numbers used in the 1956 Archives of Ontario finding aid to the sketches. Some item reference codes appear out of sequence in the listing. These represent previously unnumbered sketches found on the verso of sketches containing old code numbers. The titles of all these items have been supplied." ;
+                                                                       rico:history "Custodial History: The material in this sub-series was acquired in 1952 under the terms of a long-term loan agreement with the University of Toronto Library, which owns the records." ;
+                                                                       rico:scopeAndContent "Sub-series consists largely of watercolours and drawings, most of which were created by Elizabeth Simcoe. The majority are of Upper Canada and Lower Canada, created during her husband's tenure as Lieutenant-Governor of Upper Canada.Some of the more detailed watercolours may have been completed after her return to England in 1796. Most of the works depict the St. Lawrence River, Lake Ontario, and the Niagara region. There are also views of Montreal, Quebec, and southern places in England. Along with the landscapes, there are some portraits, primarily of aboriginal people, and drawings of flowers, birds, butterflies and fish.A number of sketches are clearly the work of other artists. Items F 47-11-1-0-109 through F 47-11-1-0-117 are identified as being drawn by Lieutenant Pilkington. A few others contain differences in style, suggesting that Mrs. Simcoe was not the artist.The sub-series also contains prints collected by Mrs. Simcoe and a photograph of either one of her watercolours or a watercolour collected by her." ;
+                                                                       rdfs:label "Elizabeth Simcoe loose sketches" .
+
+
+###  http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Loose%20Sketches-i1
+<http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Loose%20Sketches-i1> rdf:type owl:NamedIndividual ,
+                                                                                   rico:Instantiation ;
+                                                                          rico:generalDescription "How to Order: Consult the online list to identify the records that you require. Order reference transparencies or slides using reference code and barcode number, or refer to the on-line Visual Database." ;
+                                                                          rico:instantiationExtent "318 watercolours58 drawings8 prints1 photograph" ;
+                                                                          rdfs:label "Elizabeth Simcoe loose sketches-i1" .
+
+
+###  http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Loose%20Sketches%20Archival%20Description
+<http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Loose%20Sketches%20Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                                                         rico:Record ;
+                                                                                                rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Archival%20Description> ;
+                                                                                                rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
+                                                                                                                    <http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y> ;
+                                                                                                rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Archival%20Description%20Creation> ;
+                                                                                                rico:lastModificationDate "2009-07-23"^^xsd:date ;
+                                                                                                rdfs:label "Elizabeth Simcoe loose sketches Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/F%2047-11
+<http://gbad.archives.gov.on.ca/F%2047-11> rdf:type owl:NamedIndividual ,
+                                                    rico:Identifier ;
+                                           rdfs:label "F 47-11" .
+
+
+###  http://gbad.archives.gov.on.ca/F%2047-11-1
+<http://gbad.archives.gov.on.ca/F%2047-11-1> rdf:type owl:NamedIndividual ,
+                                                      rico:Identifier ;
+                                             rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Current%20Reference%20Code> ;
+                                             rdfs:label "F 47-11-1" .
+
+
+###  http://gbad.archives.gov.on.ca/Graphic%20Materials
+<http://gbad.archives.gov.on.ca/Graphic%20Materials> rdf:type owl:NamedIndividual ,
+                                                              rico:ContentType ;
+                                                     rdfs:label "Graphic materials" .
+
+
+###  http://gbad.archives.gov.on.ca/Status%3A%20Approved
+<http://gbad.archives.gov.on.ca/Status%3A%20Approved> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Status: Approved" .
+
+
+###  http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y
+<http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Web Enabled: Y" .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi
