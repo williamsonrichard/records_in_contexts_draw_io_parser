@@ -1,0 +1,112 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Elizabeth%20Simcoe%20Miscellaneous%20Sketches%20And%20Fragments
+  Annotations:
+    rdfs:label "Elizabeth Simcoe miscellaneous sketches and fragments"
+  Types: rico:RecordSet, rico:Title
+  Facts:
+    rico:hasRecordSetType Sub-Series,
+    rico:scopeAndContent "Sub-series consists of miscellaneous watercolour and drawing fragments, which were kept separately from the completed pieces contained in sub-series F 47-11-1.The first group, F 47-11-3-1, contains fragments of views of what appears to be Upper Canada; most are smudged and unidentified. Two fragments contain no sketch but identity Kingston, and \"near Queenston\", which suggests these may have been backing paper for a smaller mounted drawing. The second group, F 47-11-3-2, contains watercolour and drawing fragments of places in England and Europe, drawn after Mrs. Simcoe's return to England. Many of these have some identification. Differences in style suggest that some were not created by Mrs. Simcoe.",
+    rico:history "Custodial History: The material in this sub-series was acquired in 1952 under the terms of a long-term loan agreement with the University of Toronto Library, which owns the records.",
+    rico:hasOrHadInstantiation Elizabeth%20Simcoe%20Miscellaneous%20Sketches%20And%20Fragments-i1,
+    rico:conditionsOfAccess "No restrictions on access.",
+    rico:conditionsOfUse "Records are in the public domain. There are no restrictions on reproduction for research and private study.  If you wish to use any of this material for a purpose other than research and private study, submit a Request for Permission to Publish, Exhibit or Broadcast Form.",
+    rico:generalDescription "Availability of Other Formats: Some of this material is available through the Archives' on-line Visual Database.",
+    rico:generalDescription "Finding Aid Note: An online list is available for this sub-series.",
+    rico:accruals "No further accruals are expected.",
+    rico:hasOrHadIdentifier F%2047-11-3,
+    rico:isOrWasDescribedBy Elizabeth%20Simcoe%20Miscellaneous%20Sketches%20And%20Fragments%20Archival%20Description,
+    rico:hasOrHadTitle Elizabeth%20Simcoe%20Miscellaneous%20Sketches%20And%20Fragments,
+    rico:hasContentOfType Graphic%20Materials,
+    rico:creationDate "[ca. 1790-1840]",
+    rico:isDirectlyIncludedIn Elizabeth%20Simcoe%20Sketches
+
+Individual: Sub-Series
+  Annotations:
+    rdfs:label "Sub-Series"
+  Types: rico:RecordSetType
+
+Individual: Elizabeth%20Simcoe%20Miscellaneous%20Sketches%20And%20Fragments-i1
+  Annotations:
+    rdfs:label "Elizabeth Simcoe miscellaneous sketches and fragments-i1"
+  Types: rico:Instantiation
+  Facts:
+    rico:instantiationExtent "35 watercolours5 drawings",
+    rico:generalDescription "How to Order: Consult the online list to identify the records that you require. Order using reference code and barcode number."
+
+Individual: F%2047-11-3
+  Annotations:
+    rdfs:label "F 47-11-3"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Current%20Reference%20Code
+
+Individual: Current%20Reference%20Code
+  Annotations:
+    rdfs:label "Current Reference Code"
+  Types: rico:IdentifierType
+
+Individual: Elizabeth%20Simcoe%20Miscellaneous%20Sketches%20And%20Fragments%20Archival%20Description
+  Annotations:
+    rdfs:label "Elizabeth Simcoe miscellaneous sketches and fragments Archival Description"
+  Types: rico:Record
+  Facts:
+    rico:resultsOrResultedFrom Archival%20Description%20Creation,
+    rico:lastModificationDate "2009-07-17"^^xsd:date,
+    rico:hasDocumentaryFormType Archival%20Description,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Enabled%3A%20Y
+
+Individual: Archival%20Description%20Creation
+  Annotations:
+    rdfs:label "Archival Description Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Walz
+
+Individual: Walz
+  Annotations:
+    rdfs:label "Walz"
+  Types: rico:Person
+
+Individual: Archival%20Description
+  Annotations:
+    rdfs:label "Archival Description"
+  Types: rico:DocumentaryFormType
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState
+
+Individual: Web%20Enabled%3A%20Y
+  Annotations:
+    rdfs:label "Web Enabled: Y"
+  Types: rico:RecordState
+
+Individual: Graphic%20Materials
+  Annotations:
+    rdfs:label "Graphic materials"
+  Types: rico:ContentType
+
+Individual: Elizabeth%20Simcoe%20Sketches
+  Annotations:
+    rdfs:label "Elizabeth Simcoe sketches"
+  Types: rico:RecordSet
+  Facts:
+    rico:hasOrHadIdentifier F%2047-11,
+    rico:hasRecordSetType Series
+
+Individual: F%2047-11
+  Annotations:
+    rdfs:label "F 47-11"
+  Types: rico:Identifier
+
+Individual: Series
+  Annotations:
+    rdfs:label "Series"
+  Types: rico:RecordSetType

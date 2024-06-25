@@ -1,0 +1,111 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Elizabeth%20Simcoe%20Sketchbook
+  Annotations:
+    rdfs:label "Elizabeth Simcoe sketchbook"
+  Types: rico:RecordSet, rico:Title
+  Facts:
+    rico:hasRecordSetType Sub-Series,
+    rico:scopeAndContent "Sub-series consists of a sketchbook containing 63 watercolours and drawings done by Elizabeth Simcoe during the time she accompanied her husband to Upper Canada.Many of the sketches are rough views, with few details. Some of the sketches are identified as Fort Erie, 40 Mile Creek, Queenston, Huron and Chippewa. Some of the sketches are of flowers and have accompanying notes.",
+    rico:history "Custodial History: The material in this series was acquired in 1952 under the terms of a long-term loan agreement with the University of Toronto Library, which owns the records.",
+    rico:hasOrHadInstantiation Elizabeth%20Simcoe%20Sketchbook-i1,
+    rico:conditionsOfAccess "This material is closed for conservation reasons.",
+    rico:conditionsOfUse "Records are in the public domain. There are no restrictions on reproduction for research and private study.  If you wish to use any of this material for a purpose other than research and private study, submit a Request for Permission to Publish, Exhibit or Broadcast Form.",
+    rico:generalDescription "Finding Aid Note: An online list is available for this sub-series.",
+    rico:accruals "No further accruals are expected.",
+    rico:hasOrHadIdentifier F%2047-11-2,
+    rico:isOrWasDescribedBy Elizabeth%20Simcoe%20Sketchbook%20Archival%20Description,
+    rico:hasOrHadTitle Elizabeth%20Simcoe%20Sketchbook,
+    rico:hasContentOfType Graphic%20Materials,
+    rico:creationDate "1795-1796",
+    rico:isDirectlyIncludedIn Elizabeth%20Simcoe%20Sketches
+
+Individual: Sub-Series
+  Annotations:
+    rdfs:label "Sub-Series"
+  Types: rico:RecordSetType
+
+Individual: Elizabeth%20Simcoe%20Sketchbook-i1
+  Annotations:
+    rdfs:label "Elizabeth Simcoe sketchbook-i1"
+  Types: rico:Instantiation
+  Facts:
+    rico:instantiationExtent "1 sketchbook (63 watercolours and drawings)",
+    rico:generalDescription "How to Order: This material is closed for conservation reasons. Contact a Reference Archivist for more information."
+
+Individual: F%2047-11-2
+  Annotations:
+    rdfs:label "F 47-11-2"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Current%20Reference%20Code
+
+Individual: Current%20Reference%20Code
+  Annotations:
+    rdfs:label "Current Reference Code"
+  Types: rico:IdentifierType
+
+Individual: Elizabeth%20Simcoe%20Sketchbook%20Archival%20Description
+  Annotations:
+    rdfs:label "Elizabeth Simcoe sketchbook Archival Description"
+  Types: rico:Record
+  Facts:
+    rico:resultsOrResultedFrom Archival%20Description%20Creation,
+    rico:lastModificationDate "2009-07-17"^^xsd:date,
+    rico:hasDocumentaryFormType Archival%20Description,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Enabled%3A%20Y
+
+Individual: Archival%20Description%20Creation
+  Annotations:
+    rdfs:label "Archival Description Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Walz
+
+Individual: Walz
+  Annotations:
+    rdfs:label "Walz"
+  Types: rico:Person
+
+Individual: Archival%20Description
+  Annotations:
+    rdfs:label "Archival Description"
+  Types: rico:DocumentaryFormType
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState
+
+Individual: Web%20Enabled%3A%20Y
+  Annotations:
+    rdfs:label "Web Enabled: Y"
+  Types: rico:RecordState
+
+Individual: Graphic%20Materials
+  Annotations:
+    rdfs:label "Graphic materials"
+  Types: rico:ContentType
+
+Individual: Elizabeth%20Simcoe%20Sketches
+  Annotations:
+    rdfs:label "Elizabeth Simcoe sketches"
+  Types: rico:RecordSet
+  Facts:
+    rico:hasOrHadIdentifier F%2047-11,
+    rico:hasRecordSetType Series
+
+Individual: F%2047-11
+  Annotations:
+    rdfs:label "F 47-11"
+  Types: rico:Identifier
+
+Individual: Series
+  Annotations:
+    rdfs:label "Series"
+  Types: rico:RecordSetType

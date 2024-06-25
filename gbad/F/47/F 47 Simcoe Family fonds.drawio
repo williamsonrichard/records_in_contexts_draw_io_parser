@@ -531,7 +531,7 @@
             <mxPoint x="10" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-29" value="rico:accumulationDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-28" connectable="0" vertex="1">
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-29" value="rico:date" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-28" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="PbNKBDSLsDvYSo0k1ZoX-30" value="[ca. 1750-1918]" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">

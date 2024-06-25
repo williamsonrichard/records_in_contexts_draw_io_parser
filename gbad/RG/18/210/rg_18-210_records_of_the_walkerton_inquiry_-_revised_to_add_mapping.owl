@@ -1,0 +1,149 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Records%20Of%20The%20Walkerton%20Inquiry
+  Annotations:
+    rdfs:label "Records of the Walkerton Inquiry"
+  Types: rico:RecordSet, rico:Title
+  Facts:
+    rico:hasRecordSetType Series,
+    rico:scopeAndContent "Series consists of records generated during the course of the Walkerton Inquiry into the tainted water tragedy that occurred in Walkerton, Ontario in May 2000. At that time Walkerton’s drinking water system became contaminated with deadly bacteria, primarily Escherichia coli O157:H7.1 Seven people died, and more than 2,300 became ill.The Ontario government called the Inquiry to investigate what actually happened in Walkerton. The mandate of the Inquiry was to determine the causes of the E-coli outbreak, find out who was responsible, and to investigate if it could have been prevented.Commissioner O'Connor divided the Inquiry into two Parts. The purpose of Part One was to fulfil the mandate of discovering what had happened in Walkerton, and why, and to make recommendations based on those findings. Part One involved a great deal of fact finding and included evidentiary hearings. Part Two of the Inquiry was broader in scope and dealt with policy issues related to safe drinking water. The primary purpose of Part Two was to make recommendations regarding Ontario's drinking water system.The records in this series have been arranged into sub-series that broadly reflect Parts One and Two of the Inquiry, and also include general administrative records created by the Inquiry's staff. Included in the sub-series are records connected with the hearings and meetings held by the Inquiry, commissioned research reports, correspondence, the reference database of documents used by the Inquiry and the Inquiry's website.",
+    rico:hasCreator Ontario.%20Walkerton%20Inquiry,
+    rico:hasOrHadIdentifier Accession%20Number%3A%2045241.,
+    rico:hasOrHadIdentifier RG%2018-210,
+    rico:thingIsSourceOfRelation Office%20Of%20Origin%20Relation,
+    rico:creationDate "2000-2002",
+    rico:hasOrHadTitle Records%20Of%20The%20Walkerton%20Inquiry,
+    rico:isOrWasDescribedBy Records%20Of%20The%20Walkerton%20Inquiry%20Archival%20Description,
+    rico:accruals "No further accruals are expected.",
+    rico:generalDescription "Finding Aid Note: Please see sub-series descriptions for information about finding aids.",
+    rico:generalDescription "Immediate Source of Acquisition: The records were acquired by the Archives of Ontario in a direct transfer from the Walkerton Inquiry in 2002.",
+    rico:conditionsOfAccess "Some of the records are closed until 2022. See sub-series descriptions for details.",
+    rico:conditionsOfUse "See sub-series descriptions for terms governing use.",
+    rico:hasContentOfType Electronic%20Records,
+    rico:hasContentOfType Moving%20Images,
+    rico:hasContentOfType Sound%20Recordings,
+    rico:hasContentOfType Textual%20Records,
+    rico:hasOrHadInstantiation Records%20Of%20The%20Walkerton%20Inquiry-i1
+
+Individual: Series
+  Annotations:
+    rdfs:label "Series"
+  Types: rico:RecordSetType
+
+Individual: Ontario.%20Walkerton%20Inquiry
+  Annotations:
+    rdfs:label "Ontario. Walkerton Inquiry"
+  Types: rico:CorporateBody
+
+Individual: RG%2018-210
+  Annotations:
+    rdfs:label "RG 18-210"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Current%20Reference%20Code
+
+Individual: Current%20Reference%20Code
+  Annotations:
+    rdfs:label "Current Reference Code"
+  Types: rico:IdentifierType
+
+Individual: Office%20Of%20Origin%20Relation
+  Annotations:
+    rdfs:label "Office of Origin Relation"
+  Types: rico:CreationRelation
+  Facts:
+    rico:relationHasTarget Ontario.%20Walkerton%20Inquiry,
+    rico:hasBeginningDate 2000,
+    rico:hasEndDate 2002
+
+Individual: 2000
+  Annotations:
+    rdfs:label "2000"
+  Types: rico:Date
+
+Individual: 2002
+  Annotations:
+    rdfs:label "2002"
+  Types: rico:Date
+
+Individual: Records%20Of%20The%20Walkerton%20Inquiry%20Archival%20Description
+  Annotations:
+    rdfs:label "Records of the Walkerton Inquiry Archival Description"
+  Types: rico:Record
+  Facts:
+    rico:hasDocumentaryFormType Archival%20Description,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Enabled%3A%20Y,
+    rico:resultsOrResultedFrom Archival%20Description%20Creation,
+    rico:lastModificationDate "2011-01-11"^^xsd:date
+
+Individual: Archival%20Description
+  Annotations:
+    rdfs:label "Archival Description"
+  Types: rico:DocumentaryFormType
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState
+
+Individual: Web%20Enabled%3A%20Y
+  Annotations:
+    rdfs:label "Web Enabled: Y"
+  Types: rico:RecordState
+
+Individual: Archival%20Description%20Creation
+  Annotations:
+    rdfs:label "Archival Description Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Dale
+
+Individual: Dale
+  Annotations:
+    rdfs:label "Dale"
+  Types: rico:Person
+
+Individual: Moving%20Images
+  Annotations:
+    rdfs:label "Moving images"
+  Types: rico:ContentType
+
+Individual: Sound%20Recordings
+  Annotations:
+    rdfs:label "Sound recordings"
+  Types: rico:ContentType
+
+Individual: Electronic%20Records
+  Annotations:
+    rdfs:label "Electronic records"
+  Types: rico:ContentType
+
+Individual: Textual%20Records
+  Annotations:
+    rdfs:label "Textual records"
+  Types: rico:ContentType
+
+Individual: Records%20Of%20The%20Walkerton%20Inquiry-i1
+  Annotations:
+    rdfs:label "Records of the Walkerton Inquiry-i1"
+  Types: rico:Instantiation
+  Facts:
+    rico:instantiationExtent "18.6 metres of textual records (62 boxes)4 data sets of textual records (53.5 GB)1 website (56.9 MB)5 audio cassettes3 videocassettes",
+    rico:generalDescription "How to Order: See sub-series descriptions for information on how to access the records."
+
+Individual: Accession%20Number%3A%2045241.
+  Annotations:
+    rdfs:label "Accession number: 45241."
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Accession%20Number
+
+Individual: Accession%20Number
+  Annotations:
+    rdfs:label "Accession Number"
+  Types: rico:IdentifierType

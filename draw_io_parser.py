@@ -969,19 +969,21 @@ class DrawIOXMLTree:
         try:
             x = float(geometry.attrib["x"])
         except KeyError as key_error:
-            raise ParseException(
-                "Expecting the mxGeometry element of the cell with the "
-                "following id to have an 'x' attribute, but it does not: "
-                f"{individual_cell.attrib['id']}"
-            ) from key_error
+            x = 0.0
+            #raise ParseException(
+            #    "Expecting the mxGeometry element of the cell with the "
+            #    "following id to have an 'x' attribute, but it does not: "
+            #    f"{individual_cell.attrib['id']}"
+            #) from key_error
         try:
             y = float(geometry.attrib["y"])
         except KeyError as key_error:
-            raise ParseException(
-                "Expecting the mxGeometry element of the cell with the "
-                "following id to have a 'y' attribute, but it does not: "
-                f"{individual_cell.attrib['id']}"
-            ) from key_error
+            y = 0.0
+            #raise ParseException(
+            #    "Expecting the mxGeometry element of the cell with the "
+            #    "following id to have a 'y' attribute, but it does not: "
+            #    f"{individual_cell.attrib['id']}"
+            #) from key_error
         try:
             width = float(geometry.attrib["width"])
         except KeyError as key_error:

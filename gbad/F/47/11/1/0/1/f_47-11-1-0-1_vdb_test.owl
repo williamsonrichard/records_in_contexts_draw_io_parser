@@ -1,0 +1,133 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.-i1
+  Annotations:
+    rdfs:label "October 29th 1791, 4 o'clock P.M. Richmond I or  Isle Madame near the Gut of Canso. Vessel coming out of Arishart Harbour, Green I.-i1"
+  Types: rico:Instantiation
+  Facts:
+    rico:instantiationExtent "1 watercolour on paper",
+    rico:hasOrHadDerivedInstantiation October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.-i2
+
+Individual: F%2047-11-1-0-1
+  Annotations:
+    rdfs:label "F 47-11-1-0-1"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Current%20Reference%20Code
+
+Individual: Current%20Reference%20Code
+  Annotations:
+    rdfs:label "Current Reference Code"
+  Types: rico:IdentifierType
+
+Individual: October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.%20Archival%20Description
+  Annotations:
+    rdfs:label "October 29th 1791, 4 o'clock P.M. Richmond I or  Isle Madame near the Gut of Canso. Vessel coming out of Arishart Harbour, Green I. Archival Description"
+  Types: rico:Record
+  Facts:
+    rico:hasDocumentaryFormType Archival%20Description,
+    rico:hasRecordState Web%20Enabled%3A%20Y
+
+Individual: October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.
+  Annotations:
+    rdfs:label "October 29th 1791, 4 o'clock P.M. Richmond I or  Isle Madame near the Gut of Canso. Vessel coming out of Arishart Harbour, Green I."
+  Types: rico:Record, rico:Title
+  Facts:
+    rico:hasOrHadInstantiation October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.-i1,
+    rico:hasOrHadIdentifier F%2047-11-1-0-1,
+    rico:isOrWasDescribedBy October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.%20Archival%20Description,
+    rico:hasOrHadTitle October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.,
+    rico:hasContentOfType Graphic%20Materials,
+    rico:creationDate "Oct. 29, 1791",
+    rico:isDirectlyIncludedIn Elizabeth%20Simcoe%20Loose%20Sketches,
+    rico:generalDescription "Notes: Old Code: 1",
+    rico:hasOrHadDigitalInstantiation October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.-i2,
+    rico:hasOrHadSubject Boats,
+    rico:hasOrHadSubject Cliffs,
+    rico:hasOrHadSubject Sailboats,
+    rico:hasOrHadSubject Seascapes%20%28representations%29
+
+Individual: Archival%20Description
+  Annotations:
+    rdfs:label "Archival Description"
+  Types: rico:DocumentaryFormType
+
+Individual: Web%20Enabled%3A%20Y
+  Annotations:
+    rdfs:label "Web Enabled: Y"
+  Types: rico:RecordState
+
+Individual: Graphic%20Materials
+  Annotations:
+    rdfs:label "Graphic materials"
+  Types: rico:ContentType
+
+Individual: Elizabeth%20Simcoe%20Loose%20Sketches
+  Annotations:
+    rdfs:label "Elizabeth Simcoe loose sketches"
+  Types: rico:RecordSet
+  Facts:
+    rico:hasOrHadIdentifier F%2047-11-1,
+    rico:hasRecordSetType Sub-Series
+
+Individual: F%2047-11-1
+  Annotations:
+    rdfs:label "F 47-11-1"
+  Types: rico:Identifier
+
+Individual: Sub-Series
+  Annotations:
+    rdfs:label "Sub-Series"
+  Types: rico:RecordSetType
+
+Individual: October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.-i2
+  Annotations:
+    rdfs:label "October 29th 1791, 4 o'clock P.M. Richmond I or  Isle Madame near the Gut of Canso. Vessel coming out of Arishart Harbour, Green I.-i2"
+  Types: rico:Instantiation
+  Facts:
+    rico:instantiationExtent "1 digital image (66.1 KB) : colour (jpeg)",
+    rico:qualityOfRepresentationNote "Resolution (DPI): 300",
+    rico:hasProductionTechniqueType Scanned%20Digital%20Image,
+    rico:creationDate "02-2002",
+    rico:hasOrHadIdentifier I0006853.jpg
+
+Individual: Scanned%20Digital%20Image
+  Annotations:
+    rdfs:label "Scanned digital image"
+  Types: rico:ProductionTechniqueType
+
+Individual: I0006853.jpg
+  Annotations:
+    rdfs:label "I0006853.jpg"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType File%20Name
+
+Individual: File%20Name
+  Annotations:
+    rdfs:label "File name"
+  Types: rico:IdentifierType
+
+Individual: Seascapes%20%28representations%29
+  Annotations:
+    rdfs:label "Seascapes (representations)"
+  Types: rico:Thing
+
+Individual: Cliffs
+  Annotations:
+    rdfs:label "Cliffs"
+  Types: rico:Thing
+
+Individual: Boats
+  Annotations:
+    rdfs:label "Boats"
+  Types: rico:Thing
+
+Individual: Sailboats
+  Annotations:
+    rdfs:label "Sailboats"
+  Types: rico:Thing

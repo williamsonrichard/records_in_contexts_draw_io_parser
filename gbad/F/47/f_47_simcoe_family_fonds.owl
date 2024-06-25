@@ -1,0 +1,152 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Simcoe%20Family%20Fonds
+  Annotations:
+    rdfs:label "Simcoe family fonds"
+  Types: rico:RecordSet, rico:Title
+  Facts:
+    rico:hasRecordSetType Fonds,
+    rico:scopeAndContent "Fonds documents the official and private lives of several members of the Simcoe family in England and Upper Canada, predominantly in the late 18th and early 19th centuries. The fonds also contains records from John Graves Simcoe's Lieutenant-Governorship of Upper Canada 1792-1796. The records document the administrative and military careers of four generations of men of the Simcoe family, as well as the family's private life, including management of the family estate in Devonshire, financial matters, and genealogical research conducted by later generations of the family.Family members represented in the fonds include Captain John Simcoe, John Graves Simcoe, Elizabeth Posthuma Simcoe, Francis Simcoe, Eliza Simcoe, and John K. Simcoe.Records include personal and official correspondence, letter books, reports, returns, and commissions. The fonds contains a considerable quantity of graphic materials, including watercolour paintings, drawings and prints; maps and celestial charts; architectural and technical drawings; and artifacts attributed by Simcoe descendents to John Graves and Elizabeth Simcoe.",
+    rico:history "Custodial History: The Simcoe Family papers were held by descendants of John Graves and Elizabeth Simcoe until the mid to late-20th century. Eliza Simcoe, the eldest daughter of John Graves and Elizabeth Simcoe, retained possession of the records which make up this fonds until her death in 1865. Between 1859 and 1861, a portion of the records were loaned to the Canadian Library of Parliament for arrangement and partial copying. On the death of Eliza Simcoe, the records passed to the children of the Reverend Henry Addington Simcoe, Eliza's only surviving brother. Some time after this, part of the records came into the possession of the Vowler family and the Coles family, each related to the Simcoes through marriage to a daughter or granddaughter of Henry Addington Simcoe.  In the late 1940s Dr. S. McLaughlan purchased the records then held by the Coles family and donated the whole to the University of Toronto Library. In 1951 the University and the Ontario Department of Archives and Records opened negotiations to transfer the custody, but not ownership, of the Simcoe records to the province.  In 1952, an agreement was signed, and the Simcoe Papers were transferred to the Archives of Ontario in order that they might be preserved in more appropriate circumstances and to ease public access to the records. The records which came to the Archives under the terms of this long-term loan agreement represent the bulk of the fonds. A subsequent purchase by the Archives of records and artifacts from other Simcoe descendants in 1993, and a number of small donations from a variety of sources have since added to the fonds.",
+    rico:hasOrHadInstantiation Simcoe%20Family%20Fonds-i1,
+    rico:conditionsOfAccess "Refer to series and sub-series descriptions for information on access restrictions.",
+    rico:conditionsOfUse "Records are in the public domain. There are no restrictions on reproduction for research and private study.  If you wish to use any of this material for a purpose other than research and private study, submit a Request for Permission to Publish, Exhibit or Broadcast Form.",
+    rico:generalDescription "Associated Material: Library and Archives Canada holds a large series of transcriptions from the Simcoe family records. See the correspondence of Eliza Simcoe and the Coles family for details on these copying projects. The originals from which these transcriptions were made are largely contained in this fonds.",
+    rico:generalDescription "Associated Material: The Clements Library of the University of Michigan in Ann Arbor, Michigan, holds a collection of correspondence from John Graves and Elizabeth Simcoe dating from the 1770s through 1810. The Archives of Ontario possesses a microfilm copy of this collection. ",
+    rico:generalDescription "Availability of Other Formats: Refer to series and sub-series descriptions for information on the availability of other formats.",
+    rico:generalDescription "Finding Aid Note: Please see series and sub-series descriptions for listings.",
+    rico:generalDescription "Related Material: Fonds F 1174 (John Ross Robertson fonds) contains 57 items of incoming and outgoing correspondence by John Graves Simcoe and Elizabeth Simcoe. Robertson was a biographer of the Simcoes.",
+    rico:generalDescription "Related Material: MS 83 consists of a Letterbook dated January 1792 through July 1793.  Evidence points to this item being the missing volume from F 47-2-5, Brigade Majors Department.",
+    rico:accruals "No further accruals are expected.",
+    rico:hasOrHadIdentifier F%2047,
+    rico:isOrWasDescribedBy Simcoe%20Family%20Fonds%20Archival%20Description,
+    rico:hasCreator Simcoe%20%28family%29,
+    rico:hasCreator Simcoe%2C%20Eliza%2C%20Ca.%201784-1865,
+    rico:hasCreator Simcoe%2C%20Elizabeth%20Posthuma%2C%201762-1850,
+    rico:hasCreator Simcoe%2C%20Francis%20Gwillim%2C%201791-1812,
+    rico:hasCreator Simcoe%2C%20John%20Graves%2C%201752-1806,
+    rico:hasOrHadTitle Simcoe%20Family%20Fonds,
+    rico:hasContentOfType Architectural%20And%20Technical%20Drawings,
+    rico:hasContentOfType Artifacts,
+    rico:hasContentOfType Cartographic%20Materials,
+    rico:hasContentOfType Graphic%20Materials,
+    rico:hasContentOfType Textual%20Records,
+    rico:creationDate "1665-[ca. 1918] (predominant 1762-1848)",
+    rico:date "[ca. 1750-1918]"
+
+Individual: Fonds
+  Annotations:
+    rdfs:label "Fonds"
+  Types: rico:RecordSetType
+
+Individual: Simcoe%20Family%20Fonds-i1
+  Annotations:
+    rdfs:label "Simcoe family fonds-i1"
+  Types: rico:Instantiation
+  Facts:
+    rico:instantiationExtent "2.67 metres of textual records63 volumes of textual records353 watercolours63 drawings8 prints4 photographs1 sketchbook (63 watercolours and drawings)98 maps3 celestial charts4 technical drawings2 architectural drawings1 sabre with scabbard1 dress sword with scabbard1 walking cane1 wedding ring",
+    rico:generalDescription "How to Order: Consult the online series or sub-series list to identify the records that you require. For microfilmed items, consult the appropriate reel of self-service microfilm. To access any other material, contact a Reference Archivist."
+
+Individual: F%2047
+  Annotations:
+    rdfs:label "F 47"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Current%20Reference%20Code
+
+Individual: Current%20Reference%20Code
+  Annotations:
+    rdfs:label "Current Reference Code"
+  Types: rico:IdentifierType
+
+Individual: Simcoe%20Family%20Fonds%20Archival%20Description
+  Annotations:
+    rdfs:label "Simcoe family fonds Archival Description"
+  Types: rico:Record
+  Facts:
+    rico:resultsOrResultedFrom Archival%20Description%20Creation,
+    rico:lastModificationDate "2002-12-08"^^xsd:date,
+    rico:hasDocumentaryFormType Archival%20Description,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Enabled%3A%20Y
+
+Individual: Archival%20Description%20Creation
+  Annotations:
+    rdfs:label "Archival Description Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Walz
+
+Individual: Walz
+  Annotations:
+    rdfs:label "Walz"
+  Types: rico:Person
+
+Individual: Archival%20Description
+  Annotations:
+    rdfs:label "Archival Description"
+  Types: rico:DocumentaryFormType
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState
+
+Individual: Web%20Enabled%3A%20Y
+  Annotations:
+    rdfs:label "Web Enabled: Y"
+  Types: rico:RecordState
+
+Individual: Artifacts
+  Annotations:
+    rdfs:label "Artifacts"
+  Types: rico:ContentType
+
+Individual: Architectural%20And%20Technical%20Drawings
+  Annotations:
+    rdfs:label "Architectural and technical drawings"
+  Types: rico:ContentType
+
+Individual: Cartographic%20Materials
+  Annotations:
+    rdfs:label "Cartographic materials"
+  Types: rico:ContentType
+
+Individual: Graphic%20Materials
+  Annotations:
+    rdfs:label "Graphic materials"
+  Types: rico:ContentType
+
+Individual: Textual%20Records
+  Annotations:
+    rdfs:label "Textual records"
+  Types: rico:ContentType
+
+Individual: Simcoe%20%28family%29
+  Annotations:
+    rdfs:label "Simcoe (family)"
+  Types: rico:Family
+
+Individual: Simcoe%2C%20John%20Graves%2C%201752-1806
+  Annotations:
+    rdfs:label "Simcoe, John Graves, 1752-1806"
+  Types: rico:Person
+
+Individual: Simcoe%2C%20Francis%20Gwillim%2C%201791-1812
+  Annotations:
+    rdfs:label "Simcoe, Francis Gwillim, 1791-1812"
+  Types: rico:Person
+
+Individual: Simcoe%2C%20Eliza%2C%20Ca.%201784-1865
+  Annotations:
+    rdfs:label "Simcoe, Eliza, ca. 1784-1865"
+  Types: rico:Person
+
+Individual: Simcoe%2C%20Elizabeth%20Posthuma%2C%201762-1850
+  Annotations:
+    rdfs:label "Simcoe, Elizabeth Posthuma, 1762-1850"
+  Types: rico:Person
