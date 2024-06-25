@@ -46,6 +46,12 @@ output_file="$output_file_dir/$output_file_name"
 # Construct the TTL file path
 ttl_file="$output_file_dir/$(basename "$output_file" .owl).ttl"
 
+ttl_file_hash=''
+# Check if the TTL file exists
+if [ -f "$ttl_file" ]; then
+  ttl_file_hash=$(md5sum "$ttl_file")
+fi
+
 # Function to properly escape and quote arguments
 quote_argument() {
     local quoted_arg
@@ -88,5 +94,13 @@ echo "Executing command: $conversion_command"
 # Run the conversion command
 eval $conversion_command
 
-# Print the output message
-echo "TTL Output saved to: $ttl_file"
+# Check if the TTL file exists
+if [ ! -f "$ttl_file" ]; then
+  echo "Error: This TTL does not exist: $ttl_file"
+# Check if the TTL file has changed after robot
+elif [ "$ttl_file_hash" = "$(md5sum $ttl_file)" ]; then
+  echo "Warning: This TTL exists but is unchanged: $ttl_file"
+else
+  # Print the output message
+  echo "TTL Output saved to: $ttl_file"
+fi
