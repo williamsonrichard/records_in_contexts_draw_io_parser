@@ -13,7 +13,7 @@
 input_dir="gbad"
 
 # Define the subdirectories to exclude
-exclude_subdirs=("schema" "mapping" "transform")
+exclude_subdirs=("schema" "mapping" "transform" "validate")
 
 # Build the find command
 find_command="find \"$input_dir\" -type f -name \"*.ttl\""
