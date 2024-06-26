@@ -1339,25 +1339,29 @@ def _infer_type(literal: str) -> str:
         return "\"" + literal + "\"^^xsd:date"
     except ValueError:
         pass
-    if literal[-1] == "Z":
-        try:
-            datetime.strptime(literal[-1], "%Y-%m-%dT%H-%M-%S")
-            return "\"" + literal + "\"^^xsd:dateTime"
-        except ValueError:
-            pass
-    elif literal[-6] == "+" or literal[-6] == "-":
-        try:
-            datetime.strptime(literal[:-6], "%Y-%m-%dT%H-%M-%S")
-            datetime.strptime(literal[-5:], "%H:%M")
-            return "\"" + literal + "\"^^xsd:dateTime"
-        except ValueError:
-            pass
-    else:
-        try:
-            datetime.strptime("%Y-%m-%dT%H-%M-%S", literal)
-            return "\"" + literal + "\"^^xsd:dateTime"
-        except ValueError:
-            pass
+    try:
+        if literal[-1] == "Z":
+            try:
+                datetime.strptime(literal[-1], "%Y-%m-%dT%H-%M-%S")
+                return "\"" + literal + "\"^^xsd:dateTime"
+            except ValueError:
+                pass
+        elif literal[-6] == "+" or literal[-6] == "-":
+            try:
+                datetime.strptime(literal[:-6], "%Y-%m-%dT%H-%M-%S")
+                datetime.strptime(literal[-5:], "%H:%M")
+                return "\"" + literal + "\"^^xsd:dateTime"
+            except ValueError:
+                pass
+        else:
+            try:
+                datetime.strptime("%Y-%m-%dT%H-%M-%S", literal)
+                return "\"" + literal + "\"^^xsd:dateTime"
+            except ValueError:
+                pass
+    except IndexError:
+        # Short literals
+        pass
     literal = literal.replace('"', r'\"')
     return "\"" + literal + "\""
 

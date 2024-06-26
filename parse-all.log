@@ -1,3 +1,4 @@
+Script started on 2024-06-25 22:11:56-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
 Total number of *.drawio files found: 26
 
 Processing file 1 of 26: gbad/AA/37/AA37 Department of Health.drawio
@@ -157,3 +158,5 @@ Executing command: ./robot.sh convert -i "gbad/RG/18/210/rg_18-210_walkerton_inq
 Warning: This TTL exists but is unchanged: gbad/RG/18/210/rg_18-210_walkerton_inquiry_in_ric-o_original.ttl
 
 Finished processing all Draw.io files.
+
+Script done on 2024-06-25 22:15:57-04:00 [COMMAND_EXIT_CODE="0"]
