@@ -1,0 +1,28 @@
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX gbad: <http://gbad.archives.gov.on.ca/>
+
+# Select triples for any root RecordSet, and
+# show the repaired IRI for RecordSet
+SELECT
+(IF(BOUND(?s), ?s, ?rootElement) as ?subject)
+(IF(BOUND(?s), ?ps, ?po) as ?predicate)
+(IF(BOUND(?o), ?o, ?rootElement) as ?object)
+?validRootIri
+WHERE {
+    {
+		?rootElement ?po ?o .
+        ?rootElement a rico:RecordSet .
+  		?rootElement rico:hasOrHadIdentifier ?rootIdentifier .
+        ?rootIdentifier rico:hasIdentifierType gbad:Current%20Reference%20Code .
+		BIND(IRI(REPLACE(REPLACE(STR(?rootIdentifier), "%20", "/"), "-", "/")) AS ?validRootIri)
+    }
+    UNION
+    {
+        ?s ?ps ?rootElement .
+        ?rootElement a rico:RecordSet .
+  		?rootElement rico:hasOrHadIdentifier ?rootIdentifier .
+        ?rootIdentifier rico:hasIdentifierType gbad:Current%20Reference%20Code .
+		BIND(IRI(REPLACE(REPLACE(STR(?rootIdentifier), "%20", "/"), "-", "/")) AS ?validRootIri)
+    }
+}

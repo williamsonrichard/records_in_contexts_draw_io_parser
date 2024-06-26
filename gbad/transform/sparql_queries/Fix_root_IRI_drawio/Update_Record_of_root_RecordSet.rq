@@ -1,0 +1,33 @@
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX gbad: <http://gbad.archives.gov.on.ca/>
+
+# Update triples for any Record describing root RecordSet,
+# repairing the IRI for Record
+DELETE {
+  ?record ?po ?o .
+  ?s ?ps ?record .
+}
+INSERT {
+  ?validRecordIri ?po ?o .
+  ?s ?ps ?validRecordIri .
+}
+WHERE {
+    {
+        ?rootElement a rico:RecordSet .
+  		?rootElement rico:hasOrHadIdentifier ?rootIdentifier .
+        ?rootIdentifier rico:hasIdentifierType gbad:Current%20Reference%20Code .
+        ?rootElement rico:isOrWasDescribedBy ?record .
+        ?record ?po ?o .
+        BIND(IRI(CONCAT(STR(?rootElement),"/Record/",REPLACE(STR(?record),"http://gbad.archives.gov.on.ca/",""))) AS ?validRecordIri)
+    }
+    UNION
+    {
+        ?rootElement a rico:RecordSet .
+  		?rootElement rico:hasOrHadIdentifier ?rootIdentifier .
+        ?rootIdentifier rico:hasIdentifierType gbad:Current%20Reference%20Code .
+        ?rootElement rico:isOrWasDescribedBy ?record .
+        ?s ?ps ?record .
+        BIND(IRI(CONCAT(STR(?rootElement),"/Record/",REPLACE(STR(?record),"http://gbad.archives.gov.on.ca/",""))) AS ?validRecordIri)
+    }
+}
