@@ -45,6 +45,7 @@ from typing import Generator, Iterator
 from xml.etree.ElementTree import Element, fromstring
 from typing import Optional
 import urllib.parse
+import traceback
 
 _ric_classes = [
     "AccumulationRelation",
@@ -1761,8 +1762,9 @@ def _main() -> None:
     except ParseException as exception:
         sys_exit(str(exception))
     except Exception as exception:  # pylint: disable=broad-exception-caught
-        sys_exit(f"An unexpected error occurred: {exception}")
-
+        error_type = type(exception).__name__
+        error_traceback = traceback.format_exc()
+        sys_exit(f"An unexpected error occurred: {error_type}: {exception}\n\nTraceback:\n{error_traceback}")
 
 if __name__ == "__main__":
     _main()
