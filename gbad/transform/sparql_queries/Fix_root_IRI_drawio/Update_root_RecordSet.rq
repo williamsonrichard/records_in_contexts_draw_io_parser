@@ -3,7 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX gbad: <http://gbad.archives.gov.on.ca/>
 
 # Update triples for any root RecordSet,
-# repairing the IRI for Record
+# repairing the IRI for RecordSet
 DELETE {
   ?rootElement ?po ?o .
   ?s ?ps ?rootElement .
