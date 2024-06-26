@@ -1,3 +1,4 @@
+Script started on 2024-06-25 22:16:47-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
 Collecting files: find "gbad" -type f -name "*.ttl" -not -path "gbad/schema/*" -not -path "gbad/mapping/*" -not -path "gbad/transform/*"
 Copied aa37_department_of_health.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/authority
 Copied aa42_ministry_of_health.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/authority
@@ -26,3 +27,5 @@ Copied rg_10-145_mobile_tuberculosis_testing_clinic_photographs.ttl to ../gbad-p
 Copied rg_18-210_records_of_the_walkerton_inquiry_-_revised_to_add_mapping.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
 Copied rg_18-210_walkerton_inquiry_in_ric-o_original.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
 Copied 26 files from 'gbad' to '../gbad-project.github.io/gbad/from_draw_io_parser'.
+
+Script done on 2024-06-25 22:16:48-04:00 [COMMAND_EXIT_CODE="0"]
