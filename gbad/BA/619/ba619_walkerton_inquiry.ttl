@@ -72,6 +72,36 @@ xsd:date rdf:type rdfs:Datatype .
                                                                            rdfs:label "Government of Ontario Agency Code" .
 
 
+###  http://gbad.archives.gov.on.ca/Ontario.%20Walkerton%20Inquiry
+<http://gbad.archives.gov.on.ca/Ontario.%20Walkerton%20Inquiry> rdf:type owl:NamedIndividual ,
+                                                                         rico:AgentName ,
+                                                                         rico:CorporateBody ;
+                                                                rico:authorizedBy <http://gbad.archives.gov.on.ca/Order%20In%20Council%201170%20%2F%202000> ;
+                                                                rico:hasBeginningDate <http://gbad.archives.gov.on.ca/2000> ;
+                                                                rico:hasEndDate <http://gbad.archives.gov.on.ca/2002> ;
+                                                                rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/Ontario.%20Walkerton%20Inquiry> ;
+                                                                rico:hasOrHadCorporateBodyType <http://gbad.archives.gov.on.ca/B%20Ontario%20Government%20Name> ;
+                                                                rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/BA619> ;
+                                                                rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Ontario.%20Walkerton%20Inquiry%20Authority%20Record> ;
+                                                                rico:generalDescription "Function Note: The Walkerton Inquiry was appointed to investigate the causes of the contamination of Walkerton's drinking water system with E. coli bacteria in May of 2000. This contamination caused the death of seven people and more than 2,300 became ill. The Inquiry was to find out who was responsible for the E. coli outbreak, and if it could have been prevented. The Inquiry was also responsible for making recommendations on how to avoid another outbreak in the future." ;
+                                                                rico:history "Commissioner O'Connor divided the Inquiry into two parts, which ran more or less concurrently. The first part dealt exclusively with what happened in Walkerton, and involved extensive public hearings. The second part went beyond Walkerton and involved an investigation into other matters related to the general safety of Ontario's drinking water.The work of the commission resulted in two reports published in 2002, entitled Part One and Part Two: Report of the Walkerton Inquiry. Justice O'Connor made a large number of recommendations related to the following: the protection of the sources of Ontario's drinking water; the need for effective standards and technology for the treatment of water and to monitor its quality; the need for stricter mandatory regulations from municipalities that provide drinking water; and, the need for a strengthened role for the provincial government in regulating and overseeing the safety of Ontario's drinking water." ;
+                                                                rico:normalizedValue "Walkerton Inquiry" ;
+                                                                rdfs:label "Ontario. Walkerton Inquiry" .
+
+
+###  http://gbad.archives.gov.on.ca/Ontario.%20Walkerton%20Inquiry%20Authority%20Record
+<http://gbad.archives.gov.on.ca/Ontario.%20Walkerton%20Inquiry%20Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                                                              rico:Record ;
+                                                                                     rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Authority%20Record> ;
+                                                                                     rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
+                                                                                                         <http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> ;
+                                                                                     rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> ;
+                                                                                     rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> ;
+                                                                                     rico:generalDescription "Source Note: Final reports of the Commission." ;
+                                                                                     rico:lastModificationDate "2007-06-16"^^xsd:date ;
+                                                                                     rdfs:label "Ontario. Walkerton Inquiry Authority Record" .
+
+
 ###  http://gbad.archives.gov.on.ca/Order%20In%20Council%201170%20%2F%202000
 <http://gbad.archives.gov.on.ca/Order%20In%20Council%201170%20%2F%202000> rdf:type owl:NamedIndividual ,
                                                                                    rico:Mandate ;
@@ -88,36 +118,6 @@ xsd:date rdf:type rdfs:Datatype .
 <http://gbad.archives.gov.on.ca/Status%3A%20Approved> rdf:type owl:NamedIndividual ,
                                                                rico:RecordState ;
                                                       rdfs:label "Status: Approved" .
-
-
-###  http://gbad.archives.gov.on.ca/Walkerton%20Inquiry
-<http://gbad.archives.gov.on.ca/Walkerton%20Inquiry> rdf:type owl:NamedIndividual ,
-                                                              rico:AgentName ,
-                                                              rico:CorporateBody ;
-                                                     rico:authorizedBy <http://gbad.archives.gov.on.ca/Order%20In%20Council%201170%20%2F%202000> ;
-                                                     rico:hasBeginningDate <http://gbad.archives.gov.on.ca/2000> ;
-                                                     rico:hasEndDate <http://gbad.archives.gov.on.ca/2002> ;
-                                                     rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/Walkerton%20Inquiry> ;
-                                                     rico:hasOrHadCorporateBodyType <http://gbad.archives.gov.on.ca/B%20Ontario%20Government%20Name> ;
-                                                     rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/BA619> ;
-                                                     rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Walkerton%20Inquiry%20Authority%20Record> ;
-                                                     rico:generalDescription "Function Note: The Walkerton Inquiry was appointed to investigate the causes of the contamination of Walkerton's drinking water system with E. coli bacteria in May of 2000. This contamination caused the death of seven people and more than 2,300 became ill. The Inquiry was to find out who was responsible for the E. coli outbreak, and if it could have been prevented. The Inquiry was also responsible for making recommendations on how to avoid another outbreak in the future." ;
-                                                     rico:history "Commissioner O'Connor divided the Inquiry into two parts, which ran more or less concurrently. The first part dealt exclusively with what happened in Walkerton, and involved extensive public hearings. The second part went beyond Walkerton and involved an investigation into other matters related to the general safety of Ontario's drinking water.The work of the commission resulted in two reports published in 2002, entitled Part One and Part Two: Report of the Walkerton Inquiry. Justice O'Connor made a large number of recommendations related to the following: the protection of the sources of Ontario's drinking water; the need for effective standards and technology for the treatment of water and to monitor its quality; the need for stricter mandatory regulations from municipalities that provide drinking water; and, the need for a strengthened role for the provincial government in regulating and overseeing the safety of Ontario's drinking water." ;
-                                                     rico:normalizedValue "Ontario. Walkerton Inquiry" ;
-                                                     rdfs:label "Walkerton Inquiry" .
-
-
-###  http://gbad.archives.gov.on.ca/Walkerton%20Inquiry%20Authority%20Record
-<http://gbad.archives.gov.on.ca/Walkerton%20Inquiry%20Authority%20Record> rdf:type owl:NamedIndividual ,
-                                                                                   rico:Record ;
-                                                                          rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Authority%20Record> ;
-                                                                          rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
-                                                                                              <http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> ;
-                                                                          rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> ;
-                                                                          rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> ;
-                                                                          rico:generalDescription "Source Note: Final reports of the Commission." ;
-                                                                          rico:lastModificationDate "2007-06-16"^^xsd:date ;
-                                                                          rdfs:label "Walkerton Inquiry Authority Record" .
 
 
 ###  http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y

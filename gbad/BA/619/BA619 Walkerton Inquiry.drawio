@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2024-06-05T14:50:01.346Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="LHFsa5vyEi4acI09mObb" version="24.4.14" type="device">
+<mxfile host="app.diagrams.net" modified="2024-06-26T20:21:17.246Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="u6bbZK0YBV2cf-xJRQmU" version="24.6.0" type="device">
   <diagram name="Page-1" id="JNRxnBV9_3tvGunqLC9R">
-    <mxGraphModel dx="2924" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+    <mxGraphModel dx="1909" dy="560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="gmwnegnUR_CNORKRYM6Y-1" value="Walkerton Inquiry" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-1" value="Ontario. Walkerton Inquiry" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="290" y="370" width="180" height="52" as="geometry" />
         </mxCell>
         <mxCell id="gmwnegnUR_CNORKRYM6Y-2" value="rico:CorporateBody" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gmwnegnUR_CNORKRYM6Y-1" vertex="1">
@@ -19,7 +19,7 @@
         <mxCell id="gmwnegnUR_CNORKRYM6Y-11" value="rico:normalizedValue" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="gmwnegnUR_CNORKRYM6Y-10" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="gmwnegnUR_CNORKRYM6Y-12" value="Ontario. Walkerton Inquiry" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;strokeColor=#000000;" parent="1" vertex="1">
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-12" value="Walkerton Inquiry" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="100" y="40" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="gmwnegnUR_CNORKRYM6Y-13" value="BA619" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -56,7 +56,7 @@
         <mxCell id="gmwnegnUR_CNORKRYM6Y-21" value="rico:IdentifierType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gmwnegnUR_CNORKRYM6Y-20" vertex="1">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-1" value="Walkerton Inquiry" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-1" value="Ontario. Walkerton Inquiry" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="170" y="200" width="170" height="52" as="geometry">
             <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
           </mxGeometry>
@@ -161,11 +161,11 @@
         <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-28" value="Source Note:&amp;nbsp;Final reports of the Commission." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;strokeColor=#FF0000;" parent="1" vertex="1">
           <mxGeometry x="-80" y="598" width="120" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-29" value="Walkerton Inquiry Authority Record" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
-          <mxGeometry x="-230" y="434" width="130" height="52" as="geometry" />
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-29" value="Ontario. Walkerton Inquiry&amp;nbsp;Authority Record" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="-230" y="434" width="160" height="52" as="geometry" />
         </mxCell>
         <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-30" value="rico:Record" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="I4GB3cVhTv-sTvJ7h0Jz-29" vertex="1">
-          <mxGeometry y="26" width="130" height="26" as="geometry" />
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="gmwnegnUR_CNORKRYM6Y-1" target="I4GB3cVhTv-sTvJ7h0Jz-29" edge="1">
           <mxGeometry relative="1" as="geometry">
