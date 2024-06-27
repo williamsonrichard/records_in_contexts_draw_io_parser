@@ -1,0 +1,60 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Simcoe%2C%20Francis%20Gwillim%2C%201791-1812
+  Annotations:
+    rdfs:label "Simcoe, Francis Gwillim, 1791-1812"
+  Types: rico:AgentName, rico:Person
+  Facts:
+    rico:normalizedValue "Francis Gwillim Simcoe",
+    rico:hasOrHadAgentName Simcoe%2C%20Francis%20Gwillim%2C%201791-1812,
+    rico:history "Francis Gwillim Simcoe was born in 1791 and the next year travelled with his parents to Upper Canada, where he spent his infancy and early childhood. At about age 17 he entered the British army as an Ensign. In 1809 his mother purchased a Lieutenancy for him and he was posted with Wellington's army to the Iberian Peninsula. He took an active part in the campaigns in Portugal and Spain until he was fatally wounded during the assault on the Portuguese town of Adajos in 1812.",
+    rico:isOrWasDescribedBy Simcoe%2C%20Francis%20Gwillim%2C%201791-1812%20Authority%20Record
+
+Individual: Simcoe%2C%20Francis%20Gwillim%2C%201791-1812%20Authority%20Record
+  Annotations:
+    rdfs:label "Simcoe, Francis Gwillim, 1791-1812 Authority Record"
+  Types: rico:Record
+  Facts:
+    rico:generalDescription "Source Note: Archives of Ontario, fonds 47.",
+    rico:hasDocumentaryFormType Authority%20Record,
+    rico:isOrWasRegulatedBy Rules%20For%20Archival%20Description,
+    rico:resultsOrResultedFrom Authority%20Record%20Creation,
+    rico:lastModificationDate "2012-02-28"^^xsd:date,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Ready%3A%20Y
+
+Individual: Authority%20Record
+  Annotations:
+    rdfs:label "Authority Record"
+  Types: rico:DocumentaryFormType
+
+Individual: Rules%20For%20Archival%20Description
+  Annotations:
+    rdfs:label "Rules for Archival Description"
+  Types: rico:Rule
+
+Individual: Authority%20Record%20Creation
+  Annotations:
+    rdfs:label "Authority Record Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Walz
+
+Individual: Walz
+  Annotations:
+    rdfs:label "Walz"
+  Types: rico:Person
+
+Individual: Web%20Ready%3A%20Y
+  Annotations:
+    rdfs:label "Web Ready: Y"
+  Types: rico:RecordState
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState

@@ -1,0 +1,162 @@
+Script started on 2024-06-25 22:11:56-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+Total number of *.drawio files found: 26
+
+Processing file 1 of 26: gbad/AA/37/AA37 Department of Health.drawio
+Executing command: cat "gbad/AA/37/AA37 Department of Health.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/AA/37/aa37_department_of_health.owl"
+Manchester OWL Output saved to: gbad/AA/37/aa37_department_of_health.owl
+Executing command: ./robot.sh convert -i "gbad/AA/37/aa37_department_of_health.owl" -o "gbad/AA/37/aa37_department_of_health.ttl"
+Warning: This TTL exists but is unchanged: gbad/AA/37/aa37_department_of_health.ttl
+
+Processing file 2 of 26: gbad/AA/42/AA42 Ministry of Health.drawio
+Executing command: cat "gbad/AA/42/AA42 Ministry of Health.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/AA/42/aa42_ministry_of_health.owl"
+Manchester OWL Output saved to: gbad/AA/42/aa42_ministry_of_health.owl
+Executing command: ./robot.sh convert -i "gbad/AA/42/aa42_ministry_of_health.owl" -o "gbad/AA/42/aa42_ministry_of_health.ttl"
+Warning: This TTL exists but is unchanged: gbad/AA/42/aa42_ministry_of_health.ttl
+
+Processing file 3 of 26: gbad/BA/27/BA27 Provincial Board of Health of Ontario.drawio
+Executing command: cat "gbad/BA/27/BA27 Provincial Board of Health of Ontario.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/BA/27/ba27_provincial_board_of_health_of_ontario.owl"
+Manchester OWL Output saved to: gbad/BA/27/ba27_provincial_board_of_health_of_ontario.owl
+Executing command: ./robot.sh convert -i "gbad/BA/27/ba27_provincial_board_of_health_of_ontario.owl" -o "gbad/BA/27/ba27_provincial_board_of_health_of_ontario.ttl"
+Warning: This TTL exists but is unchanged: gbad/BA/27/ba27_provincial_board_of_health_of_ontario.ttl
+
+Processing file 4 of 26: gbad/BA/619/BA619 Walkerton Inquiry Authority in RiC-O.drawio
+Executing command: cat "gbad/BA/619/BA619 Walkerton Inquiry Authority in RiC-O.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/BA/619/ba619_walkerton_inquiry_authority_in_ric-o.owl"
+Manchester OWL Output saved to: gbad/BA/619/ba619_walkerton_inquiry_authority_in_ric-o.owl
+Executing command: ./robot.sh convert -i "gbad/BA/619/ba619_walkerton_inquiry_authority_in_ric-o.owl" -o "gbad/BA/619/ba619_walkerton_inquiry_authority_in_ric-o.ttl"
+Warning: This TTL exists but is unchanged: gbad/BA/619/ba619_walkerton_inquiry_authority_in_ric-o.ttl
+
+Processing file 5 of 26: gbad/CA/1853/CA1853 Chest Disease Service.drawio
+Executing command: cat "gbad/CA/1853/CA1853 Chest Disease Service.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/CA/1853/ca1853_chest_disease_service.owl"
+Manchester OWL Output saved to: gbad/CA/1853/ca1853_chest_disease_service.owl
+Executing command: ./robot.sh convert -i "gbad/CA/1853/ca1853_chest_disease_service.owl" -o "gbad/CA/1853/ca1853_chest_disease_service.ttl"
+Warning: This TTL exists but is unchanged: gbad/CA/1853/ca1853_chest_disease_service.ttl
+
+Processing file 6 of 26: gbad/CA/1934/CA1934 Division of Tuberculosis Prevention.drawio
+Executing command: cat "gbad/CA/1934/CA1934 Division of Tuberculosis Prevention.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/CA/1934/ca1934_division_of_tuberculosis_prevention.owl"
+Manchester OWL Output saved to: gbad/CA/1934/ca1934_division_of_tuberculosis_prevention.owl
+Executing command: ./robot.sh convert -i "gbad/CA/1934/ca1934_division_of_tuberculosis_prevention.owl" -o "gbad/CA/1934/ca1934_division_of_tuberculosis_prevention.ttl"
+Warning: This TTL exists but is unchanged: gbad/CA/1934/ca1934_division_of_tuberculosis_prevention.ttl
+
+Processing file 7 of 26: gbad/F/47/11/1/0/1/F 47-11-1-0-1 (VDB test).drawio
+Executing command: cat "gbad/F/47/11/1/0/1/F 47-11-1-0-1 (VDB test).drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/F/47/11/1/0/1/f_47-11-1-0-1_vdb_test.owl"
+Manchester OWL Output saved to: gbad/F/47/11/1/0/1/f_47-11-1-0-1_vdb_test.owl
+Executing command: ./robot.sh convert -i "gbad/F/47/11/1/0/1/f_47-11-1-0-1_vdb_test.owl" -o "gbad/F/47/11/1/0/1/f_47-11-1-0-1_vdb_test.ttl"
+Warning: This TTL exists but is unchanged: gbad/F/47/11/1/0/1/f_47-11-1-0-1_vdb_test.ttl
+
+Processing file 8 of 26: gbad/F/47/11/1/0/1/F 47-11-1-0-1.drawio
+Executing command: cat "gbad/F/47/11/1/0/1/F 47-11-1-0-1.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/F/47/11/1/0/1/f_47-11-1-0-1.owl"
+Manchester OWL Output saved to: gbad/F/47/11/1/0/1/f_47-11-1-0-1.owl
+Executing command: ./robot.sh convert -i "gbad/F/47/11/1/0/1/f_47-11-1-0-1.owl" -o "gbad/F/47/11/1/0/1/f_47-11-1-0-1.ttl"
+Warning: This TTL exists but is unchanged: gbad/F/47/11/1/0/1/f_47-11-1-0-1.ttl
+
+Processing file 9 of 26: gbad/F/47/11/1/F 47-11-1 Elizabeth Simcoe loose sketches.drawio
+Executing command: cat "gbad/F/47/11/1/F 47-11-1 Elizabeth Simcoe loose sketches.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/F/47/11/1/f_47-11-1_elizabeth_simcoe_loose_sketches.owl"
+Manchester OWL Output saved to: gbad/F/47/11/1/f_47-11-1_elizabeth_simcoe_loose_sketches.owl
+Executing command: ./robot.sh convert -i "gbad/F/47/11/1/f_47-11-1_elizabeth_simcoe_loose_sketches.owl" -o "gbad/F/47/11/1/f_47-11-1_elizabeth_simcoe_loose_sketches.ttl"
+Warning: This TTL exists but is unchanged: gbad/F/47/11/1/f_47-11-1_elizabeth_simcoe_loose_sketches.ttl
+
+Processing file 10 of 26: gbad/F/47/11/2/F 47-11-2 Elizabeth Simcoe sketchbook.drawio
+Executing command: cat "gbad/F/47/11/2/F 47-11-2 Elizabeth Simcoe sketchbook.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/F/47/11/2/f_47-11-2_elizabeth_simcoe_sketchbook.owl"
+Manchester OWL Output saved to: gbad/F/47/11/2/f_47-11-2_elizabeth_simcoe_sketchbook.owl
+Executing command: ./robot.sh convert -i "gbad/F/47/11/2/f_47-11-2_elizabeth_simcoe_sketchbook.owl" -o "gbad/F/47/11/2/f_47-11-2_elizabeth_simcoe_sketchbook.ttl"
+Warning: This TTL exists but is unchanged: gbad/F/47/11/2/f_47-11-2_elizabeth_simcoe_sketchbook.ttl
+
+Processing file 11 of 26: gbad/F/47/11/3/F 47-11-3 Elizabeth Simcoe miscellaneous sketches and fragments.drawio
+Executing command: cat "gbad/F/47/11/3/F 47-11-3 Elizabeth Simcoe miscellaneous sketches and fragments.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/F/47/11/3/f_47-11-3_elizabeth_simcoe_miscellaneous_sketches_and_fragments.owl"
+Manchester OWL Output saved to: gbad/F/47/11/3/f_47-11-3_elizabeth_simcoe_miscellaneous_sketches_and_fragments.owl
+Executing command: ./robot.sh convert -i "gbad/F/47/11/3/f_47-11-3_elizabeth_simcoe_miscellaneous_sketches_and_fragments.owl" -o "gbad/F/47/11/3/f_47-11-3_elizabeth_simcoe_miscellaneous_sketches_and_fragments.ttl"
+Warning: This TTL exists but is unchanged: gbad/F/47/11/3/f_47-11-3_elizabeth_simcoe_miscellaneous_sketches_and_fragments.ttl
+
+Processing file 12 of 26: gbad/F/47/11/4/F 47-11-4 Notes on Elizabeth Simcoe sketches.drawio
+Executing command: cat "gbad/F/47/11/4/F 47-11-4 Notes on Elizabeth Simcoe sketches.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/F/47/11/4/f_47-11-4_notes_on_elizabeth_simcoe_sketches.owl"
+Manchester OWL Output saved to: gbad/F/47/11/4/f_47-11-4_notes_on_elizabeth_simcoe_sketches.owl
+Executing command: ./robot.sh convert -i "gbad/F/47/11/4/f_47-11-4_notes_on_elizabeth_simcoe_sketches.owl" -o "gbad/F/47/11/4/f_47-11-4_notes_on_elizabeth_simcoe_sketches.ttl"
+Warning: This TTL exists but is unchanged: gbad/F/47/11/4/f_47-11-4_notes_on_elizabeth_simcoe_sketches.ttl
+
+Processing file 13 of 26: gbad/F/47/11/F 47-11 Elizabeth Simcoe sketches.drawio
+Executing command: cat "gbad/F/47/11/F 47-11 Elizabeth Simcoe sketches.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/F/47/11/f_47-11_elizabeth_simcoe_sketches.owl"
+Manchester OWL Output saved to: gbad/F/47/11/f_47-11_elizabeth_simcoe_sketches.owl
+Executing command: ./robot.sh convert -i "gbad/F/47/11/f_47-11_elizabeth_simcoe_sketches.owl" -o "gbad/F/47/11/f_47-11_elizabeth_simcoe_sketches.ttl"
+Warning: This TTL exists but is unchanged: gbad/F/47/11/f_47-11_elizabeth_simcoe_sketches.ttl
+
+Processing file 14 of 26: gbad/F/47/F 47 Simcoe Family fonds.drawio
+Executing command: cat "gbad/F/47/F 47 Simcoe Family fonds.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/F/47/f_47_simcoe_family_fonds.owl"
+Manchester OWL Output saved to: gbad/F/47/f_47_simcoe_family_fonds.owl
+Executing command: ./robot.sh convert -i "gbad/F/47/f_47_simcoe_family_fonds.owl" -o "gbad/F/47/f_47_simcoe_family_fonds.ttl"
+Warning: This TTL exists but is unchanged: gbad/F/47/f_47_simcoe_family_fonds.ttl
+
+Processing file 15 of 26: gbad/F/4711/F 4711 Orville Wood fonds.drawio
+Executing command: cat "gbad/F/4711/F 4711 Orville Wood fonds.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/F/4711/f_4711_orville_wood_fonds.owl"
+Manchester OWL Output saved to: gbad/F/4711/f_4711_orville_wood_fonds.owl
+Executing command: ./robot.sh convert -i "gbad/F/4711/f_4711_orville_wood_fonds.owl" -o "gbad/F/4711/f_4711_orville_wood_fonds.ttl"
+Warning: This TTL exists but is unchanged: gbad/F/4711/f_4711_orville_wood_fonds.ttl
+
+Processing file 16 of 26: gbad/person/Orville Wood Authority.drawio
+Executing command: cat "gbad/person/Orville Wood Authority.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/person/orville_wood_authority.owl"
+Manchester OWL Output saved to: gbad/person/orville_wood_authority.owl
+Executing command: ./robot.sh convert -i "gbad/person/orville_wood_authority.owl" -o "gbad/person/orville_wood_authority.ttl"
+Warning: This TTL exists but is unchanged: gbad/person/orville_wood_authority.ttl
+
+Processing file 17 of 26: gbad/person/Simcoe (family).drawio
+Executing command: cat "gbad/person/Simcoe (family).drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/person/simcoe_family.owl"
+Manchester OWL Output saved to: gbad/person/simcoe_family.owl
+Executing command: ./robot.sh convert -i "gbad/person/simcoe_family.owl" -o "gbad/person/simcoe_family.ttl"
+Warning: This TTL exists but is unchanged: gbad/person/simcoe_family.ttl
+
+Processing file 18 of 26: gbad/person/Simcoe, Eliza, ca. 1784-1865.drawio
+Executing command: cat "gbad/person/Simcoe, Eliza, ca. 1784-1865.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/person/simcoe_eliza_ca_1784-1865.owl"
+Manchester OWL Output saved to: gbad/person/simcoe_eliza_ca_1784-1865.owl
+Executing command: ./robot.sh convert -i "gbad/person/simcoe_eliza_ca_1784-1865.owl" -o "gbad/person/simcoe_eliza_ca_1784-1865.ttl"
+Warning: This TTL exists but is unchanged: gbad/person/simcoe_eliza_ca_1784-1865.ttl
+
+Processing file 19 of 26: gbad/person/Simcoe, Elizabeth Posthuma, 1762-1850.drawio
+Executing command: cat "gbad/person/Simcoe, Elizabeth Posthuma, 1762-1850.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/person/simcoe_elizabeth_posthuma_1762-1850.owl"
+Manchester OWL Output saved to: gbad/person/simcoe_elizabeth_posthuma_1762-1850.owl
+Executing command: ./robot.sh convert -i "gbad/person/simcoe_elizabeth_posthuma_1762-1850.owl" -o "gbad/person/simcoe_elizabeth_posthuma_1762-1850.ttl"
+Warning: This TTL exists but is unchanged: gbad/person/simcoe_elizabeth_posthuma_1762-1850.ttl
+
+Processing file 20 of 26: gbad/person/Simcoe, Francis Gwillim, 1791-1812.drawio
+Executing command: cat "gbad/person/Simcoe, Francis Gwillim, 1791-1812.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/person/simcoe_francis_gwillim_1791-1812.owl"
+Manchester OWL Output saved to: gbad/person/simcoe_francis_gwillim_1791-1812.owl
+Executing command: ./robot.sh convert -i "gbad/person/simcoe_francis_gwillim_1791-1812.owl" -o "gbad/person/simcoe_francis_gwillim_1791-1812.ttl"
+Warning: This TTL exists but is unchanged: gbad/person/simcoe_francis_gwillim_1791-1812.ttl
+
+Processing file 21 of 26: gbad/person/Simcoe, John Graves, 1752-1806.drawio
+Executing command: cat "gbad/person/Simcoe, John Graves, 1752-1806.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/person/simcoe_john_graves_1752-1806.owl"
+Manchester OWL Output saved to: gbad/person/simcoe_john_graves_1752-1806.owl
+Executing command: ./robot.sh convert -i "gbad/person/simcoe_john_graves_1752-1806.owl" -o "gbad/person/simcoe_john_graves_1752-1806.ttl"
+Warning: This TTL exists but is unchanged: gbad/person/simcoe_john_graves_1752-1806.ttl
+
+Processing file 22 of 26: gbad/RG/1/659/RG 1-659 - Northern pike lamprey mark, Rondeau Park, April 20, 1955.drawio
+Executing command: cat "gbad/RG/1/659/RG 1-659 - Northern pike lamprey mark, Rondeau Park, April 20, 1955.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/RG/1/659/rg_1-659_-_northern_pike_lamprey_mark_rondeau_park_april_20_1955.owl"
+Manchester OWL Output saved to: gbad/RG/1/659/rg_1-659_-_northern_pike_lamprey_mark_rondeau_park_april_20_1955.owl
+Executing command: ./robot.sh convert -i "gbad/RG/1/659/rg_1-659_-_northern_pike_lamprey_mark_rondeau_park_april_20_1955.owl" -o "gbad/RG/1/659/rg_1-659_-_northern_pike_lamprey_mark_rondeau_park_april_20_1955.ttl"
+Warning: This TTL exists but is unchanged: gbad/RG/1/659/rg_1-659_-_northern_pike_lamprey_mark_rondeau_park_april_20_1955.ttl
+
+Processing file 23 of 26: gbad/RG/10/142/RG 10-142 Correspondence of the Chief of the Chest Disease Service.drawio
+Executing command: cat "gbad/RG/10/142/RG 10-142 Correspondence of the Chief of the Chest Disease Service.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/RG/10/142/rg_10-142_correspondence_of_the_chief_of_the_chest_disease_service.owl"
+Manchester OWL Output saved to: gbad/RG/10/142/rg_10-142_correspondence_of_the_chief_of_the_chest_disease_service.owl
+Executing command: ./robot.sh convert -i "gbad/RG/10/142/rg_10-142_correspondence_of_the_chief_of_the_chest_disease_service.owl" -o "gbad/RG/10/142/rg_10-142_correspondence_of_the_chief_of_the_chest_disease_service.ttl"
+Warning: This TTL exists but is unchanged: gbad/RG/10/142/rg_10-142_correspondence_of_the_chief_of_the_chest_disease_service.ttl
+
+Processing file 24 of 26: gbad/RG/10/145/RG 10-145 Mobile Tuberculosis Testing Clinic photographs.drawio
+Executing command: cat "gbad/RG/10/145/RG 10-145 Mobile Tuberculosis Testing Clinic photographs.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/RG/10/145/rg_10-145_mobile_tuberculosis_testing_clinic_photographs.owl"
+Manchester OWL Output saved to: gbad/RG/10/145/rg_10-145_mobile_tuberculosis_testing_clinic_photographs.owl
+Executing command: ./robot.sh convert -i "gbad/RG/10/145/rg_10-145_mobile_tuberculosis_testing_clinic_photographs.owl" -o "gbad/RG/10/145/rg_10-145_mobile_tuberculosis_testing_clinic_photographs.ttl"
+Warning: This TTL exists but is unchanged: gbad/RG/10/145/rg_10-145_mobile_tuberculosis_testing_clinic_photographs.ttl
+
+Processing file 25 of 26: gbad/RG/18/210/RG 18-210 Records of the Walkerton Inquiry - revised to ADD mapping.drawio
+Executing command: cat "gbad/RG/18/210/RG 18-210 Records of the Walkerton Inquiry - revised to ADD mapping.drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/RG/18/210/rg_18-210_records_of_the_walkerton_inquiry_-_revised_to_add_mapping.owl"
+Manchester OWL Output saved to: gbad/RG/18/210/rg_18-210_records_of_the_walkerton_inquiry_-_revised_to_add_mapping.owl
+Executing command: ./robot.sh convert -i "gbad/RG/18/210/rg_18-210_records_of_the_walkerton_inquiry_-_revised_to_add_mapping.owl" -o "gbad/RG/18/210/rg_18-210_records_of_the_walkerton_inquiry_-_revised_to_add_mapping.ttl"
+Warning: This TTL exists but is unchanged: gbad/RG/18/210/rg_18-210_records_of_the_walkerton_inquiry_-_revised_to_add_mapping.ttl
+
+Processing file 26 of 26: gbad/RG/18/210/RG 18-210 Walkerton Inquiry in RiC-O (original).drawio
+Executing command: cat "gbad/RG/18/210/RG 18-210 Walkerton Inquiry in RiC-O (original).drawio" | python draw_io_parser.py -m url                        -o http://gbad.archives.gov.on.ca                        -p http://gbad.archives.gov.on.ca/ > "gbad/RG/18/210/rg_18-210_walkerton_inquiry_in_ric-o_original.owl"
+Manchester OWL Output saved to: gbad/RG/18/210/rg_18-210_walkerton_inquiry_in_ric-o_original.owl
+Executing command: ./robot.sh convert -i "gbad/RG/18/210/rg_18-210_walkerton_inquiry_in_ric-o_original.owl" -o "gbad/RG/18/210/rg_18-210_walkerton_inquiry_in_ric-o_original.ttl"
+Warning: This TTL exists but is unchanged: gbad/RG/18/210/rg_18-210_walkerton_inquiry_in_ric-o_original.ttl
+
+Finished processing all Draw.io files.
+
+Script done on 2024-06-25 22:15:57-04:00 [COMMAND_EXIT_CODE="0"]

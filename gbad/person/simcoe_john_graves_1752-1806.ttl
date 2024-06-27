@@ -1,0 +1,88 @@
+@prefix : <http://gbad.archives.gov.on.ca#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca> .
+
+<http://gbad.archives.gov.on.ca> rdf:type owl:Ontology ;
+                                  owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/Walz
+<http://gbad.archives.gov.on.ca/Walz> rdf:type owl:NamedIndividual ,
+                                               rico:Person ;
+                                      rdfs:label "Walz" .
+
+
+###  http://gbad.archives.gov.on.ca/Authority%20Record
+<http://gbad.archives.gov.on.ca/Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                             rico:DocumentaryFormType ;
+                                                    rdfs:label "Authority Record" .
+
+
+###  http://gbad.archives.gov.on.ca/Authority%20Record%20Creation
+<http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> rdf:type owl:NamedIndividual ,
+                                                                        rico:Activity ;
+                                                               rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/Walz> ;
+                                                               rdfs:label "Authority Record Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description
+<http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                               rico:Rule ;
+                                                                      rdfs:label "Rules for Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%2C%20John%20Graves%2C%201752-1806
+<http://gbad.archives.gov.on.ca/Simcoe%2C%20John%20Graves%2C%201752-1806> rdf:type owl:NamedIndividual ,
+                                                                                   rico:AgentName ,
+                                                                                   rico:Person ;
+                                                                          rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/Simcoe%2C%20John%20Graves%2C%201752-1806> ;
+                                                                          rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Simcoe%2C%20John%20Graves%2C%201752-1806%20Authority%20Record> ;
+                                                                          rico:history "John Graves Simcoe was born at Cotterstock, England in 1752, the third of four sons of John and Katherine Simcoe. He spent one year at Merton College, Oxford, before entering the army as an Ensign in the 35th Foot in 1770. He was posted to Boston in 1775, and in 1777 was given command of the Queen's Rangers, a mixed (predominantly light infantry) corps made up of loyalists. He took part in several operations in New York, Pennsylvania and Virginia before being invalided home as a Lieutenant-Colonel in 1781.In 1782, Simcoe married Elizabeth Posthuma Gwillim, the ward of his godfather, Admiral Samuel Graves and his wife Margaret. She provided a significant financial support for his career, enabling Simcoe to purchase an estate in Honiton, Devon, and build Wolford Lodge, which served as the Simcoe family home until 1923. He spent the years 1782-1791 as a half-pay officer, managing his estate, pursuing military promotion and appointments, and corresponding with members of his former command about land claims and problems faced by loyalists. He entered Parliament in 1790, but took little part in debates. In 1791 he was appointed the first Lieutenant-Governor of Upper Canada. Simcoe, his wife, and two of their younger children arrived in the Canadas in 1792.As Lieutenant-Governor, Simcoe was instrumental in organizing the first civil government in what is now Ontario. Following the instructions of the Home Secretary, he organized the legislative and executive bodies which were to govern the province for the next fifty years. Simcoe began the process of road construction and the survey of town and rural lots on which organized settlement were to be based, and actively promoted settlement. He took part in studying and recording the resources of Upper Canada, taking extensive inspection tours, ordering the survey and construction of roads, and the improvement of water communications. Part of Simcoe's duties in Upper Canada included the maintenance of good relations with aboriginal groups in the territory ceded to the United States in 1783.In 1796, Simcoe returned to England on leave, and two years later resigned his appointment. His command was then changed from Upper Canada to Santa Domingo (Haiti), where he was to suppress a slave revolt being covertly supported by Spain and French republicans. He spent only eight months on the island before returning to England in 1797.In 1799, Simcoe was promoted to the rank of Major- General and appointed commander of the garrison at Plymouth; his rank was increased again two years later to Lieutenant-General in command of coastal defence in Devonshire. His principal responsibility was organizing and planning defensive measures against an expected invasion from France. In 1806 Simcoe was appointed to the command of British forces in India, but during a diplomatic mission to Portugal he became ill and died shortly after his return to England." ;
+                                                                          rico:normalizedValue "John Graves Simcoe" ;
+                                                                          rdfs:label "Simcoe, John Graves, 1752-1806" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%2C%20John%20Graves%2C%201752-1806%20Authority%20Record
+<http://gbad.archives.gov.on.ca/Simcoe%2C%20John%20Graves%2C%201752-1806%20Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                                                                        rico:Record ;
+                                                                                               rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Authority%20Record> ;
+                                                                                               rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
+                                                                                                                   <http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> ;
+                                                                                               rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/Rules%20For%20Archival%20Description> ;
+                                                                                               rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Authority%20Record%20Creation> ;
+                                                                                               rico:generalDescription "Source Note: AMICUS." ,
+                                                                                                                       "Source Note: Dictionary of Canadian Biography." ,
+                                                                                                                       "Source Note: Archives of Ontario, fonds 47." ;
+                                                                                               rico:lastModificationDate "2012-02-28"^^xsd:date ;
+                                                                                               rdfs:label "Simcoe, John Graves, 1752-1806 Authority Record" .
+
+
+###  http://gbad.archives.gov.on.ca/Status%3A%20Approved
+<http://gbad.archives.gov.on.ca/Status%3A%20Approved> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Status: Approved" .
+
+
+###  http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y
+<http://gbad.archives.gov.on.ca/Web%20Ready%3A%20Y> rdf:type owl:NamedIndividual ,
+                                                             rico:RecordState ;
+                                                    rdfs:label "Web Ready: Y" .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

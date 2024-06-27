@@ -43,6 +43,9 @@ from html.parser import HTMLParser
 from sys import exit as sys_exit, stdin
 from typing import Generator, Iterator
 from xml.etree.ElementTree import Element, fromstring
+from typing import Optional
+import urllib.parse
+import traceback
 
 _ric_classes = [
     "AccumulationRelation",
@@ -468,10 +471,12 @@ _ric_object_properties = [
     "proxyFor",
     "proxyIn",
     "regulatesOrRegulated",
+    "relationHasTarget",
     "resultedFromTheMergerOf",
     "resultedFromTheSplitOf",
     "resultsOrResultedFrom",
     "resultsOrResultedIn",
+    "thingIsSourceOfRelation",
     "wasComponentOf",
     "wasConstituentOf",
     "wasContainedBy",
@@ -561,7 +566,7 @@ Height = float
 ArrowStart = tuple[XCoordinate, YCoordinate]
 ArrowEnd = tuple[XCoordinate, YCoordinate]
 Label = str
-ArrowData = tuple[Cell, ArrowStart | None, ArrowEnd | None, Label]
+ArrowData = tuple[Cell, Optional[ArrowStart], Optional[ArrowEnd], Label]
 Dimensions = tuple[XCoordinate, YCoordinate, Width, Height]
 Paragraph = str
 Metacharacter = str
@@ -570,7 +575,7 @@ Replacement = str
 DEFAULT_CAPITALISATION_SCHEME = "upper-camel"
 DEFAULT_INDENTATION = 2
 DEFAULT_MAX_GAP = 10
-OWL_METACHARACTERS = ["(", ")", "[", "]", "/", ","]
+OWL_METACHARACTERS = ["(", ")", "[", "]", "/", ",", ":", ".", "'", '"']
 
 
 class NothingToParseException(Exception):
@@ -713,12 +718,12 @@ class NodeHTMLParser(HTMLParser):
         self._raw_data = ""
 
     def handle_starttag(self, tag: str, _: list[tuple[str, str | None]]) -> None:
-        if tag in ["div", "blockquote"]:
+        if tag in ["div", "blockquote", "p"]:
             self._chunks.append(self._raw_data)
             self._within_tag = True
 
     def handle_endtag(self, tag: str) -> None:
-        if tag in ["div", "blockquote"]:
+        if tag in ["div", "blockquote", "p"]:
             self._chunks.append(self._raw_data)
             self._raw_data = ""
             self._within_tag = False
@@ -965,19 +970,21 @@ class DrawIOXMLTree:
         try:
             x = float(geometry.attrib["x"])
         except KeyError as key_error:
-            raise ParseException(
-                "Expecting the mxGeometry element of the cell with the "
-                "following id to have an 'x' attribute, but it does not: "
-                f"{individual_cell.attrib['id']}"
-            ) from key_error
+            x = 0.0
+            #raise ParseException(
+            #    "Expecting the mxGeometry element of the cell with the "
+            #    "following id to have an 'x' attribute, but it does not: "
+            #    f"{individual_cell.attrib['id']}"
+            #) from key_error
         try:
             y = float(geometry.attrib["y"])
         except KeyError as key_error:
-            raise ParseException(
-                "Expecting the mxGeometry element of the cell with the "
-                "following id to have a 'y' attribute, but it does not: "
-                f"{individual_cell.attrib['id']}"
-            ) from key_error
+            y = 0.0
+            #raise ParseException(
+            #    "Expecting the mxGeometry element of the cell with the "
+            #    "following id to have a 'y' attribute, but it does not: "
+            #    f"{individual_cell.attrib['id']}"
+            #) from key_error
         try:
             width = float(geometry.attrib["width"])
         except KeyError as key_error:
@@ -1332,25 +1339,30 @@ def _infer_type(literal: str) -> str:
         return "\"" + literal + "\"^^xsd:date"
     except ValueError:
         pass
-    if literal[-1] == "Z":
-        try:
-            datetime.strptime(literal[-1], "%Y-%m-%dT%H-%M-%S")
-            return "\"" + literal + "\"^^xsd:dateTime"
-        except ValueError:
-            pass
-    elif literal[-6] == "+" or literal[-6] == "-":
-        try:
-            datetime.strptime(literal[:-6], "%Y-%m-%dT%H-%M-%S")
-            datetime.strptime(literal[-5:], "%H:%M")
-            return "\"" + literal + "\"^^xsd:dateTime"
-        except ValueError:
-            pass
-    else:
-        try:
-            datetime.strptime("%Y-%m-%dT%H-%M-%S", literal)
-            return "\"" + literal + "\"^^xsd:dateTime"
-        except ValueError:
-            pass
+    try:
+        if literal[-1] == "Z":
+            try:
+                datetime.strptime(literal[-1], "%Y-%m-%dT%H-%M-%S")
+                return "\"" + literal + "\"^^xsd:dateTime"
+            except ValueError:
+                pass
+        elif literal[-6] == "+" or literal[-6] == "-":
+            try:
+                datetime.strptime(literal[:-6], "%Y-%m-%dT%H-%M-%S")
+                datetime.strptime(literal[-5:], "%H:%M")
+                return "\"" + literal + "\"^^xsd:dateTime"
+            except ValueError:
+                pass
+        else:
+            try:
+                datetime.strptime("%Y-%m-%dT%H-%M-%S", literal)
+                return "\"" + literal + "\"^^xsd:dateTime"
+            except ValueError:
+                pass
+    except IndexError:
+        # Short literals
+        pass
+    literal = literal.replace('"', r'\"')
     return "\"" + literal + "\""
 
 
@@ -1439,7 +1451,7 @@ def _preamble(serialisation_config: SerialisationConfig) -> str:
     return preamble + f"""Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
 Prefix: {prefix_string}: {prefix_iri}
 Ontology: <{ontology_iri_string}>
-{' '*indentation}Import: <https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/current-version/RiC-O_1-0.rdf>
+{' '*indentation}Import: <https://www.ica.org/standards/RiC/ontology>
 
 """
 
@@ -1469,20 +1481,29 @@ def serialise(blocks: Blocks, serialisation_config: SerialisationConfig) -> str:
 def _parse_space_substitute(
         metacharacter_substitutes: list[str]) -> str | None:
     has_remove = False
+    has_url = False
     for substitution_definition in metacharacter_substitutes:
         if substitution_definition == "remove":
             has_remove = True
-            continue
+            if not has_url:
+                continue
+        if substitution_definition == "url":
+            has_url = True
+            if not has_remove:
+                continue
         if substitution_definition[0] != ' ':
-            continue
+            if not has_url:
+                continue
         if substitution_definition[1] != "=":
             raise _MetacharacterSubstituteParseException(
-                "The second character of a string other than 'remove' passed "
-                "into the -m/--metadata-substitute option must be '='. This is "
+                "The second character of a string other than 'remove' or 'url' "
+                "passed into the -m/--metadata-substitute option must be '='. This is "
                 f"not the case for: {substitution_definition}")
         return substitution_definition.split("=")[1]
     if has_remove:
         return ""
+    elif has_url:
+        return "%20"
     return None
 
 
@@ -1490,19 +1511,25 @@ def _parse_metacharacter_substitutes(
         metacharacter_substitutes: list[str]) -> Generator[
         tuple[Metacharacter, Replacement], None, None]:
     has_remove = False
+    has_url = False
     handled = []
     for substitution_definition in metacharacter_substitutes:
         if substitution_definition[0] == ' ':
             continue
         if substitution_definition == "remove":
             has_remove = True
-            continue
+            if not has_url:
+                continue
+        if substitution_definition == "url":
+            has_url = True
+            if not has_remove:
+                continue
         if substitution_definition[0] not in OWL_METACHARACTERS:
             metacharacters = ', '.join(
                 f"'{character}'" for character in OWL_METACHARACTERS)
             raise _MetacharacterSubstituteParseException(
-                "The first character of a string other than 'remove' passed "
-                "into the -m/--metadata-substitute option must be an OWL "
+                "The first character of a string other than 'remove' or 'url' "
+                "passed into the -m/--metadata-substitute option must be an OWL "
                 f"metacharacter, namely one of the following: {metacharacters}"
                 f". This is not the case for: {substitution_definition}")
         if substitution_definition[1] != "=":
@@ -1513,11 +1540,14 @@ def _parse_metacharacter_substitutes(
         metacharacter, replacement = substitution_definition.split("=", 1)
         handled.append(metacharacter)
         yield metacharacter, replacement
-    if not has_remove:
-        return
     for metacharacter in OWL_METACHARACTERS:
         if metacharacter not in handled:
-            yield metacharacter, ""
+            if has_url:
+                yield metacharacter, urllib.parse.quote(metacharacter, safe='')
+            else:
+                yield metacharacter, ""
+    if not has_remove:
+        return
 
 
 def _parse_capitalisation_scheme(capitalisation_scheme: str) -> None:
@@ -1617,11 +1647,11 @@ def _arguments_parser():
             "defines a substitute for an OWL metacharacter, namely for a space "
             f"character ' ' or one of the following: {metacharacters}. This "
             "option can be used multiple times, for each metacharacter one "
-            "wishes to handle. Either the string passed into the option must "
-            "be 'remove', or the syntax 'c=d' must be used, where c is the "
-            "metacharacter and d is its substitute, which can consist of "
-            "zero, one, or more characters. The case of zero characters, that "
-            "is to say when the syntax reads 'c=', has the effect of simply "
+            "wishes to handle. The string passed into the option must "
+            "be 'remove' or 'url'; otherwise., the syntax 'c=d' must be used, "
+            "where c is the metacharacter and d is its substitute, which can "
+            "consist of zero, one, or more characters. The case of zero characters, "
+            "that is to say when the syntax reads 'c=', has the effect of simply "
             "removing any occurrence of c. In several cases it will be "
             "necessary to include the quotation marks in the syntax, and "
             "indeed doing so in all cases will not harm. In the special case "
@@ -1631,7 +1661,11 @@ def _arguments_parser():
             "special string 'remove' is used, all metacharacters will simply "
             "be removed except for those for which a replacement has been "
             "defined by means of a separate use of the "
-            "-m/--metacharacter-substitute option"))
+            "-m/--metacharacter-substitute option. "
+            "If the special string 'url' is used, all metacharacters will simply "
+            "be replaced with corresponding URL entities except for those "
+            "for which a replacement has been defined by means of a separate use "
+            "of the -m/--metacharacter-substitute option."))
     argument_parser.add_argument(
         "-l",
         "--label-disable",
@@ -1732,8 +1766,9 @@ def _main() -> None:
     except ParseException as exception:
         sys_exit(str(exception))
     except Exception as exception:  # pylint: disable=broad-exception-caught
-        sys_exit(f"An unexpected error occurred: {exception}")
-
+        error_type = type(exception).__name__
+        error_traceback = traceback.format_exc()
+        sys_exit(f"An unexpected error occurred: {error_type}: {exception}\n\nTraceback:\n{error_traceback}")
 
 if __name__ == "__main__":
     _main()

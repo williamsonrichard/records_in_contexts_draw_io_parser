@@ -1,0 +1,184 @@
+@prefix : <http://gbad.archives.gov.on.ca#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca> .
+
+<http://gbad.archives.gov.on.ca> rdf:type owl:Ontology ;
+                                  owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/Dale
+<http://gbad.archives.gov.on.ca/Dale> rdf:type owl:NamedIndividual ,
+                                               rico:Person ;
+                                      rdfs:label "Dale" .
+
+
+###  http://gbad.archives.gov.on.ca/Series
+<http://gbad.archives.gov.on.ca/Series> rdf:type owl:NamedIndividual ,
+                                                 rico:RecordSetType ;
+                                        rdfs:label "Series" .
+
+
+###  http://gbad.archives.gov.on.ca/2000
+<http://gbad.archives.gov.on.ca/2000> rdf:type owl:NamedIndividual ,
+                                               rico:Date ;
+                                      rdfs:label "2000" .
+
+
+###  http://gbad.archives.gov.on.ca/2002
+<http://gbad.archives.gov.on.ca/2002> rdf:type owl:NamedIndividual ,
+                                               rico:Date ;
+                                      rdfs:label "2002" .
+
+
+###  http://gbad.archives.gov.on.ca/Accession%20Number
+<http://gbad.archives.gov.on.ca/Accession%20Number> rdf:type owl:NamedIndividual ,
+                                                             rico:IdentifierType ;
+                                                    rdfs:label "Accession Number" .
+
+
+###  http://gbad.archives.gov.on.ca/Accession%20Number%3A%2045241.
+<http://gbad.archives.gov.on.ca/Accession%20Number%3A%2045241.> rdf:type owl:NamedIndividual ,
+                                                                         rico:Identifier ;
+                                                                rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Accession%20Number> ;
+                                                                rdfs:label "Accession number: 45241." .
+
+
+###  http://gbad.archives.gov.on.ca/Archival%20Description
+<http://gbad.archives.gov.on.ca/Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                 rico:DocumentaryFormType ;
+                                                        rdfs:label "Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Archival%20Description%20Creation
+<http://gbad.archives.gov.on.ca/Archival%20Description%20Creation> rdf:type owl:NamedIndividual ,
+                                                                            rico:Activity ;
+                                                                   rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/Dale> ;
+                                                                   rdfs:label "Archival Description Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/Current%20Reference%20Code
+<http://gbad.archives.gov.on.ca/Current%20Reference%20Code> rdf:type owl:NamedIndividual ,
+                                                                     rico:IdentifierType ;
+                                                            rdfs:label "Current Reference Code" .
+
+
+###  http://gbad.archives.gov.on.ca/Electronic%20Records
+<http://gbad.archives.gov.on.ca/Electronic%20Records> rdf:type owl:NamedIndividual ,
+                                                               rico:ContentType ;
+                                                      rdfs:label "Electronic records" .
+
+
+###  http://gbad.archives.gov.on.ca/Moving%20Images
+<http://gbad.archives.gov.on.ca/Moving%20Images> rdf:type owl:NamedIndividual ,
+                                                          rico:ContentType ;
+                                                 rdfs:label "Moving images" .
+
+
+###  http://gbad.archives.gov.on.ca/Office%20Of%20Origin%20Relation
+<http://gbad.archives.gov.on.ca/Office%20Of%20Origin%20Relation> rdf:type owl:NamedIndividual ,
+                                                                          rico:CreationRelation ;
+                                                                 rico:hasBeginningDate <http://gbad.archives.gov.on.ca/2000> ;
+                                                                 rico:hasEndDate <http://gbad.archives.gov.on.ca/2002> ;
+                                                                 rico:relationHasTarget <http://gbad.archives.gov.on.ca/Ontario.%20Walkerton%20Inquiry> ;
+                                                                 rdfs:label "Office of Origin Relation" .
+
+
+###  http://gbad.archives.gov.on.ca/Ontario.%20Walkerton%20Inquiry
+<http://gbad.archives.gov.on.ca/Ontario.%20Walkerton%20Inquiry> rdf:type owl:NamedIndividual ,
+                                                                         rico:CorporateBody ;
+                                                                rdfs:label "Ontario. Walkerton Inquiry" .
+
+
+###  http://gbad.archives.gov.on.ca/RG%2018-210
+<http://gbad.archives.gov.on.ca/RG%2018-210> rdf:type owl:NamedIndividual ,
+                                                      rico:Identifier ;
+                                             rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Current%20Reference%20Code> ;
+                                             rdfs:label "RG 18-210" .
+
+
+###  http://gbad.archives.gov.on.ca/Records%20Of%20The%20Walkerton%20Inquiry
+<http://gbad.archives.gov.on.ca/Records%20Of%20The%20Walkerton%20Inquiry> rdf:type owl:NamedIndividual ,
+                                                                                   rico:RecordSet ,
+                                                                                   rico:Title ;
+                                                                          rico:hasContentOfType <http://gbad.archives.gov.on.ca/Electronic%20Records> ,
+                                                                                                <http://gbad.archives.gov.on.ca/Moving%20Images> ,
+                                                                                                <http://gbad.archives.gov.on.ca/Sound%20Recordings> ,
+                                                                                                <http://gbad.archives.gov.on.ca/Textual%20Records> ;
+                                                                          rico:hasCreator <http://gbad.archives.gov.on.ca/Ontario.%20Walkerton%20Inquiry> ;
+                                                                          rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/Accession%20Number%3A%2045241.> ,
+                                                                                                  <http://gbad.archives.gov.on.ca/RG%2018-210> ;
+                                                                          rico:hasOrHadInstantiation <http://gbad.archives.gov.on.ca/Records%20Of%20The%20Walkerton%20Inquiry-i1> ;
+                                                                          rico:hasOrHadTitle <http://gbad.archives.gov.on.ca/Records%20Of%20The%20Walkerton%20Inquiry> ;
+                                                                          rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Series> ;
+                                                                          rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Records%20Of%20The%20Walkerton%20Inquiry%20Archival%20Description> ;
+                                                                          rico:thingIsSourceOfRelation <http://gbad.archives.gov.on.ca/Office%20Of%20Origin%20Relation> ;
+                                                                          rico:accruals "No further accruals are expected." ;
+                                                                          rico:conditionsOfAccess "Some of the records are closed until 2022. See sub-series descriptions for details." ;
+                                                                          rico:conditionsOfUse "See sub-series descriptions for terms governing use." ;
+                                                                          rico:creationDate "2000-2002" ;
+                                                                          rico:generalDescription "Finding Aid Note: Please see sub-series descriptions for information about finding aids." ,
+                                                                                                  "Immediate Source of Acquisition: The records were acquired by the Archives of Ontario in a direct transfer from the Walkerton Inquiry in 2002." ;
+                                                                          rico:scopeAndContent "Series consists of records generated during the course of the Walkerton Inquiry into the tainted water tragedy that occurred in Walkerton, Ontario in May 2000. At that time Walkerton’s drinking water system became contaminated with deadly bacteria, primarily Escherichia coli O157:H7.1 Seven people died, and more than 2,300 became ill.The Ontario government called the Inquiry to investigate what actually happened in Walkerton. The mandate of the Inquiry was to determine the causes of the E-coli outbreak, find out who was responsible, and to investigate if it could have been prevented.Commissioner O'Connor divided the Inquiry into two Parts. The purpose of Part One was to fulfil the mandate of discovering what had happened in Walkerton, and why, and to make recommendations based on those findings. Part One involved a great deal of fact finding and included evidentiary hearings. Part Two of the Inquiry was broader in scope and dealt with policy issues related to safe drinking water. The primary purpose of Part Two was to make recommendations regarding Ontario's drinking water system.The records in this series have been arranged into sub-series that broadly reflect Parts One and Two of the Inquiry, and also include general administrative records created by the Inquiry's staff. Included in the sub-series are records connected with the hearings and meetings held by the Inquiry, commissioned research reports, correspondence, the reference database of documents used by the Inquiry and the Inquiry's website." ;
+                                                                          rdfs:label "Records of the Walkerton Inquiry" .
+
+
+###  http://gbad.archives.gov.on.ca/Records%20Of%20The%20Walkerton%20Inquiry-i1
+<http://gbad.archives.gov.on.ca/Records%20Of%20The%20Walkerton%20Inquiry-i1> rdf:type owl:NamedIndividual ,
+                                                                                      rico:Instantiation ;
+                                                                             rico:generalDescription "How to Order: See sub-series descriptions for information on how to access the records." ;
+                                                                             rico:instantiationExtent "18.6 metres of textual records (62 boxes)4 data sets of textual records (53.5 GB)1 website (56.9 MB)5 audio cassettes3 videocassettes" ;
+                                                                             rdfs:label "Records of the Walkerton Inquiry-i1" .
+
+
+###  http://gbad.archives.gov.on.ca/Records%20Of%20The%20Walkerton%20Inquiry%20Archival%20Description
+<http://gbad.archives.gov.on.ca/Records%20Of%20The%20Walkerton%20Inquiry%20Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                                                            rico:Record ;
+                                                                                                   rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Archival%20Description> ;
+                                                                                                   rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
+                                                                                                                       <http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y> ;
+                                                                                                   rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Archival%20Description%20Creation> ;
+                                                                                                   rico:lastModificationDate "2011-01-11"^^xsd:date ;
+                                                                                                   rdfs:label "Records of the Walkerton Inquiry Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Sound%20Recordings
+<http://gbad.archives.gov.on.ca/Sound%20Recordings> rdf:type owl:NamedIndividual ,
+                                                             rico:ContentType ;
+                                                    rdfs:label "Sound recordings" .
+
+
+###  http://gbad.archives.gov.on.ca/Status%3A%20Approved
+<http://gbad.archives.gov.on.ca/Status%3A%20Approved> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Status: Approved" .
+
+
+###  http://gbad.archives.gov.on.ca/Textual%20Records
+<http://gbad.archives.gov.on.ca/Textual%20Records> rdf:type owl:NamedIndividual ,
+                                                            rico:ContentType ;
+                                                   rdfs:label "Textual records" .
+
+
+###  http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y
+<http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Web Enabled: Y" .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

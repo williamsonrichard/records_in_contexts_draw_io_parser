@@ -1,0 +1,96 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs
+  Annotations:
+    rdfs:label "Mobile Tuberculosis Testing Clinic photographs"
+  Types: rico:RecordSet, rico:Title
+  Facts:
+    rico:hasRecordSetType Series,
+    rico:scopeAndContent "This series contains photographs of the mobile tuberculosis testing clinics administered by the Department of Health. This includes photographs of chest X-ray machinery, Community X-ray Survey trucks, the Chest X-ray train, information displays for fairs, TB testing equipment, department staff, and interior views of the clinics.",
+    rico:conditionsOfAccess "No restrictions on access.",
+    rico:conditionsOfUse "Crown copyright exists in these photographs. Permission to publish is required from the Archives of Ontario. Submit a Request for Permission to Publish, Exhibit or Broadcast form.",
+    rico:hasOrHadIdentifier RG%2010-145,
+    rico:isOrWasDescribedBy Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs%20Archival%20Description,
+    rico:hasCreator Ontario.%20Dept.%20Of%20Health,
+    rico:hasOrHadTitle Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs,
+    rico:generalDescription "Availability of Other Formats: Some of the photographs from this series are available in digital format in the Archives of Ontario Visual Database. Search using reference code RG 10-145.",
+    rico:hasContentOfType Graphic%20Materials,
+    rico:hasOrHadInstantiation Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs-i1,
+    rico:creationDate "[ca. 1950]-1964"
+
+Individual: Series
+  Annotations:
+    rdfs:label "Series"
+  Types: rico:RecordSetType
+
+Individual: RG%2010-145
+  Annotations:
+    rdfs:label "RG 10-145"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Current%20Reference%20Code
+
+Individual: Current%20Reference%20Code
+  Annotations:
+    rdfs:label "Current Reference Code"
+  Types: rico:IdentifierType
+
+Individual: Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs%20Archival%20Description
+  Annotations:
+    rdfs:label "Mobile Tuberculosis Testing Clinic photographs archival description"
+  Types: rico:Record
+  Facts:
+    rico:resultsOrResultedFrom Archival%20Description%20Creation,
+    rico:lastModificationDate "2002-08-20"^^xsd:date,
+    rico:hasDocumentaryFormType Archival%20Description,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Enabled%3A%20Y
+
+Individual: Archival%20Description%20Creation
+  Annotations:
+    rdfs:label "Archival Description Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy O%27Rourke
+
+Individual: O%27Rourke
+  Annotations:
+    rdfs:label "O'Rourke"
+  Types: rico:Person
+
+Individual: Archival%20Description
+  Annotations:
+    rdfs:label "Archival Description"
+  Types: rico:DocumentaryFormType
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState
+
+Individual: Web%20Enabled%3A%20Y
+  Annotations:
+    rdfs:label "Web Enabled: Y"
+  Types: rico:RecordState
+
+Individual: Ontario.%20Dept.%20Of%20Health
+  Annotations:
+    rdfs:label "Ontario. Dept. of Health"
+  Types: rico:CorporateBody
+
+Individual: Graphic%20Materials
+  Annotations:
+    rdfs:label "Graphic materials"
+  Types: rico:ContentType
+
+Individual: Mobile%20Tuberculosis%20Testing%20Clinic%20Photographs-i1
+  Annotations:
+    rdfs:label "Mobile Tuberculosis Testing Clinic photographs-i1"
+  Types: rico:Instantiation
+  Facts:
+    rico:generalDescription "How to Order: To view these records, order Series RG 10-145, container B 972.",
+    rico:instantiationExtent "ca. 200 photographs"

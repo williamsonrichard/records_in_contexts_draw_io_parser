@@ -1,0 +1,113 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Elizabeth%20Simcoe%20Loose%20Sketches
+  Annotations:
+    rdfs:label "Elizabeth Simcoe loose sketches"
+  Types: rico:RecordSet, rico:Title
+  Facts:
+    rico:hasRecordSetType Sub-Series,
+    rico:scopeAndContent "Sub-series consists largely of watercolours and drawings, most of which were created by Elizabeth Simcoe. The majority are of Upper Canada and Lower Canada, created during her husband's tenure as Lieutenant-Governor of Upper Canada.Some of the more detailed watercolours may have been completed after her return to England in 1796. Most of the works depict the St. Lawrence River, Lake Ontario, and the Niagara region. There are also views of Montreal, Quebec, and southern places in England. Along with the landscapes, there are some portraits, primarily of aboriginal people, and drawings of flowers, birds, butterflies and fish.A number of sketches are clearly the work of other artists. Items F 47-11-1-0-109 through F 47-11-1-0-117 are identified as being drawn by Lieutenant Pilkington. A few others contain differences in style, suggesting that Mrs. Simcoe was not the artist.The sub-series also contains prints collected by Mrs. Simcoe and a photograph of either one of her watercolours or a watercolour collected by her.",
+    rico:history "Custodial History: The material in this sub-series was acquired in 1952 under the terms of a long-term loan agreement with the University of Toronto Library, which owns the records.",
+    rico:hasOrHadInstantiation Elizabeth%20Simcoe%20Loose%20Sketches-i1,
+    rico:conditionsOfAccess "The original artworks in this sub-series are closed for conservation reasons. Please refer either to reference slides and transparencies, or to the Archives' on-line Visual Database.",
+    rico:conditionsOfUse "Records are in the public domain. There are no restrictions on reproduction for research and private study.  If you wish to use any of this material for a purpose other than research and private study, submit a Request for Permission to Publish, Exhibit or Broadcast Form.",
+    rico:generalDescription "Availability of Other Formats: This material is available as reference slides and/or transparencies, and through the Archives' on-line Visual Database.",
+    rico:generalDescription "Finding Aid Note: An online list is available for this sub-series.",
+    rico:generalDescription "Some items contain Mrs. Simcoe's original captions and dates. Others, initialed \"C.S.\", may have been captioned by her daughter Charlotte.  In a few cases, writing on the back of an item may have been done by members of the Coles family or archivists. Other supplied caption and date information was taken from John Ross Robertson's 1911 publication The Diary of Mrs. Simcoe. The original of this diary is contained in series F 47-8.The \"Old Code\" reference in the listings provides cross-references to earlier control numbers used in the 1956 Archives of Ontario finding aid to the sketches. Some item reference codes appear out of sequence in the listing. These represent previously unnumbered sketches found on the verso of sketches containing old code numbers. The titles of all these items have been supplied.",
+    rico:accruals "No further accruals are expected.",
+    rico:hasOrHadIdentifier F%2047-11-1,
+    rico:isOrWasDescribedBy Elizabeth%20Simcoe%20Loose%20Sketches%20Archival%20Description,
+    rico:hasOrHadTitle Elizabeth%20Simcoe%20Loose%20Sketches,
+    rico:hasContentOfType Graphic%20Materials,
+    rico:creationDate "1791-1842, predominant 1791-1796",
+    rico:isDirectlyIncludedIn Elizabeth%20Simcoe%20Sketches
+
+Individual: Sub-Series
+  Annotations:
+    rdfs:label "Sub-Series"
+  Types: rico:RecordSetType
+
+Individual: Elizabeth%20Simcoe%20Loose%20Sketches-i1
+  Annotations:
+    rdfs:label "Elizabeth Simcoe loose sketches-i1"
+  Types: rico:Instantiation
+  Facts:
+    rico:instantiationExtent "318 watercolours58 drawings8 prints1 photograph",
+    rico:generalDescription "How to Order: Consult the online list to identify the records that you require. Order reference transparencies or slides using reference code and barcode number, or refer to the on-line Visual Database."
+
+Individual: F%2047-11-1
+  Annotations:
+    rdfs:label "F 47-11-1"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Current%20Reference%20Code
+
+Individual: Current%20Reference%20Code
+  Annotations:
+    rdfs:label "Current Reference Code"
+  Types: rico:IdentifierType
+
+Individual: Elizabeth%20Simcoe%20Loose%20Sketches%20Archival%20Description
+  Annotations:
+    rdfs:label "Elizabeth Simcoe loose sketches Archival Description"
+  Types: rico:Record
+  Facts:
+    rico:resultsOrResultedFrom Archival%20Description%20Creation,
+    rico:lastModificationDate "2009-07-23"^^xsd:date,
+    rico:hasDocumentaryFormType Archival%20Description,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Enabled%3A%20Y
+
+Individual: Archival%20Description%20Creation
+  Annotations:
+    rdfs:label "Archival Description Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Walz
+
+Individual: Walz
+  Annotations:
+    rdfs:label "Walz"
+  Types: rico:Person
+
+Individual: Archival%20Description
+  Annotations:
+    rdfs:label "Archival Description"
+  Types: rico:DocumentaryFormType
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState
+
+Individual: Web%20Enabled%3A%20Y
+  Annotations:
+    rdfs:label "Web Enabled: Y"
+  Types: rico:RecordState
+
+Individual: Graphic%20Materials
+  Annotations:
+    rdfs:label "Graphic materials"
+  Types: rico:ContentType
+
+Individual: Elizabeth%20Simcoe%20Sketches
+  Annotations:
+    rdfs:label "Elizabeth Simcoe sketches"
+  Types: rico:RecordSet
+  Facts:
+    rico:hasOrHadIdentifier F%2047-11,
+    rico:hasRecordSetType Series
+
+Individual: F%2047-11
+  Annotations:
+    rdfs:label "F 47-11"
+  Types: rico:Identifier
+
+Individual: Series
+  Annotations:
+    rdfs:label "Series"
+  Types: rico:RecordSetType

@@ -1,0 +1,334 @@
+<mxfile host="app.diagrams.net" modified="2024-06-21T13:53:08.452Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="BJ0ipOQkT2kpl0kLqGAY" version="24.5.5" type="device">
+  <diagram name="Page-1" id="JNRxnBV9_3tvGunqLC9R">
+    <mxGraphModel dx="2924" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.456;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.359;exitY=-0.038;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="iiJ8OJKaNMLrSCaLO3TT-1" target="gmwnegnUR_CNORKRYM6Y-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="180" as="sourcePoint" />
+            <mxPoint x="180" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-11" value="rico:normalizedValue" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="gmwnegnUR_CNORKRYM6Y-10" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-12" value="Department of Health" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="100" y="40" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-13" value="AA37" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="200" width="230" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-14" value="rico:Identifier&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gmwnegnUR_CNORKRYM6Y-13" vertex="1">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.309;entryY=0.962;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.679;exitY=-0.038;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Tc_GIQojTk6pTu17JZoE-1" target="gmwnegnUR_CNORKRYM6Y-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="350" as="sourcePoint" />
+            <mxPoint x="470" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-17" value="rico:hasOrHadIdentifier" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="gmwnegnUR_CNORKRYM6Y-16" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.4;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.388;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="gmwnegnUR_CNORKRYM6Y-13" target="gmwnegnUR_CNORKRYM6Y-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="60" as="sourcePoint" />
+            <mxPoint x="540" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-19" value="rico:hasIdentifierType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="gmwnegnUR_CNORKRYM6Y-18" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-20" value="Agent Identifier" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="500" y="40" width="129" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmwnegnUR_CNORKRYM6Y-21" value="rico:IdentifierType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gmwnegnUR_CNORKRYM6Y-20" vertex="1">
+          <mxGeometry y="26" width="129" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-1" value="Ontario. Dept. of Health" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="170" y="200" width="170" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-2" value="rico:AgentName&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="iiJ8OJKaNMLrSCaLO3TT-1" vertex="1">
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.606;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Tc_GIQojTk6pTu17JZoE-1" target="iiJ8OJKaNMLrSCaLO3TT-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="350" as="sourcePoint" />
+            <mxPoint x="280" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-4" value="rico:hasOrHadAgentName" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="iiJ8OJKaNMLrSCaLO3TT-3" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-5" value="A Ontario Government Name" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="660" y="260" width="200" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-6" value="rico:CorporateBodyType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="iiJ8OJKaNMLrSCaLO3TT-5" vertex="1">
+          <mxGeometry y="26" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.005;entryY=-0.154;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Tc_GIQojTk6pTu17JZoE-1" target="iiJ8OJKaNMLrSCaLO3TT-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="469.46000000000004" y="373.4839999999999" as="sourcePoint" />
+            <mxPoint x="620" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-8" value="rico:hasOrHadCorporateBodyType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="iiJ8OJKaNMLrSCaLO3TT-7" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#000000;" parent="1" source="Tc_GIQojTk6pTu17JZoE-1" target="iiJ8OJKaNMLrSCaLO3TT-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470.17999999999984" y="381.0239999999999" as="sourcePoint" />
+            <mxPoint x="720" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-10" value="rico:hasBeginningDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="iiJ8OJKaNMLrSCaLO3TT-9" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-11" value="1924" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="720" y="330" width="190" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-12" value="rico:Date" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="iiJ8OJKaNMLrSCaLO3TT-11" vertex="1">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.001;entryY=0.151;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Tc_GIQojTk6pTu17JZoE-2" target="iiJ8OJKaNMLrSCaLO3TT-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="410" as="sourcePoint" />
+            <mxPoint x="620" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-18" value="rico:hasEndDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="iiJ8OJKaNMLrSCaLO3TT-17" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-19" value="1972" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="720" y="400" width="190" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="iiJ8OJKaNMLrSCaLO3TT-20" value="rico:Date" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="iiJ8OJKaNMLrSCaLO3TT-19" vertex="1">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_-RjwaxhbeTWfwVWe4ke-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.255;exitY=1.038;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.02;entryY=0.231;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Tc_GIQojTk6pTu17JZoE-2" target="_-RjwaxhbeTWfwVWe4ke-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="412.03999999999996" y="421.66200000000003" as="sourcePoint" />
+            <mxPoint x="720" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_-RjwaxhbeTWfwVWe4ke-14" value="rico:history" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="_-RjwaxhbeTWfwVWe4ke-13" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_-RjwaxhbeTWfwVWe4ke-15" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;line-height: 90%;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Established in 1924, the Department of Health replaced the Provincial Board of Health.&amp;nbsp; Since its establishment, the Department&#39;s functions have both expanded and shrunk.&amp;nbsp; In 1930, the Hospitals Branch of the Department of the Provincial Secretary - responsible for administering Ontario&#39;s psychiatric hospitals and inspecting the province&#39;s public and private hospitals - was transferred to the Department of Health. In 1952, cancer research and the operation of cancer clinics was added to the Department&#39;s responsibilities. At the same time, other functions have been shifted out of the Ministry to other agencies.&amp;nbsp; In 1956,&amp;nbsp; the Public and Private Hospitals Division was transferred to the Ontario Hospitals Services Commission (although this Commission still reported to the Minister of Health).&amp;nbsp; The water and sewage functions of the old Sanitary Engineering Division were moved to the Ontario Water Resources Commission in 1957. The Ministry of Community and Social Services took responsibility for mental retardation facilities and children&#39;s services in 1974, and the Ministry of Labour took charge of the occupational health function in 1976. The Department was organised primarily by divisions until 1959, when they became known as branches.&amp;nbsp; In 1962 a Royal Commission on Health Services was appointed which served as a catalyst for a major overhaul of the Department. This occurred in 1966 when the various branches and programmes of the Department were organized into divisions once again. These divisions included the Public Health Division, Mental Health Division, Medical Services Insurance Division, and the Financial and Administrative Services Division. The Department of Health was replaced by the new Ministry of Health in 1972.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;align=left;" parent="1" vertex="1">
+          <mxGeometry x="340" y="700" width="800" height="191" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-29" value="Ontario. Dept. of Health&amp;nbsp;Authority Record" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="-230" y="434" width="200" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-30" value="rico:Record" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="I4GB3cVhTv-sTvJ7h0Jz-29" vertex="1">
+          <mxGeometry y="26" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-31" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="Tc_GIQojTk6pTu17JZoE-1" target="I4GB3cVhTv-sTvJ7h0Jz-29" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="380" as="sourcePoint" />
+            <mxPoint x="-110" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-32" value="rico:isOrWasDescribedBy" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="I4GB3cVhTv-sTvJ7h0Jz-31" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-29" target="I4GB3cVhTv-sTvJ7h0Jz-35" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-200" y="364" as="sourcePoint" />
+            <mxPoint x="-410" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-34" value="rico:hasDocumentaryFormType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="I4GB3cVhTv-sTvJ7h0Jz-33" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-35" value="Authority Record" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="-690" y="340" width="189" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-36" value="rico:DocumentaryFormType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="I4GB3cVhTv-sTvJ7h0Jz-35" vertex="1">
+          <mxGeometry y="26" width="189" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.769;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-30" target="I4GB3cVhTv-sTvJ7h0Jz-39" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-201" y="382" as="sourcePoint" />
+            <mxPoint x="-390" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-38" value="rico:isOrWasRegulatedBy" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="I4GB3cVhTv-sTvJ7h0Jz-37" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-39" value="Rules for Archival Description" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-540" y="452" width="129" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-40" value="rico:Rule&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="I4GB3cVhTv-sTvJ7h0Jz-39" vertex="1">
+          <mxGeometry y="26" width="129" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-41" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.161;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.985;entryY=0.077;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-30" target="I4GB3cVhTv-sTvJ7h0Jz-44" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-190" y="400" as="sourcePoint" />
+            <mxPoint x="-370" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-42" value="rico:resultsOrResultedFrom" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="I4GB3cVhTv-sTvJ7h0Jz-41" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-43" value="Authority Record Creation" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="-530" y="540" width="130" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-44" value="rico:Activity" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="I4GB3cVhTv-sTvJ7h0Jz-43" vertex="1">
+          <mxGeometry y="26" width="130" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-45" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.552;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-43" target="I4GB3cVhTv-sTvJ7h0Jz-47" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-570" y="570" as="sourcePoint" />
+            <mxPoint x="-650" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-46" value="rico:isOrWasPerformedBy" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="I4GB3cVhTv-sTvJ7h0Jz-45" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-47" value="R. Anger" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-740" y="648" width="150" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="I4GB3cVhTv-sTvJ7h0Jz-48" value="rico:Person" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="I4GB3cVhTv-sTvJ7h0Jz-47" vertex="1">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kRIpfUrG9O16BsR5oPXA-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.744;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.355;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-30" target="kRIpfUrG9O16BsR5oPXA-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-140" y="396" as="sourcePoint" />
+            <mxPoint x="-110" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kRIpfUrG9O16BsR5oPXA-16" value="rico:lastModificationDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="kRIpfUrG9O16BsR5oPXA-15" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="11" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kRIpfUrG9O16BsR5oPXA-17" value="2007-06-16" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="-30" y="560" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lTHjRTAcClQ9bYR0I0Gv-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.794;entryY=1.045;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-29" target="lTHjRTAcClQ9bYR0I0Gv-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-220" y="422" as="sourcePoint" />
+            <mxPoint x="-260" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lTHjRTAcClQ9bYR0I0Gv-10" value="rico:hasRecordState" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="lTHjRTAcClQ9bYR0I0Gv-9" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lTHjRTAcClQ9bYR0I0Gv-11" value="Web Ready: Y" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-440" y="260" width="150" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lTHjRTAcClQ9bYR0I0Gv-12" value="rico:RecordState&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="lTHjRTAcClQ9bYR0I0Gv-11" vertex="1">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lTHjRTAcClQ9bYR0I0Gv-13" value="Status: Approved" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-140" y="270" width="150" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lTHjRTAcClQ9bYR0I0Gv-14" value="rico:RecordState&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="lTHjRTAcClQ9bYR0I0Gv-13" vertex="1">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lTHjRTAcClQ9bYR0I0Gv-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.43;exitY=-0.058;exitDx=0;exitDy=0;entryX=0.543;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-29" target="lTHjRTAcClQ9bYR0I0Gv-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-171" y="434" as="sourcePoint" />
+            <mxPoint x="-110" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lTHjRTAcClQ9bYR0I0Gv-16" value="rico:hasRecordState" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="lTHjRTAcClQ9bYR0I0Gv-15" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QoX8hO-0wcaPtYNZqJav-1" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Function Note: The Department of Health was responsible for the&amp;nbsp; management and operation of programmes relating to health insurance, care for the mentally ill, home care services, drug services, and the regulation of hospitals and nursing homes.&amp;nbsp; The Department also operates laboratories, psychiatric hospitals, and provides funding and leadership for local public health services.&lt;/blockquote&gt;" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;align=left;" parent="1" vertex="1">
+          <mxGeometry x="455" y="570" width="420" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QoX8hO-0wcaPtYNZqJav-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.594;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.016;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Tc_GIQojTk6pTu17JZoE-2" target="QoX8hO-0wcaPtYNZqJav-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="448.03999999999996" y="422.98800000000006" as="sourcePoint" />
+            <mxPoint x="690" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QoX8hO-0wcaPtYNZqJav-3" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="QoX8hO-0wcaPtYNZqJav-2" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="25" y="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc_GIQojTk6pTu17JZoE-1" value="Ontario. Dept. of Health" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="370" width="165" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc_GIQojTk6pTu17JZoE-2" value="rico:CorporateBody" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Tc_GIQojTk6pTu17JZoE-1" vertex="1">
+          <mxGeometry y="26" width="165" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc_GIQojTk6pTu17JZoE-23" value="Provincial Board of Health of Ontario" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="-70" y="680" width="190" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc_GIQojTk6pTu17JZoE-24" value="rico:CorporateBody" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Tc_GIQojTk6pTu17JZoE-23" vertex="1">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I4bDPw6PqqAUihyiD4HI-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.569;entryY=-0.019;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.846;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Tc_GIQojTk6pTu17JZoE-2" target="Tc_GIQojTk6pTu17JZoE-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="440" as="sourcePoint" />
+            <mxPoint x="120" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I4bDPw6PqqAUihyiD4HI-2" value="rico:isSuccessorOf" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="I4bDPw6PqqAUihyiD4HI-1" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I4bDPw6PqqAUihyiD4HI-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.435;exitY=1.038;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.556;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="I4GB3cVhTv-sTvJ7h0Jz-30" target="I4bDPw6PqqAUihyiD4HI-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-150" y="504" as="sourcePoint" />
+            <mxPoint x="-220" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I4bDPw6PqqAUihyiD4HI-4" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="I4bDPw6PqqAUihyiD4HI-3" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I4bDPw6PqqAUihyiD4HI-5" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Source Note:&amp;nbsp;MacTaggart, Hazel I.&amp;nbsp; Publications of the Government of Ontario, 1901-1955 (1964).&amp;nbsp;Publications of the Government of Ontario, 1956-1971 (1975).&amp;nbsp;Canadiana Name Authorities, 1996-12-24&lt;/blockquote&gt;" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-410" y="650" width="290" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ysJAvTtuVAxGOwe6Rh7X-1" value="The Health Department Act, Statutes of Ontario 1924, Chap. 69" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="670" y="480" width="280" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="ysJAvTtuVAxGOwe6Rh7X-2" value="rico:Mandate&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="ysJAvTtuVAxGOwe6Rh7X-1" vertex="1">
+          <mxGeometry y="26" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ysJAvTtuVAxGOwe6Rh7X-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.994;exitY=0.923;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Tc_GIQojTk6pTu17JZoE-2" target="ysJAvTtuVAxGOwe6Rh7X-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="430" as="sourcePoint" />
+            <mxPoint x="620" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ysJAvTtuVAxGOwe6Rh7X-4" value="rico:authorizedBy" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="ysJAvTtuVAxGOwe6Rh7X-3" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ysJAvTtuVAxGOwe6Rh7X-5" value="Ontario. Ministry of Health" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="100" y="750" width="180" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="ysJAvTtuVAxGOwe6Rh7X-6" value="rico:CorporateBody" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="ysJAvTtuVAxGOwe6Rh7X-5" vertex="1">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ysJAvTtuVAxGOwe6Rh7X-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.438;entryY=0.019;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.139;exitY=0.962;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Tc_GIQojTk6pTu17JZoE-2" target="ysJAvTtuVAxGOwe6Rh7X-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="420" as="sourcePoint" />
+            <mxPoint x="320" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ysJAvTtuVAxGOwe6Rh7X-8" value="rico:hasSuccessor" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="ysJAvTtuVAxGOwe6Rh7X-7" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

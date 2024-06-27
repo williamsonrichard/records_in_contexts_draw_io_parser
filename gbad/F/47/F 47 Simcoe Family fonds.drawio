@@ -1,0 +1,617 @@
+<mxfile host="app.diagrams.net" modified="2024-06-21T14:00:35.049Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="Y6EgI6BAWDuey-78MQMw" version="24.5.5" type="device">
+  <diagram name="Page-1" id="_9r6geDOEYo5xFr4fmT0">
+    <mxGraphModel dx="3774" dy="2206" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-1" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Simcoe family fonds&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="370" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-2" value="rico:RecordSet" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="sWa0SD8Ajx1KSGOqKPP4-1" vertex="1">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-3" value="Fonds" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="850" y="344" width="160" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-4" value="rico:RecordSetType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="sWa0SD8Ajx1KSGOqKPP4-3" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="sWa0SD8Ajx1KSGOqKPP4-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="390" as="sourcePoint" />
+            <mxPoint x="610" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-6" value="rico:hasRecordSetType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="sWa0SD8Ajx1KSGOqKPP4-5" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-11" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;Fonds documents the official and private lives of several members of the Simcoe family in England and Upper Canada, predominantly in the late 18th and early 19th centuries. The fonds also contains records from John Graves Simcoe&#39;s Lieutenant-Governorship of Upper Canada 1792-1796. The records document the administrative and military careers of four generations of men of the Simcoe family, as well as the family&#39;s private life, including management of the family estate in Devonshire, financial matters, and genealogical research conducted by later generations of the family.&lt;/div&gt;&lt;div&gt;Family members represented in the fonds include Captain John Simcoe, John Graves Simcoe, Elizabeth Posthuma Simcoe, Francis Simcoe, Eliza Simcoe, and John K. Simcoe.&lt;/div&gt;&lt;div&gt;Records include personal and official correspondence, letter books, reports, returns, and commissions. The fonds contains a considerable quantity of graphic materials, including watercolour paintings, drawings and prints; maps and celestial charts; architectural and technical drawings; and artifacts attributed by Simcoe descendents to John Graves and Elizabeth Simcoe.&lt;/div&gt;&lt;/blockquote&gt;" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-1340" y="120" width="740" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.004;exitY=0.413;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.994;entryY=0.693;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="sWa0SD8Ajx1KSGOqKPP4-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="400" as="sourcePoint" />
+            <mxPoint x="130" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-170" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-13" value="rico:scopeAndContent" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="sWa0SD8Ajx1KSGOqKPP4-12" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-14" value="Simcoe family fonds-i1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="-580" y="418" width="199" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sWa0SD8Ajx1KSGOqKPP4-15" value="rico:Instantiation&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="sWa0SD8Ajx1KSGOqKPP4-14" vertex="1">
+          <mxGeometry y="26" width="199" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-19" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.875;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.339;exitY=1.026;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="K4QZWATomJR9_dxTVFmW-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="361" y="420" as="sourcePoint" />
+            <mxPoint x="260" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-20" value="rico:history" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="K4QZWATomJR9_dxTVFmW-19" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-59" y="113" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-21" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Custodial History:&amp;nbsp;The Simcoe Family papers were held by descendants of John Graves and Elizabeth Simcoe until the mid to late-20th century. Eliza Simcoe, the eldest daughter of John Graves and Elizabeth Simcoe, retained possession of the records which make up this fonds until her death in 1865. Between 1859 and 1861, a portion of the records were loaned to the Canadian Library of Parliament for arrangement and partial copying. On the death of Eliza Simcoe, the records passed to the children of the Reverend Henry Addington Simcoe, Eliza&#39;s only surviving brother. Some time after this, part of the records came into the possession of the Vowler family and the Coles family, each related to the Simcoes through marriage to a daughter or granddaughter of Henry Addington Simcoe.&amp;nbsp; In the late 1940s Dr. S. McLaughlan purchased the records then held by the Coles family and donated the whole to the University of Toronto Library. In 1951 the University and the Ontario Department of Archives and Records opened negotiations to transfer the custody, but not ownership, of the Simcoe records to the province.&amp;nbsp; In 1952, an agreement was signed, and the Simcoe Papers were transferred to the Archives of Ontario in order that they might be preserved in more appropriate circumstances and to ease public access to the records. The records which came to the Archives under the terms of this long-term loan agreement represent the bulk of the fonds. A subsequent purchase by the Archives of records and artifacts from other Simcoe descendants in 1993, and a number of small donations from a variety of sources have since added to the fonds.&lt;/blockquote&gt;" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-600" y="860" width="880" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-37" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=-0.004;exitY=0.144;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="sWa0SD8Ajx1KSGOqKPP4-14" edge="1" source="sWa0SD8Ajx1KSGOqKPP4-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="400" as="sourcePoint" />
+            <mxPoint x="110" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-38" value="rico:hasOrHadInstantiation" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="K4QZWATomJR9_dxTVFmW-37" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-41" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-15" target="K4QZWATomJR9_dxTVFmW-45" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-630" y="439" as="sourcePoint" />
+            <mxPoint x="-290" y="494.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-42" value="rico:instantiationExtent" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="K4QZWATomJR9_dxTVFmW-41" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K4QZWATomJR9_dxTVFmW-45" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;2.67 metres of textual records&lt;/div&gt;&lt;div&gt;63 volumes of textual records&lt;/div&gt;&lt;div&gt;353 watercolours&lt;/div&gt;&lt;div&gt;63 drawings&lt;/div&gt;&lt;div&gt;8 prints&lt;/div&gt;&lt;div&gt;4 photographs&lt;/div&gt;&lt;div&gt;1 sketchbook (63 watercolours and drawings)&lt;/div&gt;&lt;div&gt;98 maps&lt;/div&gt;&lt;div&gt;3 celestial charts&lt;/div&gt;&lt;div&gt;4 technical drawings&lt;/div&gt;&lt;div&gt;2 architectural drawings&lt;/div&gt;&lt;div&gt;1 sabre with scabbard&lt;/div&gt;&lt;div&gt;1 dress sword with scabbard&lt;/div&gt;&lt;div&gt;1 walking cane&lt;/div&gt;&lt;div&gt;1 wedding ring&lt;/div&gt;&lt;/blockquote&gt;" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;strokeColor=#000000;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-1030" y="440" width="230" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.624;exitY=1.013;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="vEi_3DjQt7wcUmB-cSFn-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="422" as="sourcePoint" />
+            <mxPoint x="360" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-2" value="rico:conditionsOfAccess" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="vEi_3DjQt7wcUmB-cSFn-1" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-23" y="68" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-3" value="Refer to series and sub-series descriptions for information on access restrictions." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="220" y="800" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.679;exitY=1.019;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="vEi_3DjQt7wcUmB-cSFn-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="422" as="sourcePoint" />
+            <mxPoint x="420" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-5" value="rico:conditionsOfUse" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="vEi_3DjQt7wcUmB-cSFn-4" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="8" y="39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-6" value="Records are in the public domain.&amp;nbsp;There are no restrictions on reproduction for research and private study.&amp;nbsp; If you wish to use any of this material for a purpose other than research and private study, submit a Request for Permission to Publish, Exhibit or Broadcast Form." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="410" y="820" width="310" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.376;entryY=-0.04;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.795;exitY=1.019;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="vEi_3DjQt7wcUmB-cSFn-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="420" as="sourcePoint" />
+            <mxPoint x="510" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-8" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="vEi_3DjQt7wcUmB-cSFn-7" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="63" y="101" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEi_3DjQt7wcUmB-cSFn-9" value="Finding Aid Note:&amp;nbsp;Please see series and sub-series descriptions for listings." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="560" y="740" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--11" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.999;exitY=-0.103;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="wiPwyt0miK05mvKJtJq--13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="400" as="sourcePoint" />
+            <mxPoint x="920" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--12" value="rico:accruals" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--11" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--13" value="No further accruals are expected." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="960" y="450" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.927;entryY=0.871;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-14" target="wiPwyt0miK05mvKJtJq--22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-211" y="350" as="sourcePoint" />
+            <mxPoint x="-680" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--21" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--20" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--22" value="How to Order:&amp;nbsp;Consult the online series or sub-series list to identify the records that you require. For microfilmed items, consult the appropriate reel of self-service microfilm. To access any other material, contact a Reference Archivist." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="-1040" y="320" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--23" value="F 47" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-180" y="78" width="170" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--24" value="rico:Identifier&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wiPwyt0miK05mvKJtJq--23" vertex="1">
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.054;exitY=-0.01;exitDx=0;exitDy=0;entryX=0.788;entryY=1.009;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="wiPwyt0miK05mvKJtJq--24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="362" as="sourcePoint" />
+            <mxPoint x="260" y="242" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--26" value="rico:hasOrHadIdentifier" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--25" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-142" y="-75" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.129;exitY=0.013;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="wiPwyt0miK05mvKJtJq--23" target="wiPwyt0miK05mvKJtJq--33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-200" y="70" as="sourcePoint" />
+            <mxPoint x="-370" y="78" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--32" value="rico:hasIdentifierType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--31" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--33" value="Current Reference Code" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="-401" y="-20" width="129" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--34" value="rico:IdentifierType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wiPwyt0miK05mvKJtJq--33" vertex="1">
+          <mxGeometry y="26" width="129" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--53" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="wiPwyt0miK05mvKJtJq--56" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="350" as="sourcePoint" />
+            <mxPoint x="800" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--54" value="rico:isOrWasDescribedBy" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--53" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--55" value="Simcoe family fonds Archival Description" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="800" y="223" width="150" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--56" value="rico:Record" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wiPwyt0miK05mvKJtJq--55" vertex="1">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--57" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.347;entryY=1.026;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wiPwyt0miK05mvKJtJq--55" target="wiPwyt0miK05mvKJtJq--60" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="170.00000000000023" as="sourcePoint" />
+            <mxPoint x="1030" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--58" value="rico:resultsOrResultedFrom" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--57" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="14" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--59" value="Archival Description Creation" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="117" width="150" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--60" value="rico:Activity" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wiPwyt0miK05mvKJtJq--59" vertex="1">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--61" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.499;entryY=0.981;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wiPwyt0miK05mvKJtJq--59" target="wiPwyt0miK05mvKJtJq--64" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="80" as="sourcePoint" />
+            <mxPoint x="1105" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--62" value="rico:isOrWasPerformedBy" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--61" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--63" value="Walz" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1210" y="8" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--64" value="rico:Person" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wiPwyt0miK05mvKJtJq--63" vertex="1">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--71" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.126;exitY=0;exitDx=0;exitDy=0;entryX=0.736;entryY=1.026;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="PbNKBDSLsDvYSo0k1ZoX-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="534.5400000000002" y="373.84400000000005" as="sourcePoint" />
+            <mxPoint x="40" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wiPwyt0miK05mvKJtJq--72" value="rico:hasCreator" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="wiPwyt0miK05mvKJtJq--71" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-123" y="-146" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Pa1L8ZfUJXBHrEYyGiSI-1" value="Simcoe family fonds" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="610" y="130" width="150" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Pa1L8ZfUJXBHrEYyGiSI-2" value="rico:Title&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Pa1L8ZfUJXBHrEYyGiSI-1" vertex="1">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Pa1L8ZfUJXBHrEYyGiSI-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.886;exitY=-0.019;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.513;entryY=1.026;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="Pa1L8ZfUJXBHrEYyGiSI-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="330" as="sourcePoint" />
+            <mxPoint x="380" y="230.00000000000023" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Pa1L8ZfUJXBHrEYyGiSI-4" value="rico:hasOrHadTitle" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="Pa1L8ZfUJXBHrEYyGiSI-3" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="23" y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rlVAaZdWDM-1AO-MbrP8-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.423;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="rlVAaZdWDM-1AO-MbrP8-3" edge="1" source="wiPwyt0miK05mvKJtJq--56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="270" as="sourcePoint" />
+            <mxPoint x="1130" y="313" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rlVAaZdWDM-1AO-MbrP8-2" value="rico:lastModificationDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="rlVAaZdWDM-1AO-MbrP8-1" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rlVAaZdWDM-1AO-MbrP8-3" value="2002-12-08" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="270" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-1" value="Archival Description" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="700" y="-104" width="189" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-2" value="rico:DocumentaryFormType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JUvVhaggt__ALHUesofw-1" vertex="1">
+          <mxGeometry y="26" width="189" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.652;entryY=1.068;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.12;exitY=-0.006;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wiPwyt0miK05mvKJtJq--55" target="JUvVhaggt__ALHUesofw-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="220" as="sourcePoint" />
+            <mxPoint x="1050" y="-20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-4" value="rico:hasDocumentaryFormType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="JUvVhaggt__ALHUesofw-3" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-18" y="-93" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.543;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="wiPwyt0miK05mvKJtJq--55" target="JUvVhaggt__ALHUesofw-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="223" as="sourcePoint" />
+            <mxPoint x="980" y="-60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-6" value="rico:hasRecordState" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="JUvVhaggt__ALHUesofw-5" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="39" y="-95" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.637;exitY=-0.019;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.372;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wiPwyt0miK05mvKJtJq--55" target="JUvVhaggt__ALHUesofw-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1010" y="156" as="sourcePoint" />
+            <mxPoint x="1050" y="-120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-8" value="rico:hasRecordState" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="JUvVhaggt__ALHUesofw-7" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="83" y="-102" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-9" value="Status: Approved" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="910" y="-145" width="150" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-10" value="rico:RecordState&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JUvVhaggt__ALHUesofw-9" vertex="1">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-11" value="Web Enabled: Y" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1100" y="-110" width="150" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUvVhaggt__ALHUesofw-12" value="rico:RecordState&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JUvVhaggt__ALHUesofw-11" vertex="1">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lszSfj4lrEIONad0Ssyt-1" value="Artifacts" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-33" y="780" width="178" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lszSfj4lrEIONad0Ssyt-2" value="rico:ContentType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="lszSfj4lrEIONad0Ssyt-1" vertex="1">
+          <mxGeometry y="26" width="178" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lszSfj4lrEIONad0Ssyt-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.212;exitY=1.051;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="lszSfj4lrEIONad0Ssyt-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="64.5" y="634" as="sourcePoint" />
+            <mxPoint x="-75.5" y="764" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lszSfj4lrEIONad0Ssyt-4" value="rico:hasContentOfType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="lszSfj4lrEIONad0Ssyt-3" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-123" y="139" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NtwbBurvTleTFVB1CDUG-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.005;exitY=0.288;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="NtwbBurvTleTFVB1CDUG-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="510" as="sourcePoint" />
+            <mxPoint x="-120" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NtwbBurvTleTFVB1CDUG-2" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="NtwbBurvTleTFVB1CDUG-1" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-247" y="66" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NtwbBurvTleTFVB1CDUG-3" value="Availability of Other Formats:&amp;nbsp;Refer to series and sub-series descriptions for information on the availability of other formats." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="-570" y="550" width="235" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NtwbBurvTleTFVB1CDUG-4" value="Related Material:&amp;nbsp;Fonds F 1174 (John Ross Robertson fonds) contains 57 items of incoming and outgoing correspondence by John Graves Simcoe and Elizabeth Simcoe. Robertson was a biographer of the Simcoes." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="980" y="570" width="530" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NtwbBurvTleTFVB1CDUG-5" value="Associated Material:&amp;nbsp;The Clements Library of the University of Michigan in Ann Arbor, Michigan, holds a collection of correspondence from John Graves and Elizabeth Simcoe dating from the 1770s through 1810. The Archives of Ontario possesses a microfilm copy of this collection.&amp;nbsp;" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="920" y="740" width="480" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NtwbBurvTleTFVB1CDUG-6" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.022;entryY=0.194;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.199;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="NtwbBurvTleTFVB1CDUG-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="430" as="sourcePoint" />
+            <mxPoint x="1220" y="679" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NtwbBurvTleTFVB1CDUG-7" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="NtwbBurvTleTFVB1CDUG-6" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="133" y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NtwbBurvTleTFVB1CDUG-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.998;exitY=0.971;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.054;entryY=0.044;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="NtwbBurvTleTFVB1CDUG-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="430" as="sourcePoint" />
+            <mxPoint x="930" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NtwbBurvTleTFVB1CDUG-9" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="NtwbBurvTleTFVB1CDUG-8" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="159" y="99" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="PbNKBDSLsDvYSo0k1ZoX-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="480" as="sourcePoint" />
+            <mxPoint x="950" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-2" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-1" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="89" y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-3" value="Related Material:&amp;nbsp;MS 83 consists of a Letterbook dated January 1792 through July 1793.&amp;nbsp; Evidence points to this item being the missing volume from F 47-2-5, Brigade Majors Department." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="980" y="657" width="400" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.866;exitY=1.06;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.023;entryY=0.069;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="PbNKBDSLsDvYSo0k1ZoX-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="377" y="512" as="sourcePoint" />
+            <mxPoint x="900" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-5" value="rico:generalDescription" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-4" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="119" y="95" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-6" value="Associated Material:&amp;nbsp;Library and Archives Canada holds a large series of transcriptions from the Simcoe family records. See the correspondence of Eliza Simcoe and the Coles family for details on these copying projects. The originals from which these transcriptions were made are largely contained in this fonds." style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="910" y="842" width="490" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-7" value="Architectural and technical drawings" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-235.5" y="780" width="178" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-8" value="rico:ContentType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="PbNKBDSLsDvYSo0k1ZoX-7" vertex="1">
+          <mxGeometry y="26" width="178" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-9" value="Cartographic materials" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-450" y="780" width="178" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-10" value="rico:ContentType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="PbNKBDSLsDvYSo0k1ZoX-9" vertex="1">
+          <mxGeometry y="26" width="178" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-11" value="Graphic materials" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-670" y="780" width="178" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-12" value="rico:ContentType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="PbNKBDSLsDvYSo0k1ZoX-11" vertex="1">
+          <mxGeometry y="26" width="178" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-13" value="Textual records" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-880" y="780" width="178" height="52" as="geometry">
+            <mxRectangle x="981" y="570" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-14" value="rico:ContentType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="PbNKBDSLsDvYSo0k1ZoX-13" vertex="1">
+          <mxGeometry y="26" width="178" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="PbNKBDSLsDvYSo0k1ZoX-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="302.5" y="480" as="sourcePoint" />
+            <mxPoint x="-812.5" y="830" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-270" y="650" />
+              <mxPoint x="-620" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-16" value="rico:hasContentOfType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-15" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-507" y="90" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.004;exitY=0.776;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="PbNKBDSLsDvYSo0k1ZoX-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="464" as="sourcePoint" />
+            <mxPoint x="-776" y="820" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-211" y="690" />
+              <mxPoint x="-500" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-18" value="rico:hasContentOfType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-17" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-447" y="84" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.923;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="PbNKBDSLsDvYSo0k1ZoX-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="337" y="439" as="sourcePoint" />
+            <mxPoint x="-615" y="790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-200" y="720" />
+              <mxPoint x="-340" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-20" value="rico:hasContentOfType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-19" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-337" y="108" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.093;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-2" target="PbNKBDSLsDvYSo0k1ZoX-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="347" y="449" as="sourcePoint" />
+            <mxPoint x="-395" y="790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-160" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-22" value="rico:hasContentOfType" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-21" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-246" y="149" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="PbNKBDSLsDvYSo0k1ZoX-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="370" as="sourcePoint" />
+            <mxPoint y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-26" value="rico:creationDate" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-25" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-27" value="1665-[ca. 1918] (predominant 1762-1848)" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="-261" y="280" width="236" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-28" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" edge="1" target="PbNKBDSLsDvYSo0k1ZoX-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305" y="344" as="sourcePoint" />
+            <mxPoint x="10" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-29" value="rico:date" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-28" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-30" value="[ca. 1750-1918]" style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="-135" y="210" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-31" value="&lt;div&gt;Simcoe (family)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-70" y="-52" width="121" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-32" value="rico:Family" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="PbNKBDSLsDvYSo0k1ZoX-31" vertex="1">
+          <mxGeometry y="26" width="121" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-33" value="Simcoe, John Graves, 1752-1806" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="-110" width="150" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-34" value="rico:Person" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="PbNKBDSLsDvYSo0k1ZoX-33" vertex="1">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-35" value="&lt;div&gt;Simcoe, Francis Gwillim, 1791-1812&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="145" y="-180" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-36" value="rico:Person" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="PbNKBDSLsDvYSo0k1ZoX-35" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-37" value="&lt;div&gt;Simcoe, Eliza, ca. 1784-1865&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="-128" width="190" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-38" value="rico:Person" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="PbNKBDSLsDvYSo0k1ZoX-37" vertex="1">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-39" value="Simcoe, Elizabeth Posthuma, 1762-1850" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="-44" width="190" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-40" value="rico:Person" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="PbNKBDSLsDvYSo0k1ZoX-39" vertex="1">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-41" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.186;exitY=-0.01;exitDx=0;exitDy=0;entryX=0.489;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="PbNKBDSLsDvYSo0k1ZoX-34" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="437" y="361" as="sourcePoint" />
+            <mxPoint x="120" y="-6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-42" value="rico:hasCreator" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-41" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-88" y="-157" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-43" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.335;entryY=0.968;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="PbNKBDSLsDvYSo0k1ZoX-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="522" y="430" as="sourcePoint" />
+            <mxPoint x="270" y="4" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-44" value="rico:hasCreator" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-43" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-51" y="-170" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-45" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.402;exitY=0;exitDx=0;exitDy=0;entryX=0.264;entryY=0.987;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" target="PbNKBDSLsDvYSo0k1ZoX-38" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="538" y="422" as="sourcePoint" />
+            <mxPoint x="380" y="-75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-46" value="rico:hasCreator" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-45" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2" y="-170" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-47" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.623;exitY=-0.013;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.316;entryY=0.923;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sWa0SD8Ajx1KSGOqKPP4-1" edge="1" target="PbNKBDSLsDvYSo0k1ZoX-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="449" as="sourcePoint" />
+            <mxPoint x="530" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PbNKBDSLsDvYSo0k1ZoX-48" value="rico:hasCreator" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="PbNKBDSLsDvYSo0k1ZoX-47" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="44" y="-119" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

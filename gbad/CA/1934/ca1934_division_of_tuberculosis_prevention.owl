@@ -1,0 +1,160 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: CA1934
+  Annotations:
+    rdfs:label "CA1934"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Agent%20Identifier
+
+Individual: Agent%20Identifier
+  Annotations:
+    rdfs:label "Agent Identifier"
+  Types: rico:IdentifierType
+
+Individual: Ontario.%20Division%20Of%20Tuberculosis%20Prevention
+  Annotations:
+    rdfs:label "Ontario. Division of Tuberculosis Prevention"
+  Types: rico:AgentName, rico:CorporateBody
+  Facts:
+    rico:normalizedValue "Division of Tuberculosis Prevention",
+    rico:hasOrHadIdentifier CA1934,
+    rico:hasOrHadAgentName Ontario.%20Division%20Of%20Tuberculosis%20Prevention,
+    rico:hasOrHadAgentName Ontario.%20Tuberculosis%20Prevention%20Branch,
+    rico:hasOrHadAgentName Ontario.%20Tuberculosis%20Prevention%20Service,
+    rico:hasOrHadCorporateBodyType C%20Ontario%20Government%20Name,
+    rico:hasBeginningDate 1935,
+    rico:hasEndDate 1974,
+    rico:history "The origins of tuberculosis prevention in the government of Ontario date to 1923 when a Diagnostic Chest Clinic was established in the Division of Preventable Diseases. In 1935 a separate Division of Tuberculosis Prevention was created. In 1959 the division was renamed the Tuberculosis Prevention Branch.
+
+As part of a major reorganization of the Department of Health in 1966, the newly named Tuberculosis Prevention Service became part of the Special Health Services Branch of the Public Health Division.
+
+In 1969 a number of changes occured in the branch. The TB case register was turned over to the Epidemiology Service and in conformity with the Task Force on Tuberculosis Prevention, the service assumed responsibility for all chest clinics in the province. Up until that year, voluntary agencies had operated the chest clinics. Fourteen permanent chest clinics were operated at Ottawa, Belleville, Timmins, Lindsay, North Bay, Orillia, Brantford, Kingston, Windsor, Fort William, Kirkland Lake, London, Kitchener, Hamilton, with sub-office in Sault Ste. Marie, Sudbury, Cornwall, and Barrie. By 1970, the department was responsible for 28 chest clinic offices.
+
+In 1973 the Tuberculosis Prevention Service was moved to the Clinic Services Branch, which formed part of the Direct Services Division.
+
+The unit was headed by G.C. Brink (1935-1959), S.A. Holling (1959-1965), and C.H. Rorabeck (1965-1973).
+
+In 1974 the service was renamed the Chest Disease Service and formed part of the Clinic Service Branch.",
+    rico:hasOrHadController Ontario.%20Dept.%20Of%20Health,
+    rico:hasOrHadController Ontario.%20Ministry%20Of%20Health,
+    rico:hasSuccessor Ontario.%20Chest%20Disease%20Service,
+    rico:isOrWasDescribedBy Ontario.%20Division%20Of%20Tuberculosis%20Prevention%20Authority%20Record,
+    rico:generalDescription "Function Note: The Tuberculosis Prevention Division developed and promoted measures designed to eradicate tuberculosis in its early stages."
+
+Individual: C%20Ontario%20Government%20Name
+  Annotations:
+    rdfs:label "C Ontario Government Name"
+  Types: rico:CorporateBodyType
+
+Individual: 1935
+  Annotations:
+    rdfs:label "1935"
+  Types: rico:Date
+
+Individual: 1974
+  Annotations:
+    rdfs:label "1974"
+  Types: rico:Date
+
+Individual: Ontario.%20Tuberculosis%20Prevention%20Branch
+  Annotations:
+    rdfs:label "Ontario. Tuberculosis Prevention Branch"
+  Types: rico:AgentName
+  Facts:
+    rico:hasOrHadCategory Variant%20Name
+
+Individual: Ontario.%20Division%20Of%20Tuberculosis%20Prevention%20Authority%20Record
+  Annotations:
+    rdfs:label "Ontario. Division of Tuberculosis Prevention Authority Record"
+  Types: rico:Record
+  Facts:
+    rico:hasDocumentaryFormType Authority%20Record,
+    rico:isOrWasRegulatedBy Rules%20For%20Archival%20Description,
+    rico:resultsOrResultedFrom Authority%20Record%20Creation,
+    rico:lastModificationDate "2024-06-03"^^xsd:date,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Ready%3A%20Y
+
+Individual: Authority%20Record
+  Annotations:
+    rdfs:label "Authority Record"
+  Types: rico:DocumentaryFormType
+
+Individual: Rules%20For%20Archival%20Description
+  Annotations:
+    rdfs:label "Rules for Archival Description"
+  Types: rico:Rule
+
+Individual: Authority%20Record%20Creation
+  Annotations:
+    rdfs:label "Authority Record Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Billinton
+
+Individual: Billinton
+  Annotations:
+    rdfs:label "Billinton"
+  Types: rico:Person
+
+Individual: Controlling%20Agency%20Relation
+  Annotations:
+    rdfs:label "Controlling Agency Relation"
+  Types: rico:AgentControlRelation
+  Facts:
+    rico:relationHasTarget Ontario.%20Division%20Of%20Tuberculosis%20Prevention,
+    rico:hasBeginningDate 1935,
+    rico:hasBeginningDate 1972,
+    rico:hasEndDate 1972,
+    rico:hasEndDate 1974
+
+Individual: 1972
+  Annotations:
+    rdfs:label "1972"
+  Types: rico:Date
+
+Individual: Variant%20Name
+  Annotations:
+    rdfs:label "Variant Name"
+  Types: rico:Type
+
+Individual: Web%20Ready%3A%20Y
+  Annotations:
+    rdfs:label "Web Ready: Y"
+  Types: rico:RecordState
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState
+
+Individual: Ontario.%20Dept.%20Of%20Health
+  Annotations:
+    rdfs:label "Ontario. Dept. of Health"
+  Types: rico:CorporateBody
+  Facts:
+    rico:thingIsSourceOfRelation Controlling%20Agency%20Relation
+
+Individual: Ontario.%20Ministry%20Of%20Health
+  Annotations:
+    rdfs:label "Ontario. Ministry of Health"
+  Types: rico:CorporateBody
+  Facts:
+    rico:thingIsSourceOfRelation Controlling%20Agency%20Relation
+
+Individual: Ontario.%20Chest%20Disease%20Service
+  Annotations:
+    rdfs:label "Ontario. Chest Disease Service"
+  Types: rico:CorporateBody
+
+Individual: Ontario.%20Tuberculosis%20Prevention%20Service
+  Annotations:
+    rdfs:label "Ontario. Tuberculosis Prevention Service"
+  Types: rico:AgentName
+  Facts:
+    rico:hasOrHadCategory Variant%20Name

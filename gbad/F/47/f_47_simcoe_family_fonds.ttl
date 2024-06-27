@@ -1,0 +1,189 @@
+@prefix : <http://gbad.archives.gov.on.ca#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca> .
+
+<http://gbad.archives.gov.on.ca> rdf:type owl:Ontology ;
+                                  owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/Artifacts
+<http://gbad.archives.gov.on.ca/Artifacts> rdf:type owl:NamedIndividual ,
+                                                    rico:ContentType ;
+                                           rdfs:label "Artifacts" .
+
+
+###  http://gbad.archives.gov.on.ca/Fonds
+<http://gbad.archives.gov.on.ca/Fonds> rdf:type owl:NamedIndividual ,
+                                                rico:RecordSetType ;
+                                       rdfs:label "Fonds" .
+
+
+###  http://gbad.archives.gov.on.ca/Walz
+<http://gbad.archives.gov.on.ca/Walz> rdf:type owl:NamedIndividual ,
+                                               rico:Person ;
+                                      rdfs:label "Walz" .
+
+
+###  http://gbad.archives.gov.on.ca/Architectural%20And%20Technical%20Drawings
+<http://gbad.archives.gov.on.ca/Architectural%20And%20Technical%20Drawings> rdf:type owl:NamedIndividual ,
+                                                                                     rico:ContentType ;
+                                                                            rdfs:label "Architectural and technical drawings" .
+
+
+###  http://gbad.archives.gov.on.ca/Archival%20Description
+<http://gbad.archives.gov.on.ca/Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                 rico:DocumentaryFormType ;
+                                                        rdfs:label "Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Archival%20Description%20Creation
+<http://gbad.archives.gov.on.ca/Archival%20Description%20Creation> rdf:type owl:NamedIndividual ,
+                                                                            rico:Activity ;
+                                                                   rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/Walz> ;
+                                                                   rdfs:label "Archival Description Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/Cartographic%20Materials
+<http://gbad.archives.gov.on.ca/Cartographic%20Materials> rdf:type owl:NamedIndividual ,
+                                                                   rico:ContentType ;
+                                                          rdfs:label "Cartographic materials" .
+
+
+###  http://gbad.archives.gov.on.ca/Current%20Reference%20Code
+<http://gbad.archives.gov.on.ca/Current%20Reference%20Code> rdf:type owl:NamedIndividual ,
+                                                                     rico:IdentifierType ;
+                                                            rdfs:label "Current Reference Code" .
+
+
+###  http://gbad.archives.gov.on.ca/F%2047
+<http://gbad.archives.gov.on.ca/F%2047> rdf:type owl:NamedIndividual ,
+                                                 rico:Identifier ;
+                                        rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Current%20Reference%20Code> ;
+                                        rdfs:label "F 47" .
+
+
+###  http://gbad.archives.gov.on.ca/Graphic%20Materials
+<http://gbad.archives.gov.on.ca/Graphic%20Materials> rdf:type owl:NamedIndividual ,
+                                                              rico:ContentType ;
+                                                     rdfs:label "Graphic materials" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%20%28family%29
+<http://gbad.archives.gov.on.ca/Simcoe%20%28family%29> rdf:type owl:NamedIndividual ,
+                                                                rico:Family ;
+                                                       rdfs:label "Simcoe (family)" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%20Family%20Fonds
+<http://gbad.archives.gov.on.ca/Simcoe%20Family%20Fonds> rdf:type owl:NamedIndividual ,
+                                                                  rico:RecordSet ,
+                                                                  rico:Title ;
+                                                         rico:hasContentOfType <http://gbad.archives.gov.on.ca/Artifacts> ,
+                                                                               <http://gbad.archives.gov.on.ca/Architectural%20And%20Technical%20Drawings> ,
+                                                                               <http://gbad.archives.gov.on.ca/Cartographic%20Materials> ,
+                                                                               <http://gbad.archives.gov.on.ca/Graphic%20Materials> ,
+                                                                               <http://gbad.archives.gov.on.ca/Textual%20Records> ;
+                                                         rico:hasCreator <http://gbad.archives.gov.on.ca/Simcoe%20%28family%29> ,
+                                                                         <http://gbad.archives.gov.on.ca/Simcoe%2C%20Eliza%2C%20Ca.%201784-1865> ,
+                                                                         <http://gbad.archives.gov.on.ca/Simcoe%2C%20Elizabeth%20Posthuma%2C%201762-1850> ,
+                                                                         <http://gbad.archives.gov.on.ca/Simcoe%2C%20Francis%20Gwillim%2C%201791-1812> ,
+                                                                         <http://gbad.archives.gov.on.ca/Simcoe%2C%20John%20Graves%2C%201752-1806> ;
+                                                         rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/F%2047> ;
+                                                         rico:hasOrHadInstantiation <http://gbad.archives.gov.on.ca/Simcoe%20Family%20Fonds-i1> ;
+                                                         rico:hasOrHadTitle <http://gbad.archives.gov.on.ca/Simcoe%20Family%20Fonds> ;
+                                                         rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Fonds> ;
+                                                         rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Simcoe%20Family%20Fonds%20Archival%20Description> ;
+                                                         rico:accruals "No further accruals are expected." ;
+                                                         rico:conditionsOfAccess "Refer to series and sub-series descriptions for information on access restrictions." ;
+                                                         rico:conditionsOfUse "Records are in the public domain. There are no restrictions on reproduction for research and private study.  If you wish to use any of this material for a purpose other than research and private study, submit a Request for Permission to Publish, Exhibit or Broadcast Form." ;
+                                                         rico:creationDate "1665-[ca. 1918] (predominant 1762-1848)" ;
+                                                         rico:date "[ca. 1750-1918]" ;
+                                                         rico:generalDescription "Associated Material: Library and Archives Canada holds a large series of transcriptions from the Simcoe family records. See the correspondence of Eliza Simcoe and the Coles family for details on these copying projects. The originals from which these transcriptions were made are largely contained in this fonds." ,
+                                                                                 "Associated Material: The Clements Library of the University of Michigan in Ann Arbor, Michigan, holds a collection of correspondence from John Graves and Elizabeth Simcoe dating from the 1770s through 1810. The Archives of Ontario possesses a microfilm copy of this collection. " ,
+                                                                                 "Availability of Other Formats: Refer to series and sub-series descriptions for information on the availability of other formats." ,
+                                                                                 "Finding Aid Note: Please see series and sub-series descriptions for listings." ,
+                                                                                 "Related Material: Fonds F 1174 (John Ross Robertson fonds) contains 57 items of incoming and outgoing correspondence by John Graves Simcoe and Elizabeth Simcoe. Robertson was a biographer of the Simcoes." ,
+                                                                                 "Related Material: MS 83 consists of a Letterbook dated January 1792 through July 1793.  Evidence points to this item being the missing volume from F 47-2-5, Brigade Majors Department." ;
+                                                         rico:history "Custodial History: The Simcoe Family papers were held by descendants of John Graves and Elizabeth Simcoe until the mid to late-20th century. Eliza Simcoe, the eldest daughter of John Graves and Elizabeth Simcoe, retained possession of the records which make up this fonds until her death in 1865. Between 1859 and 1861, a portion of the records were loaned to the Canadian Library of Parliament for arrangement and partial copying. On the death of Eliza Simcoe, the records passed to the children of the Reverend Henry Addington Simcoe, Eliza's only surviving brother. Some time after this, part of the records came into the possession of the Vowler family and the Coles family, each related to the Simcoes through marriage to a daughter or granddaughter of Henry Addington Simcoe.  In the late 1940s Dr. S. McLaughlan purchased the records then held by the Coles family and donated the whole to the University of Toronto Library. In 1951 the University and the Ontario Department of Archives and Records opened negotiations to transfer the custody, but not ownership, of the Simcoe records to the province.  In 1952, an agreement was signed, and the Simcoe Papers were transferred to the Archives of Ontario in order that they might be preserved in more appropriate circumstances and to ease public access to the records. The records which came to the Archives under the terms of this long-term loan agreement represent the bulk of the fonds. A subsequent purchase by the Archives of records and artifacts from other Simcoe descendants in 1993, and a number of small donations from a variety of sources have since added to the fonds." ;
+                                                         rico:scopeAndContent "Fonds documents the official and private lives of several members of the Simcoe family in England and Upper Canada, predominantly in the late 18th and early 19th centuries. The fonds also contains records from John Graves Simcoe's Lieutenant-Governorship of Upper Canada 1792-1796. The records document the administrative and military careers of four generations of men of the Simcoe family, as well as the family's private life, including management of the family estate in Devonshire, financial matters, and genealogical research conducted by later generations of the family.Family members represented in the fonds include Captain John Simcoe, John Graves Simcoe, Elizabeth Posthuma Simcoe, Francis Simcoe, Eliza Simcoe, and John K. Simcoe.Records include personal and official correspondence, letter books, reports, returns, and commissions. The fonds contains a considerable quantity of graphic materials, including watercolour paintings, drawings and prints; maps and celestial charts; architectural and technical drawings; and artifacts attributed by Simcoe descendents to John Graves and Elizabeth Simcoe." ;
+                                                         rdfs:label "Simcoe family fonds" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%20Family%20Fonds-i1
+<http://gbad.archives.gov.on.ca/Simcoe%20Family%20Fonds-i1> rdf:type owl:NamedIndividual ,
+                                                                     rico:Instantiation ;
+                                                            rico:generalDescription "How to Order: Consult the online series or sub-series list to identify the records that you require. For microfilmed items, consult the appropriate reel of self-service microfilm. To access any other material, contact a Reference Archivist." ;
+                                                            rico:instantiationExtent "2.67 metres of textual records63 volumes of textual records353 watercolours63 drawings8 prints4 photographs1 sketchbook (63 watercolours and drawings)98 maps3 celestial charts4 technical drawings2 architectural drawings1 sabre with scabbard1 dress sword with scabbard1 walking cane1 wedding ring" ;
+                                                            rdfs:label "Simcoe family fonds-i1" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%20Family%20Fonds%20Archival%20Description
+<http://gbad.archives.gov.on.ca/Simcoe%20Family%20Fonds%20Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                                           rico:Record ;
+                                                                                  rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Archival%20Description> ;
+                                                                                  rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
+                                                                                                      <http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y> ;
+                                                                                  rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Archival%20Description%20Creation> ;
+                                                                                  rico:lastModificationDate "2002-12-08"^^xsd:date ;
+                                                                                  rdfs:label "Simcoe family fonds Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%2C%20Eliza%2C%20Ca.%201784-1865
+<http://gbad.archives.gov.on.ca/Simcoe%2C%20Eliza%2C%20Ca.%201784-1865> rdf:type owl:NamedIndividual ,
+                                                                                 rico:Person ;
+                                                                        rdfs:label "Simcoe, Eliza, ca. 1784-1865" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%2C%20Elizabeth%20Posthuma%2C%201762-1850
+<http://gbad.archives.gov.on.ca/Simcoe%2C%20Elizabeth%20Posthuma%2C%201762-1850> rdf:type owl:NamedIndividual ,
+                                                                                          rico:Person ;
+                                                                                 rdfs:label "Simcoe, Elizabeth Posthuma, 1762-1850" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%2C%20Francis%20Gwillim%2C%201791-1812
+<http://gbad.archives.gov.on.ca/Simcoe%2C%20Francis%20Gwillim%2C%201791-1812> rdf:type owl:NamedIndividual ,
+                                                                                       rico:Person ;
+                                                                              rdfs:label "Simcoe, Francis Gwillim, 1791-1812" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%2C%20John%20Graves%2C%201752-1806
+<http://gbad.archives.gov.on.ca/Simcoe%2C%20John%20Graves%2C%201752-1806> rdf:type owl:NamedIndividual ,
+                                                                                   rico:Person ;
+                                                                          rdfs:label "Simcoe, John Graves, 1752-1806" .
+
+
+###  http://gbad.archives.gov.on.ca/Status%3A%20Approved
+<http://gbad.archives.gov.on.ca/Status%3A%20Approved> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Status: Approved" .
+
+
+###  http://gbad.archives.gov.on.ca/Textual%20Records
+<http://gbad.archives.gov.on.ca/Textual%20Records> rdf:type owl:NamedIndividual ,
+                                                            rico:ContentType ;
+                                                   rdfs:label "Textual records" .
+
+
+###  http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y
+<http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Web Enabled: Y" .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

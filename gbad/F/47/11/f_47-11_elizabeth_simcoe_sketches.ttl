@@ -1,0 +1,163 @@
+@prefix : <http://gbad.archives.gov.on.ca#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca> .
+
+<http://gbad.archives.gov.on.ca> rdf:type owl:Ontology ;
+                                  owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/Fonds
+<http://gbad.archives.gov.on.ca/Fonds> rdf:type owl:NamedIndividual ,
+                                                rico:RecordSetType ;
+                                       rdfs:label "Fonds" .
+
+
+###  http://gbad.archives.gov.on.ca/Series
+<http://gbad.archives.gov.on.ca/Series> rdf:type owl:NamedIndividual ,
+                                                 rico:RecordSetType ;
+                                        rdfs:label "Series" .
+
+
+###  http://gbad.archives.gov.on.ca/Walz
+<http://gbad.archives.gov.on.ca/Walz> rdf:type owl:NamedIndividual ,
+                                               rico:Person ;
+                                      rdfs:label "Walz" .
+
+
+###  http://gbad.archives.gov.on.ca/Archival%20Description
+<http://gbad.archives.gov.on.ca/Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                 rico:DocumentaryFormType ;
+                                                        rdfs:label "Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Archival%20Description%20Creation
+<http://gbad.archives.gov.on.ca/Archival%20Description%20Creation> rdf:type owl:NamedIndividual ,
+                                                                            rico:Activity ;
+                                                                   rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/Walz> ;
+                                                                   rdfs:label "Archival Description Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/Cartographic%20Materials
+<http://gbad.archives.gov.on.ca/Cartographic%20Materials> rdf:type owl:NamedIndividual ,
+                                                                   rico:ContentType ;
+                                                          rdfs:label "Cartographic materials" .
+
+
+###  http://gbad.archives.gov.on.ca/Current%20Reference%20Code
+<http://gbad.archives.gov.on.ca/Current%20Reference%20Code> rdf:type owl:NamedIndividual ,
+                                                                     rico:IdentifierType ;
+                                                            rdfs:label "Current Reference Code" .
+
+
+###  http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Sketches
+<http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Sketches> rdf:type owl:NamedIndividual ,
+                                                                        rico:RecordSet ,
+                                                                        rico:Title ;
+                                                               rico:hasContentOfType <http://gbad.archives.gov.on.ca/Cartographic%20Materials> ,
+                                                                                     <http://gbad.archives.gov.on.ca/Graphic%20Materials> ,
+                                                                                     <http://gbad.archives.gov.on.ca/Textual%20Records> ;
+                                                               rico:hasCreator <http://gbad.archives.gov.on.ca/Simcoe%2C%20Elizabeth%20Posthuma%2C%201762-1850> ;
+                                                               rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/F%2047-11> ;
+                                                               rico:hasOrHadInstantiation <http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Sketches-i1> ;
+                                                               rico:hasOrHadTitle <http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Sketches> ;
+                                                               rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Series> ;
+                                                               rico:isDirectlyIncludedIn <http://gbad.archives.gov.on.ca/Simcoe%20Family%20Fonds> ;
+                                                               rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Sketches%20Archival%20Description> ;
+                                                               rico:accruals "No further accruals are expected." ;
+                                                               rico:conditionsOfAccess "See sub-series descriptions for information on access restrictions on this material." ;
+                                                               rico:conditionsOfUse "Records are in the public domain. There are no restrictions on reproduction for research and private study.  If you wish to use any of this material for a purpose other than research and private study, submit a Request for Permission to Publish, Exhibit or Broadcast Form." ;
+                                                               rico:creationDate "ca. 1790-[184-?] (Predominant 1791-1796)" ;
+                                                               rico:generalDescription "Availability of Other Formats: See sub-series descriptions for information on the availability of other formats." ,
+                                                                                       "Finding Aid Note: Please see sub-series descriptions." ;
+                                                               rico:history "Custodial History: The material in this series was acquired in 1952 under the terms of a long-term loan agreement with the University of Toronto Library, which owns the records." ;
+                                                               rico:scopeAndContent "Series consists of artworks and other related records created or cellected by Elizabeth Simcoe. The watercolours and drawings consist primarily of landscapes, the majority of which are views of Upper and Lower Canada.Differences in style within the series, such as more detailed trees, sharper contrasts and less perspective, suggests that Simcoe was not the artist of all the artworks in the series, and that she collected drawings done by others. In two cases, other artists are identified. More details on the attribution of works is in the description for sub-series F 47-11-1.The Canadian sketches provide a visual compliment to her diaries (see Series F 47-8), which contain documentation regarding when scenes were sketched. Additional sketches are contained within the diaries which make up series F 47-8." ;
+                                                               rdfs:label "Elizabeth Simcoe sketches" .
+
+
+###  http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Sketches-i1
+<http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Sketches-i1> rdf:type owl:NamedIndividual ,
+                                                                           rico:Instantiation ;
+                                                                  rico:generalDescription "How to Order: Please see sub-series descriptions for ordering information." ;
+                                                                  rico:instantiationExtent "353 watercolours63 drawings8 prints1 sketchbook (63 watercolours and drawings)1 photograph1 centimetre of textual records1 map" ;
+                                                                  rdfs:label "Elizabeth Simcoe sketches-i1" .
+
+
+###  http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Sketches%20Archival%20Description
+<http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Sketches%20Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                                                 rico:Record ;
+                                                                                        rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Archival%20Description> ;
+                                                                                        rico:hasRecordState <http://gbad.archives.gov.on.ca/Status%3A%20Approved> ,
+                                                                                                            <http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y> ;
+                                                                                        rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/Archival%20Description%20Creation> ;
+                                                                                        rico:lastModificationDate "2009-07-17"^^xsd:date ;
+                                                                                        rdfs:label "Elizabeth Simcoe sketches Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/F%2047
+<http://gbad.archives.gov.on.ca/F%2047> rdf:type owl:NamedIndividual ,
+                                                 rico:Identifier ;
+                                        rdfs:label "F 47" .
+
+
+###  http://gbad.archives.gov.on.ca/F%2047-11
+<http://gbad.archives.gov.on.ca/F%2047-11> rdf:type owl:NamedIndividual ,
+                                                    rico:Identifier ;
+                                           rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Current%20Reference%20Code> ;
+                                           rdfs:label "F 47-11" .
+
+
+###  http://gbad.archives.gov.on.ca/Graphic%20Materials
+<http://gbad.archives.gov.on.ca/Graphic%20Materials> rdf:type owl:NamedIndividual ,
+                                                              rico:ContentType ;
+                                                     rdfs:label "Graphic materials" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%20Family%20Fonds
+<http://gbad.archives.gov.on.ca/Simcoe%20Family%20Fonds> rdf:type owl:NamedIndividual ,
+                                                                  rico:RecordSet ;
+                                                         rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/F%2047> ;
+                                                         rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Fonds> ;
+                                                         rdfs:label "Simcoe family fonds" .
+
+
+###  http://gbad.archives.gov.on.ca/Simcoe%2C%20Elizabeth%20Posthuma%2C%201762-1850
+<http://gbad.archives.gov.on.ca/Simcoe%2C%20Elizabeth%20Posthuma%2C%201762-1850> rdf:type owl:NamedIndividual ,
+                                                                                          rico:Person ;
+                                                                                 rdfs:label "Simcoe, Elizabeth Posthuma, 1762-1850" .
+
+
+###  http://gbad.archives.gov.on.ca/Status%3A%20Approved
+<http://gbad.archives.gov.on.ca/Status%3A%20Approved> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Status: Approved" .
+
+
+###  http://gbad.archives.gov.on.ca/Textual%20Records
+<http://gbad.archives.gov.on.ca/Textual%20Records> rdf:type owl:NamedIndividual ,
+                                                            rico:ContentType ;
+                                                   rdfs:label "Textual records" .
+
+
+###  http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y
+<http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Web Enabled: Y" .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

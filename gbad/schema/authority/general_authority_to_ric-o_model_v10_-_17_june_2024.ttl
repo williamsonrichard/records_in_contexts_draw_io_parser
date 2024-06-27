@@ -1,0 +1,177 @@
+@prefix : <http://gbad.archives.gov.on.ca/schema/authority#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca/schema/authority> .
+
+<http://gbad.archives.gov.on.ca/schema/authority> rdf:type owl:Ontology ;
+                                                   owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/schema/authority#%28AUTH18%29STATUSA
+<http://gbad.archives.gov.on.ca/schema/authority#%28AUTH18%29STATUSA> rdf:type owl:NamedIndividual ,
+                                                                               rico:RecordState ;
+                                                                      rdfs:label "(AUTH18)STATUSA" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#%28AUTH22%29WEBA
+<http://gbad.archives.gov.on.ca/schema/authority#%28AUTH22%29WEBA> rdf:type owl:NamedIndividual ,
+                                                                            rico:RecordState ;
+                                                                   rdfs:label "(AUTH22)WEBA" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA
+<http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA> rdf:type owl:NamedIndividual ,
+                                                                                                        rico:Identifier ;
+                                                                                               rico:hasIdentifierType <http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier> ;
+                                                                                               rdfs:label "Agency Reference Code (AUTH01)REFA" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier
+<http://gbad.archives.gov.on.ca/schema/authority#Agent%20Identifier> rdf:type owl:NamedIndividual ,
+                                                                              rico:IdentifierType ;
+                                                                     rdfs:label "Agent Identifier" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU
+<http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU> rdf:type owl:NamedIndividual ,
+                                                                                          rico:Person ;
+                                                                                 rdfs:label "Archivist (AUTH02)ARCHAU" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record
+<http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record> rdf:type owl:NamedIndividual ,
+                                                                              rico:DocumentaryFormType ,
+                                                                              rico:Record ;
+                                                                     rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record> ;
+                                                                     rico:hasRecordState <http://gbad.archives.gov.on.ca/schema/authority#%28AUTH18%29STATUSA> ,
+                                                                                         <http://gbad.archives.gov.on.ca/schema/authority#%28AUTH22%29WEBA> ;
+                                                                     rico:isOrWasRegulatedBy <http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES> ;
+                                                                     rico:resultsOrResultedFrom <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation> ;
+                                                                     rico:generalDescription "(AUTH17)SOURCE" ;
+                                                                     rico:lastModificationDate "Date (AUTH09)MOD_DATE" ;
+                                                                     rdfs:label "Authority Record" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation
+<http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record%20Creation> rdf:type owl:NamedIndividual ,
+                                                                                         rico:Activity ;
+                                                                                rico:isOrWasPerformedBy <http://gbad.archives.gov.on.ca/schema/authority#Archivist%20%28AUTH02%29ARCHAU> ;
+                                                                                rdfs:label "Authority Record Creation" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP
+<http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP> rdf:type owl:NamedIndividual ,
+                                                                                                 rico:CorporateBodyType ;
+                                                                                        rdfs:label "Authority Type (AUTH03)AUTHTP" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA
+<http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA> rdf:type owl:NamedIndividual ,
+                                                                                                rico:Mandate ;
+                                                                                       rdfs:label "Authorizing Agent (AUTH04)AA" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG
+<http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG> rdf:type owl:NamedIndividual ,
+                                                                                                       rico:Agent ;
+                                                                                              rico:thingIsSourceOfRelation <http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation> ;
+                                                                                              rdfs:label "Controlling Agencies (AUTH08)CONTAG" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation
+<http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agency%20Relation> rdf:type owl:NamedIndividual ,
+                                                                                           rico:AgentControlRelation ;
+                                                                                  rico:hasBeginningDate <http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT> ;
+                                                                                  rico:hasEndDate <http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT> ;
+                                                                                  rico:relationHasTarget <http://gbad.archives.gov.on.ca/schema/authority#Heading%20%28AUTH12%29HEADING> ;
+                                                                                  rdfs:label "Controlling Agency Relation" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT
+<http://gbad.archives.gov.on.ca/schema/authority#Date%20Of%20Subordination%20%28AUTH08%29DATECONT> rdf:type owl:NamedIndividual ,
+                                                                                                            rico:Date ;
+                                                                                                   rdfs:label "Date of Subordination (AUTH08)DATECONT" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX
+<http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> rdf:type owl:NamedIndividual ,
+                                                                                                       rico:Date ;
+                                                                                              rdfs:label "Dates of Existence (AUTH10)DATEEX" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Heading%20%28AUTH12%29HEADING
+<http://gbad.archives.gov.on.ca/schema/authority#Heading%20%28AUTH12%29HEADING> rdf:type owl:NamedIndividual ,
+                                                                                         rico:Agent ,
+                                                                                         rico:AgentName ;
+                                                                                rico:authorizedBy <http://gbad.archives.gov.on.ca/schema/authority#Authorizing%20Agent%20%28AUTH04%29AA> ;
+                                                                                rico:hasBeginningDate <http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> ;
+                                                                                rico:hasBirthDate <http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> ;
+                                                                                rico:hasDeathDate <http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> ;
+                                                                                rico:hasEndDate <http://gbad.archives.gov.on.ca/schema/authority#Dates%20Of%20Existence%20%28AUTH10%29DATEEX> ;
+                                                                                rico:hasOrHadAgentName <http://gbad.archives.gov.on.ca/schema/authority#Heading%20%28AUTH12%29HEADING> ,
+                                                                                                       <http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR> ,
+                                                                                                       <http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR> ;
+                                                                                rico:hasOrHadController <http://gbad.archives.gov.on.ca/schema/authority#Controlling%20Agencies%20%28AUTH08%29CONTAG> ;
+                                                                                rico:hasOrHadCorporateBodyType <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Type%20%28AUTH03%29AUTHTP> ;
+                                                                                rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/schema/authority#Agency%20Reference%20Code%20%28AUTH01%29REFA> ;
+                                                                                rico:hasSuccessor <http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC> ;
+                                                                                rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/schema/authority#Authority%20Record> ;
+                                                                                rico:isSuccessorOf <http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED> ;
+                                                                                rico:generalDescription "(AUTH11)FUN" ;
+                                                                                rico:history "Biographical Sketch or Administrative History (AUTH05)ADM" ;
+                                                                                rico:normalizedValue "Natural Name (AUTH13)NAME" ;
+                                                                                rdfs:label "Heading (AUTH12)HEADING" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name
+<http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name> rdf:type owl:NamedIndividual ,
+                                                                           rico:Type ;
+                                                                  rdfs:label "Parallel Name" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR
+<http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Names%20%28AUTH14%29PAR> rdf:type owl:NamedIndividual ,
+                                                                                              rico:AgentName ;
+                                                                                     rico:hasOrHadCategory <http://gbad.archives.gov.on.ca/schema/authority#Parallel%20Name> ;
+                                                                                     rdfs:label "Parallel Names (AUTH14)PAR" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED
+<http://gbad.archives.gov.on.ca/schema/authority#Predecessor%20Agencies%20%28AUTH15%29PRED> rdf:type owl:NamedIndividual ,
+                                                                                                     rico:Agent ;
+                                                                                            rdfs:label "Predecessor Agencies (AUTH15)PRED" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES
+<http://gbad.archives.gov.on.ca/schema/authority#Rules%20%28AUTH16%29RULES> rdf:type owl:NamedIndividual ,
+                                                                                     rico:Rule ;
+                                                                            rdfs:label "Rules (AUTH16)RULES" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC
+<http://gbad.archives.gov.on.ca/schema/authority#Successor%20Agencies%20%28AUTH20%29SUC> rdf:type owl:NamedIndividual ,
+                                                                                                  rico:Agent ;
+                                                                                         rdfs:label "Successor Agencies (AUTH20)SUC" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name
+<http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name> rdf:type owl:NamedIndividual ,
+                                                                          rico:Type ;
+                                                                 rdfs:label "Variant Name" .
+
+
+###  http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR
+<http://gbad.archives.gov.on.ca/schema/authority#Variant%20Names%20%28AUTH21%29VAR> rdf:type owl:NamedIndividual ,
+                                                                                             rico:AgentName ;
+                                                                                    rico:hasOrHadCategory <http://gbad.archives.gov.on.ca/schema/authority#Variant%20Name> ;
+                                                                                    rdfs:label "Variant Names (AUTH21)VAR" .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

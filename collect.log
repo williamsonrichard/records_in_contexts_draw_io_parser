@@ -1,0 +1,31 @@
+Script started on 2024-06-27 14:48:13-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+Collecting files: find "gbad" -type f -name "*.ttl" -not -path "gbad/schema/*" -not -path "gbad/mapping/*" -not -path "gbad/transform/*" -not -path "gbad/validate/*"
+Copied aa37_department_of_health.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/authority
+Copied aa42_ministry_of_health.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/authority
+Copied ba27_provincial_board_of_health_of_ontario.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/authority
+Copied ba619_walkerton_inquiry.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/authority
+Copied ca1853_chest_disease_service.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/authority
+Copied ca1934_division_of_tuberculosis_prevention.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/authority
+Copied f_47-11-1-0-1.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied f_47-11-1-0-1_vdb_test.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied f_47-11-1_elizabeth_simcoe_loose_sketches.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied f_47-11-2_elizabeth_simcoe_sketchbook.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied f_47-11-3_elizabeth_simcoe_miscellaneous_sketches_and_fragments.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied f_47-11-4_notes_on_elizabeth_simcoe_sketches.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied f_47-11_elizabeth_simcoe_sketches.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied f_47_simcoe_family_fonds.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied f_4711_orville_wood_fonds.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Warning! Authority or description? Check manually. Copied orville_wood_authority.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser
+Warning! Authority or description? Check manually. Copied simcoe_elizabeth_posthuma_1762-1850.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser
+Warning! Authority or description? Check manually. Copied simcoe_eliza_ca_1784-1865.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser
+Warning! Authority or description? Check manually. Copied simcoe_family.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser
+Warning! Authority or description? Check manually. Copied simcoe_francis_gwillim_1791-1812.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser
+Warning! Authority or description? Check manually. Copied simcoe_john_graves_1752-1806.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser
+Copied rg_1-659_-_northern_pike_lamprey_mark_rondeau_park_april_20_1955.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied rg_10-142_correspondence_of_the_chief_of_the_chest_disease_service.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied rg_10-145_mobile_tuberculosis_testing_clinic_photographs.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied rg_18-210_records_of_the_walkerton_inquiry_-_revised_to_add_mapping.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied rg_18-210_walkerton_inquiry_in_ric-o_original.ttl to ../gbad-project.github.io/gbad/from_draw_io_parser/description-listings
+Copied 26 files from 'gbad' to '../gbad-project.github.io/gbad/from_draw_io_parser'.
+
+Script done on 2024-06-27 14:48:15-04:00 [COMMAND_EXIT_CODE="0"]

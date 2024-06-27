@@ -1,0 +1,98 @@
+@prefix : <http://gbad.archives.gov.on.ca#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@base <http://gbad.archives.gov.on.ca> .
+
+<http://gbad.archives.gov.on.ca> rdf:type owl:Ontology ;
+                                  owl:imports <https://www.ica.org/standards/RiC/ontology> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://gbad.archives.gov.on.ca/Sub-Series
+<http://gbad.archives.gov.on.ca/Sub-Series> rdf:type owl:NamedIndividual ,
+                                                     rico:RecordSetType ;
+                                            rdfs:label "Sub-Series" .
+
+
+###  http://gbad.archives.gov.on.ca/Archival%20Description
+<http://gbad.archives.gov.on.ca/Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                 rico:DocumentaryFormType ;
+                                                        rdfs:label "Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Current%20Reference%20Code
+<http://gbad.archives.gov.on.ca/Current%20Reference%20Code> rdf:type owl:NamedIndividual ,
+                                                                     rico:IdentifierType ;
+                                                            rdfs:label "Current Reference Code" .
+
+
+###  http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Loose%20Sketches
+<http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Loose%20Sketches> rdf:type owl:NamedIndividual ,
+                                                                                rico:RecordSet ;
+                                                                       rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/F%2047-11-1> ;
+                                                                       rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Sub-Series> ;
+                                                                       rdfs:label "Elizabeth Simcoe loose sketches" .
+
+
+###  http://gbad.archives.gov.on.ca/F%2047-11-1
+<http://gbad.archives.gov.on.ca/F%2047-11-1> rdf:type owl:NamedIndividual ,
+                                                      rico:Identifier ;
+                                             rdfs:label "F 47-11-1" .
+
+
+###  http://gbad.archives.gov.on.ca/F%2047-11-1-0-1
+<http://gbad.archives.gov.on.ca/F%2047-11-1-0-1> rdf:type owl:NamedIndividual ,
+                                                          rico:Identifier ;
+                                                 rico:hasIdentifierType <http://gbad.archives.gov.on.ca/Current%20Reference%20Code> ;
+                                                 rdfs:label "F 47-11-1-0-1" .
+
+
+###  http://gbad.archives.gov.on.ca/Graphic%20Materials
+<http://gbad.archives.gov.on.ca/Graphic%20Materials> rdf:type owl:NamedIndividual ,
+                                                              rico:ContentType ;
+                                                     rdfs:label "Graphic materials" .
+
+
+###  http://gbad.archives.gov.on.ca/October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.
+<http://gbad.archives.gov.on.ca/October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                                                                                 rico:Record ,
+                                                                                                                                                                                                                                 rico:Title ;
+                                                                                                                                                                                                                        rico:hasContentOfType <http://gbad.archives.gov.on.ca/Graphic%20Materials> ;
+                                                                                                                                                                                                                        rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/F%2047-11-1-0-1> ;
+                                                                                                                                                                                                                        rico:hasOrHadInstantiation <http://gbad.archives.gov.on.ca/October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.-i1> ;
+                                                                                                                                                                                                                        rico:hasOrHadTitle <http://gbad.archives.gov.on.ca/October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.> ;
+                                                                                                                                                                                                                        rico:isDirectlyIncludedIn <http://gbad.archives.gov.on.ca/Elizabeth%20Simcoe%20Loose%20Sketches> ;
+                                                                                                                                                                                                                        rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.%20Archival%20Description> ;
+                                                                                                                                                                                                                        rico:creationDate "Oct. 29, 1791" ;
+                                                                                                                                                                                                                        rico:generalDescription "Notes: Old Code: 1" ;
+                                                                                                                                                                                                                        rdfs:label "October 29th 1791, 4 o'clock P.M. Richmond I or  Isle Madame near the Gut of Canso. Vessel coming out of Arishart Harbour, Green I." .
+
+
+###  http://gbad.archives.gov.on.ca/October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.-i1
+<http://gbad.archives.gov.on.ca/October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.-i1> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                                                                                    rico:Instantiation ;
+                                                                                                                                                                                                                           rico:instantiationExtent "1 watercolour on paper" ;
+                                                                                                                                                                                                                           rdfs:label "October 29th 1791, 4 o'clock P.M. Richmond I or  Isle Madame near the Gut of Canso. Vessel coming out of Arishart Harbour, Green I.-i1" .
+
+
+###  http://gbad.archives.gov.on.ca/October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.%20Archival%20Description
+<http://gbad.archives.gov.on.ca/October%2029th%201791%2C%204%20O%27clock%20P.M.%20Richmond%20I%20Or%20Isle%20Madame%20Near%20The%20Gut%20Of%20Canso.%20Vessel%20Coming%20Out%20Of%20Arishart%20Harbour%2C%20Green%20I.%20Archival%20Description> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                                                                                                          rico:Record ;
+                                                                                                                                                                                                                                                 rico:hasDocumentaryFormType <http://gbad.archives.gov.on.ca/Archival%20Description> ;
+                                                                                                                                                                                                                                                 rico:hasRecordState <http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y> ;
+                                                                                                                                                                                                                                                 rdfs:label "October 29th 1791, 4 o'clock P.M. Richmond I or  Isle Madame near the Gut of Canso. Vessel coming out of Arishart Harbour, Green I. Archival Description" .
+
+
+###  http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y
+<http://gbad.archives.gov.on.ca/Web%20Enabled%3A%20Y> rdf:type owl:NamedIndividual ,
+                                                               rico:RecordState ;
+                                                      rdfs:label "Web Enabled: Y" .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

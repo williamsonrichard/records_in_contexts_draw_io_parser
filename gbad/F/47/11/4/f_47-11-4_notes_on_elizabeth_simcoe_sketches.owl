@@ -1,0 +1,117 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Notes%20On%20Elizabeth%20Simcoe%20Sketches
+  Annotations:
+    rdfs:label "Notes on Elizabeth Simcoe sketches"
+  Types: rico:RecordSet, rico:Title
+  Facts:
+    rico:hasRecordSetType Sub-Series,
+    rico:scopeAndContent "Sub-series consists of records providing information about the artworks contained within sub-series F 47-11-1 to F 47-11-3. It is not clear whether Elizabeth Simcoe was the author of these documents. Two are caption lists of some of her sketches; the remaining two documents are scraps, containing a few names and notes. There is also a map indicating places where Elizabeth Simcoe made sketches.",
+    rico:history "Custodial History: The material in this sub-series was acquired in 1952 under the terms of a long-term loan agreement with the University of Toronto Library, which owns the records.",
+    rico:hasOrHadInstantiation Notes%20On%20Elizabeth%20Simcoe%20Sketches-i1,
+    rico:conditionsOfAccess "No restrictions on access.",
+    rico:conditionsOfUse "Records are in the public domain. There are no restrictions on reproduction for research and private study.  If you wish to use any of this material for a purpose other than research and private study, submit a Request for Permission to Publish, Exhibit or Broadcast Form.",
+    rico:generalDescription "Finding Aid Note: An online list is available for this sub-series.",
+    rico:accruals "No further accruals are expected.",
+    rico:hasOrHadIdentifier F%2047-11-4,
+    rico:isOrWasDescribedBy Notes%20On%20Elizabeth%20Simcoe%20Sketches%20Archival%20Description,
+    rico:hasOrHadTitle Notes%20On%20Elizabeth%20Simcoe%20Sketches,
+    rico:hasContentOfType Cartographic%20Materials,
+    rico:hasContentOfType Textual%20Records,
+    rico:creationDate "[ca. 1790-184--]",
+    rico:isDirectlyIncludedIn Elizabeth%20Simcoe%20Sketches
+
+Individual: Sub-Series
+  Annotations:
+    rdfs:label "Sub-Series"
+  Types: rico:RecordSetType
+
+Individual: Notes%20On%20Elizabeth%20Simcoe%20Sketches-i1
+  Annotations:
+    rdfs:label "Notes on Elizabeth Simcoe sketches-i1"
+  Types: rico:Instantiation
+  Facts:
+    rico:instantiationExtent "1 map",
+    rico:generalDescription "How to Order: Consult the online list to identify the records that you require. Order using reference code and barcode number."
+
+Individual: F%2047-11-4
+  Annotations:
+    rdfs:label "F 47-11-4"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Current%20Reference%20Code
+
+Individual: Current%20Reference%20Code
+  Annotations:
+    rdfs:label "Current Reference Code"
+  Types: rico:IdentifierType
+
+Individual: Notes%20On%20Elizabeth%20Simcoe%20Sketches%20Archival%20Description
+  Annotations:
+    rdfs:label "Notes on Elizabeth Simcoe sketches Archival Description"
+  Types: rico:Record
+  Facts:
+    rico:resultsOrResultedFrom Archival%20Description%20Creation,
+    rico:lastModificationDate "2009-07-17"^^xsd:date,
+    rico:hasDocumentaryFormType Archival%20Description,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Enabled%3A%20Y
+
+Individual: Archival%20Description%20Creation
+  Annotations:
+    rdfs:label "Archival Description Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Walz
+
+Individual: Walz
+  Annotations:
+    rdfs:label "Walz"
+  Types: rico:Person
+
+Individual: Archival%20Description
+  Annotations:
+    rdfs:label "Archival Description"
+  Types: rico:DocumentaryFormType
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState
+
+Individual: Web%20Enabled%3A%20Y
+  Annotations:
+    rdfs:label "Web Enabled: Y"
+  Types: rico:RecordState
+
+Individual: Textual%20Records
+  Annotations:
+    rdfs:label "Textual records"
+  Types: rico:ContentType
+
+Individual: Elizabeth%20Simcoe%20Sketches
+  Annotations:
+    rdfs:label "Elizabeth Simcoe sketches"
+  Types: rico:RecordSet
+  Facts:
+    rico:hasOrHadIdentifier F%2047-11,
+    rico:hasRecordSetType Series
+
+Individual: F%2047-11
+  Annotations:
+    rdfs:label "F 47-11"
+  Types: rico:Identifier
+
+Individual: Series
+  Annotations:
+    rdfs:label "Series"
+  Types: rico:RecordSetType
+
+Individual: Cartographic%20Materials
+  Annotations:
+    rdfs:label "Cartographic materials"
+  Types: rico:ContentType

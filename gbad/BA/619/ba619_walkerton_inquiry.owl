@@ -1,0 +1,98 @@
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rico: <https://www.ica.org/standards/RiC/ontology#>
+Prefix: : <http://gbad.archives.gov.on.ca/>
+Ontology: <http://gbad.archives.gov.on.ca>
+  Import: <https://www.ica.org/standards/RiC/ontology>
+
+Individual: Ontario.%20Walkerton%20Inquiry
+  Annotations:
+    rdfs:label "Ontario. Walkerton Inquiry"
+  Types: rico:AgentName, rico:CorporateBody
+  Facts:
+    rico:normalizedValue "Walkerton Inquiry",
+    rico:hasOrHadIdentifier BA619,
+    rico:hasOrHadAgentName Ontario.%20Walkerton%20Inquiry,
+    rico:hasOrHadCorporateBodyType B%20Ontario%20Government%20Name,
+    rico:hasBeginningDate 2000,
+    rico:hasEndDate 2002,
+    rico:authorizedBy Order%20In%20Council%201170%20%2F%202000,
+    rico:history "Commissioner O'Connor divided the Inquiry into two parts, which ran more or less concurrently. The first part dealt exclusively with what happened in Walkerton, and involved extensive public hearings. The second part went beyond Walkerton and involved an investigation into other matters related to the general safety of Ontario's drinking water.The work of the commission resulted in two reports published in 2002, entitled Part One and Part Two: Report of the Walkerton Inquiry. Justice O'Connor made a large number of recommendations related to the following: the protection of the sources of Ontario's drinking water; the need for effective standards and technology for the treatment of water and to monitor its quality; the need for stricter mandatory regulations from municipalities that provide drinking water; and, the need for a strengthened role for the provincial government in regulating and overseeing the safety of Ontario's drinking water.",
+    rico:isOrWasDescribedBy Ontario.%20Walkerton%20Inquiry%20Authority%20Record,
+    rico:generalDescription "Function Note: The Walkerton Inquiry was appointed to investigate the causes of the contamination of Walkerton's drinking water system with E. coli bacteria in May of 2000. This contamination caused the death of seven people and more than 2,300 became ill. The Inquiry was to find out who was responsible for the E. coli outbreak, and if it could have been prevented. The Inquiry was also responsible for making recommendations on how to avoid another outbreak in the future."
+
+Individual: BA619
+  Annotations:
+    rdfs:label "BA619"
+  Types: rico:Identifier
+  Facts:
+    rico:hasIdentifierType Government%20Of%20Ontario%20Agency%20Code
+
+Individual: Government%20Of%20Ontario%20Agency%20Code
+  Annotations:
+    rdfs:label "Government of Ontario Agency Code"
+  Types: rico:IdentifierType
+
+Individual: B%20Ontario%20Government%20Name
+  Annotations:
+    rdfs:label "B Ontario Government Name"
+  Types: rico:CorporateBodyType
+
+Individual: 2000
+  Annotations:
+    rdfs:label "2000"
+  Types: rico:Date
+
+Individual: 2002
+  Annotations:
+    rdfs:label "2002"
+  Types: rico:Date
+
+Individual: Order%20In%20Council%201170%20%2F%202000
+  Annotations:
+    rdfs:label "Order in Council 1170 / 2000"
+  Types: rico:Mandate
+
+Individual: Ontario.%20Walkerton%20Inquiry%20Authority%20Record
+  Annotations:
+    rdfs:label "Ontario. Walkerton Inquiry Authority Record"
+  Types: rico:Record
+  Facts:
+    rico:generalDescription "Source Note: Final reports of the Commission.",
+    rico:hasDocumentaryFormType Authority%20Record,
+    rico:isOrWasRegulatedBy Rules%20For%20Archival%20Description,
+    rico:resultsOrResultedFrom Authority%20Record%20Creation,
+    rico:lastModificationDate "2007-06-16"^^xsd:date,
+    rico:hasRecordState Status%3A%20Approved,
+    rico:hasRecordState Web%20Ready%3A%20Y
+
+Individual: Authority%20Record
+  Annotations:
+    rdfs:label "Authority Record"
+  Types: rico:DocumentaryFormType
+
+Individual: Rules%20For%20Archival%20Description
+  Annotations:
+    rdfs:label "Rules for Archival Description"
+  Types: rico:Rule
+
+Individual: Authority%20Record%20Creation
+  Annotations:
+    rdfs:label "Authority Record Creation"
+  Types: rico:Activity
+  Facts:
+    rico:isOrWasPerformedBy Dale
+
+Individual: Dale
+  Annotations:
+    rdfs:label "Dale"
+  Types: rico:Person
+
+Individual: Web%20Ready%3A%20Y
+  Annotations:
+    rdfs:label "Web Ready: Y"
+  Types: rico:RecordState
+
+Individual: Status%3A%20Approved
+  Annotations:
+    rdfs:label "Status: Approved"
+  Types: rico:RecordState

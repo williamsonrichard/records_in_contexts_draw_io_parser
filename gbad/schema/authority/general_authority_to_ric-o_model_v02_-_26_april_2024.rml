@@ -1,0 +1,152 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix auth: <http://gbad.archives.gov.on.ca/schema/authority#> .
+@prefix : <http://gbad.archives.gov.on.ca/schema/mapping#> .
+@base <http://gbad.archives.gov.on.ca/> .
+
+_:source dc:title "gbad/mapping/source/authority_head_6.csv" .
+
+:AgentNameAUTH13 a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "gbad/mapping/source/authority_head_6.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+
+  rr:subjectMap [
+    rr:template "{REFA}/AgentName";
+    rr:class rico:AgentName
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rico:normalizedValue;
+    rr:objectMap [
+      rml:reference "HEADING";
+    ]
+  ].
+
+:AgentAUTH13 a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "gbad/mapping/source/authority_head_6.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+
+  rr:subjectMap [
+    rr:template "{REFA}";
+    rr:class rico:Agent
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "HEADING";
+    ]
+  ].
+
+  # Mapping for General Description
+  #rr:predicateObjectMap [
+  #  rr:predicate rico:generalDescription;
+  #  rr:objectMap [
+  #    rml:reference "BRIEFBIO";
+  #    rr:constant auth:GeneralDescription
+  #  ]
+  #];
+
+  # Mapping for Identifier Type
+  #rr:predicateObjectMap [
+  #  rr:predicate rico:hasIdentifierType;
+  #  rr:objectMap [
+  #    rr:constant auth:AgentIdentifier
+  #  ]
+  #];
+
+  # Mapping for Last Modification Date
+  #rr:predicateObjectMap [
+  #  rr:predicate rico:lastModificationDate;
+  #  rr:objectMap [
+  #    rml:reference "DATEEX";
+  #    rr:constant auth:DateOfModification
+  #  ]
+  #];
+
+  # Mapping for Documentary Form Type
+  #rr:predicateObjectMap [
+  #  rr:predicate rico:hasDocumentaryFormType;
+  #  rr:objectMap [
+  #    rr:constant auth:AuthorityRecord
+  #  ]
+  #];
+
+  # Mapping for Predecessor
+  #rr:predicateObjectMap [
+  #  rr:predicate rico:hasPredecessor;
+  #  rr:objectMap [
+  #    rml:reference "PRED";
+  #    rr:constant auth:PredecessorAgencies
+  #  ]
+  #];
+
+  # Mapping for Successor
+  #rr:predicateObjectMap [
+  #  rr:predicate rico:hasSuccessor;
+  #  rr:objectMap [
+  #    rml:reference "SUC";
+  #    rr:constant auth:SuccessorAgencies
+  #  ]
+  #];
+
+  # Mapping for Rules
+  #rr:predicateObjectMap [
+  #  rr:predicate rico:hasRecordCreator;
+  #  rr:objectMap [
+  #    rml:reference "RULES";
+  #    rr:constant auth:Rules
+  #  ]
+  #];
+
+  # Mapping for Status
+  #rr:predicateObjectMap [
+  #  rr:predicate rico:status;
+  #  rr:objectMap [
+  #    rml:reference "STATUSA";
+  #    rr:constant auth:Status
+  #  ]
+  #];
+
+  # Mapping for Website
+  #rr:predicateObjectMap [
+  #  rr:predicate rico:hasRecordState;
+  #  rr:objectMap [
+  #    rml:reference "WEBA";
+  #    rr:constant auth:WebReady
+  #  ]
+  #];
+
+  ### Additional Mappings from Ontology
+
+  # Mapping for Agency Reference Code
+  #rr:predicateObjectMap [
+  #  rr:predicate rico:hasIdentifier;
+  #  rr:objectMap [
+  #    rml:reference "REFA";
+  #    rr:constant auth:AgencyReferenceCode
+  #  ]
+  #].
+
+  # Mapping for Archivist
+  #rr:predicateObjectMap [
+  #  rr:predicate rico:hasCreator;
+  #  rr:objectMap [
+  #    rml:reference "ARCHAU";
+  #    rr:constant auth:Archivist
+  #  ]
+  #].
